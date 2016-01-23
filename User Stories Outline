@@ -1,0 +1,22 @@
+1     User Interface appears in a list view (similar to Redit)
+3    Filtering Options [closest, farthest, rating, (similar to Amazon)]
+1    Creating a task title
+1    Set a task Location
+1    Set a task Time
+1    Set a task Duration
+1    Set a task Price
+1    Set a task Description
+1    Set a task Picture
+1    Have a plus sign button to "Create a Task"
+5    Have Tasks associated with standard symbols
+4    Have a search function
+1    User Account (user name and password)
+2    Have a rating system (tasks created, completed, assigned)
+2    Be able to include a description with a rating
+2    Be able to bid on a task
+5    Implement a 3rd part payment system
+3    Options for compensaiton (trade or money)
+5    Filter by number of "$$$" (more money = more "$")
+1    User Interface sketches
+3    Be able to filter search results by area code
+5    Filter by mapped GPS locatoin
