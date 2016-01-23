@@ -1,22 +1,64 @@
-1     User Interface appears in a list view (similar to Redit)
-3    Filtering Options [closest, farthest, rating, (similar to Amazon)]
-1    Creating a task title
-1    Set a task Location
-1    Set a task Time
-1    Set a task Duration
-1    Set a task Price
-1    Set a task Description
-1    Set a task Picture
-1    Have a plus sign button to "Create a Task"
-5    Have Tasks associated with standard symbols
-4    Have a search function
-1    User Account (user name and password)
-2    Have a rating system (tasks created, completed, assigned)
-2    Be able to include a description with a rating
-2    Be able to bid on a task
-5    Implement a 3rd part payment system
-3    Options for compensaiton (trade or money)
-5    Filter by number of "$$$" (more money = more "$")
-1    User Interface sketches
-3    Be able to filter search results by area code
-5    Filter by mapped GPS locatoin
+As a user,
+I want the app to open to a list,
+so that I can see any nearby tasks that need to be completed.
+(importance level: 1)
+
+As a task-seeker, 
+I want to be able to filter the list of tasks,
+so that I can find them by proximity, price, and rating.
+(importance level: 3)
+
+As a task-seeker,
+I want to be able to bid on tasks,
+so that I can compete with other task-doers for the most desirable tasks.
+(importance level: 2)
+
+As a user,
+I want tasks, as well as task-sourcers and seekers to have ratings,
+so that I can be assured that I will have a safe experience.
+(importance level: 2)
+
+As a task-sourcer,
+I want to generate tasks with descriptive attributes,
+so that I can find other people who will complete the tasks for me.
+(importance leve: 1)
+
+As a task-sourcer,
+I want to be able to see a picture of the person who agrees to do my task
+so that I can feel more comfortable interacting with them in person.
+(importance leve: 1)
+
+As a task-seeker,
+I want the list of tasks to have descriptive symbols,
+so that I can easily identify what kind of work the task entails.
+(importance level: 5)
+
+As a task-seeker,
+I want an easy way to search the list of tasks,
+so that I can easily find specific tasks I'd like to complete.
+(importance level: 4)
+
+As a user,
+I want to have a user account and task history list,
+so that I can easily manage pending tasks, and view
+(importance level: 1)
+
+As a user,
+I want to be able to see description with ratings,
+so that I can get more information about task, task-doers, and task-seekers.
+(importance level: 2)
+
+As a user,
+I want to be able to user third party payment systems like paypal or venmo,
+so that I can easily give and recieve compensation for tasks.
+(importance level: 5)
+
+As a user,
+I want the option to trade or barter in lieu of financial compensation,
+so that I can easily arrange tasks that wouldn't ordinarily require payment.
+(importance level: 3)
+
+As a user,
+I want the task list to show tasks that are close to my current location,
+so that I can use the task app anywhere, at anytime.
+(importance level: 5)
