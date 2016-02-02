@@ -1,0 +1,18 @@
+<resources>
+    <string name="parse_app_id">B1JHogV7pRql8v3xKuvuxNxRZjWWOUbGK04GzbK3</string>
+    <string name="parse_client_key">B9BB44VfrV96Dlq28bP13yi7QRD5lyIBGc0FOGER</string>
+
+    <string name="app_name">Tasker</string>
+    <string name="action_settings">Settings</string>
+    <string name="SignUpButtonText">Sign Up</string>
+    <string name="SignInButtonText">Sign In</string>
+    <string name="LogoText">TASKER</string>
+    <string name="ForgotUsernameText">Forgot Username</string>
+    <string name="ForgotPasswordText">Forgot Password</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="title_activity_create_account">Create Account</string>
+    <string name="title_activity_home_page">Tasker</string>
+    <string name="confirmPwd">Confirm Password</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>
