@@ -18,7 +18,10 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
 import com.parse.LogInCallback;
+import com.parse.Parse;
+import com.parse.ParseACL;
 import com.parse.ParseException;
+import com.parse.ParseObject;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
@@ -29,6 +32,9 @@ public class Login extends AppCompatActivity {
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
+
+    public static final String APPLICATION_ID = "B1JHogV7pRql8v3xKuvuxNxRZjWWOUbGK04GzbK3";
+    public static final String CLIENT_ID = "B9BB44VfrV96Dlq28bP13yi7QRD5lyIBGc0FOGER";
 
     Button signInButton, signUpButton;
     EditText username, password;
@@ -41,144 +47,19 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        //Create Layout
-//        RelativeLayout loginLayout = new RelativeLayout(this);
-//        loginLayout.setBackgroundColor(Color.LTGRAY);
+//        // Create a local Datastore
+//        Parse.enableLocalDatastore(this);
+//        // Initialize Parse
+//        Parse.initialize(this, APPLICATION_ID, CLIENT_ID);
+//        ParseUser.enableAutomaticUser();
+//        ParseACL defaultACL = new ParseACL();
+//        // Optionally enable public read access.
+//        // defaultACL.setPublicReadAccess﴾true﴿;
+//        ParseACL.setDefaultACL( defaultACL, true);
 //
-//        //Create Title
-//        TextView titleText = new TextView(this);
-//        titleText.setText(R.string.LogoText);
-//        titleText.setTextColor(Color.BLACK);
-//        titleText.setGravity(Gravity.FILL_HORIZONTAL);
-//
-//        //Buttons
-//        Button signInButton = new Button(this);
-//        signInButton.setText(R.string.SignInButtonText);
-//        signInButton.setTextColor(Color.WHITE);
-//        signInButton.setBackgroundColor(Color.BLACK);
-//
-//        Button signUpButton = new Button(this);
-//        signUpButton.setText(R.string.SignUpButtonText);
-//        signUpButton.setTextColor(Color.WHITE);
-//        signUpButton.setBackgroundColor(Color.BLACK);
-//
-//        //Username and password
-//        EditText usernameBox = new EditText(this);
-//        usernameBox.setText(R.string.Username);
-//        usernameBox.setTextColor(Color.BLACK);
-//
-//        EditText passwordBox = new EditText(this);
-//        passwordBox.setText(R.string.Password);
-//        passwordBox.setTextColor(Color.BLACK);
-//
-//        Resources r = getResources();
-//        int px = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 320,
-//                r.getDisplayMetrics()
-//        );
-//
-//        titleText.setWidth(px);
-//        usernameBox.setWidth(px);
-//        passwordBox.setWidth(px);
-//        signInButton.setWidth(px);
-//        signUpButton.setWidth(px);
-//
-//        //Forgot textviews
-//        TextView forgotUsername = new TextView(this);
-//        forgotUsername.setText(R.string.ForgotUsernameText);
-//        forgotUsername.setTextColor(Color.WHITE);
-//        forgotUsername.isClickable();
-//
-//        TextView forgotPassword = new TextView(this);
-//        forgotPassword.setText(R.string.ForgotPasswordText);
-//        forgotPassword.setTextColor(Color.WHITE);
-//        forgotPassword.isClickable();
-//
-//        //Give each widget a unique ID for referencing
-//        signInButton.setId(1);
-//        signUpButton.setId(2);
-//        usernameBox.setId(3);
-//        passwordBox.setId(4);
-//        forgotUsername.setId(5);
-//        forgotPassword.setId(6);
-//
-//        //Layout Containers
-//        RelativeLayout.LayoutParams titleDetails = new RelativeLayout.LayoutParams(
-//                RelativeLayout.LayoutParams.WRAP_CONTENT,
-//                RelativeLayout.LayoutParams.WRAP_CONTENT
-//        );
-//
-//        RelativeLayout.LayoutParams usernameDetails = new RelativeLayout.LayoutParams(
-//                RelativeLayout.LayoutParams.WRAP_CONTENT,
-//                RelativeLayout.LayoutParams.WRAP_CONTENT
-//        );
-//
-//        RelativeLayout.LayoutParams passwordDetails = new RelativeLayout.LayoutParams(
-//                RelativeLayout.LayoutParams.WRAP_CONTENT,
-//                RelativeLayout.LayoutParams.WRAP_CONTENT
-//        );
-//
-//        RelativeLayout.LayoutParams forgotUsernameDetails = new RelativeLayout.LayoutParams(
-//                RelativeLayout.LayoutParams.WRAP_CONTENT,
-//                RelativeLayout.LayoutParams.WRAP_CONTENT
-//        );
-//
-//        RelativeLayout.LayoutParams forgotPasswordDetails = new RelativeLayout.LayoutParams(
-//                RelativeLayout.LayoutParams.WRAP_CONTENT,
-//                RelativeLayout.LayoutParams.WRAP_CONTENT
-//        );
-//
-//        RelativeLayout.LayoutParams signInButtonDetails = new RelativeLayout.LayoutParams(
-//                RelativeLayout.LayoutParams.WRAP_CONTENT,
-//                RelativeLayout.LayoutParams.WRAP_CONTENT
-//        );
-//
-//        RelativeLayout.LayoutParams signUpButtonDetails = new RelativeLayout.LayoutParams(
-//                RelativeLayout.LayoutParams.WRAP_CONTENT,
-//                RelativeLayout.LayoutParams.WRAP_CONTENT
-//        );
-//
-//
-//
-//        //Rules for positioning of widgets
-//        titleDetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
-//        titleDetails.addRule(RelativeLayout.ALIGN_TOP);
-//        titleDetails.setMargins(0,50,0,50);
-//
-//        usernameDetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
-//        usernameDetails.addRule(RelativeLayout.ABOVE, passwordBox.getId());
-//        usernameDetails.setMargins(0, 0, 0, 50);
-//
-//        passwordDetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
-//        passwordDetails.addRule(RelativeLayout.ABOVE, signInButton.getId());
-//        passwordDetails.setMargins(0, 0, 0, 0);
-//
-//        forgotUsernameDetails.addRule(RelativeLayout.ALIGN_LEFT, passwordBox.getId());
-//        forgotUsernameDetails.addRule(RelativeLayout.BELOW, passwordBox.getId());
-//        forgotUsernameDetails.setMargins(0, 10, 0, 50);
-//
-//        forgotPasswordDetails.addRule(RelativeLayout.ALIGN_RIGHT, passwordBox.getId());
-//        forgotPasswordDetails.addRule(RelativeLayout.BELOW, passwordBox.getId());
-//        forgotPasswordDetails.setMargins(0, 10, 0, 50);
-//
-//        signInButtonDetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
-//        signInButtonDetails.addRule(RelativeLayout.CENTER_VERTICAL);
-//        signInButtonDetails.setMargins(0, 100, 0, 50);
-//
-//        signUpButtonDetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
-//        signUpButtonDetails.addRule(RelativeLayout.BELOW, signInButton.getId());
-//        signUpButtonDetails.setMargins(0,0,0,0);
-//
-//        //Add all of the widgets to the layout
-//        loginLayout.addView(titleText, titleDetails);
-//        loginLayout.addView(signInButton, signInButtonDetails);
-//        loginLayout.addView(signUpButton, signUpButtonDetails);
-//        loginLayout.addView(usernameBox, usernameDetails);
-//        loginLayout.addView(passwordBox, passwordDetails);
-//        loginLayout.addView(forgotPassword, forgotPasswordDetails);
-//        loginLayout.addView(forgotUsername, forgotUsernameDetails);
-
-        //Set this layout as the one to be displayed
-//        setContentView(loginLayout);
+//        ParseObject testObject = new ParseObject("TestObject");
+//        testObject.put("foo", "bar");
+//        testObject.saveInBackground();
 
         setContentView(R.layout.activity_login);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -278,16 +159,43 @@ public class Login extends AppCompatActivity {
     }
 
     public void signin(View view) {
-        if (username.getText().toString().equals("admin")){
-            if (password.getText().toString().equals("admin")){
-                Intent intent = new Intent(Login.this, HomePage.class);
-                Toast.makeText(getApplicationContext(), "Loging in...", Toast.LENGTH_SHORT).show();
+//        if (username.getText().toString().equals("admin")){
+//            if (password.getText().toString().equals("admin")){
+//                Intent intent = new Intent(Login.this, HomePage.class);
+//                Toast.makeText(getApplicationContext(), "Loging in...", Toast.LENGTH_SHORT).show();
+//
+//                startActivity(intent);
+//            }
+//        } else {
+//            Toast.makeText(getApplicationContext(), "Wrong Credentials", Toast.LENGTH_SHORT).show();
+//        }
 
-                startActivity(intent);
-            }
-        } else {
-            Toast.makeText(getApplicationContext(), "Wrong Credentials", Toast.LENGTH_SHORT).show();
-        }
+        // Retrieve the text entered from the EditText
+        usernameTxt = username.getText().toString();
+        passwordTxt = password.getText().toString();
+
+        // Send data to Parse.com for verification
+        ParseUser.logInInBackground(usernameTxt, passwordTxt,
+                new LogInCallback() {
+                    public void done(ParseUser user, ParseException e) {
+                        if (user != null) {
+                            // If user exist and authenticated, send user to Welcome.class
+                            Intent intent = new Intent(
+                                    Login.this,
+                                    HomePage.class);
+                            startActivity(intent);
+                            Toast.makeText(getApplicationContext(),
+                                    "Successfully Logged in",
+                                    Toast.LENGTH_LONG).show();
+                            finish();
+                        } else {
+                            Toast.makeText(
+                                    getApplicationContext(),
+                                    "No such user exist, please signup",
+                                    Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
 
 
     }
@@ -295,6 +203,27 @@ public class Login extends AppCompatActivity {
     public void signup(View view) {
         Intent intent = new Intent(Login.this, CreateAccount.class);
         startActivity(intent);
+//        usernameTxt = username.getText().toString();
+//        passwordTxt = password.getText().toString();
+//
+//        if (usernameTxt.equals("") && passwordTxt.equals("")) {
+//            Toast.makeText(getApplicationContext(), "FILL IN THE INFO!", Toast.LENGTH_LONG).show();
+//        } else {
+//            ParseUser user = new ParseUser();
+//            user.setUsername(usernameTxt);
+//            user.setPassword(passwordTxt);
+//            user.signUpInBackground(new SignUpCallback() {
+//                @Override
+//                public void done(ParseException e) {
+//                    if (e == null) {
+//                        Toast.makeText(getApplicationContext(), "Successfully Signed Up!", Toast.LENGTH_LONG).show();
+//                    } else {
+//                        Toast.makeText(getApplicationContext(), "Sign Up Error", Toast.LENGTH_LONG).show();
+//                    }
+//                }
+//            });
+//        }
+
 
     }
 
