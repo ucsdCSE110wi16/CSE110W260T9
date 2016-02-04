@@ -16,7 +16,7 @@ import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
 public class CreateAccount extends AppCompatActivity {
-    String usernameTxt, passwordTxt;
+    String emailTxt, usernameTxt, passwordTxt, passwordCfmTxt;
     EditText email, username, password, passwordCfm;
     Button button;
 
@@ -36,25 +36,33 @@ public class CreateAccount extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                emailTxt = email.getText().toString();
                 usernameTxt = username.getText().toString();
                 passwordTxt = password.getText().toString();
+                passwordCfmTxt = passwordCfm.getText().toString();
 
-                if (usernameTxt.equals("") && passwordTxt.equals("")) {
-                    Toast.makeText(getApplicationContext(), "FILL IN THE INFO!", Toast.LENGTH_LONG).show();
+                if (usernameTxt.equals("") || passwordTxt.equals("") || emailTxt.equals("")) {
+                    Toast.makeText(getApplicationContext(), "Please enter your email, username, and password.", Toast.LENGTH_LONG).show();
                 } else {
-                    ParseUser user = new ParseUser();
-                    user.setUsername(usernameTxt);
-                    user.setPassword(passwordTxt);
-                    user.signUpInBackground(new SignUpCallback() {
-                        @Override
-                        public void done(ParseException e) {
-                            if (e == null) {
-                                Toast.makeText(getApplicationContext(), "Successfully Signed Up!", Toast.LENGTH_LONG).show();
-                            } else {
-                                Toast.makeText(getApplicationContext(), "Sign Up Error", Toast.LENGTH_LONG).show();
+                    if (!passwordTxt.equals(passwordCfmTxt)) {
+                        Toast.makeText(getApplicationContext(), "Password and Password Confirmation do not match.", Toast.LENGTH_LONG).show();
+                    } else {
+                        ParseUser user = new ParseUser();
+                        user.setEmail(emailTxt);
+                        user.setUsername(usernameTxt);
+                        user.setPassword(passwordTxt);
+
+                        user.signUpInBackground(new SignUpCallback() {
+                            @Override
+                            public void done(ParseException e) {
+                                if (e == null) {
+                                    Toast.makeText(getApplicationContext(), "Successfully Signed Up!", Toast.LENGTH_LONG).show();
+                                } else {
+                                    Toast.makeText(getApplicationContext(), "Sign Up Error", Toast.LENGTH_LONG).show();
+                                }
                             }
-                        }
-                    });
+                        });
+                    }
                 }
             }
         });
