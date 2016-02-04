@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/res/merged/debug/menu/menu_home.xml",
+        "source": "/Users/Blaid/AndroidStudioProjects/Tasker/app/src/main/res/menu/menu_home.xml"
+    },
+    {
+        "merged": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/res/merged/debug/menu/menu_home.xml",
+        "source": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/src/main/res/menu/menu_home.xml"
+    }
+]
