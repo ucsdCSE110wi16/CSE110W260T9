@@ -26,9 +26,230 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c084d0eb-453e-499e-b039-763bf9d16ea2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_home_page.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_home_page.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml" />
+    <list default="true" id="c084d0eb-453e-499e-b039-763bf9d16ea2" name="Default" comment="Set theme">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mockups/FilterOptions.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mockups/Homepage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mockups/NewTask.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mockups/TaskerHomepageUI.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mockups/TaskerLoginUI.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mockups/TaskerSettingsUI.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mockups/User Profile Screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mockups/User setting.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/.idea/gradle.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/.idea/runConfigurations.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/allclasses-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/allclasses-noframe.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/AuthenticationCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ConfigCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/CountCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/DeleteCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/FindCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/FunctionCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/GetCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/GetDataCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/GetDataStreamCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/GetFileCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/LocationCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/LogInCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/LogOutCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/Parse.Configuration.Builder.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/Parse.Configuration.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/Parse.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ParseACL.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ParseAnalytics.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ParseAnonymousUtils.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ParseClassName.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ParseCloud.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ParseConfig.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ParseException.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ParseFile.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ParseGeoPoint.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ParseInstallation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ParseObject.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ParsePush.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ParsePushBroadcastReceiver.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ParseQuery.CachePolicy.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ParseQuery.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ParseRelation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ParseRole.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ParseSession.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ParseUser.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/ProgressCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/PushService.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/RefreshCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/RequestPasswordResetCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/SaveCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/SendCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/SignUpCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/http/ParseHttpBody.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/http/ParseHttpRequest.Builder.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/http/ParseHttpRequest.Method.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/http/ParseHttpRequest.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/http/ParseHttpResponse.Builder.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/http/ParseHttpResponse.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/http/ParseNetworkInterceptor.Chain.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/http/ParseNetworkInterceptor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/http/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/http/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/http/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/com/parse/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/constant-values.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/deprecated-list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/help-doc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/index-all.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/overview-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/overview-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/overview-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/package-list" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/resources/background.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/resources/tab.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/resources/titlebar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/resources/titlebar_end.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/serialized-form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0-javadoc/stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/Parse-1.13.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4-javadoc/allclasses-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4-javadoc/allclasses-noframe.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4-javadoc/com/parse/ParseFacebookUtils.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4-javadoc/com/parse/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4-javadoc/com/parse/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4-javadoc/com/parse/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4-javadoc/constant-values.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4-javadoc/deprecated-list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4-javadoc/help-doc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4-javadoc/index-all.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4-javadoc/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4-javadoc/overview-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4-javadoc/package-list" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4-javadoc/resources/background.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4-javadoc/resources/tab.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4-javadoc/resources/titlebar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4-javadoc/resources/titlebar_end.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4-javadoc/stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV3-1.10.4.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4-javadoc/allclasses-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4-javadoc/allclasses-noframe.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4-javadoc/com/parse/ParseFacebookUtils.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4-javadoc/com/parse/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4-javadoc/com/parse/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4-javadoc/com/parse/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4-javadoc/constant-values.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4-javadoc/deprecated-list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4-javadoc/help-doc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4-javadoc/index-all.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4-javadoc/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4-javadoc/overview-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4-javadoc/package-list" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4-javadoc/resources/background.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4-javadoc/resources/tab.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4-javadoc/resources/titlebar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4-javadoc/resources/titlebar_end.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4-javadoc/stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseFacebookUtilsV4-1.10.4.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/allclasses-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/allclasses-noframe.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/com/parse/interceptors/ParseLogInterceptor.Logger.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/com/parse/interceptors/ParseLogInterceptor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/com/parse/interceptors/ParseStethoInterceptor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/com/parse/interceptors/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/com/parse/interceptors/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/com/parse/interceptors/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/constant-values.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/deprecated-list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/help-doc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/index-all.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/overview-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/package-list" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/resources/background.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/resources/tab.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/resources/titlebar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/resources/titlebar_end.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2-javadoc/stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseInterceptors-0.0.2.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/allclasses-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/allclasses-noframe.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/com/parse/ParseTwitterUtils.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/com/parse/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/com/parse/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/com/parse/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/com/parse/twitter/AsyncCallback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/com/parse/twitter/Twitter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/com/parse/twitter/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/com/parse/twitter/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/com/parse/twitter/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/constant-values.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/deprecated-list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/help-doc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/index-all.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/overview-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/overview-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/overview-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/package-list" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/resources/background.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/resources/tab.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/resources/titlebar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/resources/titlebar_end.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5-javadoc/stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/ParseTwitterUtils-1.10.5.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/bolts-tasks-1.4.0-javadoc.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/bolts-tasks-1.4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/libs/Parse-1/bolts-tasks-1.4.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/proguard-rules.pro" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/androidTest/java/com/example/blaid/tasker/ApplicationTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/java/com/example/blaid/tasker/CreateAccount.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/java/com/example/blaid/tasker/HomePage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/java/com/example/blaid/tasker/Login.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/java/com/example/blaid/tasker/MainActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/java/com/example/blaid/tasker/ParseApplication.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/layout/activity_create_account.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/layout/activity_home_page.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/layout/activity_login.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/layout/activity_main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/layout/content_create_account.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/layout/content_home_page.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/layout/content_login.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/layout/content_main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/menu/menu_home.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/values-v21/styles.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/values-w820dp/dimens.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/values/colors.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/values/dimens.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/values/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/main/res/values/styles.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/app/src/test/java/com/example/blaid/tasker/ExampleUnitTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/gradle.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/gradlew" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/gradlew.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tasker/settings.gradle" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Tasker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,111 +277,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/blaid/tasker/Login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="122" column="16" selection-start-line="122" selection-start-column="16" selection-end-line="122" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/blaid/tasker/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content_create_account.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_create_account.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.4444447">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.7777777">
-              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Theme Editor" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Theme Editor" pinned="false" current-in-tab="true">
         <entry file="android-dummy:///Users/Blaid/AndroidStudioProjects/Tasker//Theme Editor">
           <provider selected="true" editor-type-id="themeEditor">
             <state theme-name="AppTheme" module-name="app" proportion="0.5" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="colors.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content_home_page.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_home_page.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateAccount.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/blaid/tasker/CreateAccount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.4375">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content_login.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_login.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
@@ -1798,7 +1918,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="AndroidView" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -1827,86 +1947,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tasker" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tasker" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tasker" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ic_logo_temp.png" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tasker" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1920,38 +1960,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tasker" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasker" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tasker" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manifests" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1974,24 +1982,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Tasker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tasker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tasker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gradle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wrapper" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2048,112 +2038,12 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tasker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tasker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tasker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tasker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tasker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tasker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tasker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tasker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-xhdpi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2182,10 +2072,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -2197,9 +2083,9 @@
     <property name="recentsLimit" value="5" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_Blaid_API_23" />
-    <property name="android.project.structure.last.selected" value="Authentication" />
+    <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OfflineTodos/android" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CSE110W260T9/Tasker" />
     <property name="FullScreen" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
@@ -2412,7 +2298,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1807" y="98" width="1440" height="873" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2435,7 +2321,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -2469,153 +2355,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/blaid/tasker/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="122" column="16" selection-start-line="122" selection-start-column="16" selection-end-line="122" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.1.1/support-v4-23.1.1-sources.jar!/android/support/v4/app/FragmentActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="533" column="19" selection-start-line="533" selection-start-column="19" selection-end-line="533" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/blaid/tasker/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_create_account.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_home_page.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/blaid/tasker/CreateAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_login.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/blaid/tasker/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/blaid/tasker/ParseApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="76" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/blaid/tasker/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/blaid/tasker/ParseApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="76" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -2661,114 +2404,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="76" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home_page.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_startup.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_logo_temp.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_logo_temp.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_logo_temp.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/local.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78125">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/blaid/tasker/ParseApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="2" selection-end-line="35" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_action_logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_logo_temp.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2787,92 +2426,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_login.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/blaid/tasker/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/blaid/tasker/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="122" column="16" selection-start-line="122" selection-start-column="16" selection-end-line="122" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_create_account.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_home_page.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="android-dummy:///Users/Blaid/AndroidStudioProjects/Tasker//Theme Editor">
       <provider selected="true" editor-type-id="themeEditor">
         <state theme-name="AppTheme" module-name="app" proportion="0.5" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4444447">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.7777777">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/blaid/tasker/CreateAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.4375">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
       </provider>
     </entry>
   </component>
