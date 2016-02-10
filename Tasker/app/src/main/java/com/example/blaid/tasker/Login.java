@@ -71,7 +71,6 @@ public class Login extends AppCompatActivity {
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
 
-        title = (TextView) findViewById(R.id.apptitle);
         forgotUsername = (TextView) findViewById(R.id.textView2);
         forgotPassword = (TextView) findViewById(R.id.textView3);
 
@@ -89,6 +88,7 @@ public class Login extends AppCompatActivity {
                 signup(v);
             }
         });
+
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -159,16 +159,6 @@ public class Login extends AppCompatActivity {
     }
 
     public void signin(View view) {
-//        if (username.getText().toString().equals("admin")){
-//            if (password.getText().toString().equals("admin")){
-//                Intent intent = new Intent(Login.this, HomePage.class);
-//                Toast.makeText(getApplicationContext(), "Loging in...", Toast.LENGTH_SHORT).show();
-//
-//                startActivity(intent);
-//            }
-//        } else {
-//            Toast.makeText(getApplicationContext(), "Wrong Credentials", Toast.LENGTH_SHORT).show();
-//        }
 
         // Retrieve the text entered from the EditText
         usernameTxt = username.getText().toString();
@@ -201,30 +191,8 @@ public class Login extends AppCompatActivity {
     }
 
     public void signup(View view) {
-        Intent intent = new Intent(Login.this, CreateAccount.class);
-        startActivity(intent);
-//        usernameTxt = username.getText().toString();
-//        passwordTxt = password.getText().toString();
-//
-//        if (usernameTxt.equals("") && passwordTxt.equals("")) {
-//            Toast.makeText(getApplicationContext(), "FILL IN THE INFO!", Toast.LENGTH_LONG).show();
-//        } else {
-//            ParseUser user = new ParseUser();
-//            user.setUsername(usernameTxt);
-//            user.setPassword(passwordTxt);
-//            user.signUpInBackground(new SignUpCallback() {
-//                @Override
-//                public void done(ParseException e) {
-//                    if (e == null) {
-//                        Toast.makeText(getApplicationContext(), "Successfully Signed Up!", Toast.LENGTH_LONG).show();
-//                    } else {
-//                        Toast.makeText(getApplicationContext(), "Sign Up Error", Toast.LENGTH_LONG).show();
-//                    }
-//                }
-//            });
-//        }
-
-
+        startActivity(new Intent(Login.this, CreateAccount.class));
     }
+
 
 }

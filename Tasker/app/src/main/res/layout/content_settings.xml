@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.blaid.tasker.settings"
+    tools:showIn="@layout/activity_settings">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/SettingsTitle"
+        android:textSize="40dp"
+        android:background="@color/colorAccent"
+        android:textAlignment="center"
+        android:textColor="@color/colorBackground"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:width="400dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="General Settings"
+        android:id="@+id/generalID"
+        android:layout_marginTop="33dp"
+        android:width="300dp"
+        android:layout_below="@+id/SettingsTitle"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sound Settings"
+        android:id="@+id/soundID"
+        android:layout_marginTop="27dp"
+        android:width="300dp"
+        android:layout_below="@+id/generalID"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Settings"
+        android:id="@+id/displayID"
+        android:width="300dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/soundID"
+        android:layout_alignStart="@+id/soundID" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification Settings"
+        android:id="@+id/notificationID"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/displayID"
+        android:layout_centerHorizontal="true"
+        android:width="300dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History Settings"
+        android:id="@+id/historyID"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/notificationID"
+        android:layout_centerHorizontal="true"
+        android:width="300dp" />
+
+</RelativeLayout>
