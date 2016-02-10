@@ -10,8 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Login"
-    tools:showIn="@layout/activity_login"
-    android:background="#cccccc">
+    tools:showIn="@layout/activity_login">
 
     <EditText
         android:layout_width="wrap_content"
@@ -20,10 +19,11 @@
         android:ems="10"
         android:id="@+id/username"
         android:hint="@string/Username"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:width="320dp" />
+        android:width="320dp"
+        android:layout_above="@+id/password"
+        android:layout_alignLeft="@+id/clicktosignin"
+        android:layout_alignStart="@+id/clicktosignin"
+        android:layout_marginBottom="40sp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -32,23 +32,26 @@
         android:ems="10"
         android:id="@+id/password"
         android:hint="@string/Password"
-        android:layout_marginTop="42dp"
-        android:layout_below="@+id/username"
+        android:width="320dp"
+        android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/username"
-        android:layout_alignStart="@+id/username"
-        android:width="320dp" />
+        android:layout_alignStart="@+id/username" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/SignInButtonText"
         android:id="@+id/clicktosignin"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:background="#0024d5"
-        android:textColor="#ffffff"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorBackground"
         android:width="320dp"
-        android:onClick="signin" />
+        android:onClick="signin"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/clicktosignup"
+        android:layout_alignStart="@+id/clicktosignup"
+        android:layout_marginTop="40sp"
+        android:typeface="monospace"
+        android:textSize="16sp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -58,19 +61,12 @@
         android:layout_marginTop="33dp"
         android:layout_below="@+id/clicktosignin"
         android:layout_centerHorizontal="true"
-        android:background="#0024d5"
-        android:textColor="#ffffff"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorBackground"
         android:width="320dp"
-        android:onClick="signup" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/LogoText"
-        android:id="@+id/apptitle"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:onClick="signup"
+        android:textSize="16sp"
+        android:typeface="monospace" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -82,7 +78,8 @@
         android:layout_alignLeft="@+id/password"
         android:layout_alignStart="@+id/password"
         android:clickable="true"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:textStyle="bold|italic" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -94,5 +91,17 @@
         android:layout_alignRight="@+id/password"
         android:layout_alignEnd="@+id/password"
         android:clickable="true"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_logo"
+        android:minHeight="200sp"
+        android:minWidth="200sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
