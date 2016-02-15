@@ -263,12 +263,15 @@
     <integer name="design_snackbar_text_max_lines">2</integer>
     <integer name="google_play_services_version">8115000</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <string name="Description">Description:</string>
+    <string name="Done">Done</string>
     <string name="ForgotPasswordText">Forgot Password</string>
     <string name="ForgotUsernameText">Forgot Username</string>
     <string name="LogoText">TASKER</string>
     <string name="Password">Password</string>
     <string name="SignInButtonText">Sign In</string>
     <string name="SignUpButtonText">Sign Up</string>
+    <string name="Upload_Photo">Upload Photo</string>
     <string name="Username">Username</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -330,6 +333,7 @@
     <string name="parse_client_key">B9BB44VfrV96Dlq28bP13yi7QRD5lyIBGc0FOGER</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title_activity_create_account">Create Account</string>
+    <string name="title_activity_create_task">Create Task</string>
     <string name="title_activity_home_page">Tasker</string>
     <string name="title_activity_main">MainActivity</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

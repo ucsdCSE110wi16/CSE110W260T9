@@ -70,6 +70,11 @@
         <meta-data
             android:name="com.parse.CLIENT_KEY"
             android:value="@string/parse_client_key" />
+
+        <activity
+            android:name="com.example.blaid.tasker.CreateTask"
+            android:label="@string/title_activity_create_task"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

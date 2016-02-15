@@ -4,15 +4,15 @@
         "source": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_startup.png",
-        "source": "/Users/Blaid/AndroidStudioProjects/Tasker/app/src/main/res/mipmap-xxxhdpi/ic_startup.png"
+        "merged": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_default_profile.png",
+        "source": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/src/main/res/mipmap-xxxhdpi/ic_default_profile.png"
     },
     {
-        "merged": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher.png",
-        "source": "/Users/Blaid/AndroidStudioProjects/Tasker/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher.png",
+        "source": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_logo_temp.png",
-        "source": "/Users/Blaid/AndroidStudioProjects/Tasker/app/src/main/res/mipmap-xxxhdpi/ic_logo_temp.png"
+        "merged": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_default_profile.png",
+        "source": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/src/main/res/mipmap-xxxhdpi/ic_default_profile.png"
     }
 ]

@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/res/merged/debug/values-v21/values-v21.xml",
+        "outputFile": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/res/merged/debug/values-v21/values-v21.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,14 @@
                     "endOffset": 119
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 223,
+                        "endColumn": 68,
+                        "endOffset": 287
+                    }
                 }
             },
             {
@@ -24,7 +31,7 @@
                     "endOffset": 588
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/src/main/res/values-v21/styles.xml",
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/src/main/res/values-v21/styles.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -45,7 +52,15 @@
                     "endOffset": 889
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/src/main/res/values-v21/styles.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/src/main/res/values-v21/styles.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 18,
+                        "endLine": 7,
+                        "endColumn": 12,
+                        "endOffset": 314
+                    }
                 }
             },
             {
@@ -57,7 +72,14 @@
                     "endOffset": 980
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 239,
+                        "endColumn": 90,
+                        "endOffset": 325
+                    }
                 }
             },
             {
@@ -69,7 +91,14 @@
                     "endOffset": 1083
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 330,
+                        "endColumn": 102,
+                        "endOffset": 428
+                    }
                 }
             },
             {
@@ -81,7 +110,14 @@
                     "endOffset": 1186
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 433,
+                        "endColumn": 102,
+                        "endOffset": 531
+                    }
                 }
             },
             {
@@ -93,7 +129,14 @@
                     "endOffset": 1291
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 536,
+                        "endColumn": 104,
+                        "endOffset": 636
+                    }
                 }
             },
             {
@@ -105,7 +148,14 @@
                     "endOffset": 1398
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 641,
+                        "endColumn": 106,
+                        "endOffset": 743
+                    }
                 }
             },
             {
@@ -117,7 +167,14 @@
                     "endOffset": 1507
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 748,
+                        "endColumn": 108,
+                        "endOffset": 852
+                    }
                 }
             },
             {
@@ -129,7 +186,14 @@
                     "endOffset": 1616
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 857,
+                        "endColumn": 108,
+                        "endOffset": 961
+                    }
                 }
             },
             {
@@ -141,7 +205,14 @@
                     "endOffset": 1725
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 966,
+                        "endColumn": 108,
+                        "endOffset": 1070
+                    }
                 }
             },
             {
@@ -153,7 +224,14 @@
                     "endOffset": 1834
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1075,
+                        "endColumn": 108,
+                        "endOffset": 1179
+                    }
                 }
             },
             {
@@ -165,7 +243,14 @@
                     "endOffset": 1943
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1184,
+                        "endColumn": 108,
+                        "endOffset": 1288
+                    }
                 }
             },
             {
@@ -177,7 +262,14 @@
                     "endOffset": 2050
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1293,
+                        "endColumn": 106,
+                        "endOffset": 1395
+                    }
                 }
             },
             {
@@ -189,7 +281,14 @@
                     "endOffset": 2153
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1400,
+                        "endColumn": 102,
+                        "endOffset": 1498
+                    }
                 }
             },
             {
@@ -201,7 +300,14 @@
                     "endOffset": 2272
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1503,
+                        "endColumn": 118,
+                        "endOffset": 1617
+                    }
                 }
             },
             {
@@ -214,7 +320,15 @@
                     "endOffset": 2427
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1801,
+                        "endLine": 20,
+                        "endColumn": 12,
+                        "endOffset": 1951
+                    }
                 }
             },
             {
@@ -227,7 +341,15 @@
                     "endOffset": 2582
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1956,
+                        "endLine": 22,
+                        "endColumn": 12,
+                        "endOffset": 2106
+                    }
                 }
             },
             {
@@ -239,7 +361,14 @@
                     "endOffset": 2687
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 2295,
+                        "endColumn": 104,
+                        "endOffset": 2395
+                    }
                 }
             },
             {
@@ -251,7 +380,14 @@
                     "endOffset": 2808
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 2400,
+                        "endColumn": 120,
+                        "endOffset": 2516
+                    }
                 }
             },
             {
@@ -263,7 +399,14 @@
                     "endOffset": 2909
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 2521,
+                        "endColumn": 100,
+                        "endOffset": 2617
+                    }
                 }
             },
             {
@@ -276,7 +419,15 @@
                     "endOffset": 3056
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 2801,
+                        "endLine": 31,
+                        "endColumn": 12,
+                        "endOffset": 2943
+                    }
                 }
             },
             {
@@ -289,7 +440,15 @@
                     "endOffset": 3197
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 2948,
+                        "endLine": 33,
+                        "endColumn": 12,
+                        "endOffset": 3084
+                    }
                 }
             },
             {
@@ -301,7 +460,14 @@
                     "endOffset": 3300
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 3273,
+                        "endColumn": 102,
+                        "endOffset": 3371
+                    }
                 }
             },
             {
@@ -313,7 +479,14 @@
                     "endOffset": 3419
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 3376,
+                        "endColumn": 118,
+                        "endOffset": 3490
+                    }
                 }
             },
             {
@@ -325,7 +498,14 @@
                     "endOffset": 3526
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 3495,
+                        "endColumn": 106,
+                        "endOffset": 3597
+                    }
                 }
             },
             {
@@ -337,7 +517,14 @@
                     "endOffset": 3629
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 3602,
+                        "endColumn": 102,
+                        "endOffset": 3700
+                    }
                 }
             },
             {
@@ -350,7 +537,15 @@
                     "endOffset": 3776
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 4,
+                        "startOffset": 3884,
+                        "endLine": 43,
+                        "endColumn": 12,
+                        "endOffset": 4026
+                    }
                 }
             },
             {
@@ -363,7 +558,15 @@
                     "endOffset": 3931
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 4,
+                        "startOffset": 4031,
+                        "endLine": 45,
+                        "endColumn": 12,
+                        "endOffset": 4181
+                    }
                 }
             },
             {
@@ -376,7 +579,15 @@
                     "endOffset": 4102
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 4,
+                        "startOffset": 4186,
+                        "endLine": 47,
+                        "endColumn": 12,
+                        "endOffset": 4352
+                    }
                 }
             },
             {
@@ -389,7 +600,15 @@
                     "endOffset": 4251
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 48,
+                        "startColumn": 4,
+                        "startOffset": 4357,
+                        "endLine": 49,
+                        "endColumn": 12,
+                        "endOffset": 4501
+                    }
                 }
             },
             {
@@ -402,7 +621,15 @@
                     "endOffset": 4416
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 50,
+                        "startColumn": 4,
+                        "startOffset": 4506,
+                        "endLine": 51,
+                        "endColumn": 12,
+                        "endOffset": 4666
+                    }
                 }
             },
             {
@@ -415,7 +642,15 @@
                     "endOffset": 4573
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 52,
+                        "startColumn": 4,
+                        "startOffset": 4671,
+                        "endLine": 53,
+                        "endColumn": 12,
+                        "endOffset": 4823
+                    }
                 }
             },
             {
@@ -428,7 +663,15 @@
                     "endOffset": 4724
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 54,
+                        "startColumn": 4,
+                        "startOffset": 4828,
+                        "endLine": 55,
+                        "endColumn": 12,
+                        "endOffset": 4974
+                    }
                 }
             },
             {
@@ -440,7 +683,14 @@
                     "endOffset": 4843
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 58,
+                        "startColumn": 4,
+                        "startOffset": 5163,
+                        "endColumn": 118,
+                        "endOffset": 5277
+                    }
                 }
             },
             {
@@ -453,7 +703,15 @@
                     "endOffset": 4992
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 4,
+                        "startOffset": 5461,
+                        "endLine": 62,
+                        "endColumn": 12,
+                        "endOffset": 5605
+                    }
                 }
             },
             {
@@ -466,7 +724,15 @@
                     "endOffset": 5141
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 63,
+                        "startColumn": 4,
+                        "startOffset": 5610,
+                        "endLine": 64,
+                        "endColumn": 12,
+                        "endOffset": 5754
+                    }
                 }
             },
             {
@@ -478,7 +744,14 @@
                     "endOffset": 5253
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 67,
+                        "startColumn": 4,
+                        "startOffset": 5943,
+                        "endColumn": 111,
+                        "endOffset": 6050
+                    }
                 }
             },
             {
@@ -490,7 +763,14 @@
                     "endOffset": 5400
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 70,
+                        "startColumn": 4,
+                        "startOffset": 6234,
+                        "endColumn": 146,
+                        "endOffset": 6376
+                    }
                 }
             },
             {
@@ -503,7 +783,15 @@
                     "endOffset": 5553
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 71,
+                        "startColumn": 4,
+                        "startOffset": 6381,
+                        "endLine": 72,
+                        "endColumn": 12,
+                        "endOffset": 6529
+                    }
                 }
             },
             {
@@ -516,7 +804,15 @@
                     "endOffset": 5700
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 4,
+                        "startOffset": 6534,
+                        "endLine": 74,
+                        "endColumn": 12,
+                        "endOffset": 6676
+                    }
                 }
             },
             {
@@ -528,7 +824,14 @@
                     "endOffset": 5775
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 77,
+                        "startColumn": 4,
+                        "startOffset": 6860,
+                        "endColumn": 74,
+                        "endOffset": 6930
+                    }
                 }
             },
             {
@@ -540,7 +843,14 @@
                     "endOffset": 5864
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 78,
+                        "startColumn": 4,
+                        "startOffset": 6935,
+                        "endColumn": 88,
+                        "endOffset": 7019
+                    }
                 }
             },
             {
@@ -552,7 +862,14 @@
                     "endOffset": 5951
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 79,
+                        "startColumn": 4,
+                        "startOffset": 7024,
+                        "endColumn": 86,
+                        "endOffset": 7106
+                    }
                 }
             },
             {
@@ -564,7 +881,14 @@
                     "endOffset": 6052
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 80,
+                        "startColumn": 4,
+                        "startOffset": 7111,
+                        "endColumn": 100,
+                        "endOffset": 7207
+                    }
                 }
             },
             {
@@ -577,7 +901,15 @@
                     "endOffset": 9120
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 81,
+                        "startColumn": 4,
+                        "startOffset": 7212,
+                        "endLine": 124,
+                        "endColumn": 12,
+                        "endOffset": 10275
+                    }
                 }
             },
             {
@@ -590,7 +922,15 @@
                     "endOffset": 9306
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 125,
+                        "startColumn": 4,
+                        "startOffset": 10280,
+                        "endLine": 127,
+                        "endColumn": 12,
+                        "endOffset": 10461
+                    }
                 }
             },
             {
@@ -603,7 +943,15 @@
                     "endOffset": 12386
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 128,
+                        "startColumn": 4,
+                        "startOffset": 10466,
+                        "endLine": 171,
+                        "endColumn": 12,
+                        "endOffset": 13541
+                    }
                 }
             },
             {
@@ -616,7 +964,15 @@
                     "endOffset": 12584
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 172,
+                        "startColumn": 4,
+                        "startOffset": 13546,
+                        "endLine": 174,
+                        "endColumn": 12,
+                        "endOffset": 13739
+                    }
                 }
             },
             {
@@ -629,7 +985,15 @@
                     "endOffset": 12707
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 177,
+                        "startColumn": 4,
+                        "startOffset": 13923,
+                        "endLine": 178,
+                        "endColumn": 12,
+                        "endOffset": 14041
+                    }
                 }
             },
             {
@@ -642,7 +1006,15 @@
                     "endOffset": 12830
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 179,
+                        "startColumn": 4,
+                        "startOffset": 14046,
+                        "endLine": 180,
+                        "endColumn": 12,
+                        "endOffset": 14164
+                    }
                 }
             },
             {
@@ -655,7 +1027,15 @@
                     "endOffset": 12943
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 181,
+                        "startColumn": 4,
+                        "startOffset": 14169,
+                        "endLine": 182,
+                        "endColumn": 12,
+                        "endOffset": 14277
+                    }
                 }
             },
             {
@@ -668,7 +1048,15 @@
                     "endOffset": 13126
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 183,
+                        "startColumn": 4,
+                        "startOffset": 14282,
+                        "endLine": 185,
+                        "endColumn": 12,
+                        "endOffset": 14460
+                    }
                 }
             },
             {
@@ -681,7 +1069,15 @@
                     "endOffset": 13257
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 186,
+                        "startColumn": 4,
+                        "startOffset": 14465,
+                        "endLine": 187,
+                        "endColumn": 12,
+                        "endOffset": 14591
+                    }
                 }
             },
             {
@@ -694,7 +1090,15 @@
                     "endOffset": 13458
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 188,
+                        "startColumn": 4,
+                        "startOffset": 14596,
+                        "endLine": 190,
+                        "endColumn": 12,
+                        "endOffset": 14792
+                    }
                 }
             },
             {
@@ -706,7 +1110,14 @@
                     "endOffset": 13547
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 191,
+                        "startColumn": 4,
+                        "startOffset": 14797,
+                        "endColumn": 88,
+                        "endOffset": 14881
+                    }
                 }
             },
             {
@@ -718,7 +1129,14 @@
                     "endOffset": 13658
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 192,
+                        "startColumn": 4,
+                        "startOffset": 14886,
+                        "endColumn": 110,
+                        "endOffset": 14992
+                    }
                 }
             },
             {
@@ -730,7 +1148,14 @@
                     "endOffset": 13785
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 193,
+                        "startColumn": 4,
+                        "startOffset": 14997,
+                        "endColumn": 126,
+                        "endOffset": 15119
+                    }
                 }
             },
             {
@@ -742,7 +1167,14 @@
                     "endOffset": 13886
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 194,
+                        "startColumn": 4,
+                        "startOffset": 15124,
+                        "endColumn": 100,
+                        "endOffset": 15220
+                    }
                 }
             },
             {
@@ -754,7 +1186,14 @@
                     "endOffset": 13981
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 195,
+                        "startColumn": 4,
+                        "startOffset": 15225,
+                        "endColumn": 94,
+                        "endOffset": 15315
+                    }
                 }
             },
             {
@@ -766,7 +1205,14 @@
                     "endOffset": 14104
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 196,
+                        "startColumn": 4,
+                        "startOffset": 15320,
+                        "endColumn": 122,
+                        "endOffset": 15438
+                    }
                 }
             },
             {
@@ -778,7 +1224,14 @@
                     "endOffset": 14233
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 197,
+                        "startColumn": 4,
+                        "startOffset": 15443,
+                        "endColumn": 128,
+                        "endOffset": 15567
+                    }
                 }
             },
             {
@@ -790,7 +1243,14 @@
                     "endOffset": 14350
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 198,
+                        "startColumn": 4,
+                        "startOffset": 15572,
+                        "endColumn": 116,
+                        "endOffset": 15684
+                    }
                 }
             },
             {
@@ -803,7 +1263,15 @@
                     "endOffset": 14527
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 199,
+                        "startColumn": 4,
+                        "startOffset": 15689,
+                        "endLine": 201,
+                        "endColumn": 12,
+                        "endOffset": 15861
+                    }
                 }
             },
             {
@@ -815,7 +1283,14 @@
                     "endOffset": 14626
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 202,
+                        "startColumn": 4,
+                        "startOffset": 15866,
+                        "endColumn": 98,
+                        "endOffset": 15960
+                    }
                 }
             },
             {
@@ -828,7 +1303,15 @@
                     "endOffset": 14761
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 203,
+                        "startColumn": 4,
+                        "startOffset": 15965,
+                        "endLine": 204,
+                        "endColumn": 12,
+                        "endOffset": 16095
+                    }
                 }
             },
             {
@@ -841,7 +1324,15 @@
                     "endOffset": 14904
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 205,
+                        "startColumn": 4,
+                        "startOffset": 16100,
+                        "endLine": 206,
+                        "endColumn": 12,
+                        "endOffset": 16238
+                    }
                 }
             },
             {
@@ -854,7 +1345,15 @@
                     "endOffset": 15039
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 207,
+                        "startColumn": 4,
+                        "startOffset": 16243,
+                        "endLine": 208,
+                        "endColumn": 12,
+                        "endOffset": 16373
+                    }
                 }
             },
             {
@@ -867,7 +1366,15 @@
                     "endOffset": 15158
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 209,
+                        "startColumn": 4,
+                        "startOffset": 16378,
+                        "endLine": 210,
+                        "endColumn": 12,
+                        "endOffset": 16492
+                    }
                 }
             },
             {
@@ -880,7 +1387,15 @@
                     "endOffset": 15359
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 211,
+                        "startColumn": 4,
+                        "startOffset": 16497,
+                        "endLine": 214,
+                        "endColumn": 12,
+                        "endOffset": 16693
+                    }
                 }
             },
             {
@@ -893,7 +1408,15 @@
                     "endOffset": 15478
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 215,
+                        "startColumn": 4,
+                        "startOffset": 16698,
+                        "endLine": 216,
+                        "endColumn": 12,
+                        "endOffset": 16812
+                    }
                 }
             },
             {
@@ -905,7 +1428,14 @@
                     "endOffset": 15571
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 217,
+                        "startColumn": 4,
+                        "startOffset": 16817,
+                        "endColumn": 92,
+                        "endOffset": 16905
+                    }
                 }
             },
             {
@@ -917,7 +1447,14 @@
                     "endOffset": 15682
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 218,
+                        "startColumn": 4,
+                        "startOffset": 16910,
+                        "endColumn": 110,
+                        "endOffset": 17016
+                    }
                 }
             },
             {
@@ -929,7 +1466,14 @@
                     "endOffset": 15738
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 219,
+                        "startColumn": 4,
+                        "startOffset": 17021,
+                        "endColumn": 55,
+                        "endOffset": 17072
+                    }
                 }
             },
             {
@@ -942,7 +1486,15 @@
                     "endOffset": 15845
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 220,
+                        "startColumn": 4,
+                        "startOffset": 17077,
+                        "endLine": 221,
+                        "endColumn": 12,
+                        "endOffset": 17179
+                    }
                 }
             },
             {
@@ -955,7 +1507,15 @@
                     "endOffset": 16040
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 222,
+                        "startColumn": 4,
+                        "startOffset": 17184,
+                        "endLine": 225,
+                        "endColumn": 12,
+                        "endOffset": 17374
+                    }
                 }
             },
             {
@@ -968,7 +1528,15 @@
                     "endOffset": 16151
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 226,
+                        "startColumn": 4,
+                        "startOffset": 17379,
+                        "endLine": 227,
+                        "endColumn": 12,
+                        "endOffset": 17485
+                    }
                 }
             },
             {
@@ -981,7 +1549,15 @@
                     "endOffset": 16284
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 228,
+                        "startColumn": 4,
+                        "startOffset": 17490,
+                        "endLine": 229,
+                        "endColumn": 12,
+                        "endOffset": 17618
+                    }
                 }
             },
             {
@@ -993,7 +1569,14 @@
                     "endOffset": 16379
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 230,
+                        "startColumn": 4,
+                        "startOffset": 17623,
+                        "endColumn": 94,
+                        "endOffset": 17713
+                    }
                 }
             },
             {
@@ -1005,7 +1588,14 @@
                     "endOffset": 16470
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 231,
+                        "startColumn": 4,
+                        "startOffset": 17718,
+                        "endColumn": 90,
+                        "endOffset": 17804
+                    }
                 }
             },
             {
@@ -1017,7 +1607,14 @@
                     "endOffset": 16561
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 232,
+                        "startColumn": 4,
+                        "startOffset": 17809,
+                        "endColumn": 90,
+                        "endOffset": 17895
+                    }
                 }
             },
             {
@@ -1029,7 +1626,14 @@
                     "endOffset": 16678
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 233,
+                        "startColumn": 4,
+                        "startOffset": 17900,
+                        "endColumn": 116,
+                        "endOffset": 18012
+                    }
                 }
             },
             {
@@ -1042,7 +1646,15 @@
                     "endOffset": 16817
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 234,
+                        "startColumn": 4,
+                        "startOffset": 18017,
+                        "endLine": 235,
+                        "endColumn": 12,
+                        "endOffset": 18151
+                    }
                 }
             },
             {
@@ -1055,7 +1667,15 @@
                     "endOffset": 17170
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 238,
+                        "startColumn": 4,
+                        "startOffset": 18335,
+                        "endLine": 244,
+                        "endColumn": 12,
+                        "endOffset": 18683
+                    }
                 }
             },
             {
@@ -1068,7 +1688,15 @@
                     "endOffset": 17535
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 245,
+                        "startColumn": 4,
+                        "startOffset": 18688,
+                        "endLine": 251,
+                        "endColumn": 12,
+                        "endOffset": 19048
+                    }
                 }
             },
             {
@@ -1081,7 +1709,15 @@
                     "endOffset": 18215
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 252,
+                        "startColumn": 4,
+                        "startOffset": 19053,
+                        "endLine": 261,
+                        "endColumn": 12,
+                        "endOffset": 19728
+                    }
                 }
             },
             {
@@ -1093,7 +1729,14 @@
                     "endOffset": 18272
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 262,
+                        "startColumn": 4,
+                        "startOffset": 19733,
+                        "endColumn": 56,
+                        "endOffset": 19785
+                    }
                 }
             },
             {
@@ -1105,7 +1748,14 @@
                     "endOffset": 18330
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 263,
+                        "startColumn": 4,
+                        "startOffset": 19790,
+                        "endColumn": 57,
+                        "endOffset": 19843
+                    }
                 }
             }
         ]
@@ -1122,14 +1772,7 @@
                     "endOffset": 119
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 223,
-                        "endColumn": 68,
-                        "endOffset": 287
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
@@ -1137,57 +1780,19 @@
                     "startLine": 3,
                     "startColumn": 4,
                     "startOffset": 124,
-                    "endLine": 8,
+                    "endLine": 10,
                     "endColumn": 12,
-                    "endOffset": 420
+                    "endOffset": 588
                 },
                 "from": {
                     "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/src/main/res/values-v21/styles.xml",
                     "position": {
-                        "startLine": 2,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 18,
-                        "endLine": 7,
+                        "startOffset": 320,
+                        "endLine": 16,
                         "endColumn": 12,
-                        "endOffset": 314
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 425,
-                    "endColumn": 90,
-                    "endOffset": 511
-                },
-                "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 239,
-                        "endColumn": 90,
-                        "endOffset": 325
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 516,
-                    "endColumn": 102,
-                    "endOffset": 614
-                },
-                "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 330,
-                        "endColumn": 102,
-                        "endOffset": 428
+                        "endOffset": 784
                     }
                 }
             },
@@ -1195,1417 +1800,873 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 619,
-                    "endColumn": 102,
-                    "endOffset": 717
+                    "startOffset": 593,
+                    "endLine": 16,
+                    "endColumn": 12,
+                    "endOffset": 889
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 433,
-                        "endColumn": 102,
-                        "endOffset": 531
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 722,
-                    "endColumn": 104,
-                    "endOffset": 822
-                },
-                "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 536,
-                        "endColumn": 104,
-                        "endOffset": 636
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 827,
-                    "endColumn": 106,
-                    "endOffset": 929
-                },
-                "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 641,
-                        "endColumn": 106,
-                        "endOffset": 743
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 934,
-                    "endColumn": 108,
-                    "endOffset": 1038
-                },
-                "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 748,
-                        "endColumn": 108,
-                        "endOffset": 852
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 1043,
-                    "endColumn": 108,
-                    "endOffset": 1147
-                },
-                "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 857,
-                        "endColumn": 108,
-                        "endOffset": 961
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 1152,
-                    "endColumn": 108,
-                    "endOffset": 1256
-                },
-                "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 966,
-                        "endColumn": 108,
-                        "endOffset": 1070
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/src/main/res/values-v21/styles.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1261,
-                    "endColumn": 108,
-                    "endOffset": 1365
+                    "startOffset": 894,
+                    "endColumn": 90,
+                    "endOffset": 980
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1075,
-                        "endColumn": 108,
-                        "endOffset": 1179
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1370,
-                    "endColumn": 108,
-                    "endOffset": 1474
+                    "startOffset": 985,
+                    "endColumn": 102,
+                    "endOffset": 1083
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1184,
-                        "endColumn": 108,
-                        "endOffset": 1288
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1479,
-                    "endColumn": 106,
-                    "endOffset": 1581
+                    "startOffset": 1088,
+                    "endColumn": 102,
+                    "endOffset": 1186
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1293,
-                        "endColumn": 106,
-                        "endOffset": 1395
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1586,
-                    "endColumn": 102,
-                    "endOffset": 1684
+                    "startOffset": 1191,
+                    "endColumn": 104,
+                    "endOffset": 1291
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1400,
-                        "endColumn": 102,
-                        "endOffset": 1498
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1689,
-                    "endColumn": 118,
-                    "endOffset": 1803
+                    "startOffset": 1296,
+                    "endColumn": 106,
+                    "endOffset": 1398
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1503,
-                        "endColumn": 118,
-                        "endOffset": 1617
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 1808,
-                    "endLine": 23,
-                    "endColumn": 12,
-                    "endOffset": 1958
+                    "startOffset": 1403,
+                    "endColumn": 108,
+                    "endOffset": 1507
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1801,
-                        "endLine": 20,
-                        "endColumn": 12,
-                        "endOffset": 1951
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1512,
+                    "endColumn": 108,
+                    "endOffset": 1616
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 1963,
-                    "endLine": 25,
-                    "endColumn": 12,
-                    "endOffset": 2113
+                    "startOffset": 1621,
+                    "endColumn": 108,
+                    "endOffset": 1725
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 1956,
-                        "endLine": 22,
-                        "endColumn": 12,
-                        "endOffset": 2106
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1730,
+                    "endColumn": 108,
+                    "endOffset": 1834
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 2118,
-                    "endColumn": 104,
-                    "endOffset": 2218
+                    "startOffset": 1839,
+                    "endColumn": 108,
+                    "endOffset": 1943
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 25,
-                        "startColumn": 4,
-                        "startOffset": 2295,
-                        "endColumn": 104,
-                        "endOffset": 2395
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 2223,
-                    "endColumn": 120,
-                    "endOffset": 2339
+                    "startOffset": 1948,
+                    "endColumn": 106,
+                    "endOffset": 2050
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 26,
-                        "startColumn": 4,
-                        "startOffset": 2400,
-                        "endColumn": 120,
-                        "endOffset": 2516
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 2344,
-                    "endColumn": 100,
-                    "endOffset": 2440
+                    "startOffset": 2055,
+                    "endColumn": 102,
+                    "endOffset": 2153
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 27,
-                        "startColumn": 4,
-                        "startOffset": 2521,
-                        "endColumn": 100,
-                        "endOffset": 2617
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 2445,
-                    "endLine": 30,
-                    "endColumn": 12,
-                    "endOffset": 2587
+                    "startOffset": 2158,
+                    "endColumn": 118,
+                    "endOffset": 2272
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 30,
-                        "startColumn": 4,
-                        "startOffset": 2801,
-                        "endLine": 31,
-                        "endColumn": 12,
-                        "endOffset": 2943
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 31,
+                    "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 2592,
-                    "endLine": 32,
+                    "startOffset": 2277,
+                    "endLine": 31,
                     "endColumn": 12,
-                    "endOffset": 2728
+                    "endOffset": 2427
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 32,
-                        "startColumn": 4,
-                        "startOffset": 2948,
-                        "endLine": 33,
-                        "endColumn": 12,
-                        "endOffset": 3084
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 33,
+                    "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 2733,
-                    "endColumn": 102,
-                    "endOffset": 2831
+                    "startOffset": 2432,
+                    "endLine": 33,
+                    "endColumn": 12,
+                    "endOffset": 2582
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 36,
-                        "startColumn": 4,
-                        "startOffset": 3273,
-                        "endColumn": 102,
-                        "endOffset": 3371
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 2836,
-                    "endColumn": 118,
-                    "endOffset": 2950
+                    "startOffset": 2587,
+                    "endColumn": 104,
+                    "endOffset": 2687
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 37,
-                        "startColumn": 4,
-                        "startOffset": 3376,
-                        "endColumn": 118,
-                        "endOffset": 3490
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 2955,
-                    "endColumn": 106,
-                    "endOffset": 3057
+                    "startOffset": 2692,
+                    "endColumn": 120,
+                    "endOffset": 2808
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 38,
-                        "startColumn": 4,
-                        "startOffset": 3495,
-                        "endColumn": 106,
-                        "endOffset": 3597
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 3062,
-                    "endColumn": 102,
-                    "endOffset": 3160
+                    "startOffset": 2813,
+                    "endColumn": 100,
+                    "endOffset": 2909
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 39,
-                        "startColumn": 4,
-                        "startOffset": 3602,
-                        "endColumn": 102,
-                        "endOffset": 3700
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 3165,
+                    "startOffset": 2914,
                     "endLine": 38,
                     "endColumn": 12,
-                    "endOffset": 3307
+                    "endOffset": 3056
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 42,
-                        "startColumn": 4,
-                        "startOffset": 3884,
-                        "endLine": 43,
-                        "endColumn": 12,
-                        "endOffset": 4026
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 3312,
+                    "startOffset": 3061,
                     "endLine": 40,
                     "endColumn": 12,
-                    "endOffset": 3462
+                    "endOffset": 3197
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 44,
-                        "startColumn": 4,
-                        "startOffset": 4031,
-                        "endLine": 45,
-                        "endColumn": 12,
-                        "endOffset": 4181
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 3467,
-                    "endLine": 42,
-                    "endColumn": 12,
-                    "endOffset": 3633
+                    "startOffset": 3202,
+                    "endColumn": 102,
+                    "endOffset": 3300
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 46,
-                        "startColumn": 4,
-                        "startOffset": 4186,
-                        "endLine": 47,
-                        "endColumn": 12,
-                        "endOffset": 4352
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 3305,
+                    "endColumn": 118,
+                    "endOffset": 3419
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 3638,
-                    "endLine": 44,
-                    "endColumn": 12,
-                    "endOffset": 3782
+                    "startOffset": 3424,
+                    "endColumn": 106,
+                    "endOffset": 3526
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 48,
-                        "startColumn": 4,
-                        "startOffset": 4357,
-                        "endLine": 49,
-                        "endColumn": 12,
-                        "endOffset": 4501
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 3531,
+                    "endColumn": 102,
+                    "endOffset": 3629
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 3787,
+                    "startOffset": 3634,
                     "endLine": 46,
                     "endColumn": 12,
-                    "endOffset": 3947
+                    "endOffset": 3776
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 50,
-                        "startColumn": 4,
-                        "startOffset": 4506,
-                        "endLine": 51,
-                        "endColumn": 12,
-                        "endOffset": 4666
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 3952,
+                    "startOffset": 3781,
                     "endLine": 48,
                     "endColumn": 12,
-                    "endOffset": 4104
+                    "endOffset": 3931
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 52,
-                        "startColumn": 4,
-                        "startOffset": 4671,
-                        "endLine": 53,
-                        "endColumn": 12,
-                        "endOffset": 4823
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 4109,
+                    "startOffset": 3936,
                     "endLine": 50,
                     "endColumn": 12,
-                    "endOffset": 4255
+                    "endOffset": 4102
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 54,
-                        "startColumn": 4,
-                        "startOffset": 4828,
-                        "endLine": 55,
-                        "endColumn": 12,
-                        "endOffset": 4974
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 4260,
-                    "endColumn": 118,
-                    "endOffset": 4374
-                },
-                "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 58,
-                        "startColumn": 4,
-                        "startOffset": 5163,
-                        "endColumn": 118,
-                        "endOffset": 5277
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 52,
-                    "startColumn": 4,
-                    "startOffset": 4379,
-                    "endLine": 53,
+                    "startOffset": 4107,
+                    "endLine": 52,
                     "endColumn": 12,
-                    "endOffset": 4523
+                    "endOffset": 4251
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 61,
-                        "startColumn": 4,
-                        "startOffset": 5461,
-                        "endLine": 62,
-                        "endColumn": 12,
-                        "endOffset": 5605
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 54,
+                    "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 4528,
-                    "endLine": 55,
+                    "startOffset": 4256,
+                    "endLine": 54,
                     "endColumn": 12,
-                    "endOffset": 4672
+                    "endOffset": 4416
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 63,
-                        "startColumn": 4,
-                        "startOffset": 5610,
-                        "endLine": 64,
-                        "endColumn": 12,
-                        "endOffset": 5754
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 56,
+                    "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 4677,
-                    "endColumn": 111,
-                    "endOffset": 4784
+                    "startOffset": 4421,
+                    "endLine": 56,
+                    "endColumn": 12,
+                    "endOffset": 4573
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 67,
-                        "startColumn": 4,
-                        "startOffset": 5943,
-                        "endColumn": 111,
-                        "endOffset": 6050
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 4789,
-                    "endColumn": 146,
-                    "endOffset": 4931
+                    "startOffset": 4578,
+                    "endLine": 58,
+                    "endColumn": 12,
+                    "endOffset": 4724
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 70,
-                        "startColumn": 4,
-                        "startOffset": 6234,
-                        "endColumn": 146,
-                        "endOffset": 6376
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 58,
+                    "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 4936,
-                    "endLine": 59,
-                    "endColumn": 12,
-                    "endOffset": 5084
+                    "startOffset": 4729,
+                    "endColumn": 118,
+                    "endOffset": 4843
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 71,
-                        "startColumn": 4,
-                        "startOffset": 6381,
-                        "endLine": 72,
-                        "endColumn": 12,
-                        "endOffset": 6529
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 5089,
+                    "startOffset": 4848,
                     "endLine": 61,
                     "endColumn": 12,
-                    "endOffset": 5231
+                    "endOffset": 4992
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 73,
-                        "startColumn": 4,
-                        "startOffset": 6534,
-                        "endLine": 74,
-                        "endColumn": 12,
-                        "endOffset": 6676
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 5236,
-                    "endColumn": 74,
-                    "endOffset": 5306
+                    "startOffset": 4997,
+                    "endLine": 63,
+                    "endColumn": 12,
+                    "endOffset": 5141
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 77,
-                        "startColumn": 4,
-                        "startOffset": 6860,
-                        "endColumn": 74,
-                        "endOffset": 6930
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 63,
-                    "startColumn": 4,
-                    "startOffset": 5311,
-                    "endColumn": 88,
-                    "endOffset": 5395
-                },
-                "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 78,
-                        "startColumn": 4,
-                        "startOffset": 6935,
-                        "endColumn": 88,
-                        "endOffset": 7019
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 5400,
-                    "endColumn": 86,
-                    "endOffset": 5482
+                    "startOffset": 5146,
+                    "endColumn": 111,
+                    "endOffset": 5253
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 79,
-                        "startColumn": 4,
-                        "startOffset": 7024,
-                        "endColumn": 86,
-                        "endOffset": 7106
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 5487,
-                    "endColumn": 100,
-                    "endOffset": 5583
+                    "startOffset": 5258,
+                    "endColumn": 146,
+                    "endOffset": 5400
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 80,
-                        "startColumn": 4,
-                        "startOffset": 7111,
-                        "endColumn": 100,
-                        "endOffset": 7207
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 5588,
-                    "endLine": 109,
+                    "startOffset": 5405,
+                    "endLine": 67,
                     "endColumn": 12,
-                    "endOffset": 8651
+                    "endOffset": 5553
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 81,
-                        "startColumn": 4,
-                        "startOffset": 7212,
-                        "endLine": 124,
-                        "endColumn": 12,
-                        "endOffset": 10275
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 110,
+                    "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 8656,
-                    "endLine": 112,
+                    "startOffset": 5558,
+                    "endLine": 69,
                     "endColumn": 12,
-                    "endOffset": 8837
+                    "endOffset": 5700
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 125,
-                        "startColumn": 4,
-                        "startOffset": 10280,
-                        "endLine": 127,
-                        "endColumn": 12,
-                        "endOffset": 10461
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 113,
+                    "startLine": 70,
                     "startColumn": 4,
-                    "startOffset": 8842,
-                    "endLine": 156,
-                    "endColumn": 12,
-                    "endOffset": 11917
+                    "startOffset": 5705,
+                    "endColumn": 74,
+                    "endOffset": 5775
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 128,
-                        "startColumn": 4,
-                        "startOffset": 10466,
-                        "endLine": 171,
-                        "endColumn": 12,
-                        "endOffset": 13541
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 157,
+                    "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 11922,
-                    "endLine": 159,
-                    "endColumn": 12,
-                    "endOffset": 12115
+                    "startOffset": 5780,
+                    "endColumn": 88,
+                    "endOffset": 5864
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 172,
-                        "startColumn": 4,
-                        "startOffset": 13546,
-                        "endLine": 174,
-                        "endColumn": 12,
-                        "endOffset": 13739
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 160,
+                    "startLine": 72,
                     "startColumn": 4,
-                    "startOffset": 12120,
-                    "endLine": 161,
-                    "endColumn": 12,
-                    "endOffset": 12238
+                    "startOffset": 5869,
+                    "endColumn": 86,
+                    "endOffset": 5951
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 177,
-                        "startColumn": 4,
-                        "startOffset": 13923,
-                        "endLine": 178,
-                        "endColumn": 12,
-                        "endOffset": 14041
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 162,
+                    "startLine": 73,
                     "startColumn": 4,
-                    "startOffset": 12243,
-                    "endLine": 163,
-                    "endColumn": 12,
-                    "endOffset": 12361
+                    "startOffset": 5956,
+                    "endColumn": 100,
+                    "endOffset": 6052
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 179,
-                        "startColumn": 4,
-                        "startOffset": 14046,
-                        "endLine": 180,
-                        "endColumn": 12,
-                        "endOffset": 14164
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 164,
+                    "startLine": 74,
                     "startColumn": 4,
-                    "startOffset": 12366,
-                    "endLine": 165,
+                    "startOffset": 6057,
+                    "endLine": 117,
                     "endColumn": 12,
-                    "endOffset": 12474
+                    "endOffset": 9120
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 181,
-                        "startColumn": 4,
-                        "startOffset": 14169,
-                        "endLine": 182,
-                        "endColumn": 12,
-                        "endOffset": 14277
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 166,
+                    "startLine": 118,
                     "startColumn": 4,
-                    "startOffset": 12479,
-                    "endLine": 168,
+                    "startOffset": 9125,
+                    "endLine": 120,
                     "endColumn": 12,
-                    "endOffset": 12657
+                    "endOffset": 9306
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 183,
-                        "startColumn": 4,
-                        "startOffset": 14282,
-                        "endLine": 185,
-                        "endColumn": 12,
-                        "endOffset": 14460
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 169,
+                    "startLine": 121,
                     "startColumn": 4,
-                    "startOffset": 12662,
-                    "endLine": 170,
+                    "startOffset": 9311,
+                    "endLine": 164,
                     "endColumn": 12,
-                    "endOffset": 12788
+                    "endOffset": 12386
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 186,
-                        "startColumn": 4,
-                        "startOffset": 14465,
-                        "endLine": 187,
-                        "endColumn": 12,
-                        "endOffset": 14591
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 171,
+                    "startLine": 165,
                     "startColumn": 4,
-                    "startOffset": 12793,
+                    "startOffset": 12391,
+                    "endLine": 167,
+                    "endColumn": 12,
+                    "endOffset": 12584
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 168,
+                    "startColumn": 4,
+                    "startOffset": 12589,
+                    "endLine": 169,
+                    "endColumn": 12,
+                    "endOffset": 12707
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 170,
+                    "startColumn": 4,
+                    "startOffset": 12712,
+                    "endLine": 171,
+                    "endColumn": 12,
+                    "endOffset": 12830
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 172,
+                    "startColumn": 4,
+                    "startOffset": 12835,
                     "endLine": 173,
                     "endColumn": 12,
-                    "endOffset": 12989
+                    "endOffset": 12943
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 188,
-                        "startColumn": 4,
-                        "startOffset": 14596,
-                        "endLine": 190,
-                        "endColumn": 12,
-                        "endOffset": 14792
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 174,
                     "startColumn": 4,
-                    "startOffset": 12994,
-                    "endColumn": 88,
-                    "endOffset": 13078
+                    "startOffset": 12948,
+                    "endLine": 176,
+                    "endColumn": 12,
+                    "endOffset": 13126
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 191,
-                        "startColumn": 4,
-                        "startOffset": 14797,
-                        "endColumn": 88,
-                        "endOffset": 14881
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 175,
-                    "startColumn": 4,
-                    "startOffset": 13083,
-                    "endColumn": 110,
-                    "endOffset": 13189
-                },
-                "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 192,
-                        "startColumn": 4,
-                        "startOffset": 14886,
-                        "endColumn": 110,
-                        "endOffset": 14992
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 176,
-                    "startColumn": 4,
-                    "startOffset": 13194,
-                    "endColumn": 126,
-                    "endOffset": 13316
-                },
-                "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 193,
-                        "startColumn": 4,
-                        "startOffset": 14997,
-                        "endColumn": 126,
-                        "endOffset": 15119
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 177,
                     "startColumn": 4,
-                    "startOffset": 13321,
-                    "endColumn": 100,
-                    "endOffset": 13417
+                    "startOffset": 13131,
+                    "endLine": 178,
+                    "endColumn": 12,
+                    "endOffset": 13257
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 194,
-                        "startColumn": 4,
-                        "startOffset": 15124,
-                        "endColumn": 100,
-                        "endOffset": 15220
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 178,
-                    "startColumn": 4,
-                    "startOffset": 13422,
-                    "endColumn": 94,
-                    "endOffset": 13512
-                },
-                "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 195,
-                        "startColumn": 4,
-                        "startOffset": 15225,
-                        "endColumn": 94,
-                        "endOffset": 15315
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 179,
                     "startColumn": 4,
-                    "startOffset": 13517,
-                    "endColumn": 122,
-                    "endOffset": 13635
+                    "startOffset": 13262,
+                    "endLine": 181,
+                    "endColumn": 12,
+                    "endOffset": 13458
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 196,
-                        "startColumn": 4,
-                        "startOffset": 15320,
-                        "endColumn": 122,
-                        "endOffset": 15438
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 180,
-                    "startColumn": 4,
-                    "startOffset": 13640,
-                    "endColumn": 128,
-                    "endOffset": 13764
-                },
-                "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 197,
-                        "startColumn": 4,
-                        "startOffset": 15443,
-                        "endColumn": 128,
-                        "endOffset": 15567
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 181,
-                    "startColumn": 4,
-                    "startOffset": 13769,
-                    "endColumn": 116,
-                    "endOffset": 13881
-                },
-                "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 198,
-                        "startColumn": 4,
-                        "startOffset": 15572,
-                        "endColumn": 116,
-                        "endOffset": 15684
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 182,
                     "startColumn": 4,
-                    "startOffset": 13886,
-                    "endLine": 184,
-                    "endColumn": 12,
-                    "endOffset": 14058
+                    "startOffset": 13463,
+                    "endColumn": 88,
+                    "endOffset": 13547
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 199,
-                        "startColumn": 4,
-                        "startOffset": 15689,
-                        "endLine": 201,
-                        "endColumn": 12,
-                        "endOffset": 15861
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 183,
+                    "startColumn": 4,
+                    "startOffset": 13552,
+                    "endColumn": 110,
+                    "endOffset": 13658
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 184,
+                    "startColumn": 4,
+                    "startOffset": 13663,
+                    "endColumn": 126,
+                    "endOffset": 13785
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 185,
                     "startColumn": 4,
-                    "startOffset": 14063,
-                    "endColumn": 98,
-                    "endOffset": 14157
+                    "startOffset": 13790,
+                    "endColumn": 100,
+                    "endOffset": 13886
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 202,
-                        "startColumn": 4,
-                        "startOffset": 15866,
-                        "endColumn": 98,
-                        "endOffset": 15960
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 186,
                     "startColumn": 4,
-                    "startOffset": 14162,
-                    "endLine": 187,
-                    "endColumn": 12,
-                    "endOffset": 14292
+                    "startOffset": 13891,
+                    "endColumn": 94,
+                    "endOffset": 13981
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 203,
-                        "startColumn": 4,
-                        "startOffset": 15965,
-                        "endLine": 204,
-                        "endColumn": 12,
-                        "endOffset": 16095
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 187,
+                    "startColumn": 4,
+                    "startOffset": 13986,
+                    "endColumn": 122,
+                    "endOffset": 14104
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 188,
                     "startColumn": 4,
-                    "startOffset": 14297,
-                    "endLine": 189,
-                    "endColumn": 12,
-                    "endOffset": 14435
+                    "startOffset": 14109,
+                    "endColumn": 128,
+                    "endOffset": 14233
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 205,
-                        "startColumn": 4,
-                        "startOffset": 16100,
-                        "endLine": 206,
-                        "endColumn": 12,
-                        "endOffset": 16238
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 189,
+                    "startColumn": 4,
+                    "startOffset": 14238,
+                    "endColumn": 116,
+                    "endOffset": 14350
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 190,
                     "startColumn": 4,
-                    "startOffset": 14440,
-                    "endLine": 191,
+                    "startOffset": 14355,
+                    "endLine": 192,
                     "endColumn": 12,
-                    "endOffset": 14570
+                    "endOffset": 14527
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 207,
-                        "startColumn": 4,
-                        "startOffset": 16243,
-                        "endLine": 208,
-                        "endColumn": 12,
-                        "endOffset": 16373
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 192,
+                    "startLine": 193,
                     "startColumn": 4,
-                    "startOffset": 14575,
-                    "endLine": 193,
-                    "endColumn": 12,
-                    "endOffset": 14689
+                    "startOffset": 14532,
+                    "endColumn": 98,
+                    "endOffset": 14626
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 209,
-                        "startColumn": 4,
-                        "startOffset": 16378,
-                        "endLine": 210,
-                        "endColumn": 12,
-                        "endOffset": 16492
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 194,
                     "startColumn": 4,
-                    "startOffset": 14694,
-                    "endLine": 197,
+                    "startOffset": 14631,
+                    "endLine": 195,
                     "endColumn": 12,
-                    "endOffset": 14890
+                    "endOffset": 14761
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 211,
-                        "startColumn": 4,
-                        "startOffset": 16497,
-                        "endLine": 214,
-                        "endColumn": 12,
-                        "endOffset": 16693
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 196,
+                    "startColumn": 4,
+                    "startOffset": 14766,
+                    "endLine": 197,
+                    "endColumn": 12,
+                    "endOffset": 14904
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 198,
                     "startColumn": 4,
-                    "startOffset": 14895,
+                    "startOffset": 14909,
                     "endLine": 199,
                     "endColumn": 12,
-                    "endOffset": 15009
+                    "endOffset": 15039
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 215,
-                        "startColumn": 4,
-                        "startOffset": 16698,
-                        "endLine": 216,
-                        "endColumn": 12,
-                        "endOffset": 16812
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 200,
                     "startColumn": 4,
-                    "startOffset": 15014,
-                    "endColumn": 92,
-                    "endOffset": 15102
+                    "startOffset": 15044,
+                    "endLine": 201,
+                    "endColumn": 12,
+                    "endOffset": 15158
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 217,
-                        "startColumn": 4,
-                        "startOffset": 16817,
-                        "endColumn": 92,
-                        "endOffset": 16905
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 201,
-                    "startColumn": 4,
-                    "startOffset": 15107,
-                    "endColumn": 110,
-                    "endOffset": 15213
-                },
-                "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 218,
-                        "startColumn": 4,
-                        "startOffset": 16910,
-                        "endColumn": 110,
-                        "endOffset": 17016
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 202,
                     "startColumn": 4,
-                    "startOffset": 15218,
-                    "endColumn": 55,
-                    "endOffset": 15269
+                    "startOffset": 15163,
+                    "endLine": 205,
+                    "endColumn": 12,
+                    "endOffset": 15359
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 219,
-                        "startColumn": 4,
-                        "startOffset": 17021,
-                        "endColumn": 55,
-                        "endOffset": 17072
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 203,
+                    "startLine": 206,
                     "startColumn": 4,
-                    "startOffset": 15274,
-                    "endLine": 204,
+                    "startOffset": 15364,
+                    "endLine": 207,
                     "endColumn": 12,
-                    "endOffset": 15376
+                    "endOffset": 15478
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 220,
-                        "startColumn": 4,
-                        "startOffset": 17077,
-                        "endLine": 221,
-                        "endColumn": 12,
-                        "endOffset": 17179
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 205,
+                    "startLine": 208,
                     "startColumn": 4,
-                    "startOffset": 15381,
-                    "endLine": 208,
-                    "endColumn": 12,
+                    "startOffset": 15483,
+                    "endColumn": 92,
                     "endOffset": 15571
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 222,
-                        "startColumn": 4,
-                        "startOffset": 17184,
-                        "endLine": 225,
-                        "endColumn": 12,
-                        "endOffset": 17374
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
@@ -2613,239 +2674,199 @@
                     "startLine": 209,
                     "startColumn": 4,
                     "startOffset": 15576,
-                    "endLine": 210,
-                    "endColumn": 12,
+                    "endColumn": 110,
                     "endOffset": 15682
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 226,
-                        "startColumn": 4,
-                        "startOffset": 17379,
-                        "endLine": 227,
-                        "endColumn": 12,
-                        "endOffset": 17485
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 210,
+                    "startColumn": 4,
+                    "startOffset": 15687,
+                    "endColumn": 55,
+                    "endOffset": 15738
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 211,
                     "startColumn": 4,
-                    "startOffset": 15687,
+                    "startOffset": 15743,
                     "endLine": 212,
                     "endColumn": 12,
-                    "endOffset": 15815
+                    "endOffset": 15845
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 228,
-                        "startColumn": 4,
-                        "startOffset": 17490,
-                        "endLine": 229,
-                        "endColumn": 12,
-                        "endOffset": 17618
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 213,
                     "startColumn": 4,
-                    "startOffset": 15820,
-                    "endColumn": 94,
-                    "endOffset": 15910
+                    "startOffset": 15850,
+                    "endLine": 216,
+                    "endColumn": 12,
+                    "endOffset": 16040
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 230,
-                        "startColumn": 4,
-                        "startOffset": 17623,
-                        "endColumn": 94,
-                        "endOffset": 17713
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 214,
-                    "startColumn": 4,
-                    "startOffset": 15915,
-                    "endColumn": 90,
-                    "endOffset": 16001
-                },
-                "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 231,
-                        "startColumn": 4,
-                        "startOffset": 17718,
-                        "endColumn": 90,
-                        "endOffset": 17804
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 215,
-                    "startColumn": 4,
-                    "startOffset": 16006,
-                    "endColumn": 90,
-                    "endOffset": 16092
-                },
-                "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 232,
-                        "startColumn": 4,
-                        "startOffset": 17809,
-                        "endColumn": 90,
-                        "endOffset": 17895
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 216,
-                    "startColumn": 4,
-                    "startOffset": 16097,
-                    "endColumn": 116,
-                    "endOffset": 16209
-                },
-                "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 233,
-                        "startColumn": 4,
-                        "startOffset": 17900,
-                        "endColumn": 116,
-                        "endOffset": 18012
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 217,
                     "startColumn": 4,
-                    "startOffset": 16214,
+                    "startOffset": 16045,
                     "endLine": 218,
                     "endColumn": 12,
-                    "endOffset": 16348
+                    "endOffset": 16151
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 234,
-                        "startColumn": 4,
-                        "startOffset": 18017,
-                        "endLine": 235,
-                        "endColumn": 12,
-                        "endOffset": 18151
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 219,
                     "startColumn": 4,
-                    "startOffset": 16353,
-                    "endLine": 225,
+                    "startOffset": 16156,
+                    "endLine": 220,
                     "endColumn": 12,
-                    "endOffset": 16701
+                    "endOffset": 16284
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 238,
-                        "startColumn": 4,
-                        "startOffset": 18335,
-                        "endLine": 244,
-                        "endColumn": 12,
-                        "endOffset": 18683
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 226,
+                    "startLine": 221,
                     "startColumn": 4,
-                    "startOffset": 16706,
-                    "endLine": 232,
-                    "endColumn": 12,
-                    "endOffset": 17066
+                    "startOffset": 16289,
+                    "endColumn": 94,
+                    "endOffset": 16379
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 245,
-                        "startColumn": 4,
-                        "startOffset": 18688,
-                        "endLine": 251,
-                        "endColumn": 12,
-                        "endOffset": 19048
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 233,
+                    "startLine": 222,
                     "startColumn": 4,
-                    "startOffset": 17071,
-                    "endLine": 242,
-                    "endColumn": 12,
-                    "endOffset": 17746
+                    "startOffset": 16384,
+                    "endColumn": 90,
+                    "endOffset": 16470
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 252,
-                        "startColumn": 4,
-                        "startOffset": 19053,
-                        "endLine": 261,
-                        "endColumn": 12,
-                        "endOffset": 19728
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 243,
+                    "startLine": 223,
                     "startColumn": 4,
-                    "startOffset": 17751,
+                    "startOffset": 16475,
+                    "endColumn": 90,
+                    "endOffset": 16561
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 224,
+                    "startColumn": 4,
+                    "startOffset": 16566,
+                    "endColumn": 116,
+                    "endOffset": 16678
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 225,
+                    "startColumn": 4,
+                    "startOffset": 16683,
+                    "endLine": 226,
+                    "endColumn": 12,
+                    "endOffset": 16817
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 227,
+                    "startColumn": 4,
+                    "startOffset": 16822,
+                    "endLine": 233,
+                    "endColumn": 12,
+                    "endOffset": 17170
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 234,
+                    "startColumn": 4,
+                    "startOffset": 17175,
+                    "endLine": 240,
+                    "endColumn": 12,
+                    "endOffset": 17535
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 241,
+                    "startColumn": 4,
+                    "startOffset": 17540,
+                    "endLine": 250,
+                    "endColumn": 12,
+                    "endOffset": 18215
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 251,
+                    "startColumn": 4,
+                    "startOffset": 18220,
                     "endColumn": 56,
-                    "endOffset": 17803
+                    "endOffset": 18272
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 262,
-                        "startColumn": 4,
-                        "startOffset": 19733,
-                        "endColumn": 56,
-                        "endOffset": 19785
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 244,
+                    "startLine": 252,
                     "startColumn": 4,
-                    "startOffset": 17808,
+                    "startOffset": 18277,
                     "endColumn": 57,
-                    "endOffset": 17861
+                    "endOffset": 18330
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml",
-                    "position": {
-                        "startLine": 263,
-                        "startColumn": 4,
-                        "startOffset": 19790,
-                        "endColumn": 57,
-                        "endOffset": 19843
-                    }
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v21/values-v21.xml"
                 }
             }
         ]

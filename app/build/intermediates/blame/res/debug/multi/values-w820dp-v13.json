@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/res/merged/debug/values-w820dp-v13/values-w820dp-v13.xml",
+        "outputFile": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/res/merged/debug/values-w820dp-v13/values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/src/main/res/values-w820dp/dimens.xml",
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/src/main/res/values-w820dp/dimens.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -24,7 +24,7 @@
         ]
     },
     {
-        "outputFile": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/res/merged/debug/values-w820dp-v13/values-w820dp-v13.xml",
+        "outputFile": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/res/merged/debug/values-w820dp-v13/values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -35,7 +35,7 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/src/main/res/values-w820dp/dimens.xml",
+                    "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/src/main/res/values-w820dp/dimens.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

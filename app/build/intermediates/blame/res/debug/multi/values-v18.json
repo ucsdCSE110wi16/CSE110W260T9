@@ -1,29 +1,5 @@
 [
     {
-        "outputFile": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/res/merged/debug/values-v18/values-v18.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 48,
-                    "endOffset": 99
-                },
-                "from": {
-                    "file": "/Users/Blaid/AndroidStudioProjects/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v18/values-v18.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 229,
-                        "endColumn": 48,
-                        "endOffset": 273
-                    }
-                }
-            }
-        ]
-    },
-    {
         "outputFile": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/res/merged/debug/values-v18/values-v18.xml",
         "map": [
             {
@@ -36,6 +12,30 @@
                 },
                 "from": {
                     "file": "/Users/Blaid/AndroidStudioProjects/CSE110W260T9/Tasker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v18/values-v18.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 48,
+                        "endOffset": 273
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/res/merged/debug/values-v18/values-v18.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "/Users/Blaid/AndroidStudioProjects/Taskerr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v18/values-v18.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
