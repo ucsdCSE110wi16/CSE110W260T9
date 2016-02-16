@@ -15,4 +15,5 @@
     <string name="title_activity_home_page">Tasker</string>
     <string name="confirmPwd">Confirm Password</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_user__settings">User_Settings</string>
 </resources>
