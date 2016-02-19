@@ -18,4 +18,5 @@
     <string name="title_activity_settings">settings</string>
     <string name="title_activity_general">General</string>
     <string name="title_activity_general_settings">GeneralSettings</string>
+    <string name="title_activity_profile_edit">profileEdit</string>
 </resources>

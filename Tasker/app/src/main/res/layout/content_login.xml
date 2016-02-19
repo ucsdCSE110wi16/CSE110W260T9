@@ -104,4 +104,14 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="skip login"
+        android:id="@+id/skipLoginID"
+        android:onClick="HomePage"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

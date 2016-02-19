@@ -70,12 +70,16 @@
             android:label="@string/title_activity_settings"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".General"
-            android:label="@string/title_activity_general"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".GeneralSettings"
             android:label="@string/title_activity_general_settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Settings"
+            android:label="User_Settings"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".UserProfile"
+            android:label="UserProfile"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -36,7 +36,7 @@ public class Login extends AppCompatActivity {
     public static final String APPLICATION_ID = "B1JHogV7pRql8v3xKuvuxNxRZjWWOUbGK04GzbK3";
     public static final String CLIENT_ID = "B9BB44VfrV96Dlq28bP13yi7QRD5lyIBGc0FOGER";
 
-    Button signInButton, signUpButton;
+    Button signInButton, signUpButton, skipLoginButton;
     EditText username, password;
 
     TextView title, forgotUsername, forgotPassword;
@@ -67,6 +67,7 @@ public class Login extends AppCompatActivity {
 
         signInButton = (Button) findViewById(R.id.clicktosignin);
         signUpButton = (Button) findViewById(R.id.clicktosignup);
+        skipLoginButton = (Button) findViewById(R.id.skipLoginID);
 
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
@@ -78,6 +79,14 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 signin(v);
+
+            }
+        });
+
+        skipLoginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                skipLoginPage(v);
 
             }
         });
@@ -192,6 +201,10 @@ public class Login extends AppCompatActivity {
 
     public void signup(View view) {
         startActivity(new Intent(Login.this, CreateAccount.class));
+    }
+
+    public void skipLoginPage(View view) {
+        startActivity(new Intent(Login.this, HomePage.class));
     }
 
 
