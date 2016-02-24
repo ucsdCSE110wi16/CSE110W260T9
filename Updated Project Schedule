@@ -2,22 +2,16 @@
 # 	A tentative project schedule, to be further updated                   #
 ###############################################################################
 
-Week 4:
-	Create a UI shell with the appropriate views.
-Week 5:
-	Implement user account and profile, add login features.
-Week 6:
+Week 8:
+  Finalize the UI shell.
+  Finish combining all of the working versions of the project and
+  make sure to push those to the master branch on GIT.
 	Implement the task related features, creation, search and listing.
 	Begin implementing backend database features.
-Week 7:
+Week 9:
 	Implement the rating system, the bidding system, and refine the search
 	and listing filters.  Refine the backend.
-Week 8:
+Week 10:
 	Refine the rating/bidding systems, add descriptions, fix any problems
 	that have come up in previous weeks, and add changes as desired by the
 	client.
-Week 9:
-	Implement final features like third-party payment, GPS location.
-Week 10:
-	If possible, try to implement a map view in addition to list view.
-	
