@@ -36,7 +36,7 @@ public class Login extends AppCompatActivity {
     public static final String APPLICATION_ID = "B1JHogV7pRql8v3xKuvuxNxRZjWWOUbGK04GzbK3";
     public static final String CLIENT_ID = "B9BB44VfrV96Dlq28bP13yi7QRD5lyIBGc0FOGER";
 
-    Button signInButton, signUpButton;
+    Button signInButton, signUpButton, skipLoginButton, logoutButton;
     EditText username, password;
 
     TextView title, forgotUsername, forgotPassword;
@@ -67,6 +67,8 @@ public class Login extends AppCompatActivity {
 
         signInButton = (Button) findViewById(R.id.clicktosignin);
         signUpButton = (Button) findViewById(R.id.clicktosignup);
+        skipLoginButton = (Button) findViewById(R.id.skipLoginID);
+        logoutButton = (Button) findViewById(R.id.logoutID);
 
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
@@ -78,6 +80,14 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 signin(v);
+
+            }
+        });
+
+        skipLoginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                skipLoginPage(v);
 
             }
         });
@@ -111,8 +121,13 @@ public class Login extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        /*if (id == R.id.action_logout) {
             return true;
+        }*/
+        switch (id){
+            case R.id.action_logout:
+                Toast.makeText(Login.this, "Logging out...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(Login.this, settings.class));
         }
 
         return super.onOptionsItemSelected(item);
@@ -192,6 +207,10 @@ public class Login extends AppCompatActivity {
 
     public void signup(View view) {
         startActivity(new Intent(Login.this, CreateAccount.class));
+    }
+
+    public void skipLoginPage(View view) {
+        startActivity(new Intent(Login.this, HomePage.class));
     }
 
 

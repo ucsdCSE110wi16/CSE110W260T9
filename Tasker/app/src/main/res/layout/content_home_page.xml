@@ -21,4 +21,23 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="107dp"
         android:onClick="settingsPage" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user profile"
+        android:id="@+id/userProfileID"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/settingsButton"
+        android:layout_centerHorizontal="true"
+        android:nestedScrollingEnabled="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view my profile"
+        android:id="@+id/viewMyProfileID"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/userProfileID"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
