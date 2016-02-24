@@ -12,7 +12,15 @@
     <string name="Username">Username</string>
     <string name="Password">Password</string>
     <string name="title_activity_create_account">Create Account</string>
-    <string name="title_activity_home_page">Tasker</string>
+    <string name="title_activity_home_page">home_page</string>
     <string name="confirmPwd">Confirm Password</string>
     <string name="title_activity_main">MainActivity</string>
+
+    <string name="drawer_open">Sliding Menu Opened</string>
+    <string name="drawer_closed">Sliding Menu Closed</string>
+    <string name="title_activity_drawer_activity">drawer_activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
 </resources>
