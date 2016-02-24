@@ -76,11 +76,17 @@
         <activity
             android:name=".User_Settings"
             android:label="User_Settings"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".UserProfile"
             android:label="UserProfile"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SettingsNEW_Activity"
+            android:label="@string/title_activity_settings_new_" />
+        <activity
+            android:name=".SettingsNEW_Activity.java"
+            android:label="@string/title_activity_settings_new__activity.java"></activity>
     </application>
 
 </manifest>

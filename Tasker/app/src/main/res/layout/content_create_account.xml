@@ -20,10 +20,11 @@
         android:ems="10"
         android:id="@+id/editTextEmail"
         android:hint="E-mail"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:width="320sp"
-        android:paddingTop="20sp" />
+        android:paddingTop="20sp"
+        android:background="#fdfafa"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -32,11 +33,14 @@
         android:ems="10"
         android:id="@+id/editTextPassword"
         android:hint="@string/Password"
-        android:layout_below="@+id/editTextUsername"
-        android:layout_centerHorizontal="true"
         android:width="320sp"
         android:password="true"
-        android:paddingTop="20sp" />
+        android:paddingTop="20sp"
+        android:background="#fefbfb"
+        android:layout_below="@+id/editTextUsername"
+        android:layout_alignLeft="@+id/editTextUsername"
+        android:layout_alignStart="@+id/editTextUsername"
+        android:layout_marginTop="30dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -45,34 +49,62 @@
         android:ems="10"
         android:id="@+id/editTextPasswordConfirm"
         android:hint="@string/confirmPwd"
-        android:layout_below="@+id/editTextPassword"
-        android:layout_centerHorizontal="true"
         android:width="320sp"
         android:password="true"
-        android:paddingTop="20sp" />
+        android:paddingTop="20sp"
+        android:background="#ffffff"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_alignLeft="@+id/editTextPassword"
+        android:layout_alignStart="@+id/editTextPassword"
+        android:layout_marginTop="28dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editTextUsername"
         android:hint="@string/Username"
-        android:layout_below="@+id/editTextEmail"
-        android:layout_centerHorizontal="true"
         android:paddingTop="20sp"
-        android:width="320sp" />
+        android:width="320sp"
+        android:background="#ffffff"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_alignLeft="@+id/editTextEmail"
+        android:layout_alignStart="@+id/editTextEmail"
+        android:layout_marginTop="28dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Create Account"
         android:id="@+id/createButton"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
         android:width="320sp"
         android:shadowColor="#000000"
         android:textSize="16sp"
         android:background="@color/colorAccent"
         android:textColor="@color/colorBackground"
-        android:typeface="monospace" />
+        android:typeface="monospace"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilePicButtonID"
+        android:layout_below="@+id/editTextPasswordConfirm"
+        android:layout_alignLeft="@+id/editTextPasswordConfirm"
+        android:layout_alignStart="@+id/editTextPasswordConfirm"
+        android:layout_alignRight="@+id/editTextPasswordConfirm"
+        android:layout_alignEnd="@+id/editTextPasswordConfirm"
+        android:layout_above="@+id/createButton"
+        android:src="@android:drawable/ic_menu_camera" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Click to Add Profile Picture"
+        android:id="@+id/textView8"
+        android:textSize="25dp"
+        android:layout_above="@+id/createButton"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
