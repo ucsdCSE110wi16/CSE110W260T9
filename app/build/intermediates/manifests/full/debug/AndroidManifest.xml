@@ -72,6 +72,10 @@
             android:value="@string/parse_client_key" />
 
         <activity
+            android:name="com.example.blaid.tasker.CreateT"
+            android:label="@string/title_activity_create_task"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name="com.example.blaid.tasker.CreateTask"
             android:label="@string/title_activity_create_task"
             android:theme="@style/AppTheme.NoActionBar" />

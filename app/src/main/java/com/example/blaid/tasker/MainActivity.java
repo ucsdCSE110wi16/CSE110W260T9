@@ -14,14 +14,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-<<<<<<< HEAD
         Parse.initialize(this);
 
         Intent intent = new Intent(this, Login.class);
         startActivity(intent);
-=======
-        startActivity(new Intent(getApplicationContext(), Login.class));
->>>>>>> master
     }
 
 }
