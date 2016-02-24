@@ -20,10 +20,17 @@
         android:ems="10"
         android:id="@+id/editTextEmail"
         android:hint="E-mail"
+<<<<<<< HEAD
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:width="320sp"
         android:paddingTop="20sp" />
+=======
+        android:width="320sp"
+        android:paddingTop="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+>>>>>>> master
 
     <EditText
         android:layout_width="wrap_content"
@@ -32,11 +39,19 @@
         android:ems="10"
         android:id="@+id/editTextPassword"
         android:hint="@string/Password"
+<<<<<<< HEAD
         android:layout_below="@+id/editTextUsername"
         android:layout_centerHorizontal="true"
         android:width="320sp"
         android:password="true"
         android:paddingTop="20sp" />
+=======
+        android:width="320sp"
+        android:password="true"
+        android:paddingTop="20sp"
+        android:layout_below="@+id/editTextUsername"
+        android:layout_centerHorizontal="true" />
+>>>>>>> master
 
     <EditText
         android:layout_width="wrap_content"
@@ -45,21 +60,36 @@
         android:ems="10"
         android:id="@+id/editTextPasswordConfirm"
         android:hint="@string/confirmPwd"
+<<<<<<< HEAD
         android:layout_below="@+id/editTextPassword"
         android:layout_centerHorizontal="true"
         android:width="320sp"
         android:password="true"
         android:paddingTop="20sp" />
+=======
+        android:width="320sp"
+        android:password="true"
+        android:paddingTop="20sp"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_centerHorizontal="true" />
+>>>>>>> master
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editTextUsername"
         android:hint="@string/Username"
+<<<<<<< HEAD
         android:layout_below="@+id/editTextEmail"
         android:layout_centerHorizontal="true"
         android:paddingTop="20sp"
         android:width="320sp" />
+=======
+        android:paddingTop="20sp"
+        android:width="320sp"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_centerHorizontal="true" />
+>>>>>>> master
 
     <Button
         android:layout_width="wrap_content"
@@ -72,7 +102,12 @@
         android:shadowColor="#000000"
         android:textSize="16sp"
         android:background="@color/colorAccent"
+<<<<<<< HEAD
         android:textColor="@color/colorBackground"
         android:typeface="monospace" />
+=======
+        android:typeface="monospace"
+        android:textColor="@color/colorBackground" />
+>>>>>>> master
 
 </RelativeLayout>

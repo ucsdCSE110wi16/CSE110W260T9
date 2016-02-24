@@ -1,5 +1,9 @@
 package com.example.blaid.tasker;
 
+<<<<<<< HEAD
+=======
+import android.content.Intent;
+>>>>>>> master
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -16,7 +20,11 @@ import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
 public class CreateAccount extends AppCompatActivity {
+<<<<<<< HEAD
     String emailTxt, usernameTxt, passwordTxt, passwordCfmTxt;
+=======
+    String usernameTxt, passwordTxt, passwordCfmTxt, emailTxt;
+>>>>>>> master
     EditText email, username, password, passwordCfm;
     Button button;
 
@@ -36,6 +44,7 @@ public class CreateAccount extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
                 emailTxt = email.getText().toString();
                 usernameTxt = username.getText().toString();
                 passwordTxt = password.getText().toString();
@@ -51,12 +60,33 @@ public class CreateAccount extends AppCompatActivity {
                         user.setEmail(emailTxt);
                         user.setUsername(usernameTxt);
                         user.setPassword(passwordTxt);
+=======
+                usernameTxt = username.getText().toString();
+                passwordTxt = password.getText().toString();
+                passwordCfmTxt = passwordCfm.getText().toString();
+                emailTxt = email.getText().toString();
+
+                if (usernameTxt.equals("") || passwordTxt.equals("") || emailTxt.equals("")) {
+                    Toast.makeText(getApplicationContext(), "Fill in your email, username, and password!", Toast.LENGTH_LONG).show();
+                } else {
+                    if (!passwordTxt.equals(passwordCfmTxt)) {
+                        Toast.makeText(getApplicationContext(), "Password and password confirmation do not match.", Toast.LENGTH_LONG).show();
+                    } else {
+                        ParseUser user = new ParseUser();
+                        user.setUsername(usernameTxt);
+                        user.setPassword(passwordTxt);
+                        user.setEmail(emailTxt);
+>>>>>>> master
 
                         user.signUpInBackground(new SignUpCallback() {
                             @Override
                             public void done(ParseException e) {
                                 if (e == null) {
                                     Toast.makeText(getApplicationContext(), "Successfully Signed Up!", Toast.LENGTH_LONG).show();
+<<<<<<< HEAD
+=======
+                                    goToHomePage();
+>>>>>>> master
                                 } else {
                                     Toast.makeText(getApplicationContext(), "Sign Up Error", Toast.LENGTH_LONG).show();
                                 }
@@ -66,9 +96,19 @@ public class CreateAccount extends AppCompatActivity {
                 }
             }
         });
+<<<<<<< HEAD
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
+=======
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    public void goToHomePage() {
+        startActivity(new Intent(getApplicationContext(), HomePage.class));
+    }
+
+>>>>>>> master
 }

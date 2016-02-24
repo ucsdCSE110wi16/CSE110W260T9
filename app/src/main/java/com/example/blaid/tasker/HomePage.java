@@ -1,20 +1,29 @@
 package com.example.blaid.tasker;
 
+<<<<<<< HEAD
 import android.content.Intent;
+=======
+>>>>>>> master
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+<<<<<<< HEAD
 import android.widget.Button;
+=======
+>>>>>>> master
 
 import com.example.blaid.tasker.R;
 
 public class HomePage extends AppCompatActivity {
 
+<<<<<<< HEAD
     Button createTaskButton;
 
+=======
+>>>>>>> master
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +31,7 @@ public class HomePage extends AppCompatActivity {
 //        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
 
+<<<<<<< HEAD
         createTaskButton = (Button) findViewById(R.id.createTaskButtonId);
 
         createTaskButton.setOnClickListener(new View.OnClickListener() {
@@ -31,6 +41,8 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
+=======
+>>>>>>> master
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,7 +53,10 @@ public class HomePage extends AppCompatActivity {
         });
     }
 
+<<<<<<< HEAD
     public void goCreateTask(View v) {
         startActivity(new Intent(getApplicationContext(), CreateTask.class));
     }
+=======
+>>>>>>> master
 }

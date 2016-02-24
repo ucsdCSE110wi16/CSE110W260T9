@@ -11,12 +11,18 @@
     <string name="ForgotPasswordText">Forgot Password</string>
     <string name="Username">Username</string>
     <string name="Password">Password</string>
+<<<<<<< HEAD
     <string name="Done">Done</string>
+=======
+>>>>>>> master
     <string name="title_activity_create_account">Create Account</string>
     <string name="title_activity_home_page">Tasker</string>
     <string name="confirmPwd">Confirm Password</string>
     <string name="title_activity_main">MainActivity</string>
+<<<<<<< HEAD
     <string name="title_activity_create_task">Create Task</string>
     <string name="Upload_Photo">Upload Photo</string>
     <string name="Description">Description:</string>
+=======
+>>>>>>> master
 </resources>

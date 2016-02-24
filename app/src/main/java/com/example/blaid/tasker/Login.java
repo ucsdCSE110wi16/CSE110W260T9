@@ -33,8 +33,13 @@ public class Login extends AppCompatActivity {
      */
     private GoogleApiClient client;
 
+<<<<<<< HEAD
 //    public static final String APPLICATION_ID = "B1JHogV7pRql8v3xKuvuxNxRZjWWOUbGK04GzbK3";
 //    public static final String CLIENT_ID = "B9BB44VfrV96Dlq28bP13yi7QRD5lyIBGc0FOGER";
+=======
+    public static final String APPLICATION_ID = "B1JHogV7pRql8v3xKuvuxNxRZjWWOUbGK04GzbK3";
+    public static final String CLIENT_ID = "B9BB44VfrV96Dlq28bP13yi7QRD5lyIBGc0FOGER";
+>>>>>>> master
 
     Button signInButton, signUpButton;
     EditText username, password;
@@ -71,6 +76,10 @@ public class Login extends AppCompatActivity {
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
 
+<<<<<<< HEAD
+=======
+//        title = (TextView) findViewById(R.id.apptitle);
+>>>>>>> master
         forgotUsername = (TextView) findViewById(R.id.textView2);
         forgotPassword = (TextView) findViewById(R.id.textView3);
 
@@ -158,7 +167,10 @@ public class Login extends AppCompatActivity {
     }
 
     public void signin(View view) {
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
         // Retrieve the text entered from the EditText
         usernameTxt = username.getText().toString();
         passwordTxt = password.getText().toString();
@@ -185,12 +197,20 @@ public class Login extends AppCompatActivity {
                         }
                     }
                 });
+<<<<<<< HEAD
 
 
     }
 
     public void signup(View view) {
         startActivity(new Intent(Login.this, CreateAccount.class));
+=======
+    }
+
+    public void signup(View view) {
+        Intent intent = new Intent(Login.this, CreateAccount.class);
+        startActivity(intent);
+>>>>>>> master
     }
 
 }
