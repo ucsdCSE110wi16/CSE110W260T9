@@ -9,7 +9,45 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.blaid.tasker.drawer_activity"
+    tools:context="com.example.blaid.tasker.Home_Page"
     tools:showIn="@layout/app_bar_drawer_activity">
 
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="createTask"
+        android:id="@+id/createTaskButtonId"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="settings"
+        android:id="@+id/settingsButton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp"
+        android:onClick="settingsPage" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user profile"
+        android:id="@+id/userProfileID"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/settingsButton"
+        android:layout_centerHorizontal="true"
+        android:nestedScrollingEnabled="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view my profile"
+        android:id="@+id/viewMyProfileID"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/userProfileID"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

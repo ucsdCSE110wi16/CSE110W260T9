@@ -5,15 +5,15 @@
         <item
             android:id="@+id/nav_closest"
             android:icon="@drawable/ic_menu_send"
-            android:title="Closest" />
+            android:title="Settings" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Farthest" />
+            android:title="User Profile" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Free" />
+            android:title="View User Profile" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_camera"

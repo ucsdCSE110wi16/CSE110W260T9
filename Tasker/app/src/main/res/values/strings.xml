@@ -16,7 +16,7 @@
     <string name="title_activity_home_page">Tasker</string>
     <string name="confirmPwd">Confirm Password</string>
     <string name="title_activity_main">MainActivity</string>
-<!--<<<<<<< HEAD-->
+    <!--<<<<<<< HEAD-->
     <string name="title_activity_create_task">Create Task</string>
     <string name="Upload_Photo">Upload Photo</string>
     <string name="Description">Description:</string>
@@ -25,6 +25,13 @@
     <string name="Enter_Location">Enter Location...</string>
     <string name="Title">Title:</string>
     <string name="Enter_title">Enter title here...</string>
+    <string name="drawer_open">Sliding Menu Opened</string>
+    <string name="drawer_closed">Sliding Menu Closed</string>
+    <string name="title_activity_drawer_activity">drawer_activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
@@ -114,7 +121,7 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
-=======
+    =======
     <string name="title_activity_settings">settings</string>
     <string name="title_activity_general">General</string>
     <string name="title_activity_general_settings">GeneralSettings</string>
@@ -179,5 +186,6 @@
 
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="title_activity_settings_new__activity.java">SettingsNEW</string>
->>>>>>> CreateTask/master
+    <string name="title_activity_filter_page">Filter Options</string>
+    >>>>>>> CreateTask/master
 </resources>

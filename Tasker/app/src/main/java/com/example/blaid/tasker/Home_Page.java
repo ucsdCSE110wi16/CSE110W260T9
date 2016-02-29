@@ -1,5 +1,6 @@
 package com.example.blaid.tasker;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,12 +13,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+
 /**
  * Created by deneyew on 2/23/16.
  */
 public class Home_Page extends AppCompatActivity
             implements NavigationView.OnNavigationItemSelectedListener {
 
+
+        Button createTaskButton;
+        Button SettingsButton;
+        Button UserProfileEditButton;
+        Button ViewUserProfileButton;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -25,14 +33,47 @@ public class Home_Page extends AppCompatActivity
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
             setSupportActionBar(toolbar);
 
-            FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+            createTaskButton = (Button) findViewById(R.id.createTaskButtonId);
+
+            createTaskButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    goCreateTask(v);
+                }
+            });
+
+
+            SettingsButton = (Button) findViewById(R.id.settingsButton);
+            UserProfileEditButton = (Button) findViewById(R.id.userProfileID);
+            ViewUserProfileButton = (Button) findViewById(R.id.viewMyProfileID);
+
+
+            SettingsButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    settingsPage(v);
+                }
+            });
+            UserProfileEditButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    userProfileEditPage(v);
+                }
+            });
+            ViewUserProfileButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    viewUserProfilePage(v);
+                }
+            });
+           /* FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
             fab.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
                 }
-            });
+            });*/
 
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -99,6 +140,20 @@ public class Home_Page extends AppCompatActivity
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             drawer.closeDrawer(GravityCompat.START);
             return true;
+        }
+
+        public void goCreateTask(View v) {
+            startActivity(new Intent(getApplicationContext(), CreateTask.class));
+        }
+
+        public void settingsPage(View view) {
+            startActivity(new Intent(getApplicationContext(), settings.class));
+        }
+        public void userProfileEditPage(View view) {
+            startActivity(new Intent(getApplicationContext(), User_Settings.class));
+        }
+        public void viewUserProfilePage(View view) {
+            startActivity(new Intent(getApplicationContext(), UserProfile.class));
         }
     }
 
