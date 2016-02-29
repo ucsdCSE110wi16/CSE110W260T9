@@ -40,7 +40,7 @@ public class FilterPage extends AppCompatActivity {
     }
 
     public void addNearYouListener(){
-        nearyou = (CheckBox) findViewById(R.id.checkBox);
+        nearyou = (CheckBox) findViewById(R.id.nearchu);
         nearyou.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,7 +50,7 @@ public class FilterPage extends AppCompatActivity {
     }
 
     public void addFoFreeListener(){
-        fofree = (CheckBox) findViewById(R.id.checkBox2);
+        fofree = (CheckBox) findViewById(R.id.freebee);
         fofree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,7 +60,7 @@ public class FilterPage extends AppCompatActivity {
     }
 
     public void addFiftyListener(){
-        fifty = (CheckBox) findViewById(R.id.checkBox3);
+        fifty = (CheckBox) findViewById(R.id.fiveo);
         fifty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,7 +70,7 @@ public class FilterPage extends AppCompatActivity {
     }
 
     public void addHundredListener(){
-        hundred = (CheckBox) findViewById(R.id.checkBox4);
+        hundred = (CheckBox) findViewById(R.id.hundy);
         hundred.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,7 +80,7 @@ public class FilterPage extends AppCompatActivity {
     }
 
     public void addTwoFiftyListener(){
-        twofifty = (CheckBox) findViewById(R.id.checkBox5);
+        twofifty = (CheckBox) findViewById(R.id.tFifty);
         twofifty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,7 +90,7 @@ public class FilterPage extends AppCompatActivity {
     }
 
     public void addMoMOneyListener(){
-        momoney = (CheckBox) findViewById(R.id.checkBox6);
+        momoney = (CheckBox) findViewById(R.id.moMoney);
         momoney.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

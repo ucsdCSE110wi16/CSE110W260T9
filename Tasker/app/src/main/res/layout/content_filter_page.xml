@@ -1,63 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
+
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
 
     tools:context="com.example.blaid.tasker.FilterPage"
-    tools:showIn="@layout/activity_filter_page">
+    tools:showIn="@layout/activity_filter_page"
+  >
+
 
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New CheckBox"
-        android:id="@+id/checkBox"
+        android:text="Near You"
+        android:id="@+id/nearchu"
         android:checked="false"
 
-        android:textSize="22dp" />
+        android:textSize="26dp"
+        android:layout_weight="0.11" />
 
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="0"
-        android:id="@+id/checkBox2"
+        android:text="Deals"
+        android:id="@+id/demdeals"
         android:checked="false"
-        android:textSize="22dp"
-         />
+        android:textSize="26sp"
+        android:layout_weight="0.11" />
 
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New CheckBox"
-        android:id="@+id/checkBox3"
-        android:textSize="22dp"
-        />
-
-    <CheckBox
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="New CheckBox"
-        android:id="@+id/checkBox4"
-
+        android:text="Free"
+        android:id="@+id/freebee"
         android:checked="false"
-        android:textSize="22dp"
-        />
+        android:textSize="26sp"
+        android:layout_weight="0.11" />
 
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New CheckBox"
-        android:id="@+id/checkBox5"
-        android:textSize="22dp"
-        android:checked="false" />
+        android:text="$0 -> $50"
+        android:id="@+id/fiveo"
+        android:checked="false"
+        android:textSize="26sp"
+        android:layout_weight="0.11" />
 
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New CheckBox"
-        android:id="@+id/checkBox6"
-        android:textSize="22dp"/>
+        android:text="$50 -> $100"
+        android:id="@+id/hundy"
+        android:textSize="26sp"
+        android:checked="false"
+        android:layout_weight="0.11" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$100 -> $250"
+        android:id="@+id/tFifty"
+        android:textSize="26sp"
+        android:layout_weight="0.11"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$250 > "
+        android:id="@+id/moMoney"
+        android:checked="false"
+        android:textSize="26sp"
+        android:layout_weight="0.11"/>
 
 </LinearLayout>
