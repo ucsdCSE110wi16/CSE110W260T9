@@ -18,12 +18,8 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
 import com.parse.LogInCallback;
-import com.parse.Parse;
-import com.parse.ParseACL;
 import com.parse.ParseException;
-import com.parse.ParseObject;
 import com.parse.ParseUser;
-import com.parse.SignUpCallback;
 
 public class Login extends AppCompatActivity {
 
@@ -33,8 +29,8 @@ public class Login extends AppCompatActivity {
      */
     private GoogleApiClient client;
 
-    public static final String APPLICATION_ID = "B1JHogV7pRql8v3xKuvuxNxRZjWWOUbGK04GzbK3";
-    public static final String CLIENT_ID = "B9BB44VfrV96Dlq28bP13yi7QRD5lyIBGc0FOGER";
+//    public static final String APPLICATION_ID = "B1JHogV7pRql8v3xKuvuxNxRZjWWOUbGK04GzbK3";
+//    public static final String CLIENT_ID = "B9BB44VfrV96Dlq28bP13yi7QRD5lyIBGc0FOGER";
 
     Button signInButton, signUpButton, skipLoginButton, logoutButton;
     EditText username, password;
@@ -127,7 +123,7 @@ public class Login extends AppCompatActivity {
         switch (id){
             case R.id.action_logout:
                 Toast.makeText(Login.this, "Logging out...", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(Login.this, settings.class));
+                startActivity(new Intent(Login.this, Settings.class));
         }
 
         return super.onOptionsItemSelected(item);
