@@ -5,16 +5,15 @@
         <item
             android:id="@+id/nav_closest"
             android:icon="@drawable/ic_menu_send"
+            android:title="Near You" />
 
         <item
             android:id="@+id/nav_household"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Household" />
         <item
-            android:id="@+id/nav_gallery"
             android:id="@+id/nav_food"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="User Profile" />
             android:title="Food" />
         <item
             android:id="@+id/nav_labor"
@@ -33,6 +32,7 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="$50 -> $100" />
         <item
+            android:id="@+id/nav_onetwofifty"
             android:icon="@drawable/ic_menu_camera"
             android:title="$100 -> $250" />
         <item
