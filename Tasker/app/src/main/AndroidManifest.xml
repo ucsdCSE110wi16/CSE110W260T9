@@ -90,16 +90,16 @@
             android:label="Home_Page"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".FilterPage"
+            android:label="FilterPg"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".SettingsNEW_Activity"
             android:label="@string/title_activity_settings_new_" />
-        <!-- <activity -->
-        <!-- android:name=".SettingsNEW_Activity.java" -->
-        <!-- android:label="@string/title_activity_settings_new__activity.java" /> -->
-        >>>>>>> CreateTask/master
-        <activity
-            android:name=".FilterPage"
-            android:label="@string/title_activity_filter_page"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <!--<activity-->
+            <!--android:name=".SettingsNEW_Activity.java"-->
+            <!--android:label="@string/title_activity_settings_new__activity.java" />-->
+>>>>>>> CreateTask/master
     </application>
 
 </manifest>
