@@ -7,15 +7,23 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+<<<<<<< HEAD
 import android.widget.AdapterView;
 import android.widget.DatePicker;
 import android.widget.Spinner;
 import android.widget.Toast;
+=======
+import android.widget.DatePicker;
+>>>>>>> origin/master
 
 
 public class CreateTask extends AppCompatActivity {
     private int year = 2016;
+<<<<<<< HEAD
     private int month = 3;
+=======
+    private int month = 2;
+>>>>>>> origin/master
     private int day;
 
     private DatePickerDialog.OnDateSetListener myDateListener =
@@ -44,6 +52,7 @@ public class CreateTask extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+<<<<<<< HEAD
         Spinner s = (Spinner) findViewById(R.id.spin);
 
         s.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -66,6 +75,8 @@ public class CreateTask extends AppCompatActivity {
             }
         });
 
+=======
+>>>>>>> origin/master
     }
 
     public void goHome(View v) {

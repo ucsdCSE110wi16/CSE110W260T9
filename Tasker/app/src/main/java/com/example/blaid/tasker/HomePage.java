@@ -60,6 +60,7 @@ public class HomePage extends AppCompatActivity {
     }
 
     public void settingsPage(View view) {
+<<<<<<< HEAD
         startActivity(new Intent(getApplicationContext(), Settings.class));
     }
     public void userProfileEditPage(View view) {
@@ -67,5 +68,14 @@ public class HomePage extends AppCompatActivity {
     }
     public void viewUserProfilePage(View view) {
         startActivity(new Intent(getApplicationContext(), ViewProfile.class));
+=======
+        startActivity(new Intent(getApplicationContext(), settings.class));
+    }
+    public void userProfileEditPage(View view) {
+        startActivity(new Intent(getApplicationContext(), User_Settings.class));
+    }
+    public void viewUserProfilePage(View view) {
+        startActivity(new Intent(getApplicationContext(), UserProfile.class));
+>>>>>>> origin/master
     }
 }

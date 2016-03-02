@@ -54,7 +54,12 @@
         <!-- <intent-filter> -->
         <!-- <action android:name="android.intent.action.MAIN" /> -->
 
+<<<<<<< HEAD
         >>>>>>> CreateTask/master
+=======
+
+>>>>>>> CreateTask/master
+>>>>>>> origin/master
         <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
         <!-- </intent-filter> -->
         <!-- </activity> -->
@@ -68,6 +73,13 @@
         <activity
             android:name=".CreateTask"
             android:label="@string/title_activity_create_task"
+<<<<<<< HEAD
+=======
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".settings"
+            android:label="@string/title_activity_settings"
+>>>>>>> origin/master
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Settings"
@@ -84,6 +96,7 @@
         <activity
             android:name=".SettingsNEW_Activity"
             android:label="@string/title_activity_settings_new_" />
+<<<<<<< HEAD
         <!-- <activity -->
         <!-- android:name=".SettingsNEW_Activity.java" -->
         <!-- android:label="@string/title_activity_settings_new__activity.java" /> --><![CDATA[
@@ -93,6 +106,12 @@
             android:name=".GeneralSettings"
             android:label="@string/title_activity_general_settings"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+=======
+        <!--<activity-->
+            <!--android:name=".SettingsNEW_Activity.java"-->
+            <!--android:label="@string/title_activity_settings_new__activity.java" />-->
+>>>>>>> CreateTask/master
+>>>>>>> origin/master
     </application>
 
 </manifest>
