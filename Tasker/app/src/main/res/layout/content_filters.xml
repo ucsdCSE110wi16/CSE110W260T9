@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    tools:context=".Filters"
+    tools:showIn="@layout/activity_filters"
+    >
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Near You"
+        android:id="@+id/near_you"
+        android:textSize="18dp"
+        android:checked="false"
+        android:layout_weight="0.15" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deals$$$"
+        android:id="@+id/deals_$"
+        android:checked="false"
+        android:textSize="18dp"
+        android:layout_weight="0.15" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FREE"
+        android:id="@+id/fofree"
+        android:layout_gravity="center_vertical"
+        android:textSize="18dp"
+        android:checked="false"
+        android:layout_weight="0.15" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$0 -> $50"
+        android:id="@+id/fifty"
+        android:textSize="18dp"
+        android:layout_weight="0.15"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$50 ->$100"
+        android:id="@+id/hund"
+        android:textSize="18dp"
+        android:layout_weight="0.15"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$100 ->$250"
+        android:id="@+id/twofifty"
+        android:textSize="18dp"
+        android:checked="false"
+        android:layout_weight="0.15" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prices over $250"
+        android:id="@+id/mo_money"
+        android:textSize="18dp"
+        android:checked="false"
+        android:layout_weight="0.15" />
+
+    <Button
+        android:layout_width="131dp"
+        android:layout_height="58dp"
+        android:text="Apply Changes"
+        android:id="@+id/applychanges"
+        android:background="#f7ef08"
+        android:layout_gravity="right" />
+
+</LinearLayout>

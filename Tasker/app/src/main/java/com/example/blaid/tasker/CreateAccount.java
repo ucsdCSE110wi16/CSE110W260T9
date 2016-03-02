@@ -1,5 +1,6 @@
 package com.example.blaid.tasker;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -32,6 +33,7 @@ public class CreateAccount extends AppCompatActivity {
         password = (EditText) findViewById(R.id.editTextPassword);
         passwordCfm = (EditText) findViewById(R.id.editTextPasswordConfirm);
         button = (Button) findViewById(R.id.createButton);
+
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,8 +69,11 @@ public class CreateAccount extends AppCompatActivity {
             }
         });
 
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    public void skipLoginPage(View view) {
+        startActivity(new Intent(CreateAccount.this, HomePage.class));
     }
 
 }
