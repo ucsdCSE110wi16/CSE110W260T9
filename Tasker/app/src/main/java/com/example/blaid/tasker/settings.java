@@ -2,8 +2,6 @@ package com.example.blaid.tasker;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -13,7 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class settings extends AppCompatActivity {
+public class Settings extends AppCompatActivity {
 
     Button generalButton, soundButton, displayButton, notificationsButton, historyButton;
 
@@ -97,31 +95,31 @@ public class settings extends AppCompatActivity {
         }*/
         switch (id){
             case R.id.action_logout:
-                Toast.makeText(settings.this, "Logging out...", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(settings.this, Login.class));
+                Toast.makeText(Settings.this, "Logging out...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(Settings.this, Login.class));
         }
 
         return super.onOptionsItemSelected(item);
     }
 
     public void generalPage(View view) {
-        startActivity(new Intent(settings.this, GeneralSettings.class));
+        startActivity(new Intent(Settings.this, GeneralSettings.class));
     }
 
     public void soundPage(View view) {
-        startActivity(new Intent(settings.this, SettingsNEW_Activity.class));
+        startActivity(new Intent(Settings.this, SettingsNEW_Activity.class));
     }
 
     public void displayPage(View view) {
-        startActivity(new Intent(settings.this, GeneralSettings.class));
+        startActivity(new Intent(Settings.this, GeneralSettings.class));
     }
 
     public void notificationsPage(View view) {
-        startActivity(new Intent(settings.this, GeneralSettings.class));
+        startActivity(new Intent(Settings.this, GeneralSettings.class));
     }
 
     public void historyPage(View view) {
-        startActivity(new Intent(settings.this, GeneralSettings.class));
+        startActivity(new Intent(Settings.this, GeneralSettings.class));
     }
 
 }

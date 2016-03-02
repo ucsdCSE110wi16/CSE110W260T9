@@ -6,11 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-
-
-
 public class HomePage extends AppCompatActivity {
 
+    Button createTaskButton;
     Button SettingsButton;
     Button UserProfileEditButton;
     Button ViewUserProfileButton;
@@ -21,6 +19,16 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
 //        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
+
+        createTaskButton = (Button) findViewById(R.id.createTaskButtonId);
+
+        createTaskButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goCreateTask(v);
+            }
+        });
+
 
         SettingsButton = (Button) findViewById(R.id.settingsButton);
         UserProfileEditButton = (Button) findViewById(R.id.userProfileID);
@@ -47,13 +55,17 @@ public class HomePage extends AppCompatActivity {
         });
     }
 
+    public void goCreateTask(View v) {
+        startActivity(new Intent(getApplicationContext(), CreateTask.class));
+    }
+
     public void settingsPage(View view) {
-        startActivity(new Intent(HomePage.this, settings.class));
+        startActivity(new Intent(getApplicationContext(), Settings.class));
     }
     public void userProfileEditPage(View view) {
-        startActivity(new Intent(HomePage.this, User_Settings.class));
+        startActivity(new Intent(getApplicationContext(), EditProfile.class));
     }
     public void viewUserProfilePage(View view) {
-        startActivity(new Intent(HomePage.this, UserProfile.class));
+        startActivity(new Intent(getApplicationContext(), ViewProfile.class));
     }
 }

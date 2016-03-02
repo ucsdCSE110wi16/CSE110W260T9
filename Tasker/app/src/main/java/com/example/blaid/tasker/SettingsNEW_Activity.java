@@ -23,10 +23,10 @@ import android.view.MenuItem;
 import java.util.List;
 
 /**
- * A {@link PreferenceActivity} that presents a set of application settings. On
- * handset devices, settings are presented as a single list. On tablets,
- * settings are split by category, with category headers shown to the left of
- * the list of settings.
+ * A {@link PreferenceActivity} that presents a set of application Settings. On
+ * handset devices, Settings are presented as a single list. On tablets,
+ * Settings are split by category, with category headers shown to the left of
+ * the list of Settings.
  * <p/>
  * See <a href="http://developer.android.com/design/patterns/settings.html">
  * Android Design: Settings</a> for design guidelines and the <a
@@ -163,7 +163,7 @@ public class SettingsNEW_Activity extends AppCompatPreferenceActivity {
 
     /**
      * This fragment shows general preferences only. It is used when the
-     * activity is showing a two-pane settings UI.
+     * activity is showing a two-pane Settings UI.
      */
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     public static class GeneralPreferenceFragment extends PreferenceFragment {
@@ -194,7 +194,7 @@ public class SettingsNEW_Activity extends AppCompatPreferenceActivity {
 
     /**
      * This fragment shows notification preferences only. It is used when the
-     * activity is showing a two-pane settings UI.
+     * activity is showing a two-pane Settings UI.
      */
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     public static class NotificationPreferenceFragment extends PreferenceFragment {
@@ -224,7 +224,7 @@ public class SettingsNEW_Activity extends AppCompatPreferenceActivity {
 
     /**
      * This fragment shows data and sync preferences only. It is used when the
-     * activity is showing a two-pane settings UI.
+     * activity is showing a two-pane Settings UI.
      */
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     public static class DataSyncPreferenceFragment extends PreferenceFragment {
