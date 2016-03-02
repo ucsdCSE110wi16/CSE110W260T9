@@ -39,7 +39,7 @@ public class Login extends AppCompatActivity {
     Button signInButton, signUpButton, skipLoginButton, logoutButton;
     EditText username, password;
 
-    TextView title, forgotUsername, forgotPassword;
+    TextView forgotUsername, forgotPassword;
 
     String usernameTxt, passwordTxt;
 
