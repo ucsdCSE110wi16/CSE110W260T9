@@ -80,7 +80,7 @@ public class drawer_activity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_closest) {
+        /*if (id == R.id.nav_closest) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
 
@@ -92,7 +92,7 @@ public class drawer_activity extends AppCompatActivity
 
         } else if (id == R.id.nav_ftoone) {
 
-        }
+        }*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

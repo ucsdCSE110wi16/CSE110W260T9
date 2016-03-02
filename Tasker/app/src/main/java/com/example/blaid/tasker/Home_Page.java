@@ -125,15 +125,25 @@ public class Home_Page extends AppCompatActivity
 
             if (id == R.id.nav_closest) {
                 // Handle the camera action
-            } else if (id == R.id.nav_gallery) {
+            } else if (id == R.id.nav_household) {
 
-            } else if (id == R.id.nav_slideshow) {
+            } else if (id == R.id.nav_food) {
 
-            } else if (id == R.id.nav_manage) {
+            } else if (id == R.id.nav_labor) {
 
-            } else if (id == R.id.nav_gOne) {
+            } else if (id == R.id.nav_delivery) {
 
-            } else if (id == R.id.nav_ftoone) {
+            } else if (id == R.id.nav_delivery) {
+
+            } else if (id == R.id.nav_fivezero) {
+
+            } else if(id == R.id.nav_ftoone) {
+
+            } else if(id == R.id.nav_onetwofifty) {
+
+            } else if(id == R.id.nav_Twofifty) {
+
+            } else if(id == R.id.nav_deals){
 
             }
 

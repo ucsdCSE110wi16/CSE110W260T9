@@ -5,17 +5,24 @@
         <item
             android:id="@+id/nav_closest"
             android:icon="@drawable/ic_menu_send"
-            android:title="Settings" />
+
+        <item
+            android:id="@+id/nav_household"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Household" />
         <item
             android:id="@+id/nav_gallery"
+            android:id="@+id/nav_food"
             android:icon="@drawable/ic_menu_gallery"
             android:title="User Profile" />
+            android:title="Food" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="View User Profile" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_delivery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Delivery" />
+        <item
+            android:id="@+id/nav_fivezero"
             android:icon="@drawable/ic_menu_camera"
             android:title="$0 -> $50"/>
         <item
@@ -23,9 +30,12 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="$50 -> $100" />
         <item
-            android:id="@+id/nav_gOne"
             android:icon="@drawable/ic_menu_camera"
-            android:title="> $100" />
+            android:title="$100 -> $250" />
+        <item
+            android:id="@+id/nav_Twofifty"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="$250 >" />
         <item
             android:id="@+id/nav_deals"
             android:icon="@drawable/ic_menu_gallery"

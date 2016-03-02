@@ -187,7 +187,7 @@ public class Login extends AppCompatActivity {
                             // If user exist and authenticated, send user to Welcome.class
                             Intent intent = new Intent(
                                     Login.this,
-                                    HomePage.class);
+                                    Home_Page.class);
                             startActivity(intent);
                             Toast.makeText(getApplicationContext(),
                                     "Successfully Logged in",
@@ -210,7 +210,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void skipLoginPage(View view) {
-        startActivity(new Intent(Login.this, HomePage.class));
+        startActivity(new Intent(Login.this, Home_Page.class));
     }
 
 
