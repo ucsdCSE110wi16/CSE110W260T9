@@ -13,6 +13,16 @@
     tools:showIn="@layout/activity_home_page">
 
     <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="createTask"
+        android:id="@+id/createTaskButtonId"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp" />
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="settings"
@@ -39,15 +49,6 @@
         android:id="@+id/viewMyProfileID"
         android:layout_marginTop="39dp"
         android:layout_below="@+id/userProfileID"
-        android:layout_centerHorizontal="true" />
-
-     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Filter Options"
-        android:id="@+id/viewFilterOptions"
-        android:layout_marginTop="39dp"
-        android:layout_below="@+id/viewMyProfileID"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

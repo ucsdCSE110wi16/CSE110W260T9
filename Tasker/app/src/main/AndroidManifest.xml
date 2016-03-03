@@ -62,7 +62,6 @@
         <!-- <intent-filter> -->
         <!-- <action android:name="android.intent.action.MAIN" /> -->
 
-
         <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
         <!-- </intent-filter> -->
         <!-- </activity> -->
@@ -74,6 +73,11 @@
             android:value="@string/parse_client_key" />
 
         <activity
+	    android:name=".CreateTask"
+            android:label="@string/title_activity_create_task"
+            android:theme="@style/AppTheme.NoActionBar" />
+        
+	<activity
             android:name=".settings"
             android:label="@string/title_activity_settings"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -93,10 +97,10 @@
             android:name=".SettingsNEW_Activity"
             android:label="@string/title_activity_settings_new_" />
 
+
         <activity
             android:name=".Filters"
             android:label="@string/title_activity_filters"></activity>
-
     </application>
 
 </manifest>

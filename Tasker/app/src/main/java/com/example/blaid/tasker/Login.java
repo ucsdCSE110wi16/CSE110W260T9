@@ -33,8 +33,8 @@ public class Login extends AppCompatActivity {
      */
     private GoogleApiClient client;
 
-    public static final String APPLICATION_ID = "B1JHogV7pRql8v3xKuvuxNxRZjWWOUbGK04GzbK3";
-    public static final String CLIENT_ID = "B9BB44VfrV96Dlq28bP13yi7QRD5lyIBGc0FOGER";
+//    public static final String APPLICATION_ID = "B1JHogV7pRql8v3xKuvuxNxRZjWWOUbGK04GzbK3";
+//    public static final String CLIENT_ID = "B9BB44VfrV96Dlq28bP13yi7QRD5lyIBGc0FOGER";
 
     Button signInButton, signUpButton, skipLoginButton, logoutButton;
     EditText username, password;
@@ -210,7 +210,10 @@ public class Login extends AppCompatActivity {
     }
 
     public void skipLoginPage(View view) {
+
         startActivity(new Intent(Login.this, Home_Page.class));
+
+
     }
 
 

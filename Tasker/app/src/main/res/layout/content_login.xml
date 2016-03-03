@@ -21,8 +21,12 @@
         android:hint="@string/Username"
         android:width="320dp"
         android:layout_alignBottom="@+id/imageView"
+<<<<<<< HEAD
         android:layout_alignRight="@+id/imageView"
         android:layout_alignEnd="@+id/imageView" />
+=======
+        android:layout_centerHorizontal="true" />
+>>>>>>> abbec3815d14c4acefe161dc00c9bbeae0217c97
 
     <EditText
         android:layout_width="wrap_content"
