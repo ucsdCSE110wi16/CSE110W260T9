@@ -190,6 +190,7 @@
     </string-array>
 
     <string-array name="Menu_Options">
+        <item>Menu</item>
         <item>LogOut</item>
         <item>Edit_profile</item>
         <item>Settings</item>

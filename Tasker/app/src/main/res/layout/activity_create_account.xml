@@ -25,19 +25,5 @@
 
     <include layout="@layout/content_create_account" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Create Account"
-        android:id="@+id/text_create_accountID"
-        android:textSize="40dp"
-        android:background="@color/colorAccent"
-        android:layout_gravity="center|top"
-        android:height="50dp"
-        android:textAlignment="center"
-        android:textColor="@color/colorBackground"
-        android:layout_below="@+id/view" />
-
 
 </android.support.design.widget.CoordinatorLayout>

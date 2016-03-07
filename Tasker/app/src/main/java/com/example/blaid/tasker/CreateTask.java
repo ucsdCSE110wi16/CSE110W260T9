@@ -11,17 +11,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class CreateTask extends AppCompatActivity {
     private int year = 2016;
     private int month = 3;
     private int day;
+
+    ImageButton buttonBack;
 
     private DatePickerDialog.OnDateSetListener myDateListener =
                                                new DatePickerDialog.OnDateSetListener() {
@@ -49,23 +56,56 @@ public class CreateTask extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Spinner s = (Spinner) findViewById(R.id.spin);
+        buttonBack = (ImageButton) findViewById(R.id.button_backID);
+
+        Spinner s = (Spinner) findViewById(R.id.menu_spinnerID);
+
+        // Spinner Drop down elements
+        List<String> categories = new ArrayList<String>();
+        categories.add("Menu");
+        categories.add("Logout");
+        categories.add("Edit Profile");
+        categories.add("Settings");
+        categories.add("Create Task");
+        categories.add("View Profile");
+
+        // Creating adapter for spinner
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
+
+        // Drop down layout style - list view with radio button
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // attaching data adapter to spinner
+        s.setAdapter(dataAdapter);
 
         s.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String Task = parent.getSelectedItem().toString();
+                // On selecting a spinner item
+                String item = parent.getItemAtPosition(position).toString();
 
-                //File f = new File("/res/drawable/laundry_icon.jpg");
-                //Bitmap bmap = BitmapFactory.decodeFile(f.getAbsolutePath());
-                //Drawable drawable = getDrawable(R.drawable.fast_food_icon);
-                //android.widget.ImageView myImageView = (android.widget.ImageView)findViewById(R.id.image_of_taskID);
-                //myImageView.setImageBitmap(bmap);
-                Toast.makeText(CreateTask.this, "You selected " + Task + " as your task type", Toast.LENGTH_SHORT).show();
+                switch (item){
+                    case "Logout":
+                        Toast.makeText(CreateTask.this, "Logging out...", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(CreateTask.this, Login.class));
+                        break;
 
-                //image_of_taskID.src "@drawable/laundry-icon";
-                //android:src="@drawable/dirty-dishes-icon";
-                //Toast.makeText(CreateTask.this, "this part needs to be finished", Toast.LENGTH_SHORT).show();
+                    case "Edit Profile":
+                        startActivity(new Intent(CreateTask.this, EditMyProfile.class));
+                        break;
+
+                    case "Settings":
+                        startActivity(new Intent(CreateTask.this, Settings.class));
+                        break;
+
+                    case "Create Task":
+                        startActivity(new Intent(CreateTask.this, CreateTask.class));
+                        break;
+
+                    case "View Profile":
+                        startActivity(new Intent(CreateTask.this, ViewProfile.class));
+                        break;
+                }
             }
 
             @Override
@@ -74,9 +114,17 @@ public class CreateTask extends AppCompatActivity {
             }
         });
 
+        buttonBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                login(v);
+
+            }
+        });
+
     }
 
-    public void goHome(View v) {
-        startActivity(new Intent(getApplicationContext(), HomePage.class));
+    public void login(View v) {
+        startActivity(new Intent(getApplicationContext(), Login.class));
     }
 }
