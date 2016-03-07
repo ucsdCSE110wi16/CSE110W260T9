@@ -2,8 +2,6 @@ package com.example.blaid.tasker;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -13,9 +11,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class settings extends AppCompatActivity {
+public class Settings extends AppCompatActivity {
 
-    Button generalButton, soundButton, displayButton, notificationsButton, historyButton;
+    Button generalButton, soundButton, displayButton, notificationsButton, historyButton,settingsButton, editProfileButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +27,8 @@ public class settings extends AppCompatActivity {
         displayButton = (Button) findViewById(R.id.displayID);
         notificationsButton = (Button) findViewById(R.id.notificationID);
         historyButton = (Button) findViewById(R.id.historyID);
+        settingsButton = (Button) findViewById(R.id.menu_settingsID);
+        editProfileButton = (Button) findViewById(R.id.edit_profileID);
 
         generalButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,37 +91,42 @@ public class settings extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        /*if (id == R.id.action_logout) {
-            return true;
-        }*/
         switch (id){
             case R.id.action_logout:
-                Toast.makeText(settings.this, "Logging out...", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(settings.this, Login.class));
+                Toast.makeText(Settings.this, "Logging out...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(Settings.this, Login.class));
+                break;
+
+            case R.id.action_edit_profile:
+                startActivity(new Intent(Settings.this, EditMyProfile.class));
+                break;
+
+            case R.id.action_menu_settings:
+                startActivity(new Intent(Settings.this, Settings.class));
+                break;
         }
 
         return super.onOptionsItemSelected(item);
     }
 
     public void generalPage(View view) {
-        startActivity(new Intent(settings.this, GeneralSettings.class));
+        startActivity(new Intent(Settings.this, GeneralSettings.class));
     }
 
     public void soundPage(View view) {
-        startActivity(new Intent(settings.this, SettingsNEW_Activity.class));
+        startActivity(new Intent(Settings.this, SettingsNEW_Activity.class));
     }
 
     public void displayPage(View view) {
-        startActivity(new Intent(settings.this, GeneralSettings.class));
+        startActivity(new Intent(Settings.this, GeneralSettings.class));
     }
 
     public void notificationsPage(View view) {
-        startActivity(new Intent(settings.this, GeneralSettings.class));
+        startActivity(new Intent(Settings.this, GeneralSettings.class));
     }
 
     public void historyPage(View view) {
-        startActivity(new Intent(settings.this, GeneralSettings.class));
+        startActivity(new Intent(Settings.this, GeneralSettings.class));
     }
 
 }

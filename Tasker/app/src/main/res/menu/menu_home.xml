@@ -13,6 +13,35 @@
             android:id="@+id/logoutID"
             android:title="LogOut"/>
     </logout>
+        </item>
+
+
+    <item
+        android:id="@+id/action_edit_profile"
+        android:orderInCategory="200"
+        android:title="Edit Profile"
+        app:showAsAction="never">
+
+    <edit_profile>
+        <item
+            android:id="@+id/edit_profileID"
+            android:title="edit_profile"/>
+    </edit_profile>
+        </item>
+
+
+
+    <item
+        android:id="@+id/action_menu_settings"
+        android:orderInCategory="100"
+        android:title="Settings"
+        app:showAsAction="never">
+
+        <menu_settings>
+            <item
+                android:id="@+id/menu_settingsID"
+                android:title="menu_settings"/>
+        </menu_settings>
     </item>
 
 </menu>

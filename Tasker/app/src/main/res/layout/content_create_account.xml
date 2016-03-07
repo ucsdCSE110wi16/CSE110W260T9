@@ -23,8 +23,10 @@
         android:width="320sp"
         android:paddingTop="20sp"
         android:background="#fdfafa"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/editTextUsername"
+        android:layout_alignLeft="@+id/editTextUsername"
+        android:layout_alignStart="@+id/editTextUsername"
+        android:layout_marginBottom="43dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -37,10 +39,9 @@
         android:password="true"
         android:paddingTop="20sp"
         android:background="#fefbfb"
-        android:layout_below="@+id/editTextUsername"
-        android:layout_alignLeft="@+id/editTextUsername"
-        android:layout_alignStart="@+id/editTextUsername"
-        android:layout_marginTop="30dp" />
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/editTextPasswordConfirm"
+        android:layout_alignStart="@+id/editTextPasswordConfirm" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -53,10 +54,10 @@
         android:password="true"
         android:paddingTop="20sp"
         android:background="#ffffff"
-        android:layout_below="@+id/editTextPassword"
-        android:layout_alignLeft="@+id/editTextPassword"
-        android:layout_alignStart="@+id/editTextPassword"
-        android:layout_marginTop="28dp" />
+        android:layout_marginBottom="37dp"
+        android:layout_above="@+id/profilePicButtonID"
+        android:layout_alignLeft="@+id/createButton"
+        android:layout_alignStart="@+id/createButton" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -66,10 +67,10 @@
         android:paddingTop="20sp"
         android:width="320sp"
         android:background="#ffffff"
-        android:layout_below="@+id/editTextEmail"
-        android:layout_alignLeft="@+id/editTextEmail"
-        android:layout_alignStart="@+id/editTextEmail"
-        android:layout_marginTop="28dp" />
+        android:layout_above="@+id/editTextPassword"
+        android:layout_alignLeft="@+id/editTextPassword"
+        android:layout_alignStart="@+id/editTextPassword"
+        android:layout_marginBottom="38dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -89,13 +90,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/profilePicButtonID"
-        android:layout_below="@+id/editTextPasswordConfirm"
-        android:layout_alignLeft="@+id/editTextPasswordConfirm"
-        android:layout_alignStart="@+id/editTextPasswordConfirm"
-        android:layout_alignRight="@+id/editTextPasswordConfirm"
-        android:layout_alignEnd="@+id/editTextPasswordConfirm"
-        android:layout_above="@+id/createButton"
-        android:src="@android:drawable/ic_menu_camera" />
+        android:src="@android:drawable/ic_menu_camera"
+        android:layout_above="@+id/textView8"
+        android:layout_alignLeft="@+id/createButton"
+        android:layout_alignStart="@+id/createButton"
+        android:layout_alignRight="@+id/createButton"
+        android:layout_alignEnd="@+id/createButton" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -106,5 +106,30 @@
         android:textSize="25dp"
         android:layout_above="@+id/createButton"
         android:layout_centerHorizontal="true" />
+
+    <Spinner
+        style="@style/spinner_style"
+        android:layout_width="80dp"
+        android:height="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner3"
+        android:entries="@array/Menu_Options"
+        android:background="@color/colorAccent"
+        android:layout_gravity="top|left"
+        android:textAlignment="center"
+        android:popupBackground="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton3"
+        android:src="@android:drawable/ic_menu_revert"
+        android:background="@color/colorAccent"
+        android:width="50dp"
+        android:layout_alignTop="@+id/spinner3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
