@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -73,7 +74,40 @@ public class CreateAccount extends AppCompatActivity {
     }
 
     public void skipLoginPage(View view) {
-        startActivity(new Intent(CreateAccount.this, HomePage.class));
+        startActivity(new Intent(CreateAccount.this, Home_Page.class));
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Login/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        /*if (id == R.id.action_logout) {
+            return true;
+        }*/
+        switch (id){
+            case R.id.action_logout:
+                Toast.makeText(CreateAccount.this, "Logging out...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(CreateAccount.this, Login.class));
+                break;
+
+            case R.id.action_settings:
+                startActivity(new Intent(CreateAccount.this, settings.class));
+                break;
+
+            case R.id.action_edit_profile:
+                startActivity(new Intent(CreateAccount.this, User_Settings.class));
+                break;
+
+            case R.id.action_create_task:
+                startActivity(new Intent(CreateAccount.this, CreateTask.class));
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
 }

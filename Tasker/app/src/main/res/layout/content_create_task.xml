@@ -8,12 +8,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/createtaskbackground"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-<<<<<<< HEAD
-    tools:context=".EditMyProfile"
-=======
-    tools:context="com.example.blaid.tasker.User_Settings"
->>>>>>> origin/master
+    tools:context="com.example.blaid.tasker.CreateTask"
     tools:showIn="@layout/activity_create_task">
 
     <TextView
@@ -21,254 +18,173 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Title:"
-<<<<<<< HEAD
-        android:id="@+id/text_titleID"
-        android:fontFamily="Monaco"
-        android:textColor="#ffffffff"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"/>
-=======
         android:id="@+id/textView9"
         android:fontFamily="Monaco"
         android:textColor="#ffffffff"
-        android:layout_alignTop="@+id/editText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
->>>>>>> origin/master
+        android:layout_alignBaseline="@+id/editText"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_toRightOf="@+id/textView12"
+        android:layout_toEndOf="@+id/textView12" />
 
     <EditText
-        android:layout_width="256dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:id="@+id/edit_text_titleID"
-        android:text="Enter title here."
-        android:background="#bfbfbf"
-        android:layout_toRightOf="@+id/text_titleID"
-        android:layout_marginBottom="25dp"
-        android:layout_marginTop="15dp"/>
-=======
         android:id="@+id/editText"
-        android:text="Enter title here."
-        android:background="#bfbfbf"
-        android:layout_above="@+id/imageView4"
-        android:layout_toRightOf="@+id/imageView4"
-        android:layout_toEndOf="@+id/imageView4"
-        android:layout_marginBottom="25dp" />
->>>>>>> origin/master
+        android:hint="Enter title here"
+        android:paddingLeft="5dp"
+        android:textSize="17dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2" />
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-<<<<<<< HEAD
-        android:id="@+id/image_of_taskID"
-        android:src="@drawable/profile_pic_default"
-        android:layout_above="@+id/text_priceID"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="26dp"
-        android:layout_toStartOf="@+id/text_priceID"
-        android:layout_alignTop="@+id/button_select_timeID"
-        android:layout_alignRight="@+id/text_priceID"
-        android:layout_alignEnd="@+id/text_priceID" />
-=======
         android:id="@+id/imageView4"
         android:src="@drawable/profile_pic_default"
-        android:layout_above="@+id/textView11"
+        android:layout_below="@+id/textView9"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="26dp" />
->>>>>>> origin/master
+        android:layout_marginTop="31dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Description:"
-<<<<<<< HEAD
-        android:id="@+id/text_descriptionID"
-        android:textColor="#FFFFFF"
-        android:layout_below="@+id/text_priceID"
-=======
         android:id="@+id/textView10"
         android:textColor="#FFFFFF"
         android:layout_below="@+id/textView11"
->>>>>>> origin/master
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignRight="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4"
+        android:layout_marginTop="22dp" />
 
     <EditText
         android:layout_width="600dp"
         android:layout_height="100dp"
         android:inputType="textMultiLine"
+        android:gravity="top|left"
+        android:hint="Enter a description"
+        android:paddingLeft="5dp"
+        android:textSize="17dp"
         android:ems="10"
-<<<<<<< HEAD
-        android:id="@+id/edit_text_descriptionID"
-        android:background="#bfbfbf"
-        android:layout_above="@+id/text_locationID"
-=======
         android:id="@+id/editText2"
-        android:background="#bfbfbf"
-        android:layout_above="@+id/textView12"
->>>>>>> origin/master
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="29dp" />
+        android:background="@drawable/rounded_edittext"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
         android:text="Select Time"
-<<<<<<< HEAD
-        android:id="@+id/button_select_timeID"
-        android:layout_alignBottom="@+id/image_of_taskID"
-        android:layout_alignLeft="@+id/edit_text_priceID"
-        android:layout_alignStart="@+id/edit_text_priceID" />
-=======
         android:id="@+id/button4"
+        android:onClick="setTime"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
         android:layout_alignBottom="@+id/imageView4"
-        android:layout_alignLeft="@+id/editText3"
-        android:layout_alignStart="@+id/editText3" />
->>>>>>> origin/master
+        android:layout_alignRight="@+id/editText4"
+        android:layout_alignEnd="@+id/editText4"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp" />
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:text="Select Date"
+        android:onClick="setDate"
+        android:id="@+id/button6"
+
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4" />
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:text="Create Task!"
+        android:id="@+id/createTaskButtonId"
+
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/textView12"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Price:"
-<<<<<<< HEAD
-        android:id="@+id/text_priceID"
-        android:textColor="#ffffff"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/edit_text_locationID"
-        android:layout_alignStart="@+id/edit_text_locationID" />
-=======
         android:id="@+id/textView11"
         android:textColor="#ffffff"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/editText4"
-        android:layout_alignStart="@+id/editText4" />
->>>>>>> origin/master
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/button4"
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_toEndOf="@+id/textView9" />
 
     <EditText
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:inputType="number"
+        android:hint="$00.00"
+        android:textSize="17dp"
         android:ems="10"
-<<<<<<< HEAD
-        android:id="@+id/edit_text_priceID"
-        android:background="#bfbfbf"
-        android:layout_marginLeft="34dp"
-        android:layout_marginStart="34dp"
-        android:layout_below="@+id/image_of_taskID"
-        android:layout_toRightOf="@+id/text_priceID"
-        android:layout_toEndOf="@+id/text_priceID" />
-=======
         android:id="@+id/editText3"
-        android:background="#bfbfbf"
-        android:layout_marginLeft="34dp"
-        android:layout_marginStart="34dp"
-        android:layout_below="@+id/imageView4"
-        android:layout_toRightOf="@+id/textView11"
-        android:layout_toEndOf="@+id/textView11" />
->>>>>>> origin/master
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Location:"
-<<<<<<< HEAD
-        android:id="@+id/text_locationID"
-        android:textColor="#ffffff"
-        android:layout_above="@+id/button_create_taskID"
-=======
         android:id="@+id/textView12"
         android:textColor="#ffffff"
-        android:layout_above="@+id/button5"
->>>>>>> origin/master
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="23dp" />
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_marginTop="27dp" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="235dp"
         android:layout_height="wrap_content"
         android:inputType="textPostalAddress"
+        android:hint="Enter your location"
+        android:textSize="17sp"
+        android:paddingLeft="5dp"
         android:ems="10"
-<<<<<<< HEAD
-        android:id="@+id/edit_text_locationID"
-        android:background="#bfbfbf"
-        android:layout_alignTop="@+id/text_locationID"
-        android:layout_alignLeft="@+id/button_create_taskID"
-        android:layout_alignStart="@+id/button_create_taskID" />
-=======
         android:id="@+id/editText4"
-        android:background="#bfbfbf"
-        android:layout_alignTop="@+id/textView12"
-        android:layout_alignLeft="@+id/button5"
-        android:layout_alignStart="@+id/button5" />
->>>>>>> origin/master
+        android:background="@drawable/rounded_edittext"
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Create Task!"
-<<<<<<< HEAD
-        android:id="@+id/button_create_taskID"
-=======
-        android:id="@+id/button5"
->>>>>>> origin/master
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select Date"
-        android:onClick="setDate"
-<<<<<<< HEAD
-        android:id="@+id/button_select_timeID"
-        android:layout_below="@+id/edit_text_titleID"
-        android:layout_alignLeft="@+id/button_select_timeID"
-        android:layout_alignStart="@+id/button_select_timeID"
-        android:layout_marginTop="67dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Select Task Type:"
-        android:id="@+id/text_select_pictureID"
-        android:fontFamily="Monaco"
-        android:textColor="#ffffffff"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:layout_below="@+id/edit_text_titleID"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/spin"
-        android:entries="@array/Task_Types"
-        android:background="#bfbfbf"
-        android:layout_alignLeft="@+id/button_select_timeID"
-        android:layout_alignStart="@+id/button_select_timeID"
-        android:layout_alignRight="@+id/button_select_timeID"
-        android:layout_alignEnd="@+id/button_select_timeID"
-        android:layout_alignBottom="@+id/text_select_pictureID"
-        android:layout_alignTop="@+id/text_select_pictureID" />
-=======
-        android:id="@+id/button6"
-        android:layout_below="@+id/editText"
-        android:layout_alignLeft="@+id/button4"
-        android:layout_alignStart="@+id/button4" />
->>>>>>> origin/master
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_toRightOf="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4" />
 
 
 </RelativeLayout>

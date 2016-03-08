@@ -18,8 +18,12 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
 import com.parse.LogInCallback;
+import com.parse.Parse;
+import com.parse.ParseACL;
 import com.parse.ParseException;
+import com.parse.ParseObject;
 import com.parse.ParseUser;
+import com.parse.SignUpCallback;
 
 public class Login extends AppCompatActivity {
 
@@ -29,8 +33,8 @@ public class Login extends AppCompatActivity {
      */
     private GoogleApiClient client;
 
-//    public static final String APPLICATION_ID = "B1JHogV7pRql8v3xKuvuxNxRZjWWOUbGK04GzbK3";
-//    public static final String CLIENT_ID = "B9BB44VfrV96Dlq28bP13yi7QRD5lyIBGc0FOGER";
+    public static final String APPLICATION_ID = "B1JHogV7pRql8v3xKuvuxNxRZjWWOUbGK04GzbK3";
+    public static final String CLIENT_ID = "B9BB44VfrV96Dlq28bP13yi7QRD5lyIBGc0FOGER";
 
     Button signInButton, signUpButton, skipLoginButton, logoutButton;
     EditText username, password;
@@ -117,13 +121,13 @@ public class Login extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        /*if (id == R.id.action_logout) {
+       /* if (id == R.id.action_logout) {
             return true;
         }*/
         switch (id){
             case R.id.action_logout:
                 Toast.makeText(Login.this, "Logging out...", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(Login.this, Settings.class));
+                startActivity(new Intent(Login.this, settings.class));
         }
 
         return super.onOptionsItemSelected(item);
@@ -183,7 +187,7 @@ public class Login extends AppCompatActivity {
                             // If user exist and authenticated, send user to Welcome.class
                             Intent intent = new Intent(
                                     Login.this,
-                                    HomePage.class);
+                                    Home_Page.class);
                             startActivity(intent);
                             Toast.makeText(getApplicationContext(),
                                     "Successfully Logged in",
@@ -206,7 +210,10 @@ public class Login extends AppCompatActivity {
     }
 
     public void skipLoginPage(View view) {
-        startActivity(new Intent(Login.this, HomePage.class));
+
+        startActivity(new Intent(Login.this, Home_Page.class));
+
+
     }
 
 
