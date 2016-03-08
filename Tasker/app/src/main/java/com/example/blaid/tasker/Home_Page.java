@@ -18,50 +18,12 @@ import android.widget.Toast;
 public class Home_Page extends AppCompatActivity
             implements NavigationView.OnNavigationItemSelectedListener {
 
-        Button SettingsButton;
-        Button UserProfileEditButton;
-        Button ViewUserProfileButton;
-        Button createTaskButton;
-
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_drawer_activity);
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
             setSupportActionBar(toolbar);
-
-            /*
-            SettingsButton = (Button) findViewById(R.id.settingsButton);
-            UserProfileEditButton = (Button) findViewById(R.id.userProfileID);
-            ViewUserProfileButton = (Button) findViewById(R.id.viewMyProfileID);
-            createTaskButton = (Button) findViewById(R.id.createTaskButtonId);
-
-            createTaskButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    goCreateTask(v);
-                }
-            });
-
-            SettingsButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    settingsPage(v);
-                }
-            });
-            UserProfileEditButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    userProfileEditPage(v);
-                }
-            });
-            ViewUserProfileButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    viewUserProfilePage(v);
-                }
-            });
-            */
 
          
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -150,22 +112,6 @@ public class Home_Page extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
-    /*
-    public void goCreateTask(View v) {
-        startActivity(new Intent(getApplicationContext(), CreateTask.class));
-    }
-
-    public void settingsPage(View view) {
-        startActivity(new Intent(getApplicationContext(), settings.class));
-    }
-    public void userProfileEditPage(View view) {
-        startActivity(new Intent(getApplicationContext(), User_Settings.class));
-    }
-    public void viewUserProfilePage(View view) {
-        startActivity(new Intent(getApplicationContext(), UserProfile.class));
-    }
-    */
 }
 
 
