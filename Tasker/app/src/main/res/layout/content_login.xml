@@ -18,7 +18,7 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:id="@+id/imageView"
-        android:src="@drawable/taskericon_new"
+        android:src="@drawable/taskericon"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -122,6 +122,21 @@
         android:layout_below="@+id/clicktosignup"
         android:layout_toRightOf="@+id/clicktosignup"
         android:layout_toEndOf="@+id/clicktosignup" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tasker"
+        android:id="@+id/textView14"
+        android:textStyle="bold|italic"
+        android:textSize="80dp"
+        android:textColor="#ffffff"
+        android:shadowColor="#000000"
+        android:shadowRadius="10.0"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp" />
 
 
 </RelativeLayout>
