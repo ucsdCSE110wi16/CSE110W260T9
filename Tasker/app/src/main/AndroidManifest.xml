@@ -35,6 +35,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Login" />
         </activity>
+        <activity
+            android:name=".drawer_activity"
+            android:label="@string/title_activity_drawer_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Home_Page"
+            android:label="@string/title_activity_home_page_"
+            android:theme="@style/AppTheme.NoActionBar" />
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for
              App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -43,10 +51,6 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity
-            android:name=".HomePage"
-            android:label="@string/title_activity_home_page"
-            android:theme="@style/AppTheme" />
         <!-- <activity -->
         <!-- android:name=".MainActivity" -->
         <!-- android:label="@string/title_activity_main" -->
@@ -54,7 +58,6 @@
         <!-- <intent-filter> -->
         <!-- <action android:name="android.intent.action.MAIN" /> -->
 
-        >>>>>>> CreateTask/master
         <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
         <!-- </intent-filter> -->
         <!-- </activity> -->
@@ -66,33 +69,34 @@
             android:value="@string/parse_client_key" />
 
         <activity
-            android:name=".CreateTask"
+	    android:name=".CreateTask"
             android:label="@string/title_activity_create_task"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Settings"
+        
+	<activity
+            android:name=".settings"
             android:label="@string/title_activity_settings"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".EditMyProfile"
+            android:name=".GeneralSettings"
+            android:label="@string/title_activity_general_settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".User_Settings"
             android:label="User_Settings"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ViewProfile"
+            android:name=".UserProfile"
             android:label="UserProfile"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SettingsNEW_Activity"
             android:label="@string/title_activity_settings_new_" />
-        <!-- <activity -->
-        <!-- android:name=".SettingsNEW_Activity.java" -->
-        <!-- android:label="@string/title_activity_settings_new__activity.java" /> -->
-        >>>>>>> CreateTask/master
+
+
         <activity
-            android:name=".GeneralSettings"
-            android:label="@string/title_activity_general_settings"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Test_Run"></activity>
+            android:name=".Filters"
+            android:label="@string/title_activity_filters"></activity>
     </application>
 
 </manifest>

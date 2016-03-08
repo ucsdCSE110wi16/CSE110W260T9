@@ -18,8 +18,12 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
 import com.parse.LogInCallback;
+import com.parse.Parse;
+import com.parse.ParseACL;
 import com.parse.ParseException;
+import com.parse.ParseObject;
 import com.parse.ParseUser;
+import com.parse.SignUpCallback;
 
 public class Login extends AppCompatActivity {
 
@@ -29,10 +33,10 @@ public class Login extends AppCompatActivity {
      */
     private GoogleApiClient client;
 
-//    public static final String APPLICATION_ID = "B1JHogV7pRql8v3xKuvuxNxRZjWWOUbGK04GzbK3";
-//    public static final String CLIENT_ID = "B9BB44VfrV96Dlq28bP13yi7QRD5lyIBGc0FOGER";
+    public static final String APPLICATION_ID = "B1JHogV7pRql8v3xKuvuxNxRZjWWOUbGK04GzbK3";
+    public static final String CLIENT_ID = "B9BB44VfrV96Dlq28bP13yi7QRD5lyIBGc0FOGER";
 
-    Button signInButton, signUpButton, skipLoginButton, logoutButton, settingsButton, editProfileButton;
+    Button signInButton, signUpButton, skipLoginButton, logoutButton;
     EditText username, password;
 
     TextView title, forgotUsername, forgotPassword;
@@ -43,6 +47,20 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+//        // Create a local Datastore
+//        Parse.enableLocalDatastore(this);
+//        // Initialize Parse
+//        Parse.initialize(this, APPLICATION_ID, CLIENT_ID);
+//        ParseUser.enableAutomaticUser();
+//        ParseACL defaultACL = new ParseACL();
+//        // Optionally enable public read access.
+//        // defaultACL.setPublicReadAccess﴾true﴿;
+//        ParseACL.setDefaultACL( defaultACL, true);
+//
+//        ParseObject testObject = new ParseObject("TestObject");
+//        testObject.put("foo", "bar");
+//        testObject.saveInBackground();
+
         setContentView(R.layout.activity_login);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -51,8 +69,6 @@ public class Login extends AppCompatActivity {
         signUpButton = (Button) findViewById(R.id.clicktosignup);
         skipLoginButton = (Button) findViewById(R.id.skipLoginID);
         logoutButton = (Button) findViewById(R.id.logoutID);
-        settingsButton = (Button) findViewById(R.id.menu_settingsID);
-        editProfileButton = (Button) findViewById(R.id.edit_profileID);
 
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
@@ -104,17 +120,14 @@ public class Login extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+        //noinspection SimplifiableIfStatement
+       /* if (id == R.id.action_logout) {
+            return true;
+        }*/
         switch (id){
             case R.id.action_logout:
                 Toast.makeText(Login.this, "Logging out...", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(Login.this, Login.class));
-
-            case R.id.action_edit_profile:
-                startActivity(new Intent(Login.this, EditMyProfile.class));
-
-            case R.id.action_menu_settings:
-                startActivity(new Intent(Login.this, Settings.class));
-
+                startActivity(new Intent(Login.this, settings.class));
         }
 
         return super.onOptionsItemSelected(item);
@@ -174,7 +187,7 @@ public class Login extends AppCompatActivity {
                             // If user exist and authenticated, send user to Welcome.class
                             Intent intent = new Intent(
                                     Login.this,
-                                    HomePage.class);
+                                    Home_Page.class);
                             startActivity(intent);
                             Toast.makeText(getApplicationContext(),
                                     "Successfully Logged in",
@@ -197,7 +210,10 @@ public class Login extends AppCompatActivity {
     }
 
     public void skipLoginPage(View view) {
-        startActivity(new Intent(Login.this, Test_Run.class));
+
+        startActivity(new Intent(Login.this, Home_Page.class));
+
+
     }
 
 

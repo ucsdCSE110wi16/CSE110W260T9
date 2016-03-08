@@ -8,30 +8,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.Spinner;
 import android.widget.Toast;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.AdapterView.OnItemSelectedListener;
 
 import com.example.blaid.tasker.R;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
-import java.nio.charset.CodingErrorAction;
-import java.util.ArrayList;
-import java.util.List;
-
 public class CreateAccount extends AppCompatActivity {
     String emailTxt, usernameTxt, passwordTxt, passwordCfmTxt;
     EditText email, username, password, passwordCfm;
     Button button;
-    ImageButton buttonBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,71 +35,6 @@ public class CreateAccount extends AppCompatActivity {
         passwordCfm = (EditText) findViewById(R.id.editTextPasswordConfirm);
         button = (Button) findViewById(R.id.createButton);
 
-        buttonBack = (ImageButton) findViewById(R.id.button_menu_backID);
-
-        Spinner s = (Spinner) findViewById(R.id.spinner_menuID);
-
-        // Spinner Drop down elements
-        List<String> categories = new ArrayList<String>();
-        categories.add("Menu");
-        categories.add("Logout");
-        categories.add("Edit Profile");
-        categories.add("Settings");
-        categories.add("Create Task");
-        categories.add("View Profile");
-
-        // Creating adapter for spinner
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
-
-        // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        // attaching data adapter to spinner
-        s.setAdapter(dataAdapter);
-
-        s.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                // On selecting a spinner item
-                String item = parent.getItemAtPosition(position).toString();
-
-                switch (item){
-                    case "Logout":
-                        Toast.makeText(CreateAccount.this, "Logging out...", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(CreateAccount.this, Login.class));
-                        break;
-
-                    case "Edit Profile":
-                        startActivity(new Intent(CreateAccount.this, EditMyProfile.class));
-                        break;
-
-                    case "Settings":
-                        startActivity(new Intent(CreateAccount.this, Settings.class));
-                        break;
-
-                    case "Create Task":
-                        startActivity(new Intent(CreateAccount.this, CreateTask.class));
-                        break;
-
-                    case "View Profile":
-                        startActivity(new Intent(CreateAccount.this, ViewProfile.class));
-                        break;
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
-        buttonBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                login(v);
-
-            }
-        });
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,7 +43,6 @@ public class CreateAccount extends AppCompatActivity {
                 usernameTxt = username.getText().toString();
                 passwordTxt = password.getText().toString();
                 passwordCfmTxt = passwordCfm.getText().toString();
-
 
                 if (usernameTxt.equals("") || passwordTxt.equals("") || emailTxt.equals("")) {
                     Toast.makeText(getApplicationContext(), "Please enter your email, username, and password.", Toast.LENGTH_LONG).show();
@@ -150,8 +73,41 @@ public class CreateAccount extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
-    public void login(View view) {
-        startActivity(new Intent(CreateAccount.this, Login.class));
+    public void skipLoginPage(View view) {
+        startActivity(new Intent(CreateAccount.this, Home_Page.class));
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Login/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        /*if (id == R.id.action_logout) {
+            return true;
+        }*/
+        switch (id){
+            case R.id.action_logout:
+                Toast.makeText(CreateAccount.this, "Logging out...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(CreateAccount.this, Login.class));
+                break;
+
+            case R.id.action_settings:
+                startActivity(new Intent(CreateAccount.this, settings.class));
+                break;
+
+            case R.id.action_edit_profile:
+                startActivity(new Intent(CreateAccount.this, User_Settings.class));
+                break;
+
+            case R.id.action_create_task:
+                startActivity(new Intent(CreateAccount.this, CreateTask.class));
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
 }

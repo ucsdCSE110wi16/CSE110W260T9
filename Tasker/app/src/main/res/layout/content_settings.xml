@@ -8,8 +8,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/createtaskbackground"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Settings"
+    tools:context="com.example.blaid.tasker.settings"
     tools:showIn="@layout/activity_settings">
 
     <TextView
@@ -23,7 +24,7 @@
         android:textColor="@color/colorBackground"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:width="150dp" />
+        android:width="400dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -74,27 +75,5 @@
         android:layout_below="@+id/notificationID"
         android:layout_centerHorizontal="true"
         android:width="300dp" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButton2"
-        android:src="@android:drawable/ic_menu_revert"
-        android:background="#65f2f7"
-        android:width="50dp"
-        android:gravity="top|left"/>
-
-    <Spinner
-        style="@style/spinner_style"
-        android:layout_width="80dp"
-        android:height="50dp"
-        android:layout_height="30dp"
-        android:id="@+id/spinnerIDMenu"
-        android:entries="@array/Menu_Options"
-        android:background="#65f2f7"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_above="@+id/generalID" />
 
 </RelativeLayout>
