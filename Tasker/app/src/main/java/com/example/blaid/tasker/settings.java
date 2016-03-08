@@ -8,8 +8,16 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.Spinner;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 public class Settings extends AppCompatActivity {
 
@@ -67,8 +75,78 @@ public class Settings extends AppCompatActivity {
 
         setupActionBar();
 
+        ImageButton buttonBack;
 
+            buttonBack = (ImageButton) findViewById(R.id.imageButton2);
+
+            Spinner s = (Spinner) findViewById(R.id.spinnerIDMenu);
+
+            // Spinner Drop down elements
+            List<String> categories = new ArrayList<String>();
+            categories.add("Menu");
+            categories.add("Logout");
+            categories.add("Edit Profile");
+            categories.add("Settings");
+            categories.add("Create Task");
+            categories.add("View Profile");
+
+            // Creating adapter for spinner
+            ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
+
+            // Drop down layout style - list view with radio button
+            dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+            // attaching data adapter to spinner
+            s.setAdapter(dataAdapter);
+
+            s.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                @Override
+                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                    String item = parent.getItemAtPosition(position).toString();
+
+                    switch (item) {
+                        case "Logout":
+                            Toast.makeText(Settings.this, "Logging out...", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(Settings.this, Login.class));
+                            break;
+
+                        case "Edit Profile":
+                            startActivity(new Intent(Settings.this, EditMyProfile.class));
+                            break;
+
+                        case "Settings":
+                            startActivity(new Intent(Settings.this, Settings.class));
+                            break;
+
+                        case "Create Task":
+                            startActivity(new Intent(Settings.this, CreateTask.class));
+                            break;
+
+                        case "View Profile":
+                            startActivity(new Intent(Settings.this, ViewProfile.class));
+                            break;
+                    }
+                }
+
+                @Override
+                public void onNothingSelected(AdapterView<?> parent) {
+
+                }
+            });
+
+            buttonBack.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    goToHome(v);
+
+                }
+            });
     }
+
+    public void goToHome(View v) {
+        startActivity(new Intent(getApplicationContext(), HomePage.class));
+    }
+
 
     private void setupActionBar() {
         ActionBar actionBar = getSupportActionBar();
