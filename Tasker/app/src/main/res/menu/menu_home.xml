@@ -1,18 +1,55 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Login">
+    tools:context="com.example.blaid.tasker.HomePage">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Settings"
+        app:showAsAction="never">
+
+        <!--<settings>-->
+            <!--<item-->
+                <!--android:id="@+id/settingsID"-->
+                <!--android:title="settings"/>-->
+        <!--</settings>-->
+    </item>
+
+    <item
+        android:id="@+id/action_edit_profile"
+        android:orderInCategory="200"
+        android:title="Edit Profile"
+        app:showAsAction="never">
+        <!--<editprofile>-->
+            <!--<item-->
+                <!--android:id="@+id/editProfID"-->
+                <!--android:title="EditProfile" />-->
+        <!--</editprofile>-->
+    </item>
+
+    <item
+        android:id="@+id/action_view_profile"
+        android:orderInCategory="300"
+        android:title="View Profile"
+        app:showAsAction="never">
+        <!--<viewprofile>-->
+            <!--<item-->
+                <!--android:id="@+id/viewProfID"-->
+                <!--android:title="ViewProfile" />-->
+        <!--</viewprofile>-->
+    </item>
+
     <item
         android:id="@+id/action_logout"
-        android:orderInCategory="100"
+        android:orderInCategory="400"
         android:title="Log Out"
         app:showAsAction="never">
 
-    <logout>
-        <item
-            android:id="@+id/logoutID"
-            android:title="LogOut"/>
-    </logout>
+        <!--<logout>-->
+            <!--<item-->
+                <!--android:id="@+id/logoutID"-->
+                <!--android:title="LogOut"/>-->
+        <!--</logout>-->
     </item>
 
 </menu>

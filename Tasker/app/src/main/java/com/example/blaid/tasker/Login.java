@@ -68,7 +68,7 @@ public class Login extends AppCompatActivity {
         signInButton = (Button) findViewById(R.id.clicktosignin);
         signUpButton = (Button) findViewById(R.id.clicktosignup);
         skipLoginButton = (Button) findViewById(R.id.skipLoginID);
-        logoutButton = (Button) findViewById(R.id.logoutID);
+//        logoutButton = (Button) findViewById(R.id.logoutID);
 
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
@@ -106,32 +106,32 @@ public class Login extends AppCompatActivity {
     }
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_home, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Login/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        /*if (id == R.id.action_logout) {
-            return true;
-        }*/
-        switch (id){
-            case R.id.action_logout:
-                Toast.makeText(Login.this, "Logging out...", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(Login.this, settings.class));
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.menu_home, menu);
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        // Handle action bar item clicks here. The action bar will
+//        // automatically handle clicks on the Login/Up button, so long
+//        // as you specify a parent activity in AndroidManifest.xml.
+//        int id = item.getItemId();
+//
+//        //noinspection SimplifiableIfStatement
+//        /*if (id == R.id.action_logout) {
+//            return true;
+//        }*/
+//        switch (id){
+//            case R.id.action_logout:
+//                Toast.makeText(Login.this, "Logging out...", Toast.LENGTH_SHORT).show();
+//                startActivity(new Intent(Login.this, settings.class));
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
 
     @Override
     public void onStart() {

@@ -27,7 +27,7 @@ public class UserProfile extends AppCompatActivity {
 
         pUser = ParseUser.getCurrentUser().getUsername();
 
-        username.setText(pUser);
+        username.setText(pUser.toUpperCase());
     }
 
 }

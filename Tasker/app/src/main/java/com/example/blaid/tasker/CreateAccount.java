@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.blaid.tasker.R;
+import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
@@ -66,10 +67,36 @@ public class CreateAccount extends AppCompatActivity {
                         });
                     }
                 }
+
+                goToProfile(v);
             }
         });
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    public void goToProfile(View view) {
+        emailTxt = email.getText().toString();
+        usernameTxt = username.getText().toString();
+        passwordTxt = password.getText().toString();
+        passwordCfmTxt = passwordCfm.getText().toString();
+
+        // Send data to Parse.com for verification
+        ParseUser.logInInBackground(usernameTxt, passwordTxt,
+                new LogInCallback() {
+                    public void done(ParseUser user, ParseException e) {
+                        if (user != null) {
+                            // If user exist and authenticated, send user to Welcome.class
+                            Toast.makeText(getApplicationContext(),
+                                    "Successfully Logged in",
+                                    Toast.LENGTH_LONG).show();
+                            finish();
+                        }
+                    }
+                });
+        startActivity(new Intent(getApplicationContext(), UserProfile.class));
+
     }
 
     public void skipLoginPage(View view) {
