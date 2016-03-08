@@ -8,9 +8,19 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/createtaskbackground"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Login"
     tools:showIn="@layout/activity_login">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/taskericon_new"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -19,9 +29,12 @@
         android:ems="10"
         android:id="@+id/username"
         android:hint="@string/Username"
-        android:width="320dp"
-        android:layout_alignBottom="@+id/imageView"
-        android:layout_centerHorizontal="true" />
+
+        android:background="@drawable/rounded_edittext"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -30,40 +43,12 @@
         android:ems="10"
         android:id="@+id/password"
         android:hint="@string/Password"
-        android:width="320dp"
-        android:layout_centerVertical="true"
+        android:background="@drawable/rounded_edittext"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/username"
         android:layout_alignLeft="@+id/username"
-        android:layout_alignStart="@+id/username" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/SignInButtonText"
-        android:id="@+id/clicktosignin"
-        android:background="@color/colorAccent"
-        android:textColor="@color/colorBackground"
-        android:width="320dp"
-        android:onClick="signin"
-        android:layout_marginTop="37dp"
-        android:typeface="monospace"
-        android:textSize="16sp"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New User"
-        android:id="@+id/clicktosignup"
-        android:layout_marginTop="33dp"
-        android:layout_below="@+id/clicktosignin"
-        android:layout_centerHorizontal="true"
-        android:background="@color/colorAccent"
-        android:textColor="@color/colorBackground"
-        android:width="100dp"
-        android:onClick="signup"
-        android:textSize="16sp"
-        android:typeface="monospace" />
+        android:layout_alignStart="@+id/username"
+        android:layout_marginTop="18dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -71,12 +56,16 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/ForgotUsernameText"
         android:id="@+id/textView2"
-        android:layout_below="@+id/password"
-        android:layout_alignLeft="@+id/password"
-        android:layout_alignStart="@+id/password"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="18dp"
         android:clickable="true"
         android:textSize="14sp"
-        android:textStyle="bold|italic" />
+        android:textStyle="bold|italic"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -84,31 +73,55 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/ForgotPasswordText"
         android:id="@+id/textView3"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_alignRight="@+id/password"
-        android:layout_alignEnd="@+id/password"
         android:clickable="true"
         android:textSize="14sp"
-        android:textStyle="bold|italic" />
+        android:textStyle="bold|italic"
+        android:textColor="#ffffff"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:src="@drawable/ic_logo"
-        android:minHeight="200sp"
-        android:minWidth="200sp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="@string/SignInButtonText"
+        android:id="@+id/clicktosignin"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"/>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="New User"
+        android:id="@+id/clicktosignup"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/clicktosignin"
+        android:layout_alignLeft="@+id/clicktosignin"
+        android:layout_alignStart="@+id/clicktosignin"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="skip login"
+        android:text="Skip Login"
         android:id="@+id/skipLoginID"
-        android:onClick="HomePage"
-        android:layout_alignTop="@+id/clicktosignup"
-        android:layout_alignRight="@+id/clicktosignin"
-        android:layout_alignEnd="@+id/clicktosignin" />
+        android:layout_below="@+id/clicktosignup"
+        android:layout_toRightOf="@+id/clicktosignup"
+        android:layout_toEndOf="@+id/clicktosignup" />
+
 
 </RelativeLayout>
