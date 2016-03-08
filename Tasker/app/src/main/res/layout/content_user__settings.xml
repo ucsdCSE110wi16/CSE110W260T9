@@ -101,7 +101,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView2"
+<<<<<<< HEAD
         android:src = "@drawable/profile_pic_default"
+=======
+        android:src = "@drawable/ic_logo"
+>>>>>>> master
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"

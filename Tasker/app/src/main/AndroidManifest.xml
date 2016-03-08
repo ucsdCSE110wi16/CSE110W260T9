@@ -55,7 +55,10 @@
         <!-- <action android:name="android.intent.action.MAIN" /> -->
 
 
+<<<<<<< HEAD
 >>>>>>> CreateTask/master
+=======
+>>>>>>> master
         <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
         <!-- </intent-filter> -->
         <!-- </activity> -->
@@ -67,6 +70,7 @@
             android:value="@string/parse_client_key" />
 
         <activity
+<<<<<<< HEAD
             android:name=".CreateTask"
             android:label="@string/title_activity_create_task"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -93,6 +97,11 @@
             <!--android:name=".SettingsNEW_Activity.java"-->
             <!--android:label="@string/title_activity_settings_new__activity.java" />-->
 >>>>>>> CreateTask/master
+=======
+            android:name=".User_Settings"
+            android:label="@string/title_activity_user__settings"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+>>>>>>> master
     </application>
 
 </manifest>
