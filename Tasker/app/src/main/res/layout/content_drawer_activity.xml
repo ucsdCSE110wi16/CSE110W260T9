@@ -13,14 +13,8 @@
     tools:context="com.example.blaid.tasker.Home_Page"
     tools:showIn="@layout/app_bar_drawer_activity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="It looks like you have no new tasks..."
-        android:id="@+id/textView13"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="20dp"
-        android:textColor="#ffffff" />
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent" />
 </RelativeLayout>

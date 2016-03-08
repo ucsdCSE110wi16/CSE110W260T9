@@ -2,7 +2,7 @@ package com.example.blaid.tasker;
 
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.lang.Integer;
 
 /**
@@ -15,7 +15,7 @@ import java.lang.Integer;
 public class TaskManager {
 
     /* This stores our task list for sorting */
-    List<Task> taskList;
+    ArrayList<Task> taskList;
 
     private static TaskManager _instance = null;
     public static TaskManager getInstance(){
@@ -31,6 +31,12 @@ public class TaskManager {
     public TaskManager() {
         /* get taskList from database */
         /* filter by newest before displaying to user */
+        taskList = new ArrayList<Task>();
+        taskList.add(new Task("Laundry Task", 13.29));
+        taskList.add(new Task("Dishes", 5.00));
+        taskList.add(new Task("Food Run", 15.69));
+        taskList.add(new Task("Homework Help", 20.00));
+        taskList.add(new Task("House Cleaning", 15.99));
     }
 
     /*
@@ -60,8 +66,8 @@ public class TaskManager {
                 Collections.sort(taskList, new Comparator<Task>() {
                     @Override
                     public int compare(Task lhs, Task rhs) {
-                        Integer val1 = lhs.getPrice();
-                        Integer val2 = rhs.getPrice();
+                        Double val1 = lhs.getPrice();
+                        Double val2 = rhs.getPrice();
 
                         return val1.compareTo(val2);
                     }

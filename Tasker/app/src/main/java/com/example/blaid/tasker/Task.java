@@ -10,8 +10,7 @@ import com.parse.ParseClassName;
  * will be stored in the parse database.  This class implements comparable to allow lists
  * of tasks to be filtered.
  */
-@ParseClassName("Task")
-public class Task extends ParseObject {
+public class Task {
     /* For accessing values from date array */
     private int MONTH_INDEX = 0;
     private int DAY_INDEX = 1;
@@ -30,15 +29,25 @@ public class Task extends ParseObject {
     private String title, description, location;
     private int[] date = new int[3];
     private int[] time = new int[3];
-    private int price;
+    private double price;
 
     public Task() {
         /* Initialize member variables */
-        this.title = "";
-        this.description = "";
+        this.title = "Default Title";
+        this.description = "Default Description";
         this.location = "";
         this.USER_ID = 0;
         this.price = 0;
+        this.accepted = false;
+    }
+
+    public Task(String title, double price) {
+        /* Initialize member variables */
+        this.title = title;
+        this.description = "Default Description";
+        this.location = "";
+        this.USER_ID = 0;
+        this.price = price;
         this.accepted = false;
     }
 
@@ -53,6 +62,12 @@ public class Task extends ParseObject {
         this.USER_ID = USER_ID;
         this.price = price;
         this.accepted = false;
+    }
+
+    /* Implement toString() for list view */
+    @Override
+    public String toString() {
+        return this.title + " : $" + this.price;
     }
 
 
@@ -129,11 +144,11 @@ public class Task extends ParseObject {
         return this.date[DAY_INDEX];
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return this.price;
     }
 
