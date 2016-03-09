@@ -47,6 +47,7 @@ public class CreateAccount extends AppCompatActivity {
                     if (!passwordTxt.equals(passwordCfmTxt)) {
                         Toast.makeText(getApplicationContext(), "Password and Password Confirmation do not match.", Toast.LENGTH_LONG).show();
                     } else {
+                        System.out.println("made it");
                         ParseUser user = new ParseUser();
                         user.setEmail(emailTxt);
                         user.setUsername(usernameTxt);
@@ -55,8 +56,10 @@ public class CreateAccount extends AppCompatActivity {
                         user.signUpInBackground(new SignUpCallback() {
                             @Override
                             public void done(ParseException e) {
+                                System.out.println("Exception is :" + e);
                                 if (e == null) {
                                     Toast.makeText(getApplicationContext(), "Successfully Signed Up!", Toast.LENGTH_LONG).show();
+                                    //startActivity(new Intent(CreateAccount.this, Home_Page.class));
                                 } else {
                                     Toast.makeText(getApplicationContext(), "Sign Up Error", Toast.LENGTH_LONG).show();
                                 }

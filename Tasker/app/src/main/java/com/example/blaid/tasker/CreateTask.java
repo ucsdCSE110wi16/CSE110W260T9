@@ -58,9 +58,9 @@ public class CreateTask extends AppCompatActivity {
         changePicButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Bitmap nbm = BitmapFactory.decodeResource(getResources(), R.drawable.taskericon);
-                ImageView newImageView = (ImageView) findViewById(R.id.imageView4);
-                newImageView.setImageBitmap(nbm);
+                Bitmap nbm = BitmapFactory.decodeResource(getResources(), R.drawable.supermanprofile);
+                ImageView superManImageView = (ImageView) findViewById(R.id.imageView4);
+                superManImageView.setImageBitmap(nbm);
         }
         });
 
