@@ -69,6 +69,18 @@ public class TaskManager {
                         Double val1 = lhs.getPrice();
                         Double val2 = rhs.getPrice();
 
+                        return -1 * val1.compareTo(val2);
+                    }
+                });
+                break;
+
+            case PRICE_INC:
+                Collections.sort(taskList, new Comparator<Task>() {
+                    @Override
+                    public int compare(Task lhs, Task rhs) {
+                        Double val1 = lhs.getPrice();
+                        Double val2 = rhs.getPrice();
+
                         return val1.compareTo(val2);
                     }
                 });

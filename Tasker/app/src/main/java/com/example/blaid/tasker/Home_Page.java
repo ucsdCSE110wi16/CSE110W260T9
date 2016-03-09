@@ -115,7 +115,8 @@ public class Home_Page extends AppCompatActivity
             TaskManager.filterTasks(FilterOption.PRICE);
             adapter.notifyDataSetChanged ();
         } else if (id == R.id.nav_price_inc) {
-
+            TaskManager.filterTasks(FilterOption.PRICE_INC);
+            adapter.notifyDataSetChanged();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
