@@ -127,7 +127,7 @@ public class Login extends AppCompatActivity {
         switch (id){
             case R.id.action_logout:
                 Toast.makeText(Login.this, "Logging out...", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(Login.this, settings.class));
+                startActivity(new Intent(Login.this, Login.class));
         }
 
         return super.onOptionsItemSelected(item);

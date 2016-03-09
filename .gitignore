@@ -3,6 +3,6 @@
 /local.properties
 /.idea/*
 /build
-.idea/
+.idea/*
 app/app.iml
 *.iml

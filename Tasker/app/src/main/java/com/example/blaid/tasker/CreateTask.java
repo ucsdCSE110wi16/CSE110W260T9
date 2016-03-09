@@ -4,6 +4,8 @@ import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageView;
 import android.widget.TimePicker;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -46,6 +49,21 @@ public class CreateTask extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.profile_pic_default);
+        ImageView myImageView = (ImageView) findViewById(R.id.imageView4);
+        myImageView.setImageBitmap(bm);
+
+        Button changePicButton;
+        changePicButton = (Button) findViewById(R.id.button_profile_picID);
+        changePicButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Bitmap nbm = BitmapFactory.decodeResource(getResources(), R.drawable.supermanprofile);
+                ImageView superManImageView = (ImageView) findViewById(R.id.imageView4);
+                superManImageView.setImageBitmap(nbm);
+        }
+        });
+
         Button createTaskButton;
         createTaskButton = (Button) findViewById(R.id.createTaskButtonId);
         createTaskButton.setOnClickListener(new View.OnClickListener() {
@@ -54,7 +72,9 @@ public class CreateTask extends AppCompatActivity {
                 Task task = createTask();
                 if (task != null) {
                     TaskManager.getInstance().taskList.add(0, task);
+                    startActivity(new Intent(CreateTask.this, Home_Page.class));
                 }
+                Toast.makeText(CreateTask.this, "Please fill all fields!", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -183,10 +203,6 @@ public class CreateTask extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        /*if (id == R.id.action_logout) {
-            return true;
-        }*/
         switch (id){
             case R.id.action_logout:
                 Toast.makeText(CreateTask.this, "Logging out...", Toast.LENGTH_SHORT).show();
@@ -194,11 +210,11 @@ public class CreateTask extends AppCompatActivity {
                 break;
 
             case R.id.action_settings:
-                startActivity(new Intent(CreateTask.this, settings.class));
+                startActivity(new Intent(CreateTask.this, SettingsPage.class));
                 break;
 
             case R.id.action_edit_profile:
-                startActivity(new Intent(CreateTask.this, User_Settings.class));
+                startActivity(new Intent(CreateTask.this, EditProfile.class));
                 break;
 
             case R.id.action_create_task:

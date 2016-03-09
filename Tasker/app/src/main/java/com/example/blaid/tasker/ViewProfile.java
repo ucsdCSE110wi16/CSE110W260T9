@@ -9,12 +9,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class UserProfile extends AppCompatActivity {
+public class ViewProfile extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_profile);
+        setContentView(R.layout.activity_view_profile);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -44,20 +44,20 @@ public class UserProfile extends AppCompatActivity {
 
         switch (id){
             case R.id.action_logout:
-                Toast.makeText(UserProfile.this, "Logging out...", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(UserProfile.this, Login.class));
+                Toast.makeText(ViewProfile.this, "Logging out...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(ViewProfile.this, Login.class));
                 break;
 
             case R.id.action_settings:
-                startActivity(new Intent(UserProfile.this, settings.class));
+                startActivity(new Intent(ViewProfile.this, SettingsPage.class));
                 break;
 
             case R.id.action_edit_profile:
-                startActivity(new Intent(UserProfile.this, User_Settings.class));
+                startActivity(new Intent(ViewProfile.this, EditProfile.class));
                 break;
 
             case R.id.action_create_task:
-                startActivity(new Intent(UserProfile.this, CreateTask.class));
+                startActivity(new Intent(ViewProfile.this, CreateTask.class));
                 break;
         }
 
