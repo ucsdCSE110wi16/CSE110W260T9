@@ -57,7 +57,7 @@ public class TaskManager {
                             return comp;
                         }
                         /* If dates are equal, compare by time */
-                        return compareByTime(lhs, rhs);
+                        return -1*compareByTime(lhs, rhs);
                     }
                 });
                 break;
