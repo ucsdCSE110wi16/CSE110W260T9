@@ -26,7 +26,7 @@ public class Task {
 
     private boolean accepted;
 
-    private String title, description, location;
+    private String title, description, location, img_src;
     private int[] date = new int[3];
     private int[] time = new int[3];
     private double price;
@@ -165,6 +165,22 @@ public class Task {
 
     public String getLocation() {
         return this.location;
+    }
+
+    public String getImg_src() {
+        return this.img_src;
+    }
+
+    public void setImg_src(String img_src) {
+        this.img_src = img_src;
+    }
+
+    public String getDescription() {
+        return this.description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     /* Note there is no setUserID method, userID cannot be changed */

@@ -1,5 +1,7 @@
 package com.example.blaid.tasker;
 
+import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -13,13 +15,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
 public class Home_Page extends AppCompatActivity
             implements NavigationView.OnNavigationItemSelectedListener {
     private ArrayAdapter<Task> adapter;
+    final Context context = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,8 +54,34 @@ public class Home_Page extends AppCompatActivity
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Task listItem = (Task) listView1.getItemAtPosition(position);
-                Toast.makeText(getApplicationContext(), listItem.getTitle(), Toast.LENGTH_SHORT).show();
-                viewTask(view);
+                final Dialog dialog = new Dialog(context);
+                dialog.setContentView(R.layout.custom_dialog);
+                dialog.setTitle(listItem.getTitle());
+
+                TextView text = (TextView) dialog.findViewById(R.id.dialogPrice);
+                String price = String.format("%.2f", listItem.getPrice());
+                text.setText("$" + price);
+
+                text = (TextView) dialog.findViewById(R.id.dialogDate);
+                text.setText(listItem.getMonth() + "/" + listItem.getDay() +
+                             "/" + listItem.getYear());
+
+                text = (TextView) dialog.findViewById(R.id.dialogDescription);
+                text.setText(listItem.getDescription());
+
+                text = (TextView) dialog.findViewById(R.id.dialogLocation);
+                text.setText(listItem.getLocation());
+
+                Button dialogButton = (Button) dialog.findViewById(R.id.dialogButton);
+                // if button is clicked, close the custom dialog
+                dialogButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                    }
+                });
+
+                dialog.show();
             }
         });
     }

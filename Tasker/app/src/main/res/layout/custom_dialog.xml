@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="fill_parent"
+    android:background="@drawable/createtaskbackground" >
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/taskericon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price:"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:id="@+id/textView17"
+        android:layout_marginTop="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/dialogLocation"
+        android:layout_toEndOf="@+id/dialogLocation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:id="@+id/date"
+        android:layout_below="@+id/textView17"
+        android:layout_alignLeft="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/dialogPrice"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_toRightOf="@+id/textView17"
+        android:layout_toEndOf="@+id/textView17"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textColor="#ffffff"
+        android:id="@+id/dialogDate"
+        android:layout_alignTop="@+id/date"
+        android:layout_alignLeft="@+id/dialogPrice"
+        android:layout_alignStart="@+id/dialogPrice" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textColor="#ffffff"
+        android:id="@+id/dialogDescription"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location:"
+        android:textSize="17dp"
+        android:paddingLeft="2dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:id="@+id/textView18"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/dialogDescription"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="location"
+        android:id="@+id/dialogLocation"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="Ok"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:id="@+id/dialogButton"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/dialogLocation"
+        android:layout_alignLeft="@+id/dialogLocation"
+        android:layout_alignStart="@+id/dialogLocation" />
+
+</RelativeLayout>
