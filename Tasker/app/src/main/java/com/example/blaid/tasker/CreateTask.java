@@ -6,7 +6,6 @@ import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -20,7 +19,6 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.ImageView;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -71,7 +69,7 @@ public class CreateTask extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String Task = parent.getSelectedItem().toString();
 
-                Bitmap nbm = BitmapFactory.decodeResource(getResources(), R.drawable.supermanprofile);
+                Bitmap nbm = BitmapFactory.decodeResource(getResources(), R.drawable.selecticon);
                 ImageView superManImageView = (ImageView) findViewById(R.id.imageView4);
                 superManImageView.setImageBitmap(nbm);
 
@@ -121,7 +119,7 @@ public class CreateTask extends AppCompatActivity {
         });
 
         Button createTaskButton;
-        createTaskButton = (Button) findViewById(R.id.createTaskButtonId);
+        createTaskButton = (Button) findViewById(R.id.cancelId);
         createTaskButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

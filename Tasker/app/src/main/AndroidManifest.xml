@@ -87,7 +87,7 @@
 
         <activity
             android:name=".EditProfile"
-            android:label="User_Settings"
+            android:label="Edit Profile"
             android:theme="@style/AppTheme.NoActionBar" >
              <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -96,7 +96,7 @@
 
         <activity
             android:name=".ViewProfile"
-            android:label="UserProfile"
+            android:label="View Profile"
             android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
