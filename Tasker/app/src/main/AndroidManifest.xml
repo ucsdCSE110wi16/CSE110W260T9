@@ -69,9 +69,13 @@
             android:value="@string/parse_client_key" />
 
         <activity
-	    android:name=".CreateTask"
+	        android:name=".CreateTask"
             android:label="@string/title_activity_create_task"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home_Page" />
+        </activity>
         
 	    <activity
             android:name=".settings"
