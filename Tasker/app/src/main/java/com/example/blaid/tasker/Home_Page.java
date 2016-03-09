@@ -80,7 +80,7 @@ public class Home_Page extends AppCompatActivity
                 break;
 
             case R.id.action_settings:
-                startActivity(new Intent(Home_Page.this, settings.class));
+                startActivity(new Intent(Home_Page.this, SettingsNEW_Activity.class));
                 break;
 
             case R.id.action_edit_profile:
