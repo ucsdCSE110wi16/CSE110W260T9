@@ -241,6 +241,7 @@ public class SettingsNEW_Activity extends AppCompatPreferenceActivity {
             bindPreferenceSummaryToValue(findPreference("sync_frequency"));
         }
 
+        //test comment
         @Override
         public boolean onOptionsItemSelected(MenuItem item) {
             int id = item.getItemId();
