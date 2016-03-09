@@ -76,22 +76,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Home_Page" />
         </activity>
-        
-	    <activity
-            android:name=".settings"
-            android:label="@string/title_activity_settings"
-            android:theme="@style/AppTheme.NoActionBar" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Home_Page" />
-        </activity>
 
         <activity
             android:name=".GeneralSettings"
             android:label="@string/title_activity_general_settings"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".User_Settings"
+            android:name=".EditProfile"
             android:label="User_Settings"
             android:theme="@style/AppTheme.NoActionBar" >
              <meta-data
@@ -99,7 +90,7 @@
                 android:value=".Home_Page" />
         </activity>
         <activity
-            android:name=".UserProfile"
+            android:name=".ViewProfile"
             android:label="UserProfile"
             android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
@@ -107,7 +98,7 @@
                 android:value=".Home_Page" />
         </activity>
         <activity
-            android:name=".SettingsNEW_Activity"
+            android:name=".SettingsPage"
             android:label="@string/title_activity_settings_new_" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
