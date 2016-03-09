@@ -8,5 +8,5 @@
     android:textAppearance="?android:attr/textAppearanceLarge"
     android:id="@+id/textView13"
     android:textStyle="bold"
-    android:textColor="#ffffff">
+    android:textColor="@color/white">
 </TextView>
