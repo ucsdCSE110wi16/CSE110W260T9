@@ -72,7 +72,9 @@ public class CreateTask extends AppCompatActivity {
                 Task task = createTask();
                 if (task != null) {
                     TaskManager.getInstance().taskList.add(0, task);
+                    startActivity(new Intent(CreateTask.this, Home_Page.class));
                 }
+                Toast.makeText(CreateTask.this, "Please fill all fields!", Toast.LENGTH_SHORT).show();
             }
         });
 
