@@ -127,6 +127,17 @@ public class Home_Page extends AppCompatActivity
         } else if (id == R.id.nav_price_inc) {
             TaskManager.filterTasks(FilterOption.PRICE_INC);
             adapter.notifyDataSetChanged();
+        } else if (id == R.id.nav_laundry) {
+            TaskManager.filterTasks(FilterOption.LAUNDRY, 1);
+            adapter.notifyDataSetChanged();
+        }
+        else if (id == R.id.nav_food) {
+            TaskManager.filterTasks(FilterOption.FOOD, 2);
+            adapter.notifyDataSetChanged();
+        }
+        else if (id == R.id.nav_pets) {
+            TaskManager.filterTasks(FilterOption.PETS, 3);
+            adapter.notifyDataSetChanged();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

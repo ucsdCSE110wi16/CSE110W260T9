@@ -33,20 +33,30 @@ public class TaskManager {
         /* get taskList from database */
         /* filter by newest before displaying to user */
         taskList = new ArrayList<Task>();
-        taskList.add(new Task("Laundry Task", 13.29));
-        taskList.add(new Task("Dishes", 5.00));
-        taskList.add(new Task("Food Run", 15.69));
-        taskList.add(new Task("Homework Help", 20.00));
-        taskList.add(new Task("House Cleaning", 15.99));
-        taskList.add(new Task("Get Food", 2.00));
+        taskList.add(new Task("Laundry Task", 13.29, 1));
+        taskList.add(new Task("Dishes", 5.00, 2));
+        taskList.add(new Task("Food Run", 15.69, 2));
+
+        taskList.add(new Task("Pets cleaning", 20.00,3));
+        taskList.add(new Task("Dog Cleaning", 15.99, 3));
+        taskList.add(new Task("Get Food", 2.00, 2));
         taskList.add(new Task("Drop off Paper", 15.69));
         taskList.add(new Task("Sell Chair", 45));
-        taskList.add(new Task("Pick up Clothes", 10));
+        taskList.add(new Task("Pick up Clothes", 10, 1));
+
         taskList.add(new Task("Change Tire", 15.99));
-        taskList.add(new Task("Cook Meal", 2.00));
-        taskList.add(new Task("Drop off Books", 15.69));
-        taskList.add(new Task("Buy Groceries", 45));
-        taskList.add(new Task("Write Letter", 10));
+        taskList.add(new Task("Cook Meal", 2.00, 2));
+        taskList.add(new Task("Drop off clothes", 15.69, 1));
+        taskList.add(new Task("Buy Groceries", 45, 2));
+        taskList.add(new Task("Wash clothes", 10, 1));
+
+        taskList.add(new Task("Laundry Task", 13.50, 1));
+        taskList.add(new Task("Dishes", 5.00, 2));
+        taskList.add(new Task("Food Run", 15.69,2));
+
+        taskList.add(new Task("Get Food", 2.00, 2));
+
+        taskList.add(new Task("Cook Meal", 2.00, 2));
     }
 
     /*
@@ -96,10 +106,66 @@ public class TaskManager {
                 });
                 break;
 
-
             case LOCATION:
                 /* To Be Determined */
                 break;
+        }
+    }
+
+    public static void filterTasks(FilterOption option, final int tk_type) {
+        switch(option) {
+            case LAUNDRY:
+                Collections.sort(taskList, new Comparator<Task>() {
+                    @Override
+                    public int compare(Task lhs, Task rhs) {
+                        int val1 = lhs.getType();
+                        int val2 = rhs.getType();
+                        if(val1 == tk_type){
+                            return -1;
+                        }
+                        else if(val2 == tk_type){
+                            return 1;
+                        }
+                        return 0;
+                    }
+                });
+                break;
+
+            case PETS:
+                Collections.sort(taskList, new Comparator<Task>() {
+                    @Override
+                    public int compare(Task lhs, Task rhs) {
+                        int val1 = lhs.getType();
+                        int val2 = rhs.getType();
+
+                        if(val1 == tk_type) {
+                            return -1;
+                        }
+                        else if(val2 == tk_type) {
+                            return 1;
+                        }
+                        return 0;
+                    }
+                });
+                break;
+
+            case FOOD:
+                Collections.sort(taskList, new Comparator<Task>() {
+                    @Override
+                    public int compare(Task lhs, Task rhs) {
+                        int val1 = lhs.getType();
+                        int val2 = rhs.getType();
+                        if(val1== tk_type){
+                            return -1;
+                        }
+                        else if(val2 ==tk_type) {
+                            return 1;
+                        }
+                        return 0;
+                    }
+                });
+                break;
+
         }
     }
 
@@ -114,6 +180,7 @@ public class TaskManager {
                                               rhs.getDay());
         return cal1.compareTo(cal2);
     }
+
 
     /*
      * This helper method for filterTasks compares tasks by time only, it does

@@ -9,24 +9,37 @@
             android:icon="@drawable/newest_tk"
             android:title="Newest"
         />
-
         <item
             android:id="@+id/nav_nearest"
             android:icon="@drawable/nearby_you"
             android:title="Nearest"
            />
-
         <item
             android:id="@+id/nav_price"
             android:icon="@drawable/high_low"
             android:title="$$$$ -> $$"
             />
-
         <item
             android:id="@+id/nav_price_inc"
             android:icon="@drawable/low_high"
             android:title="$$ -> $$$$"
           />
+        <item
+            android:id="@+id/nav_laundry"
+            android:icon="@drawable/wash"
+            android:title="Laundry"
+            />
+        <item
+            android:id="@+id/nav_food"
+            android:icon="@drawable/cook"
+            android:title="Food"
+            />
+        <item
+            android:id="@+id/nav_pets"
+            android:icon="@drawable/paws"
+            android:title="Pets"
+            />
+
     </group>
 
 

@@ -193,6 +193,7 @@ public class CreateTask extends AppCompatActivity {
         String title, description, location;
         double price;
         EditText text;
+        int tTYpe;
 
         /* Get title text */
         text = (EditText) findViewById(R.id.editText);
@@ -223,6 +224,21 @@ public class CreateTask extends AppCompatActivity {
             return null;
         }
 
+        text = (EditText) findViewById(R.id.editText5);
+        if(text.getText().toString().equalsIgnoreCase("laundry")){
+            tTYpe = 1;
+        }
+        else if(text.getText().toString().equalsIgnoreCase("food") || text.getText().toString().equalsIgnoreCase("cook")){
+            tTYpe = 2;
+        }
+        else if(text.getText().toString().equalsIgnoreCase("pets") || text.getText().toString().equalsIgnoreCase("pet")) {
+            tTYpe = 3;
+        }
+        else {
+            tTYpe = 0;
+        }
+
+
         /* Create new task */
         date[0] = month;
         date[1] = day;
@@ -233,7 +249,7 @@ public class CreateTask extends AppCompatActivity {
         time[2] = ampm;
 
         Task task = new Task(title, description, location,
-                time, date, 0, price, false);
+                time, date, 0, price, false, tTYpe);
         return task;
     }
 
