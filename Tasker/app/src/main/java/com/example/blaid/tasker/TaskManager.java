@@ -33,6 +33,7 @@ public class TaskManager {
         /* get taskList from database */
         /* filter by newest before displaying to user */
         taskList = new ArrayList<Task>();
+
         taskList.add(new Task("Laundry Task", 13.29, 1));
         taskList.add(new Task("Dishes", 5.00, 2));
         taskList.add(new Task("Food Run", 15.69, 2));
@@ -57,6 +58,7 @@ public class TaskManager {
         taskList.add(new Task("Get Food", 2.00, 2));
 
         taskList.add(new Task("Cook Meal", 2.00, 2));
+
     }
 
     /*

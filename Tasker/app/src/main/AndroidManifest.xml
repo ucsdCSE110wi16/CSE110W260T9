@@ -12,7 +12,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
             android:name=".Login"
             android:label="@string/app_name"
@@ -36,12 +35,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Login" />
         </activity>
-
         <activity
             android:name=".drawer_activity"
             android:label="@string/title_activity_drawer_activity"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".Home_Page"
             android:label="@string/title_activity_home_page_"
@@ -61,6 +58,7 @@
         <!-- <intent-filter> -->
         <!-- <action android:name="android.intent.action.MAIN" /> -->
 
+
         <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
         <!-- </intent-filter> -->
         <!-- </activity> -->
@@ -72,46 +70,44 @@
             android:value="@string/parse_client_key" />
 
         <activity
-	        android:name=".CreateTask"
+            android:name=".CreateTask"
             android:label="@string/title_activity_create_task"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Home_Page" />
         </activity>
-
         <activity
             android:name=".GeneralSettings"
             android:label="@string/title_activity_general_settings"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".EditProfile"
             android:label="Edit Profile"
-            android:theme="@style/AppTheme.NoActionBar" >
-             <meta-data
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Home_Page" />
         </activity>
-
         <activity
             android:name=".ViewProfile"
             android:label="View Profile"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Home_Page" />
         </activity>
-
         <activity
             android:name=".SettingsPage"
-            android:label="@string/title_activity_settings_new_" >
+            android:label="@string/title_activity_settings_new_">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Home_Page" />
         </activity>
-
-
+        <activity
+            android:name=".ViewTask"
+            android:label="@string/title_activity_view_task"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

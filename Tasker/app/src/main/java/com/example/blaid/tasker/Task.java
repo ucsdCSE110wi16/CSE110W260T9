@@ -27,7 +27,7 @@ public class Task {
     private final int USER_ID;
 
     private boolean accepted;
-
+    private PictureChoices img_src;
     private String title, description, location;
     private int[] date = new int[3];
     private int[] time = new int[3];
@@ -41,18 +41,24 @@ public class Task {
         this.USER_ID = 0;
         this.price = 0;
         this.accepted = false;
+
         this.taskType = 0;
+
+        this.img_src = PictureChoices.DEFAULT;
+
     }
 
-    public Task(String title, double price) {
+    public Task(String title, double price, PictureChoices choice) {
         /* Initialize member variables */
+        this.img_src = choice;
         this.title = title;
         this.description = "Default Description";
-        this.location = "";
+        this.location = "Default Location";
         this.USER_ID = 0;
         this.price = price;
         this.accepted = false;
         this.taskType = 0;
+        this.choice
         this.date[MONTH_INDEX] = (int)(Math.random()*10 + 3);
         this.date[DAY_INDEX] = (int)(Math.random()*30 + 1);
         this.date[YEAR_INDEX] = 2016;
@@ -69,6 +75,8 @@ public class Task {
         this.price = price;
         this.accepted = false;
         this.taskType = tkType;
+        this.img_src = PictureChoices.DEFAULT;
+
         this.date[MONTH_INDEX] = (int)(Math.random()*10 + 3);
         this.date[DAY_INDEX] = (int)(Math.random()*30 + 1);
         this.date[YEAR_INDEX] = 2016;
@@ -77,7 +85,8 @@ public class Task {
     }
 
     public Task(String title, String description, String location, int[] time,
-                int[] date, int USER_ID, double price, boolean accepted) {
+                int[] date, int USER_ID, double price, boolean accepted,
+                PictureChoices choice) {
         /* Initialize member variables */
         this.title = title;
         this.description = description;
@@ -87,11 +96,13 @@ public class Task {
         this.USER_ID = USER_ID;
         this.price = price;
         this.accepted = false;
+        this.img_src = choice;
+
         this.taskType = 0;
     }
 
     public Task(String title, String description, String location, int[] time,
-                int[] date, int USER_ID, double price, boolean accepted, int tkType) {
+                int[] date, int USER_ID, double price, boolean accepted, int tkType, PictureChoices choice) {
         /* Initialize member variables */
         this.title = title;
         this.description = description;
@@ -102,6 +113,8 @@ public class Task {
         this.price = price;
         this.accepted = false;
         this.taskType = tkType;
+
+        this.img_src = choice;
     }
 
     /* Implement toString() for list view */
@@ -203,11 +216,29 @@ public class Task {
     }
 
 
+
     public void setType(int tkType) {
         this.taskType = tkType;
     }
 
     public int getType() { return this.taskType; }
+
+
+    public PictureChoices getImg_src() {
+        return this.img_src;
+    }
+
+    public void setImg_src(PictureChoices img_src) {
+        this.img_src = img_src;
+    }
+
+    public String getDescription() {
+        return this.description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
 
     /* Note there is no setUserID method, userID cannot be changed */
