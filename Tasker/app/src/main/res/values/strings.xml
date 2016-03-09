@@ -120,6 +120,11 @@
         <item>Batman</item>
     </string-array>
 
-       
+
     <string name="title_activity_filter">Filter Settings</string>
+    <string name="title_activity_view_task">ViewTask</string>
+    <string name="Date">Date</string>
+    <string name="Time">Time</string>
+    <string name="Accept">Accept</string>
+    <string name="Back">Back</string>
 </resources>

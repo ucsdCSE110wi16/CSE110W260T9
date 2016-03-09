@@ -82,7 +82,6 @@ public class Home_Page extends AppCompatActivity
                 });
 
                 dialog.show();
-
             }
         });
     }
@@ -162,6 +161,10 @@ public class Home_Page extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void viewTask(View v) {
+        startActivity(new Intent(getApplicationContext(), ViewTask.class));
     }
 }
 
