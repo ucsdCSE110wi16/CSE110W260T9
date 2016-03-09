@@ -42,7 +42,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imageView4"
-        android:src="@drawable/profile_pic_default"
         android:layout_below="@+id/textView9"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -185,6 +184,15 @@
         android:layout_alignBottom="@+id/textView12"
         android:layout_toRightOf="@+id/imageView4"
         android:layout_toEndOf="@+id/imageView4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Pic"
+        android:id="@+id/button_profile_picID"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_alignRight="@+id/button4"
+        android:layout_alignEnd="@+id/button4" />
 
 
 </RelativeLayout>

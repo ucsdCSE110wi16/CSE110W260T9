@@ -4,6 +4,8 @@ import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageView;
 import android.widget.TimePicker;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -45,6 +48,21 @@ public class CreateTask extends AppCompatActivity {
         setContentView(R.layout.activity_create_task);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.profile_pic_default);
+        ImageView myImageView = (ImageView) findViewById(R.id.imageView4);
+        myImageView.setImageBitmap(bm);
+
+        Button changePicButton;
+        changePicButton = (Button) findViewById(R.id.button_profile_picID);
+        changePicButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Bitmap nbm = BitmapFactory.decodeResource(getResources(), R.drawable.taskericon);
+                ImageView newImageView = (ImageView) findViewById(R.id.imageView4);
+                newImageView.setImageBitmap(nbm);
+        }
+        });
 
         Button createTaskButton;
         createTaskButton = (Button) findViewById(R.id.createTaskButtonId);

@@ -18,7 +18,9 @@ import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.preference.RingtonePreference;
 import android.text.TextUtils;
+import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -86,6 +88,43 @@ public class SettingsNEW_Activity extends AppCompatPreferenceActivity {
         }
     };
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Login/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        /*if (id == R.id.action_logout) {
+            return true;
+        }*/
+        switch (id){
+            case R.id.action_logout:
+                Toast.makeText(SettingsNEW_Activity.this, "Logging out...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(SettingsNEW_Activity.this, Login.class));
+                break;
+
+            case R.id.action_settings:
+                Toast.makeText(SettingsNEW_Activity.this, "You are already viewing Settings", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.action_edit_profile:
+                startActivity(new Intent(SettingsNEW_Activity.this, User_Settings.class));
+                break;
+
+            case R.id.action_create_task:
+                startActivity(new Intent(SettingsNEW_Activity.this, CreateTask.class));
+                break;
+
+            case R.id.action_home_page:
+                startActivity(new Intent(SettingsNEW_Activity.this, Home_Page.class));
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
     /**
      * Helper method to determine if the device has an extra-large screen. For
      * example, 10" tablets are extra-large.
@@ -131,6 +170,13 @@ public class SettingsNEW_Activity extends AppCompatPreferenceActivity {
             // Show the Up button in the action bar.
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_home, menu);
+        return true;
     }
 
     /**
