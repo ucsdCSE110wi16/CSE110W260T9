@@ -81,21 +81,13 @@ public class drawer_activity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_household) {
+        if (id == R.id.nav_newest) {
             // Handle the camera action
-        } else if (id == R.id.nav_food) {
+        } else if (id == R.id.nav_nearest) {
 
-        } else if (id == R.id.nav_labor) {
+        } else if (id == R.id.nav_price) {
 
-        } else if (id == R.id.nav_delivery) {
-
-        } else if (id == R.id.nav_fivezero) {
-
-        } else if (id == R.id.nav_onetwofifty) {
-
-        } else if(id == R.id.nav_Twofifty) {
-
-        } else if(id == R.id.nav_deals) {
+        } else if (id == R.id.nav_price_inc) {
 
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -4,38 +4,21 @@
 
     <group android:checkableBehavior="single">
         <item
-
-            android:id="@+id/nav_household"
-            android:icon="@drawable/ic_menu_send"
-            android:title="Household" />
+            android:id="@+id/nav_newest"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Newest" />
         <item
-            android:id="@+id/nav_food"
+            android:id="@+id/nav_nearest"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Food" />
+            android:title="Nearest" />
         <item
-            android:id="@+id/nav_labor"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Labor" />
-        <item
-            android:id="@+id/nav_delivery"
+            android:id="@+id/nav_price"
             android:icon="@drawable/ic_menu_camera"
-            android:title="$Delivery"/>
+            android:title="$$$$ -> $$" />
         <item
-            android:id="@+id/nav_fivezero"
+            android:id="@+id/nav_price_inc"
             android:icon="@drawable/ic_menu_camera"
-            android:title="$50 -> $100" />
-        <item
-            android:id="@+id/nav_onetwofifty"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="$100 -> $250" />
-        <item
-            android:id="@+id/nav_Twofifty"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="> $250" />
-        <item
-            android:id="@+id/nav_deals"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="$Deals$" />
+            android:title="$$ -> $$$$" />
     </group>
 
 
