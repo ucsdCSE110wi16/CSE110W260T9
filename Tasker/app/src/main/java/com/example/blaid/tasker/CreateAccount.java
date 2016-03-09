@@ -91,7 +91,7 @@ public class CreateAccount extends AppCompatActivity {
                 break;
 
             case R.id.action_settings:
-                startActivity(new Intent(CreateAccount.this, settings.class));
+                startActivity(new Intent(CreateAccount.this, SettingsNEW_Activity.class));
                 break;
 
             case R.id.action_edit_profile:

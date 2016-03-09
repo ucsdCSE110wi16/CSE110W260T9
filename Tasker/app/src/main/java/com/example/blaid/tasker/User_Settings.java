@@ -57,7 +57,7 @@ public class User_Settings extends AppCompatActivity {
                 break;
 
             case R.id.action_settings:
-                startActivity(new Intent(User_Settings.this, settings.class));
+                startActivity(new Intent(User_Settings.this, SettingsNEW_Activity.class));
                 break;
 
             case R.id.action_edit_profile:
