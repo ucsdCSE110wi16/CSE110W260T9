@@ -210,11 +210,11 @@ public class CreateTask extends AppCompatActivity {
                 break;
 
             case R.id.action_settings:
-                startActivity(new Intent(CreateTask.this, SettingsNEW_Activity.class));
+                startActivity(new Intent(CreateTask.this, SettingsPage.class));
                 break;
 
             case R.id.action_edit_profile:
-                startActivity(new Intent(CreateTask.this, User_Settings.class));
+                startActivity(new Intent(CreateTask.this, EditProfile.class));
                 break;
 
             case R.id.action_create_task:

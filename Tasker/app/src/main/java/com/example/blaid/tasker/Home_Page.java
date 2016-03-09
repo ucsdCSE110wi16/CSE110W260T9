@@ -3,7 +3,6 @@ package com.example.blaid.tasker;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
-import android.view.View;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -12,7 +11,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -80,11 +78,11 @@ public class Home_Page extends AppCompatActivity
                 break;
 
             case R.id.action_settings:
-                startActivity(new Intent(Home_Page.this, SettingsNEW_Activity.class));
+                startActivity(new Intent(Home_Page.this, SettingsPage.class));
                 break;
 
             case R.id.action_edit_profile:
-                startActivity(new Intent(Home_Page.this, User_Settings.class));
+                startActivity(new Intent(Home_Page.this, EditProfile.class));
                 break;
 
             case R.id.action_create_task:

@@ -35,7 +35,7 @@ import java.util.List;
  * href="http://developer.android.com/guide/topics/ui/settings.html">Settings
  * API Guide</a> for more information on developing a Settings UI.
  */
-public class SettingsNEW_Activity extends AppCompatPreferenceActivity {
+public class SettingsPage extends AppCompatPreferenceActivity {
     /**
      * A preference value change listener that updates the preference's summary
      * to reflect its new value.
@@ -101,24 +101,24 @@ public class SettingsNEW_Activity extends AppCompatPreferenceActivity {
         }*/
         switch (id){
             case R.id.action_logout:
-                Toast.makeText(SettingsNEW_Activity.this, "Logging out...", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(SettingsNEW_Activity.this, Login.class));
+                Toast.makeText(SettingsPage.this, "Logging out...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(SettingsPage.this, Login.class));
                 break;
 
             case R.id.action_settings:
-                Toast.makeText(SettingsNEW_Activity.this, "You are already viewing Settings", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SettingsPage.this, "You are already viewing Settings", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.action_edit_profile:
-                startActivity(new Intent(SettingsNEW_Activity.this, User_Settings.class));
+                startActivity(new Intent(SettingsPage.this, EditProfile.class));
                 break;
 
             case R.id.action_create_task:
-                startActivity(new Intent(SettingsNEW_Activity.this, CreateTask.class));
+                startActivity(new Intent(SettingsPage.this, CreateTask.class));
                 break;
 
             case R.id.action_home_page:
-                startActivity(new Intent(SettingsNEW_Activity.this, Home_Page.class));
+                startActivity(new Intent(SettingsPage.this, Home_Page.class));
                 break;
         }
 
@@ -231,7 +231,7 @@ public class SettingsNEW_Activity extends AppCompatPreferenceActivity {
         public boolean onOptionsItemSelected(MenuItem item) {
             int id = item.getItemId();
             if (id == android.R.id.home) {
-                startActivity(new Intent(getActivity(), SettingsNEW_Activity.class));
+                startActivity(new Intent(getActivity(), SettingsPage.class));
                 return true;
             }
             return super.onOptionsItemSelected(item);
@@ -261,7 +261,7 @@ public class SettingsNEW_Activity extends AppCompatPreferenceActivity {
         public boolean onOptionsItemSelected(MenuItem item) {
             int id = item.getItemId();
             if (id == android.R.id.home) {
-                startActivity(new Intent(getActivity(), SettingsNEW_Activity.class));
+                startActivity(new Intent(getActivity(), SettingsPage.class));
                 return true;
             }
             return super.onOptionsItemSelected(item);
@@ -292,7 +292,7 @@ public class SettingsNEW_Activity extends AppCompatPreferenceActivity {
         public boolean onOptionsItemSelected(MenuItem item) {
             int id = item.getItemId();
             if (id == android.R.id.home) {
-                startActivity(new Intent(getActivity(), SettingsNEW_Activity.class));
+                startActivity(new Intent(getActivity(), SettingsPage.class));
                 return true;
             }
             return super.onOptionsItemSelected(item);
