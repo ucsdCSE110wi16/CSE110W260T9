@@ -137,7 +137,7 @@ public class CreateTask extends AppCompatActivity {
      */
     private Task createTask() {
         String title, description, location;
-        int price;
+        double price;
         EditText text;
 
         /* Get title text */
@@ -150,7 +150,7 @@ public class CreateTask extends AppCompatActivity {
         /* Get price */
         text = (EditText) findViewById(R.id.editText3);
         try {
-            price = Integer.parseInt(text.getText().toString());
+            price = Double.parseDouble(text.getText().toString());
         } catch (Exception e) {
             return null;
         }

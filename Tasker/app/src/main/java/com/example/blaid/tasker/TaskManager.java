@@ -37,6 +37,15 @@ public class TaskManager {
         taskList.add(new Task("Food Run", 15.69));
         taskList.add(new Task("Homework Help", 20.00));
         taskList.add(new Task("House Cleaning", 15.99));
+        taskList.add(new Task("Get Food", 2.00));
+        taskList.add(new Task("Drop off Paper", 15.69));
+        taskList.add(new Task("Sell Chair", 45));
+        taskList.add(new Task("Pick up Clothes", 10));
+        taskList.add(new Task("Change Tire", 15.99));
+        taskList.add(new Task("Cook Meal", 2.00));
+        taskList.add(new Task("Drop off Books", 15.69));
+        taskList.add(new Task("Buy Groceries", 45));
+        taskList.add(new Task("Write Letter", 10));
     }
 
     /*
@@ -53,7 +62,7 @@ public class TaskManager {
                     public int compare(Task lhs, Task rhs) {
                         /* Compare the dates */
                         int comp = compareByDate(lhs, rhs);
-                        if (comp == 0) {
+                        if (comp != 0) {
                             return comp;
                         }
                         /* If dates are equal, compare by time */
@@ -97,38 +106,11 @@ public class TaskManager {
      * method to arrange tasks by soonest date.
      */
     public static int compareByDate(Task lhs, Task rhs) {
-        /* First compare the year */
-        Integer val1 = lhs.getYear();
-        Integer val2 = rhs.getYear();
-
-        int comp = val1.compareTo(val2);
-
-        if (comp != 0) {
-            return comp;
-        }
-
-        /* Now compare the month */
-        val1 = lhs.getMonth();
-        val2 = rhs.getMonth();
-
-        comp = val1.compareTo(val2);
-
-        if (comp != 0) {
-            return comp;
-        }
-
-        /* Now compare the day */
-        val1 = lhs.getDay();
-        val2 = rhs.getDay();
-
-        comp = val1.compareTo(val2);
-
-        if (comp != 0) {
-            return comp;
-        }
-
-        /* Returning 0 means the tasks are for the same date */
-        return 0;
+        Calendar cal1 = new GregorianCalendar(lhs.getYear(), lhs.getMonth(),
+                                              lhs.getDay());
+        Calendar cal2 = new GregorianCalendar(rhs.getYear(), rhs.getMonth(),
+                                              rhs.getDay());
+        return cal1.compareTo(cal2);
     }
 
     /*
@@ -143,7 +125,7 @@ public class TaskManager {
         int comp = val1.compareTo(val2);
 
         if (comp != 0) {
-            return comp;
+            return -1*comp;
         }
 
         /* Now compare the hour value */
@@ -153,7 +135,7 @@ public class TaskManager {
         comp = val1.compareTo(val2);
 
         if (comp != 0) {
-            return comp;
+            return -1*comp;
         }
 
         /* Now compare the minute */
@@ -163,7 +145,7 @@ public class TaskManager {
         comp = val1.compareTo(val2);
 
         if (comp != 0) {
-            return comp;
+            return -1*comp;
         }
 
         /* Returning 0 means the tasks are for the same date */

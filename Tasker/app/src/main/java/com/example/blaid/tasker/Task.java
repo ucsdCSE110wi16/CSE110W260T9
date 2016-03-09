@@ -49,15 +49,15 @@ public class Task {
         this.USER_ID = 0;
         this.price = price;
         this.accepted = false;
-        this.date[MONTH_INDEX] = 3;
-        this.date[DAY_INDEX] = 8;
+        this.date[MONTH_INDEX] = (int)(Math.random()*10 + 3);
+        this.date[DAY_INDEX] = (int)(Math.random()*30 + 1);
         this.date[YEAR_INDEX] = 2016;
         this.time[HOUR_INDEX] = 6;
         this.time[MINUTE_INDEX] = 30;
     }
 
     public Task(String title, String description, String location, int[] time,
-                int[] date, int USER_ID, int price, boolean accepted) {
+                int[] date, int USER_ID, double price, boolean accepted) {
         /* Initialize member variables */
         this.title = title;
         this.description = description;
@@ -72,7 +72,8 @@ public class Task {
     /* Implement toString() for list view */
     @Override
     public String toString() {
-        return this.title + " : $" + this.price + "  :  " +
+        String price = String.format("%.2f", this.price);
+        return this.title + " : $" + price + "  :  " +
                this.date[MONTH_INDEX] + "/" + this.date[DAY_INDEX];
     }
 
