@@ -30,6 +30,7 @@ public class Task {
     private int[] date = new int[3];
     private int[] time = new int[3];
     private double price;
+    private String username;
 
     public Task() {
         /* Initialize member variables */
@@ -40,6 +41,7 @@ public class Task {
         this.price = 0;
         this.accepted = false;
         this.img_src = PictureChoices.DEFAULT;
+        this.username = Login.user.getUsername();
     }
 
     public Task(String title, double price, PictureChoices choice) {
@@ -56,6 +58,7 @@ public class Task {
         this.date[YEAR_INDEX] = 2016;
         this.time[HOUR_INDEX] = 6;
         this.time[MINUTE_INDEX] = 30;
+        this.username = Login.user.getUsername();
     }
 
     public Task(String title, String description, String location, int[] time,
@@ -71,6 +74,7 @@ public class Task {
         this.price = price;
         this.accepted = false;
         this.img_src = choice;
+        this.username = Login.user.getUsername();
     }
 
     /* Implement toString() for list view */
@@ -185,6 +189,14 @@ public class Task {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getUsername() {
+        return this.username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     /* Note there is no setUserID method, userID cannot be changed */

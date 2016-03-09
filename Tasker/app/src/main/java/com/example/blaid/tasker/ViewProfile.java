@@ -7,7 +7,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.blaid.tasker.TaskHistory.TaskHistory;
 
 public class ViewProfile extends AppCompatActivity {
 
@@ -17,7 +21,13 @@ public class ViewProfile extends AppCompatActivity {
         setContentView(R.layout.activity_view_profile);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        Button button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ViewProfile.this, TaskHistory.class));
+            }
+        });
         setupActionBar();
     }
 

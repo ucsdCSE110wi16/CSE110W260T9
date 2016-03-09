@@ -27,6 +27,8 @@ import com.parse.SignUpCallback;
 
 public class Login extends AppCompatActivity {
 
+    public final static ParseUser user = new ParseUser();
+
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -178,6 +180,9 @@ public class Login extends AppCompatActivity {
         // Retrieve the text entered from the EditText
         usernameTxt = username.getText().toString();
         passwordTxt = password.getText().toString();
+
+        user.setUsername(usernameTxt);
+        user.setPassword(passwordTxt);
 
         // Send data to Parse.com for verification
         ParseUser.logInInBackground(usernameTxt, passwordTxt,

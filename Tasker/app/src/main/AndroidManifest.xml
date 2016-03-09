@@ -107,7 +107,16 @@
         <activity
             android:name=".ViewTask"
             android:label="@string/title_activity_view_task"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TaskHistory.TaskHistory"
+            android:label="@string/title_activity_task_history"
+            android:parentActivityName=".ViewProfile"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.blaid.tasker.ViewProfile" />
+        </activity>
     </application>
 
 </manifest>
