@@ -54,4 +54,16 @@
         </editProfile>
     </item>
 
+    <item
+        android:id="@+id/action_home_page"
+        android:orderInCategory="500"
+        android:title="Home Page"
+        app:showAsAction="never">
+
+        <homepage>
+            <item
+                android:id="@+id/menu_home_pageID"
+                android:title="Home Page"/>
+        </homepage>
+    </item>
 </menu>

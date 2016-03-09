@@ -202,7 +202,11 @@ public class CreateTask extends AppCompatActivity {
                 break;
 
             case R.id.action_create_task:
-                startActivity(new Intent(CreateTask.this, CreateTask.class));
+                Toast.makeText(CreateTask.this, "You are already viewing Create Task", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.action_home_page:
+                startActivity(new Intent(CreateTask.this, Home_Page.class));
                 break;
         }
 

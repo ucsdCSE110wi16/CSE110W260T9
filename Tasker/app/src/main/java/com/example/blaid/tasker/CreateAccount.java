@@ -73,10 +73,6 @@ public class CreateAccount extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
-    public void skipLoginPage(View view) {
-        startActivity(new Intent(CreateAccount.this, Home_Page.class));
-    }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -103,7 +99,11 @@ public class CreateAccount extends AppCompatActivity {
                 break;
 
             case R.id.action_create_task:
-                startActivity(new Intent(CreateAccount.this, CreateTask.class));
+                Toast.makeText(CreateAccount.this, "You are already viewing Create Task", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.action_home_page:
+                startActivity(new Intent(CreateAccount.this, Home_Page.class));
                 break;
         }
 

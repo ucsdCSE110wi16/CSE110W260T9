@@ -73,10 +73,15 @@
             android:label="@string/title_activity_create_task"
             android:theme="@style/AppTheme.NoActionBar" />
         
-	<activity
+	    <activity
             android:name=".settings"
             android:label="@string/title_activity_settings"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home_Page" />
+        </activity>
+
         <activity
             android:name=".GeneralSettings"
             android:label="@string/title_activity_general_settings"
@@ -94,9 +99,6 @@
             android:label="@string/title_activity_settings_new_" />
 
 
-        <activity
-            android:name=".Filters"
-            android:label="@string/title_activity_filters"></activity>
     </application>
 
 </manifest>

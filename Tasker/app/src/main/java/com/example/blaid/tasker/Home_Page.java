@@ -90,6 +90,10 @@ public class Home_Page extends AppCompatActivity
             case R.id.action_create_task:
                 startActivity(new Intent(Home_Page.this, CreateTask.class));
                 break;
+
+            case R.id.action_home_page:
+                Toast.makeText(Home_Page.this, "You are already viewing Home Page", Toast.LENGTH_SHORT).show();
+                break;
         }
 
         return super.onOptionsItemSelected(item);

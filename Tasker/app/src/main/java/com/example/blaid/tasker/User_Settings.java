@@ -59,11 +59,15 @@ public class User_Settings extends AppCompatActivity {
                 break;
 
             case R.id.action_edit_profile:
-                startActivity(new Intent(User_Settings.this, User_Settings.class));
+                Toast.makeText(User_Settings.this, "You are already viewing Edit Profile", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.action_create_task:
                 startActivity(new Intent(User_Settings.this, CreateTask.class));
+                break;
+
+            case R.id.action_home_page:
+                startActivity(new Intent(User_Settings.this, Home_Page.class));
                 break;
         }
 
