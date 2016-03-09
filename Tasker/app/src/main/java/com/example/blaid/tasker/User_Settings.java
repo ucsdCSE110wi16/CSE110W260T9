@@ -57,6 +57,7 @@ public class User_Settings extends AppCompatActivity {
                 break;
 
             case R.id.action_settings:
+                Toast.makeText(User_Settings.this, "Welcome to General Settings", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(User_Settings.this, settings.class));
                 break;
 
@@ -65,10 +66,12 @@ public class User_Settings extends AppCompatActivity {
                 break;
 
             case R.id.action_create_task:
+                Toast.makeText(User_Settings.this, "New Blank Task...", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(User_Settings.this, CreateTask.class));
                 break;
 
             case R.id.action_home_page:
+                Toast.makeText(User_Settings.this, "Welcome Home", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(User_Settings.this, Home_Page.class));
                 break;
         }

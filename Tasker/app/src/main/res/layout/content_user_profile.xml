@@ -10,7 +10,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.blaid.tasker.UserProfile"
-    tools:showIn="@layout/activity_user_profile">
+    tools:showIn="@layout/activity_user_profile"
+    android:background="@drawable/createtaskbackground">
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,7 +20,8 @@
         android:text="@string/Username"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -44,7 +46,8 @@
         android:layout_below="@+id/textView"
         android:layout_toRightOf="@+id/imageView2"
         android:layout_marginTop="46dp"
-        android:text="Task Creation Rating" />
+        android:text="Task Creation Rating"
+        android:textColor="#ffffff" />
 
     <RatingBar
         android:layout_width="wrap_content"
@@ -66,7 +69,8 @@
         android:minHeight="100sp"
         android:nestedScrollingEnabled="true"
         android:layout_above="@+id/button"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
 
     <Button
         android:layout_width="wrap_content"
@@ -107,6 +111,7 @@
         android:layout_alignLeft="@+id/textView"
         android:layout_alignStart="@+id/textView"
         android:layout_alignRight="@+id/textView6"
-        android:layout_alignEnd="@+id/textView6" />
+        android:layout_alignEnd="@+id/textView6"
+        android:textColor="#ffffff" />
 
 </RelativeLayout>

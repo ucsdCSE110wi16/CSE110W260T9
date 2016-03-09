@@ -80,14 +80,17 @@ public class Home_Page extends AppCompatActivity
                 break;
 
             case R.id.action_settings:
+                Toast.makeText(Home_Page.this, "Welcome to General Settings", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(Home_Page.this, settings.class));
                 break;
 
             case R.id.action_edit_profile:
+                Toast.makeText(Home_Page.this, "Preparing to edit User Settings...", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(Home_Page.this, User_Settings.class));
                 break;
 
             case R.id.action_create_task:
+                Toast.makeText(Home_Page.this, "New Blank Task...", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(Home_Page.this, CreateTask.class));
                 break;
 

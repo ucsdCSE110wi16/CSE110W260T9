@@ -91,10 +91,12 @@ public class CreateAccount extends AppCompatActivity {
                 break;
 
             case R.id.action_settings:
+                Toast.makeText(CreateAccount.this, "Welcome to General Settings", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(CreateAccount.this, settings.class));
                 break;
 
             case R.id.action_edit_profile:
+                Toast.makeText(CreateAccount.this, "Preparing to edit User Settings", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(CreateAccount.this, User_Settings.class));
                 break;
 
@@ -103,6 +105,7 @@ public class CreateAccount extends AppCompatActivity {
                 break;
 
             case R.id.action_home_page:
+                Toast.makeText(CreateAccount.this, "Welcome Home", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(CreateAccount.this, Home_Page.class));
                 break;
         }

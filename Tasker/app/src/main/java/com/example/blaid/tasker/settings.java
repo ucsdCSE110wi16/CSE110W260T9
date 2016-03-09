@@ -106,14 +106,17 @@ public class settings extends AppCompatActivity {
                 break;
 
             case R.id.action_edit_profile:
+                Toast.makeText(settings.this, "Preparing to edit User Settings", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(settings.this, User_Settings.class));
                 break;
 
             case R.id.action_create_task:
+                Toast.makeText(settings.this, "New Blank Task...", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(settings.this, CreateTask.class));
                 break;
 
             case R.id.action_home_page:
+                Toast.makeText(settings.this, "Welcome Home", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(settings.this, Home_Page.class));
                 break;
         }

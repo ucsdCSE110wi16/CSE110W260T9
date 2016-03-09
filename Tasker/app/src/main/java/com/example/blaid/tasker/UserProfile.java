@@ -49,14 +49,17 @@ public class UserProfile extends AppCompatActivity {
                 break;
 
             case R.id.action_settings:
+                Toast.makeText(UserProfile.this, "Welcome to General Settings", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(UserProfile.this, settings.class));
                 break;
 
             case R.id.action_edit_profile:
+                Toast.makeText(UserProfile.this, "Preparing to edit User Settings", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(UserProfile.this, User_Settings.class));
                 break;
 
             case R.id.action_create_task:
+                Toast.makeText(UserProfile.this, "New Blank Task...", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(UserProfile.this, CreateTask.class));
                 break;
         }

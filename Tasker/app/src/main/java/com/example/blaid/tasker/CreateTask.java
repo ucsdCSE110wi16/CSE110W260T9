@@ -189,19 +189,22 @@ public class CreateTask extends AppCompatActivity {
                 startActivity(new Intent(CreateTask.this, Login.class));
                 break;
 
-            case R.id.action_settings:
-                startActivity(new Intent(CreateTask.this, settings.class));
-                break;
-
-            case R.id.action_edit_profile:
-                startActivity(new Intent(CreateTask.this, User_Settings.class));
-                break;
-
             case R.id.action_create_task:
                 Toast.makeText(CreateTask.this, "You are already viewing Create Task", Toast.LENGTH_SHORT).show();
                 break;
 
+            case R.id.action_settings:
+                Toast.makeText(CreateTask.this, "Welcome to General Settings", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(CreateTask.this, settings.class));
+                break;
+
+            case R.id.action_edit_profile:
+                Toast.makeText(CreateTask.this, "Preparing to edit User Settings", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(CreateTask.this, User_Settings.class));
+                break;
+
             case R.id.action_home_page:
+                Toast.makeText(CreateTask.this, "Welcome Home", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(CreateTask.this, Home_Page.class));
                 break;
         }
