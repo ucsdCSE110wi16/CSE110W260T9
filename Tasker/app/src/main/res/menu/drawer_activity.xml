@@ -34,11 +34,11 @@
         android:title="Create Task"
         app:showAsAction="never">
 
-        <crateTask>
+        <createTask>
             <item
                 android:id="@+id/menu_create_taskID"
                 android:title="Create Task"/>
-        </crateTask>
+        </createTask>
     </item>
 
     <item
