@@ -9,12 +9,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class UserProfile extends AppCompatActivity {
+public class ViewProfile extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_profile);
+        setContentView(R.layout.activity_view_profile);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -44,24 +44,30 @@ public class UserProfile extends AppCompatActivity {
 
         switch (id){
             case R.id.action_logout:
-                Toast.makeText(UserProfile.this, "Logging out...", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(UserProfile.this, Login.class));
+                Toast.makeText(ViewProfile.this, "Logging out...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(ViewProfile.this, Login.class));
                 break;
 
             case R.id.action_settings:
-                Toast.makeText(UserProfile.this, "Welcome to General Settings", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(UserProfile.this, settings.class));
+                Toast.makeText(ViewProfile.this, "Welcome to General Settings", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(ViewProfile.this, SettingsPage.class));
                 break;
 
             case R.id.action_edit_profile:
-                Toast.makeText(UserProfile.this, "Preparing to edit User Settings", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(UserProfile.this, User_Settings.class));
+                Toast.makeText(ViewProfile.this, "Preparing to edit User Settings", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(ViewProfile.this, EditProfile.class));
                 break;
 
             case R.id.action_create_task:
-                Toast.makeText(UserProfile.this, "New Blank Task...", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(UserProfile.this, CreateTask.class));
+                Toast.makeText(ViewProfile.this, "New Blank Task...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(ViewProfile.this, CreateTask.class));
                 break;
+
+                case R.id.action_home_page:
+                    Toast.makeText(ViewProfile.this, "Welcome Home", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(ViewProfile.this, Home_Page.class));
+                    break;
+
         }
 
         return super.onOptionsItemSelected(item);

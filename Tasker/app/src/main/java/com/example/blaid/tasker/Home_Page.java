@@ -3,7 +3,6 @@ package com.example.blaid.tasker;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
-import android.view.View;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -12,7 +11,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -28,7 +26,7 @@ public class Home_Page extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-         
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -81,12 +79,12 @@ public class Home_Page extends AppCompatActivity
 
             case R.id.action_settings:
                 Toast.makeText(Home_Page.this, "Welcome to General Settings", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(Home_Page.this, settings.class));
+                startActivity(new Intent(Home_Page.this, SettingsPage.class));
                 break;
 
             case R.id.action_edit_profile:
                 Toast.makeText(Home_Page.this, "Preparing to edit User Settings...", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(Home_Page.this, User_Settings.class));
+                startActivity(new Intent(Home_Page.this, EditProfile.class));
                 break;
 
             case R.id.action_create_task:
@@ -127,6 +125,3 @@ public class Home_Page extends AppCompatActivity
         return true;
     }
 }
-
-
-

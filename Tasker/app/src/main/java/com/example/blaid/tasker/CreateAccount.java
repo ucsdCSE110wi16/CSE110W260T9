@@ -2,8 +2,6 @@ package com.example.blaid.tasker;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
@@ -12,7 +10,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.blaid.tasker.R;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
@@ -50,6 +47,7 @@ public class CreateAccount extends AppCompatActivity {
                     if (!passwordTxt.equals(passwordCfmTxt)) {
                         Toast.makeText(getApplicationContext(), "Password and Password Confirmation do not match.", Toast.LENGTH_LONG).show();
                     } else {
+                        System.out.println("made it");
                         ParseUser user = new ParseUser();
                         user.setEmail(emailTxt);
                         user.setUsername(usernameTxt);
@@ -58,8 +56,10 @@ public class CreateAccount extends AppCompatActivity {
                         user.signUpInBackground(new SignUpCallback() {
                             @Override
                             public void done(ParseException e) {
+                                System.out.println("Exception is :" + e);
                                 if (e == null) {
                                     Toast.makeText(getApplicationContext(), "Successfully Signed Up!", Toast.LENGTH_LONG).show();
+                                    //startActivity(new Intent(CreateAccount.this, Home_Page.class));
                                 } else {
                                     Toast.makeText(getApplicationContext(), "Sign Up Error", Toast.LENGTH_LONG).show();
                                 }
@@ -92,13 +92,14 @@ public class CreateAccount extends AppCompatActivity {
 
             case R.id.action_settings:
                 Toast.makeText(CreateAccount.this, "Welcome to General Settings", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(CreateAccount.this, settings.class));
+                startActivity(new Intent(CreateAccount.this,
+                SettingsPage.class));
                 break;
 
-            case R.id.action_edit_profile:
-                Toast.makeText(CreateAccount.this, "Preparing to edit User Settings", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(CreateAccount.this, User_Settings.class));
-                break;
+                case R.id.action_edit_profile:
+                    Toast.makeText(CreateAccount.this, "Preparing to edit User Settings", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(CreateAccount.this, EditProfile.class));
+                    break;
 
             case R.id.action_create_task:
                 Toast.makeText(CreateAccount.this, "You are already viewing Create Task", Toast.LENGTH_SHORT).show();
