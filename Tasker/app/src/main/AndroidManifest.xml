@@ -93,11 +93,19 @@
         <activity
             android:name=".User_Settings"
             android:label="User_Settings"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" >
+             <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home_Page" />
+        </activity>
         <activity
             android:name=".UserProfile"
             android:label="UserProfile"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home_Page" />
+        </activity>
         <activity
             android:name=".SettingsNEW_Activity"
             android:label="@string/title_activity_settings_new_" />

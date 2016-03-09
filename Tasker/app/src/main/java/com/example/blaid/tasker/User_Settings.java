@@ -20,6 +20,8 @@ public class User_Settings extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        setupActionBar();
+
     }
 
     private void setupActionBar() {
