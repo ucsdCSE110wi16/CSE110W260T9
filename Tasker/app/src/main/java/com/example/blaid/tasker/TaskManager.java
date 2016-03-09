@@ -15,7 +15,7 @@ import java.lang.Integer;
 public class TaskManager {
 
     /* This stores our task list for sorting */
-    ArrayList<Task> taskList;
+    public static ArrayList<Task> taskList;
 
     private static TaskManager _instance = null;
     public static TaskManager getInstance(){
@@ -43,7 +43,7 @@ public class TaskManager {
      * This method uses Collections.sort to apply cascading filters to the
      * task list.
      */
-    public void filterTasks(FilterOption option) {
+    public static void filterTasks(FilterOption option) {
         /* This switch statement determines which filter to sort with */
         switch (option) {
             /* Sorting by NEW will be the default filter option */
@@ -84,7 +84,7 @@ public class TaskManager {
      * This is a helper method for filterTasks, it implements a comparing
      * method to arrange tasks by soonest date.
      */
-    public int compareByDate(Task lhs, Task rhs) {
+    public static int compareByDate(Task lhs, Task rhs) {
         /* First compare the year */
         Integer val1 = lhs.getYear();
         Integer val2 = rhs.getYear();
@@ -123,7 +123,7 @@ public class TaskManager {
      * This helper method for filterTasks compares tasks by time only, it does
      * not compare date values.
      */
-    public int compareByTime(Task lhs, Task rhs) {
+    public static int compareByTime(Task lhs, Task rhs) {
         /* First compare AM vs. PM */
         Integer val1 = lhs.getAMPM();
         Integer val2 = rhs.getAMPM();

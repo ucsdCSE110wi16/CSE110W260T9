@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 public class Home_Page extends AppCompatActivity
             implements NavigationView.OnNavigationItemSelectedListener {
+    private ArrayAdapter<Task> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +40,7 @@ public class Home_Page extends AppCompatActivity
 
         ListView listView1 = (ListView) findViewById(R.id.listView1);
 
-        ArrayAdapter<Task> adapter = new ArrayAdapter<Task>(this,
+        adapter = new ArrayAdapter<Task>(this,
                                     R.layout.listview_layout,
                                     TaskManager.getInstance().taskList);
 
@@ -89,6 +90,10 @@ public class Home_Page extends AppCompatActivity
             case R.id.action_create_task:
                 startActivity(new Intent(Home_Page.this, CreateTask.class));
                 break;
+
+            case R.id.action_home_page:
+                Toast.makeText(Home_Page.this, "You are already viewing Home Page", Toast.LENGTH_SHORT).show();
+                break;
         }
 
         return super.onOptionsItemSelected(item);
@@ -101,11 +106,14 @@ public class Home_Page extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_newest) {
-            // Handle the camera action
+            TaskManager.filterTasks(FilterOption.SOON);
+            adapter.notifyDataSetChanged ();
         } else if (id == R.id.nav_nearest) {
-
+            TaskManager.filterTasks(FilterOption.LOCATION);
+            adapter.notifyDataSetChanged();
         } else if (id == R.id.nav_price) {
-
+            TaskManager.filterTasks(FilterOption.PRICE);
+            adapter.notifyDataSetChanged ();
         } else if (id == R.id.nav_price_inc) {
 
         }
