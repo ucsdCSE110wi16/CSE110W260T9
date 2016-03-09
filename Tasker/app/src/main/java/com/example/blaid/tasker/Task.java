@@ -25,8 +25,8 @@ public class Task {
     private final int USER_ID;
 
     private boolean accepted;
-
-    private String title, description, location, img_src;
+    private PictureChoices img_src;
+    private String title, description, location;
     private int[] date = new int[3];
     private int[] time = new int[3];
     private double price;
@@ -39,13 +39,15 @@ public class Task {
         this.USER_ID = 0;
         this.price = 0;
         this.accepted = false;
+        this.img_src = PictureChoices.DEFAULT;
     }
 
-    public Task(String title, double price) {
+    public Task(String title, double price, PictureChoices choice) {
         /* Initialize member variables */
+        this.img_src = choice;
         this.title = title;
         this.description = "Default Description";
-        this.location = "";
+        this.location = "Default Location";
         this.USER_ID = 0;
         this.price = price;
         this.accepted = false;
@@ -57,7 +59,8 @@ public class Task {
     }
 
     public Task(String title, String description, String location, int[] time,
-                int[] date, int USER_ID, double price, boolean accepted) {
+                int[] date, int USER_ID, double price, boolean accepted,
+                PictureChoices choice) {
         /* Initialize member variables */
         this.title = title;
         this.description = description;
@@ -67,6 +70,7 @@ public class Task {
         this.USER_ID = USER_ID;
         this.price = price;
         this.accepted = false;
+        this.img_src = choice;
     }
 
     /* Implement toString() for list view */
@@ -167,11 +171,11 @@ public class Task {
         return this.location;
     }
 
-    public String getImg_src() {
+    public PictureChoices getImg_src() {
         return this.img_src;
     }
 
-    public void setImg_src(String img_src) {
+    public void setImg_src(PictureChoices img_src) {
         this.img_src = img_src;
     }
 
