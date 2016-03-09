@@ -25,6 +25,7 @@ public class Home_Page extends AppCompatActivity
             implements NavigationView.OnNavigationItemSelectedListener {
     private ArrayAdapter<Task> adapter;
     final Context context = this;
+    TextView text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,12 +54,15 @@ public class Home_Page extends AppCompatActivity
         listView1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Task listItem = (Task) listView1.getItemAtPosition(position);
+                final Task listItem = (Task) listView1.getItemAtPosition(position);
                 final Dialog dialog = new Dialog(context);
                 dialog.setContentView(R.layout.custom_dialog);
                 dialog.setTitle(listItem.getTitle());
 
-                TextView text = (TextView) dialog.findViewById(R.id.dialogPrice);
+                text = (TextView) dialog.findViewById(R.id.dialogTitle);
+                text.setText(listItem.getTitle());
+
+                text = (TextView) dialog.findViewById(R.id.dialogPrice);
                 String price = String.format("%.2f", listItem.getPrice());
                 text.setText("$" + price);
 
@@ -72,11 +76,31 @@ public class Home_Page extends AppCompatActivity
                 text = (TextView) dialog.findViewById(R.id.dialogLocation);
                 text.setText(listItem.getLocation());
 
-                Button dialogButton = (Button) dialog.findViewById(R.id.dialogButton);
+                Button dialogExitButton = (Button) dialog.findViewById(R.id.buttonTaskBack);
                 // if button is clicked, close the custom dialog
-                dialogButton.setOnClickListener(new View.OnClickListener() {
+                dialogExitButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        dialog.dismiss();
+                    }
+                });
+
+                Button dialogAcceptButton = (Button) dialog.findViewById(R.id.buttonTaskAccept);
+                // if button is clicked, accept the task
+                /* Find way to hide the task after accepted, and link it to the current user */
+                dialogAcceptButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast iDo = Toast.makeText(getApplicationContext(), "Task: " + listItem.getTitle() + " accepted!", Toast.LENGTH_SHORT);
+                        Toast iCant = Toast.makeText(getApplicationContext(), "Task: " + listItem.getTitle() + " is already in Progress :(", Toast.LENGTH_SHORT);
+
+                        if(!listItem.getAccepted()){
+                            listItem.setAccepted(true);
+                            iDo.show();
+                        } else {
+                            iCant.show();
+                        }
+
                         dialog.dismiss();
                     }
                 });
