@@ -21,10 +21,11 @@
         android:id="@+id/textView9"
         android:fontFamily="Monaco"
         android:textColor="#ffffffff"
-        android:layout_alignBaseline="@+id/editText"
-        android:layout_alignBottom="@+id/editText"
-        android:layout_toRightOf="@+id/textView12"
-        android:layout_toEndOf="@+id/textView12" />
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/editText"
+        android:layout_toStartOf="@+id/editText"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
 
     <EditText
         android:layout_width="200dp"
@@ -36,16 +37,17 @@
         android:background="@drawable/rounded_edittext"
         android:layout_alignParentTop="true"
         android:layout_alignRight="@+id/editText2"
-        android:layout_alignEnd="@+id/editText2" />
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_alignLeft="@+id/button6"
+        android:layout_alignStart="@+id/button6" />
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:id="@+id/imageView4"
         android:layout_below="@+id/textView9"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="31dp" />
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -54,10 +56,9 @@
         android:text="Description:"
         android:id="@+id/textView10"
         android:textColor="#FFFFFF"
-        android:layout_below="@+id/textView11"
-        android:layout_alignRight="@+id/imageView4"
-        android:layout_alignEnd="@+id/imageView4"
-        android:layout_marginTop="22dp" />
+        android:layout_below="@+id/editText3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="600dp"
@@ -70,10 +71,10 @@
         android:ems="10"
         android:id="@+id/editText2"
         android:background="@drawable/rounded_edittext"
-        android:layout_below="@+id/textView10"
+        android:layout_below="@+id/textView11"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="22dp" />
+        android:layout_marginTop="52dp" />
 
     <Button
         android:layout_width="125dp"
@@ -83,7 +84,6 @@
         android:onClick="setTime"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
-
         android:background="@drawable/buttonshape"
         android:shadowColor="#A8A8A8"
         android:shadowDx="0"
@@ -101,28 +101,25 @@
         android:text="Select Date"
         android:onClick="setDate"
         android:id="@+id/button6"
-
         android:textColor="#FFFFFF"
         android:textSize="15sp"
-
         android:background="@drawable/buttonshape"
         android:shadowColor="#A8A8A8"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:layout_alignTop="@+id/imageView4"
+        android:layout_above="@+id/button4"
         android:layout_alignLeft="@+id/button4"
-        android:layout_alignStart="@+id/button4" />
+        android:layout_alignStart="@+id/button4"
+        android:layout_marginBottom="39dp" />
 
     <Button
         android:layout_width="125dp"
         android:layout_height="40dp"
         android:text="Create Task!"
-        android:id="@+id/createTaskButtonId"
-
+        android:id="@+id/cancelId"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
-
         android:background="@drawable/buttonshape"
         android:shadowColor="#A8A8A8"
         android:shadowDx="0"
@@ -139,24 +136,24 @@
         android:text="Price:"
         android:id="@+id/textView11"
         android:textColor="#ffffff"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="33dp"
         android:layout_below="@+id/button4"
-        android:layout_toRightOf="@+id/textView9"
-        android:layout_toEndOf="@+id/textView9" />
+        android:layout_toLeftOf="@+id/button4"
+        android:layout_toStartOf="@+id/button4" />
 
     <EditText
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:hint="$00.00"
         android:textSize="17dp"
         android:ems="10"
         android:id="@+id/editText3"
         android:background="@drawable/rounded_edittext"
         android:gravity="center"
-        android:layout_alignBottom="@+id/textView11"
-        android:layout_alignLeft="@+id/button4"
-        android:layout_alignStart="@+id/button4" />
+        android:layout_alignTop="@+id/textView11"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -180,19 +177,23 @@
         android:ems="10"
         android:id="@+id/editText4"
         android:background="@drawable/rounded_edittext"
-
         android:layout_alignBottom="@+id/textView12"
         android:layout_toRightOf="@+id/imageView4"
         android:layout_toEndOf="@+id/imageView4" />
 
-    <Button
+    <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Change Pic"
-        android:id="@+id/button_profile_picID"
-        android:layout_alignTop="@+id/textView10"
-        android:layout_alignRight="@+id/button4"
-        android:layout_alignEnd="@+id/button4" />
+        android:id="@+id/spin"
+        android:entries="@array/Task_Types"
+        android:background="@drawable/buttonshape"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_toStartOf="@+id/cancelId"
+        android:layout_alignRight="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4"
+        android:layout_above="@+id/editText3" />
 
 
 </RelativeLayout>

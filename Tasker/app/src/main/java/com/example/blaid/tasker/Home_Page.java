@@ -10,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -36,13 +38,20 @@ public class Home_Page extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        ListView listView1 = (ListView) findViewById(R.id.listView1);
+        final ListView listView1 = (ListView) findViewById(R.id.listView1);
 
         adapter = new ArrayAdapter<Task>(this,
                                     R.layout.listview_layout,
                                     TaskManager.getInstance().taskList);
 
         listView1.setAdapter(adapter);
+        listView1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Task listItem = (Task) listView1.getItemAtPosition(position);
+                Toast.makeText(Home_Page.this, listItem.getTitle(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
 
