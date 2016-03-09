@@ -16,11 +16,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="Sort by:"
+        android:text="@string/sort_by"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textStyle="bold"
-        android:textSize="25dp"
-        android:textColor="#ffffff" />
+        android:textSize="25sp"
+        android:textColor="@color/white" />
 
 
 </LinearLayout>
