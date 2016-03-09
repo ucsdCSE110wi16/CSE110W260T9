@@ -10,7 +10,8 @@
         android:src="@drawable/taskericon"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -20,10 +21,10 @@
         android:textStyle="bold"
         android:textColor="#ffffff"
         android:id="@+id/textView17"
-        android:layout_marginTop="41dp"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/dialogLocation"
-        android:layout_toEndOf="@+id/dialogLocation" />
+        android:layout_marginTop="22dp"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignRight="@+id/textView16"
+        android:layout_alignEnd="@+id/textView16" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -78,11 +79,11 @@
         android:text="New Text"
         android:textColor="#ffffff"
         android:id="@+id/dialogDescription"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_marginLeft="39dp"
-        android:layout_marginStart="39dp" />
+        android:layout_marginStart="39dp"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -93,10 +94,10 @@
         android:textStyle="bold"
         android:textColor="#ffffff"
         android:id="@+id/textView18"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="36dp"
         android:layout_below="@+id/dialogDescription"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignRight="@+id/dialogDescription"
+        android:layout_alignEnd="@+id/dialogDescription" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -104,8 +105,9 @@
         android:text="location"
         android:id="@+id/dialogLocation"
         android:textColor="#ffffff"
+        android:paddingLeft="15dp"
         android:layout_alignBottom="@+id/textView18"
-        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignLeft="@+id/textView18"
         android:layout_alignStart="@+id/textView16" />
 
     <Button
@@ -122,6 +124,7 @@
         android:id="@+id/dialogButton"
         android:layout_marginTop="60dp"
         android:layout_below="@+id/dialogLocation"
+        android:layout_toRightOf="@+id/textView18"
         android:layout_alignLeft="@+id/dialogLocation"
         android:layout_alignStart="@+id/dialogLocation" />
 

@@ -47,7 +47,7 @@ public class Task {
         this.img_src = choice;
         this.title = title;
         this.description = "Default Description";
-        this.location = "";
+        this.location = "Default Location";
         this.USER_ID = 0;
         this.price = price;
         this.accepted = false;
