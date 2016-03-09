@@ -91,8 +91,8 @@ public class Home_Page extends AppCompatActivity
                 dialogAcceptButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast iDo = Toast.makeText(getApplicationContext(), "Task: " + listItem.getTitle() + " accepted!", Toast.LENGTH_SHORT);
-                        Toast iCant = Toast.makeText(getApplicationContext(), "Task: " + listItem.getTitle() + " is already in Progress :(", Toast.LENGTH_SHORT);
+                        Toast iDo = Toast.makeText(getApplicationContext(), "Task, " + listItem.getTitle() + " accepted!", Toast.LENGTH_SHORT);
+                        Toast iCant = Toast.makeText(getApplicationContext(), "Task, " + listItem.getTitle() + " is already in Progress :(", Toast.LENGTH_SHORT);
 
                         if(!listItem.getAccepted()){
                             listItem.setAccepted(true);
