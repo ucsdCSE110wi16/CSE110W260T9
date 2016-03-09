@@ -49,7 +49,8 @@ public class Home_Page extends AppCompatActivity
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Task listItem = (Task) listView1.getItemAtPosition(position);
-                Toast.makeText(Home_Page.this, listItem.getTitle(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), listItem.getTitle(), Toast.LENGTH_SHORT).show();
+                viewTask(view);
             }
         });
     }
@@ -129,6 +130,10 @@ public class Home_Page extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void viewTask(View v) {
+        startActivity(new Intent(getApplicationContext(), ViewTask.class));
     }
 }
 
