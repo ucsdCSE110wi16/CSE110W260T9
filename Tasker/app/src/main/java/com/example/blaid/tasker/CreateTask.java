@@ -183,10 +183,6 @@ public class CreateTask extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        /*if (id == R.id.action_logout) {
-            return true;
-        }*/
         switch (id){
             case R.id.action_logout:
                 Toast.makeText(CreateTask.this, "Logging out...", Toast.LENGTH_SHORT).show();
