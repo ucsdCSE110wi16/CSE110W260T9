@@ -70,7 +70,7 @@ public class EditProfile extends AppCompatActivity {
                 break;
 
             case R.id.action_home_page:
-                Toast.makeText(User_Settings.this, "Welcome Home",
+                Toast.makeText(EditProfile.this, "Welcome Home",
                 Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(EditProfile.this, Home_Page.class));
                 break;

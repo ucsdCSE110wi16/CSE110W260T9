@@ -3,26 +3,30 @@
 
 
     <group android:checkableBehavior="single">
+
         <item
             android:id="@+id/nav_newest"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/newest_tk"
             android:title="Newest"
-            android:titleTextColor="#ffffff" />
+        />
+
         <item
             android:id="@+id/nav_nearest"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/nearby_you"
             android:title="Nearest"
-            android:titleTextColor="#ffffff" />
+           />
+
         <item
             android:id="@+id/nav_price"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/high_low"
             android:title="$$$$ -> $$"
-            android:titleTextColor="#ffffff" />
+            />
+
         <item
             android:id="@+id/nav_price_inc"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/low_high"
             android:title="$$ -> $$$$"
-            android:titleTextColor="#ffffff" />
+          />
     </group>
 
 
