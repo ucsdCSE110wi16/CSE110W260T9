@@ -77,9 +77,6 @@ public class Home_Page extends AppCompatActivity
                 text = (TextView) dialog.findViewById(R.id.dialogLocation);
                 text.setText(listItem.getLocation());
 
-<<<<<<< HEAD
-                Button dialogExitButton = (Button) dialog.findViewById(R.id.buttonTaskBack);
-=======
                 /* Set image view */
                 ImageView img = (ImageView) dialog.findViewById(R.id.imageView3);
                 switch (listItem.getImg_src()) {
@@ -103,8 +100,7 @@ public class Home_Page extends AppCompatActivity
                         break;
                 }
 
-                Button dialogButton = (Button) dialog.findViewById(R.id.dialogButton);
->>>>>>> f217311c0cc061f6299fb022f894f3a993f92584
+                Button dialogExitButton = (Button) dialog.findViewById(R.id.buttonTaskBack);
                 // if button is clicked, close the custom dialog
                 dialogExitButton.setOnClickListener(new View.OnClickListener() {
                     @Override
