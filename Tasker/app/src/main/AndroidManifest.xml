@@ -81,6 +81,7 @@
             android:name=".GeneralSettings"
             android:label="@string/title_activity_general_settings"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".EditProfile"
             android:label="User_Settings"
@@ -89,6 +90,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Home_Page" />
         </activity>
+
         <activity
             android:name=".ViewProfile"
             android:label="UserProfile"
@@ -97,6 +99,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Home_Page" />
         </activity>
+
         <activity
             android:name=".SettingsPage"
             android:label="@string/title_activity_settings_new_" >
