@@ -18,9 +18,10 @@ public class TaskManager {
     public static ArrayList<Task> taskList;
 
     private static TaskManager _instance = null;
+
     public static TaskManager getInstance(){
         if(_instance == null)
-            _instance= new TaskManager();
+            _instance = new TaskManager();
         return _instance;
     }
 
