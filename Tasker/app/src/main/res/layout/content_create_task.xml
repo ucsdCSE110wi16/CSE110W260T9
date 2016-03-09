@@ -56,9 +56,9 @@
         android:text="Description:"
         android:id="@+id/textView10"
         android:textColor="#FFFFFF"
-        android:layout_above="@+id/editText2"
-        android:layout_toLeftOf="@+id/createTaskButtonId"
-        android:layout_toStartOf="@+id/createTaskButtonId" />
+        android:layout_below="@+id/editText3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="600dp"
@@ -71,9 +71,10 @@
         android:ems="10"
         android:id="@+id/editText2"
         android:background="@drawable/rounded_edittext"
-        android:layout_below="@+id/button_profile_picID"
+        android:layout_below="@+id/textView11"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp" />
 
     <Button
         android:layout_width="125dp"
@@ -152,9 +153,7 @@
         android:gravity="center"
         android:layout_alignTop="@+id/textView11"
         android:layout_alignRight="@+id/editText2"
-        android:layout_alignEnd="@+id/editText2"
-        android:layout_alignLeft="@+id/button_profile_picID"
-        android:layout_alignStart="@+id/button_profile_picID" />
+        android:layout_alignEnd="@+id/editText2" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -181,15 +180,6 @@
         android:layout_alignBottom="@+id/textView12"
         android:layout_toRightOf="@+id/imageView4"
         android:layout_toEndOf="@+id/imageView4" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Change Pic"
-        android:id="@+id/button_profile_picID"
-        android:layout_below="@+id/editText3"
-        android:layout_alignRight="@+id/button4"
-        android:layout_alignEnd="@+id/button4" />
 
     <Spinner
         android:layout_width="wrap_content"

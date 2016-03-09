@@ -77,7 +77,7 @@ public class CreateTask extends AppCompatActivity {
 
                 switch (Task) {
                     case "Select Type":
-                        Bitmap selectbm = BitmapFactory.decodeResource(getResources(), R.drawable.selecttaskicon);
+                        Bitmap selectbm = BitmapFactory.decodeResource(getResources(), R.drawable.selecticon);
                         ImageView selectImageView = (ImageView) findViewById(R.id.imageView4);
                         selectImageView.setImageBitmap(selectbm);
                         break;
