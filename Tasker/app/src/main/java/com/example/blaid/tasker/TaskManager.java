@@ -33,20 +33,20 @@ public class TaskManager {
         /* get taskList from database */
         /* filter by newest before displaying to user */
         taskList = new ArrayList<Task>();
-        taskList.add(new Task("Laundry Task", 13.29));
-        taskList.add(new Task("Dishes", 5.00));
-        taskList.add(new Task("Food Run", 15.69));
-        taskList.add(new Task("Homework Help", 20.00));
-        taskList.add(new Task("House Cleaning", 15.99));
-        taskList.add(new Task("Get Food", 2.00));
-        taskList.add(new Task("Drop off Paper", 15.69));
-        taskList.add(new Task("Sell Chair", 45));
-        taskList.add(new Task("Pick up Clothes", 10));
-        taskList.add(new Task("Change Tire", 15.99));
-        taskList.add(new Task("Cook Meal", 2.00));
-        taskList.add(new Task("Drop off Books", 15.69));
-        taskList.add(new Task("Buy Groceries", 45));
-        taskList.add(new Task("Write Letter", 10));
+        taskList.add(new Task("Laundry Task", 13.29, PictureChoices.LAUNDRY));
+        taskList.add(new Task("Dishes", 5.00, PictureChoices.DISHES));
+        taskList.add(new Task("Food Run", 15.69, PictureChoices.FOOD));
+        taskList.add(new Task("Homework Help", 20.00, PictureChoices.DEFAULT));
+        taskList.add(new Task("House Cleaning", 15.99, PictureChoices.CAR));
+        taskList.add(new Task("Get Food", 2.00, PictureChoices.FOOD));
+        taskList.add(new Task("Drop off Paper", 15.69, PictureChoices.CAR));
+        taskList.add(new Task("Sell Chair", 45, PictureChoices.DEFAULT));
+        taskList.add(new Task("Pick up Clothes", 10, PictureChoices.LAUNDRY));
+        taskList.add(new Task("Change Tire", 15.99, PictureChoices.CAR));
+        taskList.add(new Task("Cook Meal", 2.00, PictureChoices.FOOD));
+        taskList.add(new Task("Drop off Books", 15.69, PictureChoices.CAR));
+        taskList.add(new Task("Buy Groceries", 45, PictureChoices.FOOD));
+        taskList.add(new Task("Write Letter", 10, PictureChoices.DEFAULT));
     }
 
     /*

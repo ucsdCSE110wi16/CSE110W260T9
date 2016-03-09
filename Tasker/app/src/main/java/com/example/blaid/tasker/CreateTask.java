@@ -41,6 +41,7 @@ public class CreateTask extends AppCompatActivity {
     private int[] time = new int[3];
 
     private String title, description, location;
+    private PictureChoices choice = PictureChoices.DEFAULT;
     private int price;
     private int hour, min;
     private int ampm = 0;
@@ -78,36 +79,42 @@ public class CreateTask extends AppCompatActivity {
                         Bitmap selectbm = BitmapFactory.decodeResource(getResources(), R.drawable.selecticon);
                         ImageView selectImageView = (ImageView) findViewById(R.id.imageView4);
                         selectImageView.setImageBitmap(selectbm);
+                        choice = PictureChoices.DEFAULT;
                         break;
 
                     case "Laundry":
                         Bitmap laundrybm = BitmapFactory.decodeResource(getResources(), R.drawable.laundryicon);
                         ImageView laundryImageView = (ImageView) findViewById(R.id.imageView4);
                         laundryImageView.setImageBitmap(laundrybm);
+                        choice = PictureChoices.LAUNDRY;
                         break;
 
                     case "Dishes":
                         Bitmap dishesbm = BitmapFactory.decodeResource(getResources(), R.drawable.dishesicon);
                         ImageView dishesImageView = (ImageView) findViewById(R.id.imageView4);
                         dishesImageView.setImageBitmap(dishesbm);
+                        choice = PictureChoices.DISHES;
                         break;
 
                     case "Car":
                         Bitmap carbm = BitmapFactory.decodeResource(getResources(), R.drawable.caricon);
                         ImageView carImageView = (ImageView) findViewById(R.id.imageView4);
                         carImageView.setImageBitmap(carbm);
+                        choice = PictureChoices.CAR;
                         break;
 
                     case "Food":
                         Bitmap foodbm = BitmapFactory.decodeResource(getResources(), R.drawable.foodicon);
                         ImageView foodImageView = (ImageView) findViewById(R.id.imageView4);
                         foodImageView.setImageBitmap(foodbm);
+                        choice = PictureChoices.FOOD;
                         break;
 
                     case "Video Games":
                         Bitmap gamebm = BitmapFactory.decodeResource(getResources(), R.drawable.gameicon);
                         ImageView gameImageView = (ImageView) findViewById(R.id.imageView4);
                         gameImageView.setImageBitmap(gamebm);
+                        choice = PictureChoices.GAMES;
                         break;
                 }
             }
@@ -233,7 +240,7 @@ public class CreateTask extends AppCompatActivity {
         time[2] = ampm;
 
         Task task = new Task(title, description, location,
-                time, date, 0, price, false);
+                time, date, 0, price, false, choice);
         return task;
     }
 

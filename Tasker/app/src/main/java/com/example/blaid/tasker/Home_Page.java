@@ -16,6 +16,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -71,6 +72,29 @@ public class Home_Page extends AppCompatActivity
 
                 text = (TextView) dialog.findViewById(R.id.dialogLocation);
                 text.setText(listItem.getLocation());
+
+                /* Set image view */
+                ImageView img = (ImageView) dialog.findViewById(R.id.imageView3);
+                switch (listItem.getImg_src()) {
+                    case LAUNDRY:
+                        img.setImageResource(R.drawable.laundryicon);
+                        break;
+                    case DISHES:
+                        img.setImageResource(R.drawable.dishesicon);
+                        break;
+                    case DEFAULT:
+                        img.setImageResource(R.drawable.profile_pic_default);
+                        break;
+                    case FOOD:
+                        img.setImageResource(R.drawable.foodicon);
+                        break;
+                    case CAR:
+                        img.setImageResource(R.drawable.caricon);
+                        break;
+                    case GAMES:
+                        img.setImageResource(R.drawable.gameicon);
+                        break;
+                }
 
                 Button dialogButton = (Button) dialog.findViewById(R.id.dialogButton);
                 // if button is clicked, close the custom dialog
