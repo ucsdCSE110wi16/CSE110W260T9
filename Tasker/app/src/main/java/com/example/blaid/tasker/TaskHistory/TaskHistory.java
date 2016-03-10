@@ -3,8 +3,6 @@ package com.example.blaid.tasker.TaskHistory;
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -53,7 +51,7 @@ public class TaskHistory extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Task listItem = (Task) listView1.getItemAtPosition(position);
                 final Dialog dialog = new Dialog(context);
-                dialog.setContentView(R.layout.custom_dialog);
+                dialog.setContentView(R.layout.task_history_dialog);
                 dialog.setTitle(listItem.getTitle());
 
                 TextView text = (TextView) dialog.findViewById(R.id.dialogPrice);
@@ -93,7 +91,7 @@ public class TaskHistory extends AppCompatActivity {
                         break;
                 }
 
-                Button dialogButton = (Button) dialog.findViewById(R.id.dialogButton);
+                Button dialogButton = (Button) dialog.findViewById(R.id.okButton);
                 // if button is clicked, close the custom dialog
                 dialogButton.setOnClickListener(new View.OnClickListener() {
                     @Override

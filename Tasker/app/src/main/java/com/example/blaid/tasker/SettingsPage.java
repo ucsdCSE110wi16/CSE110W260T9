@@ -118,7 +118,7 @@ public class SettingsPage extends AppCompatPreferenceActivity {
                 break;
 
             case R.id.action_home_page:
-                startActivity(new Intent(SettingsPage.this, Home_Page.class));
+                startActivity(new Intent(SettingsPage.this, HomePage.class));
                 break;
         }
 

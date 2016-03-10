@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="400dp"
     android:layout_height="fill_parent"
-    android:background="@drawable/createtaskbackground" >
+    android:background="@drawable/bluebackground" >
 
     <ImageView
         android:layout_width="150dp"
@@ -12,40 +12,41 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="19dp" />
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Price:"
-        android:textSize="17dp"
+        android:text="@string/price"
+        android:textSize="17sp"
         android:textStyle="bold"
-        android:textColor="#ffffff"
+        android:textColor="@color/white"
         android:id="@+id/textView17"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="38dp"
         android:layout_alignTop="@+id/imageView3"
-        android:layout_alignRight="@+id/textView16"
-        android:layout_alignEnd="@+id/textView16" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Date:"
-        android:textSize="17dp"
+        android:text="@string/Date"
+        android:textSize="17sp"
         android:textStyle="bold"
-        android:textColor="#ffffff"
+        android:textColor="@color/white"
         android:id="@+id/date"
-        android:layout_below="@+id/textView17"
         android:layout_alignLeft="@+id/textView17"
         android:layout_alignStart="@+id/textView17"
-        android:layout_marginTop="29dp" />
+        android:layout_below="@+id/textView17"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/dialogPrice"
-        android:textColor="#ffffff"
+        android:textColor="@color/white"
         android:layout_alignBottom="@+id/textView17"
         android:layout_toRightOf="@+id/textView17"
         android:layout_toEndOf="@+id/textView17"
@@ -56,77 +57,90 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
-        android:textColor="#ffffff"
+        android:textColor="@color/white"
         android:id="@+id/dialogDate"
-        android:layout_alignTop="@+id/date"
+        android:layout_alignBottom="@+id/date"
         android:layout_alignLeft="@+id/dialogPrice"
         android:layout_alignStart="@+id/dialogPrice" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Description:"
-        android:textSize="17dp"
+        android:text="@string/description"
+        android:textSize="17sp"
         android:textStyle="bold"
-        android:textColor="#ffffff"
+        android:textColor="@color/white"
         android:id="@+id/textView16"
         android:layout_below="@+id/imageView3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp" />
+        android:layout_alignLeft="@+id/dialogDescription"
+        android:layout_alignStart="@+id/dialogDescription" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
-        android:textColor="#ffffff"
+        android:textColor="@color/white"
         android:id="@+id/dialogDescription"
-        android:layout_marginLeft="39dp"
-        android:layout_marginStart="39dp"
         android:layout_below="@+id/textView16"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignLeft="@+id/buttonTaskBack"
+        android:layout_alignStart="@+id/buttonTaskBack" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Location:"
-        android:textSize="17dp"
-        android:paddingLeft="2dp"
+        android:text="@string/loc"
+        android:textSize="17sp"
         android:textStyle="bold"
-        android:textColor="#ffffff"
+        android:textColor="@color/white"
         android:id="@+id/textView18"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="40dp"
         android:layout_below="@+id/dialogDescription"
-        android:layout_alignRight="@+id/dialogDescription"
-        android:layout_alignEnd="@+id/dialogDescription" />
+        android:layout_alignLeft="@+id/dialogDescription"
+        android:layout_alignStart="@+id/dialogDescription" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="location"
         android:id="@+id/dialogLocation"
-        android:textColor="#ffffff"
+        android:textColor="@color/white"
         android:paddingLeft="15dp"
+        android:layout_alignBaseline="@+id/textView18"
         android:layout_alignBottom="@+id/textView18"
-        android:layout_alignLeft="@+id/textView18"
-        android:layout_alignStart="@+id/textView16" />
+        android:layout_toLeftOf="@+id/dialogDate"
+        android:layout_toStartOf="@+id/dialogDate" />
 
     <Button
-        android:layout_width="60dp"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="130dp"
         android:layout_height="40dp"
-        android:text="Ok"
-        android:textColor="#FFFFFF"
+        android:text="@string/Back"
+        android:id="@+id/buttonTaskBack"
+        android:textColor="@color/white"
         android:textSize="15sp"
-        android:background="@drawable/buttonshape"
-        android:shadowColor="#A8A8A8"
+        android:background="@drawable/default_button"
+        android:shadowColor="@color/colorShadow"
         android:shadowDx="0"
         android:shadowDy="0"
-        android:shadowRadius="5"
-        android:id="@+id/dialogButton"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="50dp"
         android:layout_below="@+id/dialogLocation"
-        android:layout_toRightOf="@+id/textView18"
-        android:layout_alignLeft="@+id/dialogLocation"
-        android:layout_alignStart="@+id/dialogLocation" />
+        android:layout_toLeftOf="@+id/date"
+        android:layout_toStartOf="@+id/date" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="@string/Accept"
+        android:id="@+id/buttonTaskAccept"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:background="@drawable/green_button"
+        android:shadowColor="@color/colorShadow"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:layout_alignTop="@+id/buttonTaskBack"
+        android:layout_toRightOf="@+id/date"
+        android:layout_toEndOf="@+id/date" />
 
 </RelativeLayout>

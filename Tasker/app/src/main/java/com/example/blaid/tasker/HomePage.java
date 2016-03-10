@@ -22,15 +22,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class Home_Page extends AppCompatActivity
+public class HomePage extends AppCompatActivity
             implements NavigationView.OnNavigationItemSelectedListener {
     private ArrayAdapter<Task> adapter;
     final Context context = this;
+    TextView text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_drawer_activity);
+        setContentView(R.layout.activity_home_page);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -54,12 +55,12 @@ public class Home_Page extends AppCompatActivity
         listView1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Task listItem = (Task) listView1.getItemAtPosition(position);
+                final Task listItem = (Task) listView1.getItemAtPosition(position);
                 final Dialog dialog = new Dialog(context);
-                dialog.setContentView(R.layout.custom_dialog);
+                dialog.setContentView(R.layout.home_page_dialog);
                 dialog.setTitle(listItem.getTitle());
 
-                TextView text = (TextView) dialog.findViewById(R.id.dialogPrice);
+                text = (TextView) dialog.findViewById(R.id.dialogPrice);
                 String price = String.format("%.2f", listItem.getPrice());
                 text.setText("$" + price);
 
@@ -96,11 +97,31 @@ public class Home_Page extends AppCompatActivity
                         break;
                 }
 
-                Button dialogButton = (Button) dialog.findViewById(R.id.dialogButton);
+                Button dialogExitButton = (Button) dialog.findViewById(R.id.buttonTaskBack);
                 // if button is clicked, close the custom dialog
-                dialogButton.setOnClickListener(new View.OnClickListener() {
+                dialogExitButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        dialog.dismiss();
+                    }
+                });
+
+                Button dialogAcceptButton = (Button) dialog.findViewById(R.id.buttonTaskAccept);
+                // if button is clicked, accept the task
+                /* Find way to hide the task after accepted, and link it to the current user */
+                dialogAcceptButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast iDo = Toast.makeText(getApplicationContext(), "Task, " + listItem.getTitle() + " accepted!", Toast.LENGTH_SHORT);
+                        Toast iCant = Toast.makeText(getApplicationContext(), "Task, " + listItem.getTitle() + " is already in Progress :(", Toast.LENGTH_SHORT);
+
+                        if(!listItem.getAccepted()){
+                            listItem.setAccepted(true);
+                            iDo.show();
+                        } else {
+                            iCant.show();
+                        }
+
                         dialog.dismiss();
                     }
                 });
@@ -138,24 +159,24 @@ public class Home_Page extends AppCompatActivity
 
         switch (id){
             case R.id.action_logout:
-                Toast.makeText(Home_Page.this, "Logging out...", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(Home_Page.this, Login.class));
+                Toast.makeText(HomePage.this, "Logging out...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(HomePage.this, Login.class));
                 break;
 
             case R.id.action_settings:
-                startActivity(new Intent(Home_Page.this, SettingsPage.class));
+                startActivity(new Intent(HomePage.this, SettingsPage.class));
                 break;
 
             case R.id.action_edit_profile:
-                startActivity(new Intent(Home_Page.this, EditProfile.class));
+                startActivity(new Intent(HomePage.this, EditProfile.class));
                 break;
 
             case R.id.action_create_task:
-                startActivity(new Intent(Home_Page.this, CreateTask.class));
+                startActivity(new Intent(HomePage.this, CreateTask.class));
                 break;
 
             case R.id.action_home_page:
-                Toast.makeText(Home_Page.this, "You are already viewing Home Page", Toast.LENGTH_SHORT).show();
+                Toast.makeText(HomePage.this, "You are already viewing Home Page", Toast.LENGTH_SHORT).show();
                 break;
         }
 
