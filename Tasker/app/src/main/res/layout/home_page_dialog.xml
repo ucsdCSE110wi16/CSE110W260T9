@@ -30,7 +30,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Date"
+        android:text="Date :"
         android:textSize="17sp"
         android:textStyle="bold"
         android:textColor="@color/white"
@@ -142,5 +142,27 @@
         android:layout_alignTop="@+id/buttonTaskBack"
         android:layout_toRightOf="@+id/date"
         android:layout_toEndOf="@+id/date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User :"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/textView19"
+        android:layout_below="@+id/date"
+        android:layout_toRightOf="@+id/buttonTaskBack"
+        android:layout_toEndOf="@+id/buttonTaskBack" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textColor="@color/white"
+        android:id="@+id/dialogUserText"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_alignLeft="@+id/dialogDate"
+        android:layout_alignStart="@+id/dialogDate" />
 
 </RelativeLayout>

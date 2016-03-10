@@ -11,8 +11,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.blaid.tasker.TaskHistory.TaskHistory;
-
 public class ViewProfile extends AppCompatActivity {
 
     @Override

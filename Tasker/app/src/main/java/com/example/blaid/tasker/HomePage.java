@@ -74,6 +74,10 @@ public class HomePage extends AppCompatActivity
                 text = (TextView) dialog.findViewById(R.id.dialogLocation);
                 text.setText(listItem.getLocation());
 
+                text = (TextView) dialog.findViewById(R.id.dialogUserText);
+                text.setText(listItem.getUsername());
+
+
                 /* Set image view */
                 ImageView img = (ImageView) dialog.findViewById(R.id.imageView3);
                 switch (listItem.getImg_src()) {
@@ -206,10 +210,6 @@ public class HomePage extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-
-    public void viewTask(View v) {
-        startActivity(new Intent(getApplicationContext(), ViewTask.class));
     }
 }
 

@@ -1,5 +1,6 @@
 package com.example.blaid.tasker;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -52,15 +53,19 @@ public class CreateAccount extends AppCompatActivity {
                         user.setEmail(emailTxt);
                         user.setUsername(usernameTxt);
                         user.setPassword(passwordTxt);
+                        final ProgressDialog dialog = new ProgressDialog(CreateAccount.this);
+                        dialog.setMessage("Signing up...");
+                        dialog.show();
 
                         user.signUpInBackground(new SignUpCallback() {
                             @Override
                             public void done(ParseException e) {
-                                System.out.println("Exception is :" + e);
+                                dialog.dismiss();
                                 if (e == null) {
                                     Toast.makeText(getApplicationContext(), "Successfully Signed Up!", Toast.LENGTH_LONG).show();
                                     startActivity(new Intent(CreateAccount.this, HomePage.class));
                                 } else {
+                                    System.out.println("Exception is :" + e);
                                     Toast.makeText(getApplicationContext(), "Sign Up Error", Toast.LENGTH_LONG).show();
                                 }
                             }

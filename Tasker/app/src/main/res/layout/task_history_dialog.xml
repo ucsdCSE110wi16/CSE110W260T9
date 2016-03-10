@@ -22,15 +22,14 @@
         android:textStyle="bold"
         android:textColor="#ffffff"
         android:id="@+id/textView17"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="24dp"
         android:layout_alignTop="@+id/imageView3"
-        android:layout_alignRight="@+id/textView16"
-        android:layout_alignEnd="@+id/textView16" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Date:"
+        android:text="Date :"
         android:textSize="17dp"
         android:textStyle="bold"
         android:textColor="#ffffff"
@@ -70,9 +69,10 @@
         android:textStyle="bold"
         android:textColor="#ffffff"
         android:id="@+id/textView16"
+        android:layout_marginTop="30dp"
         android:layout_below="@+id/imageView3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp" />
+        android:layout_alignLeft="@+id/dialogDescription"
+        android:layout_alignStart="@+id/dialogDescription" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -84,7 +84,8 @@
         android:layout_marginStart="39dp"
         android:layout_below="@+id/textView16"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -95,10 +96,10 @@
         android:textStyle="bold"
         android:textColor="#ffffff"
         android:id="@+id/textView18"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="35dp"
         android:layout_below="@+id/dialogDescription"
-        android:layout_alignRight="@+id/dialogDescription"
-        android:layout_alignEnd="@+id/dialogDescription" />
+        android:layout_alignLeft="@+id/dialogDescription"
+        android:layout_alignStart="@+id/dialogDescription" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -108,8 +109,8 @@
         android:textColor="#ffffff"
         android:paddingLeft="15dp"
         android:layout_alignBottom="@+id/textView18"
-        android:layout_alignLeft="@+id/textView18"
-        android:layout_alignStart="@+id/textView16" />
+        android:layout_toRightOf="@+id/dialogUser"
+        android:layout_toEndOf="@+id/dialogUser" />
 
     <Button
         android:layout_width="60dp"
@@ -123,10 +124,31 @@
         android:shadowDy="0"
         android:shadowRadius="5"
         android:id="@+id/okButton"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="61dp"
         android:layout_below="@+id/dialogLocation"
-        android:layout_toRightOf="@+id/textView18"
-        android:layout_alignLeft="@+id/dialogLocation"
-        android:layout_alignStart="@+id/dialogLocation" />
+        android:layout_toLeftOf="@+id/dialogLocation"
+        android:layout_toStartOf="@+id/dialogLocation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User :"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:id="@+id/dialogUser"
+        android:layout_above="@+id/textView16"
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignStart="@+id/date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textColor="#ffffff"
+        android:id="@+id/dialogUserText"
+        android:layout_above="@+id/textView16"
+        android:layout_alignLeft="@+id/dialogDate"
+        android:layout_alignStart="@+id/dialogDate" />
 
 </RelativeLayout>

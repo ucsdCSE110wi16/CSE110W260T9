@@ -1,6 +1,7 @@
 package com.example.blaid.tasker;
 import com.parse.ParseObject;
 import com.parse.ParseClassName;
+import com.parse.ParseUser;
 
 /**
  * Author: James McCullough
@@ -41,7 +42,7 @@ public class Task {
         this.price = 0;
         this.accepted = false;
         this.img_src = PictureChoices.DEFAULT;
-        this.username = Login.user.getUsername();
+        this.username = ParseUser.getCurrentUser().getUsername();
     }
 
     public Task(String title, double price, PictureChoices choice) {
@@ -58,7 +59,7 @@ public class Task {
         this.date[YEAR_INDEX] = 2016;
         this.time[HOUR_INDEX] = 6;
         this.time[MINUTE_INDEX] = 30;
-        this.username = Login.user.getUsername();
+        this.username = ParseUser.getCurrentUser().getUsername();
     }
 
     public Task(String title, String description, String location, int[] time,
@@ -74,7 +75,7 @@ public class Task {
         this.price = price;
         this.accepted = false;
         this.img_src = choice;
-        this.username = Login.user.getUsername();
+        this.username = ParseUser.getCurrentUser().getUsername();
     }
 
     /* Implement toString() for list view */

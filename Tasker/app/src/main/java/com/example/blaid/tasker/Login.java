@@ -1,5 +1,6 @@
 package com.example.blaid.tasker;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -23,8 +24,6 @@ import com.parse.ParseUser;
 
 public class Login extends AppCompatActivity {
 
-    public final static ParseUser user = new ParseUser();
-
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -34,10 +33,10 @@ public class Login extends AppCompatActivity {
     public static final String APPLICATION_ID = "B1JHogV7pRql8v3xKuvuxNxRZjWWOUbGK04GzbK3";
     public static final String CLIENT_ID = "B9BB44VfrV96Dlq28bP13yi7QRD5lyIBGc0FOGER";
 
-    Button signInButton, signUpButton, skipLoginButton, logoutButton;
+    Button signInButton, signUpButton, logoutButton;
     EditText username, password;
 
-    TextView title, forgotUsername, forgotPassword;
+    TextView forgotUsername, forgotPassword;
 
     String usernameTxt, passwordTxt;
 
@@ -45,27 +44,12 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        // Create a local Datastore
-//        Parse.enableLocalDatastore(this);
-//        // Initialize Parse
-//        Parse.initialize(this, APPLICATION_ID, CLIENT_ID);
-//        ParseUser.enableAutomaticUser();
-//        ParseACL defaultACL = new ParseACL();
-//        // Optionally enable public read access.
-//        // defaultACL.setPublicReadAccess﴾true﴿;
-//        ParseACL.setDefaultACL( defaultACL, true);
-//
-//        ParseObject testObject = new ParseObject("TestObject");
-//        testObject.put("foo", "bar");
-//        testObject.saveInBackground();
-
         setContentView(R.layout.activity_login);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         signInButton = (Button) findViewById(R.id.clicktosignin);
         signUpButton = (Button) findViewById(R.id.clicktosignup);
-        skipLoginButton = (Button) findViewById(R.id.skipLoginID);
         logoutButton = (Button) findViewById(R.id.logoutID);
 
         username = (EditText) findViewById(R.id.username);
@@ -78,14 +62,6 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 signin(v);
-
-            }
-        });
-
-        skipLoginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                skipLoginPage(v);
 
             }
         });
@@ -177,14 +153,16 @@ public class Login extends AppCompatActivity {
         usernameTxt = username.getText().toString();
         passwordTxt = password.getText().toString();
 
-        user.setUsername(usernameTxt);
-        user.setPassword(passwordTxt);
+        final ProgressDialog dialog = new ProgressDialog(Login.this);
+        dialog.setMessage("Logging in...");
+        dialog.show();
 
         // Send data to Parse.com for verification
         ParseUser.logInInBackground(usernameTxt, passwordTxt,
                 new LogInCallback() {
                     public void done(ParseUser user, ParseException e) {
-                        if (user != null) {
+                        dialog.dismiss();
+                        if (e == null) {
                             // If user exist and authenticated, send user to Welcome.class
                             Intent intent = new Intent(
                                     Login.this,

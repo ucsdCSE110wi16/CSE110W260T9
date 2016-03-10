@@ -1,4 +1,4 @@
-package com.example.blaid.tasker.TaskHistory;
+package com.example.blaid.tasker;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -17,6 +17,7 @@ import com.example.blaid.tasker.Login;
 import com.example.blaid.tasker.R;
 import com.example.blaid.tasker.Task;
 import com.example.blaid.tasker.TaskManager;
+import com.parse.ParseUser;
 
 import java.util.ArrayList;
 
@@ -31,7 +32,7 @@ public class TaskHistory extends AppCompatActivity {
         setContentView(R.layout.activity_task_history);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        username = Login.user.getUsername();
+        username = ParseUser.getCurrentUser().getUsername();
         ArrayList<Task> taskHistory = new ArrayList<>();
 
         for (int i = 0; i < TaskManager.taskList.size(); i++) {
@@ -67,6 +68,9 @@ public class TaskHistory extends AppCompatActivity {
 
                 text = (TextView) dialog.findViewById(R.id.dialogLocation);
                 text.setText(listItem.getLocation());
+
+                text = (TextView) dialog.findViewById(R.id.dialogUserText);
+                text.setText(listItem.getUsername());
 
                 /* Set image view */
                 ImageView img = (ImageView) dialog.findViewById(R.id.imageView3);
