@@ -1,13 +1,19 @@
 package com.example.blaid.tasker;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.parse.ParseException;
@@ -70,6 +76,72 @@ public class CreateAccount extends AppCompatActivity {
         });
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        //set task image
+        Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.profile_pic_default);
+        ImageView myImageView = (ImageView) findViewById(R.id.imageView6);
+        myImageView.setImageBitmap(bm);
+
+        //set task image spinner
+        Spinner s = (Spinner) findViewById(R.id.spinnerPicID);
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.Profile_Types, R.layout.spinner_item);
+
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
+        s.setAdapter(adapter);
+
+        s.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String Task = parent.getSelectedItem().toString();
+
+                Bitmap nbm = BitmapFactory.decodeResource(getResources(), R.drawable.selecticon);
+                ImageView superManImageView = (ImageView) findViewById(R.id.imageView6);
+                superManImageView.setImageBitmap(nbm);
+
+                switch (Task) {
+                    case "Select Pic":
+                        Bitmap selectbm = BitmapFactory.decodeResource(getResources(), R.drawable.selecticon);
+                        ImageView selectImageView = (ImageView) findViewById(R.id.imageView6);
+                        selectImageView.setImageBitmap(selectbm);
+                        break;
+
+                    case "Superman":
+                        Bitmap laundrybm = BitmapFactory.decodeResource(getResources(), R.drawable.supermanprofile);
+                        ImageView laundryImageView = (ImageView) findViewById(R.id.imageView6);
+                        laundryImageView.setImageBitmap(laundrybm);
+                        break;
+
+                    case "WonderWoman":
+                        Bitmap dishesbm = BitmapFactory.decodeResource(getResources(), R.drawable.supergirlprofile);
+                        ImageView dishesImageView = (ImageView) findViewById(R.id.imageView6);
+                        dishesImageView.setImageBitmap(dishesbm);
+                        break;
+
+                    case "Harlequin":
+                        Bitmap carbm = BitmapFactory.decodeResource(getResources(), R.drawable.harlequin_profile);
+                        ImageView carImageView = (ImageView) findViewById(R.id.imageView6);
+                        carImageView.setImageBitmap(carbm);
+                        break;
+
+                    case "StormTrooper":
+                        Bitmap foodbm = BitmapFactory.decodeResource(getResources(), R.drawable.stormtrooperprofile);
+                        ImageView foodImageView = (ImageView) findViewById(R.id.imageView4);
+                        foodImageView.setImageBitmap(foodbm);
+                        break;
+
+                    case "Batman":
+                        Bitmap gamebm = BitmapFactory.decodeResource(getResources(), R.drawable.batmanprofile);
+                        ImageView gameImageView = (ImageView) findViewById(R.id.imageView6);
+                        gameImageView.setImageBitmap(gamebm);
+                        break;
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
     }
 
     @Override
