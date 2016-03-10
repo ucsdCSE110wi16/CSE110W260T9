@@ -1,5 +1,7 @@
 package com.example.blaid.tasker;
 
+import com.parse.ParseUser;
+
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.*;
@@ -103,7 +105,7 @@ public class TaskManager {
             case USER:
                 ArrayList<Task> usersTasks = new ArrayList<Task>();
                 for (Task t: taskList) {
-                    if (t.getUsername() == Login.user.getUsername()) {
+                    if (t.getUsername().equals(ParseUser.getCurrentUser().getUsername())) {
                         usersTasks.add(t);
                     }
                 }
