@@ -121,7 +121,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/textView7"
-        android:text="Task Completion Rating"
+        android:text="@string/task_completion_rating"
         android:textColor="@color/white"
         android:layout_below="@+id/ratingBar"
         android:layout_alignLeft="@+id/textView"
