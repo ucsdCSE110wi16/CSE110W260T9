@@ -134,6 +134,11 @@ public class Task {
         return this.date;
     }
 
+    public String getDateToString() {
+        return this.date[MONTH_INDEX] + "/" + this.date[DAY_INDEX] +
+                "/" + this.date[YEAR_INDEX];
+    }
+
     public void setYear(int year) {
         this.date[YEAR_INDEX] = year;
     }

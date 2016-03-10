@@ -48,10 +48,9 @@ public class HomePage extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         final ListView listView1 = (ListView) findViewById(R.id.listView1);
+        listView1.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
-        adapter = new ArrayAdapter<Task>(this,
-                                    R.layout.listview_layout,
-                                    TaskManager.taskList);
+        adapter = new MyAdapter(this, TaskManager.taskList);
 
         listView1.setAdapter(adapter);
         listView1.setOnItemClickListener(new AdapterView.OnItemClickListener() {

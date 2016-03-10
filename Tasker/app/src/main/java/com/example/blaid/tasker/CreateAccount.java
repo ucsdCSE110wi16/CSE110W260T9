@@ -67,8 +67,6 @@ public class CreateAccount extends AppCompatActivity {
                             public void done(ParseException e) {
                                 if (e == null) {
                                     startActivity(new Intent(CreateAccount.this, HomePage.class));
-                                    Toast.makeText(getApplicationContext(), "Successfully Signed Up!", Toast.LENGTH_LONG).show();
-                                    dialog.dismiss();
                                     finish();
                                 } else {
                                     dialog.dismiss();

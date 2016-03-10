@@ -101,14 +101,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="location"
+        android:gravity="right"
+        android:text="1 Scholar's Dr, La Jolla, CA"
         android:id="@+id/dialogLocation"
         android:textColor="@color/white"
-        android:paddingLeft="15dp"
-        android:layout_alignBaseline="@+id/textView18"
-        android:layout_alignBottom="@+id/textView18"
-        android:layout_toLeftOf="@+id/dialogDate"
-        android:layout_toStartOf="@+id/dialogDate" />
+        android:layout_below="@+id/textView18"
+        android:layout_alignLeft="@+id/textView18"
+        android:layout_alignStart="@+id/textView18" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
