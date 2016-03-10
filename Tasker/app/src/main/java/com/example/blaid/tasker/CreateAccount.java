@@ -33,7 +33,6 @@ public class CreateAccount extends AppCompatActivity {
         passwordCfm = (EditText) findViewById(R.id.editTextPasswordConfirm);
         button = (Button) findViewById(R.id.createButton);
 
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

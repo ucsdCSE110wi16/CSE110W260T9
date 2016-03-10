@@ -1,4 +1,5 @@
 package com.example.blaid.tasker;
+import com.parse.Parse;
 import com.parse.ParseObject;
 import com.parse.ParseClassName;
 import com.parse.ParseUser;
@@ -23,7 +24,7 @@ public class Task {
     private int AMPM_INDEX = 2;
 
     /* Keep track of who created this task */
-    private final int USER_ID;
+    private final ParseUser USER_ID;
 
     private boolean accepted;
     private PictureChoices img_src;
@@ -38,7 +39,7 @@ public class Task {
         this.title = "Default Title";
         this.description = "Default Description";
         this.location = "";
-        this.USER_ID = 0;
+        this.USER_ID = ParseUser.getCurrentUser();
         this.price = 0;
         this.accepted = false;
         this.img_src = PictureChoices.DEFAULT;
@@ -51,7 +52,7 @@ public class Task {
         this.title = title;
         this.description = "Default Description";
         this.location = "Default Location";
-        this.USER_ID = 0;
+        this.USER_ID = ParseUser.getCurrentUser();
         this.price = price;
         this.accepted = false;
         this.date[MONTH_INDEX] = (int)(Math.random()*10 + 3);
@@ -63,7 +64,7 @@ public class Task {
     }
 
     public Task(String title, String description, String location, int[] time,
-                int[] date, int USER_ID, double price, boolean accepted,
+                int[] date, ParseUser USER_ID, double price, boolean accepted,
                 PictureChoices choice) {
         /* Initialize member variables */
         this.title = title;
@@ -201,7 +202,7 @@ public class Task {
     }
 
     /* Note there is no setUserID method, userID cannot be changed */
-    public int getUserID() {
+    public ParseUser getUserID() {
         return this.USER_ID;
     }
 
