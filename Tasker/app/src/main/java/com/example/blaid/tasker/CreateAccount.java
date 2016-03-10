@@ -129,7 +129,7 @@ public class CreateAccount extends AppCompatActivity {
 
                     case "StormTrooper":
                         Bitmap foodbm = BitmapFactory.decodeResource(getResources(), R.drawable.stormtrooperprofile);
-                        ImageView foodImageView = (ImageView) findViewById(R.id.imageView4);
+                        ImageView foodImageView = (ImageView) findViewById(R.id.imageView6);
                         foodImageView.setImageBitmap(foodbm);
                         break;
 
