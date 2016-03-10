@@ -65,8 +65,7 @@ public class CreateAccount extends AppCompatActivity {
                                     Toast.makeText(getApplicationContext(), "Successfully Signed Up!", Toast.LENGTH_LONG).show();
                                     startActivity(new Intent(CreateAccount.this, HomePage.class));
                                 } else {
-                                    System.out.println("Exception is :" + e);
-                                    Toast.makeText(getApplicationContext(), "Sign Up Error", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_LONG).show();
                                 }
                             }
                         });
