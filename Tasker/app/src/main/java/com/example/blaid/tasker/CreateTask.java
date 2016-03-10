@@ -23,6 +23,8 @@ import android.widget.TimePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.parse.ParseUser;
+
 import java.util.Calendar;
 
 
@@ -197,7 +199,7 @@ public class CreateTask extends AppCompatActivity {
      * Get values from from widgets and create task.
      */
     private Task createTask() {
-        String title, description, location;
+        String title, description, location, user;
         double price;
         EditText text;
 
@@ -230,6 +232,12 @@ public class CreateTask extends AppCompatActivity {
             return null;
         }
 
+        /* Get User */
+//        user = Login.user.getUsername();
+//        if (!user) {
+//            return null;
+//        }
+
         /* Create new task */
         date[0] = month;
         date[1] = day;
@@ -240,7 +248,7 @@ public class CreateTask extends AppCompatActivity {
         time[2] = ampm;
 
         Task task = new Task(title, description, location,
-                time, date, 0, price, false, choice);
+                time, date, ParseUser.getCurrentUser(), price, false, choice);
         return task;
     }
 

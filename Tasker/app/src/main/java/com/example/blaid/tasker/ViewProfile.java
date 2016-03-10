@@ -25,7 +25,7 @@ public class ViewProfile extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ViewProfile.this, TaskHistory.class));
+                startActivity(new Intent(getApplicationContext(), TaskHistory.class));
             }
         });
         setupActionBar();

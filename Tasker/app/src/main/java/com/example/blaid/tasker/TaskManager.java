@@ -99,6 +99,15 @@ public class TaskManager {
             case LOCATION:
                 /* To Be Determined */
                 break;
+
+            case USER:
+                ArrayList<Task> usersTasks = new ArrayList<Task>();
+                for (Task t: taskList) {
+                    if (t.getUsername() == Login.user.getUsername()) {
+                        usersTasks.add(t);
+                    }
+                }
+                break;
         }
     }
 
