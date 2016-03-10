@@ -103,7 +103,7 @@ public class TaskManager {
             case USER:
                 ArrayList<Task> usersTasks = new ArrayList<Task>();
                 for (Task t: taskList) {
-                    if (t.getUsername() == Login.user.getUsername()) {
+                    if (t.getUsername().equals(Login.user.getUsername())) {
                         usersTasks.add(t);
                     }
                 }

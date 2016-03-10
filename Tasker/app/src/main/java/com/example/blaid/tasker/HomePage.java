@@ -160,23 +160,27 @@ public class HomePage extends AppCompatActivity
         switch (id){
             case R.id.action_logout:
                 Toast.makeText(HomePage.this, "Logging out...", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(HomePage.this, Login.class));
+                startActivity(new Intent(getApplicationContext(), Login.class));
                 break;
 
             case R.id.action_settings:
-                startActivity(new Intent(HomePage.this, SettingsPage.class));
+                startActivity(new Intent(getApplicationContext(), SettingsPage.class));
                 break;
 
             case R.id.action_edit_profile:
-                startActivity(new Intent(HomePage.this, EditProfile.class));
+                startActivity(new Intent(getApplicationContext(), EditProfile.class));
                 break;
 
             case R.id.action_create_task:
-                startActivity(new Intent(HomePage.this, CreateTask.class));
+                startActivity(new Intent(getApplicationContext(), CreateTask.class));
                 break;
 
             case R.id.action_home_page:
-                Toast.makeText(HomePage.this, "You are already viewing Home Page", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "You are already viewing Home Page", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.action_view_profile:
+                startActivity(new Intent(getApplicationContext(), ViewProfile.class));
                 break;
         }
 
@@ -208,9 +212,9 @@ public class HomePage extends AppCompatActivity
         return true;
     }
 
-    public void viewTask(View v) {
-        startActivity(new Intent(getApplicationContext(), ViewTask.class));
-    }
+//    public void viewTask(View v) {
+//        startActivity(new Intent(getApplicationContext(), ViewTask.class));
+//    }
 }
 
 

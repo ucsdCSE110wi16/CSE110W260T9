@@ -27,14 +27,11 @@
         android:text="Your Tasks"
         android:textStyle="bold"
         android:textSize="40sp"
-        android:textColor="#ffffff"
-        android:shadowColor="#000000"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
         android:shadowRadius="10.0"
         android:id="@+id/taskHistoryText"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="74dp"
-        android:layout_marginStart="74dp" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

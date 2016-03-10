@@ -186,17 +186,14 @@ public class Login extends AppCompatActivity {
                     public void done(ParseUser user, ParseException e) {
                         if (user != null) {
                             // If user exist and authenticated, send user to Welcome.class
-                            Intent intent = new Intent(
-                                    Login.this,
-                                    HomePage.class);
+                            Intent intent = new Intent(Login.this, HomePage.class);
                             startActivity(intent);
                             Toast.makeText(getApplicationContext(),
                                     "Successfully Logged in",
                                     Toast.LENGTH_LONG).show();
                             finish();
                         } else {
-                            Toast.makeText(
-                                    getApplicationContext(),
+                            Toast.makeText(getApplicationContext(),
                                     "No such user exist, please signup",
                                     Toast.LENGTH_LONG).show();
                         }
