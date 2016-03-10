@@ -1,5 +1,8 @@
 package com.example.blaid.tasker;
 
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 import com.parse.ParseUser;
 
 import java.util.Collections;
@@ -17,43 +20,94 @@ import java.lang.Integer;
 public class TaskManager {
 
     /* This stores our task list for sorting */
-    public static ArrayList<Task> taskList;
-
-    private static TaskManager _instance = null;
-
-    public static TaskManager getInstance(){
-        if(_instance == null)
-            _instance = new TaskManager();
-        return _instance;
-    }
+    public static ArrayList<Task> taskList = new ArrayList<>();
 
     /*
      * This constructor grabs all the tasks in the database and initializes the
      * taskList.
      */
     public TaskManager() {
-        /* get taskList from database */
-        /* filter by newest before displaying to user */
-        taskList = new ArrayList<Task>();
-        taskList.add(new Task("Laundry Task", 13.29, PictureChoices.LAUNDRY));
-        taskList.add(new Task("Dishes", 5.00, PictureChoices.DISHES));
-        taskList.add(new Task("Food Run", 15.69, PictureChoices.FOOD));
-        taskList.add(new Task("Homework Help", 20.00, PictureChoices.DEFAULT));
-        taskList.add(new Task("House Cleaning", 15.99, PictureChoices.CAR));
-        taskList.add(new Task("Get Food", 2.00, PictureChoices.FOOD));
-        taskList.add(new Task("Drop off Paper", 15.69, PictureChoices.CAR));
-        taskList.add(new Task("Sell Chair", 45, PictureChoices.DEFAULT));
-        taskList.add(new Task("Pick up Clothes", 10, PictureChoices.LAUNDRY));
-        taskList.add(new Task("Change Tire", 15.99, PictureChoices.CAR));
-        taskList.add(new Task("Cook Meal", 2.00, PictureChoices.FOOD));
-        taskList.add(new Task("Drop off Books", 15.69, PictureChoices.CAR));
-        taskList.add(new Task("Buy Groceries", 45, PictureChoices.FOOD));
-        taskList.add(new Task("Write Letter", 10, PictureChoices.DEFAULT));
+        getTaskList();
     }
 
-    /*
+    /**
+     * This method stores a task as a ParseObject in the online database.
+     *
+     * @param task - The task to store.
+     */
+    public static void storeTask(Task task) {
+        /* Create new parse object */
+        ParseObject parseTask = new ParseObject("Task");
+
+        parseTask.put("title", task.getTitle());
+        parseTask.put("description", task.getDescription());
+        parseTask.put("location", task.getLocation());
+        parseTask.put("price", task.getPrice());
+        parseTask.put("accepted", false);
+        parseTask.put("username", task.getUsername());
+        parseTask.put("imagesource", task.getImageSourceName());
+        parseTask.put("hour", task.getHour());
+        parseTask.put("min", task.getMin());
+        parseTask.put("ampm", task.getAMPM());
+        parseTask.put("year", task.getYear());
+        parseTask.put("month", task.getMonth());
+        parseTask.put("day", task.getDay());
+
+        /* Save task to database */
+        parseTask.saveInBackground();
+    }
+
+    /**
+     * This method retrieves a list of ParseObjects to be displayed on the home page.
+     */
+    public static void getTaskList() {
+        /* Fill new task list */
+        taskList = new ArrayList<>();
+
+        /* Get new ParseQuery */
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Task");
+
+        try {
+            List<ParseObject> result = query.find();
+
+            for (int i = 0; i < result.size(); i++) {
+                Task t = createTask(result.get(i));
+                taskList.add(t);
+            }
+
+        } catch (ParseException e) {
+            System.out.println(e);
+        }
+    }
+
+    /**
+     * Create a task object from ParseObject
+     *
+     * @param obj - the parse object to convert
+     * @return - the newly created task object
+     */
+    public static Task createTask(ParseObject obj) {
+
+        return new Task(obj.getString("title"),
+                          obj.getString("description"),
+                          obj.getString("location"),
+                          obj.getInt("year"),
+                          obj.getInt("month"),
+                          obj.getInt("day"),
+                          obj.getInt("hour"),
+                          obj.getInt("min"),
+                          obj.getInt("ampm"),
+                          obj.getDouble("price"),
+                          obj.getBoolean("accepted"),
+                          obj.getString("imagesource"),
+                          obj.getString("username"));
+    }
+
+    /**
      * This method uses Collections.sort to apply cascading filters to the
      * task list.
+     *
+     * @param option - An enum indicating which filter to apply.
      */
     public static void filterTasks(FilterOption option) {
         /* This switch statement determines which filter to sort with */
@@ -113,9 +167,12 @@ public class TaskManager {
         }
     }
 
-    /*
+    /**
      * This is a helper method for filterTasks, it implements a comparing
      * method to arrange tasks by soonest date.
+     *
+     * @param lhs - the first task to compare
+     * @param rhs - the second task to compare
      */
     public static int compareByDate(Task lhs, Task rhs) {
         Calendar cal1 = new GregorianCalendar(lhs.getYear(), lhs.getMonth(),

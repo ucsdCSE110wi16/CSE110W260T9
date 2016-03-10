@@ -9,9 +9,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
+import com.parse.ParseUser;
 
 public class ViewProfile extends AppCompatActivity {
+    TextView username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +22,7 @@ public class ViewProfile extends AppCompatActivity {
         setContentView(R.layout.activity_view_profile);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
         Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,6 +31,10 @@ public class ViewProfile extends AppCompatActivity {
             }
         });
         setupActionBar();
+
+        username = (TextView) findViewById(R.id.textViewUsername);
+        username.setText(ParseUser.getCurrentUser().getUsername().toString());
+
     }
 
     private void setupActionBar() {

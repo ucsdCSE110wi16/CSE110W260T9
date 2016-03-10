@@ -13,10 +13,6 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.blaid.tasker.Login;
-import com.example.blaid.tasker.R;
-import com.example.blaid.tasker.Task;
-import com.example.blaid.tasker.TaskManager;
 import com.parse.ParseUser;
 
 import java.util.ArrayList;
@@ -25,6 +21,8 @@ public class TaskHistory extends AppCompatActivity {
     private ArrayAdapter<Task> adapter;
     final Context context = this;
     public String username;
+
+    TextView urTasks;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +33,14 @@ public class TaskHistory extends AppCompatActivity {
         username = ParseUser.getCurrentUser().getUsername();
         ArrayList<Task> taskHistory = new ArrayList<>();
 
-        for (int i = 0; i < TaskManager.taskList.size(); i++) {
-            if (TaskManager.taskList.get(i).getUsername().equals(username)) {
-                taskHistory.add(TaskManager.taskList.get(i));
+        for (Task t: TaskManager.taskList) {
+            if (t.getUsername().equals(username)) {
+                taskHistory.add(t);
             }
         }
+
+        urTasks = (TextView) findViewById(R.id.taskHistoryText);
+        urTasks.setText(ParseUser.getCurrentUser().getUsername().toString() + "'s Tasks");
 
         final ListView listView1 = (ListView) findViewById(R.id.listView1);
         adapter = new ArrayAdapter<Task>(this,
@@ -74,7 +75,7 @@ public class TaskHistory extends AppCompatActivity {
 
                 /* Set image view */
                 ImageView img = (ImageView) dialog.findViewById(R.id.imageView3);
-                switch (listItem.getImg_src()) {
+                switch (listItem.getImageSource()) {
                     case LAUNDRY:
                         img.setImageResource(R.drawable.laundryicon);
                         break;

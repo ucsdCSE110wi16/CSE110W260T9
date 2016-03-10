@@ -158,21 +158,15 @@ public class Login extends AppCompatActivity {
         ParseUser.logInInBackground(usernameTxt, passwordTxt,
                 new LogInCallback() {
                     public void done(ParseUser user, ParseException e) {
-                        dialog.dismiss();
                         if (e == null) {
                             // If user exist and authenticated, send user to Welcome.class
-                            Intent intent = new Intent(
-                                    Login.this,
-                                    HomePage.class);
+                            Intent intent = new Intent(Login.this, HomePage.class);
                             startActivity(intent);
-                            Toast.makeText(getApplicationContext(),
-                                    "Successfully Logged in",
-                                    Toast.LENGTH_LONG).show();
                             finish();
                         } else {
-                            Toast.makeText(
-                                    getApplicationContext(),
-                                    "No such user exist, please signup",
+                            dialog.dismiss();
+                            Toast.makeText(getApplicationContext(),
+                                    "No such user exist, please sign up!",
                                     Toast.LENGTH_LONG).show();
                         }
                     }

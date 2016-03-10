@@ -35,6 +35,8 @@ public class HomePage extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        TaskManager.getTaskList();
+
          
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -49,7 +51,7 @@ public class HomePage extends AppCompatActivity
 
         adapter = new ArrayAdapter<Task>(this,
                                     R.layout.listview_layout,
-                                    TaskManager.getInstance().taskList);
+                                    TaskManager.taskList);
 
         listView1.setAdapter(adapter);
         listView1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -80,7 +82,7 @@ public class HomePage extends AppCompatActivity
 
                 /* Set image view */
                 ImageView img = (ImageView) dialog.findViewById(R.id.imageView3);
-                switch (listItem.getImg_src()) {
+                switch (listItem.getImageSource()) {
                     case LAUNDRY:
                         img.setImageResource(R.drawable.laundryicon);
                         break;
@@ -164,23 +166,27 @@ public class HomePage extends AppCompatActivity
         switch (id){
             case R.id.action_logout:
                 Toast.makeText(HomePage.this, "Logging out...", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(HomePage.this, Login.class));
+                startActivity(new Intent(getApplicationContext(), Login.class));
                 break;
 
             case R.id.action_settings:
-                startActivity(new Intent(HomePage.this, SettingsPage.class));
+                startActivity(new Intent(getApplicationContext(), SettingsPage.class));
                 break;
 
             case R.id.action_edit_profile:
-                startActivity(new Intent(HomePage.this, EditProfile.class));
+                startActivity(new Intent(getApplicationContext(), EditProfile.class));
                 break;
 
             case R.id.action_create_task:
-                startActivity(new Intent(HomePage.this, CreateTask.class));
+                startActivity(new Intent(getApplicationContext(), CreateTask.class));
                 break;
 
             case R.id.action_home_page:
-                Toast.makeText(HomePage.this, "You are already viewing Home Page", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "You are already viewing Home Page", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.action_view_profile:
+                startActivity(new Intent(getApplicationContext(), ViewProfile.class));
                 break;
         }
 

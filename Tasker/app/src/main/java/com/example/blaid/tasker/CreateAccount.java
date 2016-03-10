@@ -65,11 +65,13 @@ public class CreateAccount extends AppCompatActivity {
                         user.signUpInBackground(new SignUpCallback() {
                             @Override
                             public void done(ParseException e) {
-                                dialog.dismiss();
                                 if (e == null) {
-                                    Toast.makeText(getApplicationContext(), "Successfully Signed Up!", Toast.LENGTH_LONG).show();
                                     startActivity(new Intent(CreateAccount.this, HomePage.class));
+                                    Toast.makeText(getApplicationContext(), "Successfully Signed Up!", Toast.LENGTH_LONG).show();
+                                    dialog.dismiss();
+                                    finish();
                                 } else {
+                                    dialog.dismiss();
                                     Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_LONG).show();
                                 }
                             }
