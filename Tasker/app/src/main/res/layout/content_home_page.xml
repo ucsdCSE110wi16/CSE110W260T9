@@ -8,10 +8,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/createtaskbackground"
+    android:background="@drawable/bluebackground"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.blaid.tasker.Home_Page"
-    tools:showIn="@layout/app_bar_drawer_activity">
+    tools:context=".HomePage">
 
     <ListView
         android:id="@+id/listView1"

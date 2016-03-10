@@ -18,14 +18,12 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
 import com.parse.LogInCallback;
-import com.parse.Parse;
-import com.parse.ParseACL;
 import com.parse.ParseException;
-import com.parse.ParseObject;
 import com.parse.ParseUser;
-import com.parse.SignUpCallback;
 
 public class Login extends AppCompatActivity {
+
+    public final static ParseUser user = new ParseUser();
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -179,6 +177,9 @@ public class Login extends AppCompatActivity {
         usernameTxt = username.getText().toString();
         passwordTxt = password.getText().toString();
 
+        user.setUsername(usernameTxt);
+        user.setPassword(passwordTxt);
+
         // Send data to Parse.com for verification
         ParseUser.logInInBackground(usernameTxt, passwordTxt,
                 new LogInCallback() {
@@ -187,7 +188,7 @@ public class Login extends AppCompatActivity {
                             // If user exist and authenticated, send user to Welcome.class
                             Intent intent = new Intent(
                                     Login.this,
-                                    Home_Page.class);
+                                    HomePage.class);
                             startActivity(intent);
                             Toast.makeText(getApplicationContext(),
                                     "Successfully Logged in",
@@ -211,7 +212,7 @@ public class Login extends AppCompatActivity {
 
     public void skipLoginPage(View view) {
 
-        startActivity(new Intent(Login.this, Home_Page.class));
+        startActivity(new Intent(Login.this, HomePage.class));
 
 
     }

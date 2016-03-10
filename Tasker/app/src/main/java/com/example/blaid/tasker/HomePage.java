@@ -22,7 +22,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class Home_Page extends AppCompatActivity
+public class HomePage extends AppCompatActivity
             implements NavigationView.OnNavigationItemSelectedListener {
     private ArrayAdapter<Task> adapter;
     final Context context = this;
@@ -31,7 +31,7 @@ public class Home_Page extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_drawer_activity);
+        setContentView(R.layout.activity_home_page);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -57,11 +57,8 @@ public class Home_Page extends AppCompatActivity
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 final Task listItem = (Task) listView1.getItemAtPosition(position);
                 final Dialog dialog = new Dialog(context);
-                dialog.setContentView(R.layout.custom_dialog);
+                dialog.setContentView(R.layout.home_page_dialog);
                 dialog.setTitle(listItem.getTitle());
-
-                text = (TextView) dialog.findViewById(R.id.dialogTitle);
-                text.setText(listItem.getTitle());
 
                 text = (TextView) dialog.findViewById(R.id.dialogPrice);
                 String price = String.format("%.2f", listItem.getPrice());
@@ -162,24 +159,24 @@ public class Home_Page extends AppCompatActivity
 
         switch (id){
             case R.id.action_logout:
-                Toast.makeText(Home_Page.this, "Logging out...", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(Home_Page.this, Login.class));
+                Toast.makeText(HomePage.this, "Logging out...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(HomePage.this, Login.class));
                 break;
 
             case R.id.action_settings:
-                startActivity(new Intent(Home_Page.this, SettingsPage.class));
+                startActivity(new Intent(HomePage.this, SettingsPage.class));
                 break;
 
             case R.id.action_edit_profile:
-                startActivity(new Intent(Home_Page.this, EditProfile.class));
+                startActivity(new Intent(HomePage.this, EditProfile.class));
                 break;
 
             case R.id.action_create_task:
-                startActivity(new Intent(Home_Page.this, CreateTask.class));
+                startActivity(new Intent(HomePage.this, CreateTask.class));
                 break;
 
             case R.id.action_home_page:
-                Toast.makeText(Home_Page.this, "You are already viewing Home Page", Toast.LENGTH_SHORT).show();
+                Toast.makeText(HomePage.this, "You are already viewing Home Page", Toast.LENGTH_SHORT).show();
                 break;
         }
 
