@@ -4,12 +4,12 @@
         android:radius="100dp"
         />
     <gradient
-        android:gradientRadius="190"
-        android:centerX="46%"
+        android:gradientRadius="400"
+        android:centerX="50%"
         android:centerY="50%"
-        android:centerColor="#27A819"
-        android:startColor="#E8E8E8"
-        android:endColor="#000000"
+        android:centerColor="#ffffff"
+        android:startColor="#27A819"
+        android:endColor="#E8E8E8"
         android:type="radial"
         />
     <padding
@@ -23,7 +23,7 @@
         android:height="51dp"
         />
     <stroke
-        android:width="3dp"
+        android:width="1dp"
         android:color="#878787"
         />
 </shape>
