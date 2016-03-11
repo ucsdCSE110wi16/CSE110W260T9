@@ -5,8 +5,5 @@
     <item name="ic_menu_manage" type="drawable">@android:drawable/ic_menu_manage</item>
     <item name="ic_menu_share" type="drawable">@android:drawable/ic_menu_share</item>
     <item name="ic_menu_send" type="drawable">@android:drawable/ic_menu_send</item>
-<<<<<<< HEAD
-=======
 
->>>>>>> e838c49ded70dd89259bb27e435db89ecb6bd486
 </resources>

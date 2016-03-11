@@ -168,6 +168,10 @@ public class EditProfile extends AppCompatActivity {
 
                 break;
 
+            case R.id.action_view_profile:
+
+                startActivity(new Intent(getApplicationContext(), ViewProfile.class));
+                break;
               }
 
         return super.onOptionsItemSelected(item);

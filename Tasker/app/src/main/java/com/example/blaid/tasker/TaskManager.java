@@ -32,7 +32,7 @@ public class TaskManager {
         /* get taskList from database */
         /* filter by newest before displaying to user */
 
-        //getTaskList();
+        getTaskList();
 
     }
 

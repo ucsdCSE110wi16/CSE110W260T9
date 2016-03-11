@@ -90,6 +90,11 @@ public class ViewProfile extends AppCompatActivity {
                 startActivity(new Intent(ViewProfile.this, EditProfile.class));
                 break;
 
+            case R.id.action_view_profile:
+                Toast.makeText(ViewProfile.this, "Already viewing profile", Toast.LENGTH_SHORT).show();
+
+                break;
+
             case R.id.action_create_task:
                 Toast.makeText(ViewProfile.this, "New Blank Task...", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(ViewProfile.this, CreateTask.class));

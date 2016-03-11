@@ -54,11 +54,7 @@
         <!-- <intent-filter> -->
         <!-- <action android:name="android.intent.action.MAIN" /> -->
 
-<<<<<<< HEAD
-        >>>>>>> CreateTask/master
-=======
 
->>>>>>> e838c49ded70dd89259bb27e435db89ecb6bd486
         <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
         <!-- </intent-filter> -->
         <!-- </activity> -->
@@ -98,22 +94,6 @@
                 android:value=".HomePage" />
         </activity>
         <activity
-<<<<<<< HEAD
-            android:name=".Home_Page"
-            android:label="Home_Page"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".FilterPage"
-            android:label="FilterPg"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".SettingsNEW_Activity"
-            android:label="@string/title_activity_settings_new_" />
-        <!--<activity-->
-            <!--android:name=".SettingsNEW_Activity.java"-->
-            <!--android:label="@string/title_activity_settings_new__activity.java" />-->
->>>>>>> CreateTask/master
-=======
             android:name=".SettingsPage"
             android:label="@string/title_activity_settings_new_">
             <meta-data
@@ -131,7 +111,6 @@
         </activity>
         <activity android:name=".AcceptedTasks" />
         <activity android:name=".CompletedTasks"></activity>
->>>>>>> e838c49ded70dd89259bb27e435db89ecb6bd486
     </application>
 
 </manifest>
