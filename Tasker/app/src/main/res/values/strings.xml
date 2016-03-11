@@ -16,6 +16,7 @@
     <string name="title_activity_home_page">Tasker</string>
     <string name="confirmPwd">Confirm Password</string>
     <string name="title_activity_main">MainActivity</string>
+
     <string name="title_activity_create_task">Create Task</string>
     <string name="Upload_Photo">Upload Photo</string>
     <string name="Description">Description:</string>
@@ -148,4 +149,7 @@
     <string name="description">Description:</string>
     <string name="loc">Location:</string>
     <string name="task_completion_rating">Task Completion Rating</string>
+
+    <string name="title_activity_user_profile">UserProfile</string>
+
 </resources>
