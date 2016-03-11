@@ -23,6 +23,8 @@ import android.widget.TimePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.parse.ParseUser;
+
 import java.util.Calendar;
 
 
@@ -36,13 +38,7 @@ public class CreateTask extends AppCompatActivity {
     private int year = cal.get(Calendar.YEAR);
     private int month = cal.get(Calendar.MONTH);
     private int day = cal.get(Calendar.DAY_OF_MONTH);
-    private int[] date = {month, day, year};
-
-    private int[] time = new int[3];
-
-    private String title, description, location;
-    private PictureChoices choice = PictureChoices.DEFAULT;
-    private int price;
+    private String choice;
     private int hour, min;
     private int ampm = 0;
 
@@ -79,42 +75,42 @@ public class CreateTask extends AppCompatActivity {
                         Bitmap selectbm = BitmapFactory.decodeResource(getResources(), R.drawable.selecticon);
                         ImageView selectImageView = (ImageView) findViewById(R.id.imageView4);
                         selectImageView.setImageBitmap(selectbm);
-                        choice = PictureChoices.DEFAULT;
+                        choice = PictureChoices.DEFAULT.name();
                         break;
 
                     case "Laundry":
                         Bitmap laundrybm = BitmapFactory.decodeResource(getResources(), R.drawable.laundryicon);
                         ImageView laundryImageView = (ImageView) findViewById(R.id.imageView4);
                         laundryImageView.setImageBitmap(laundrybm);
-                        choice = PictureChoices.LAUNDRY;
+                        choice = PictureChoices.LAUNDRY.name();
                         break;
 
                     case "Dishes":
                         Bitmap dishesbm = BitmapFactory.decodeResource(getResources(), R.drawable.dishesicon);
                         ImageView dishesImageView = (ImageView) findViewById(R.id.imageView4);
                         dishesImageView.setImageBitmap(dishesbm);
-                        choice = PictureChoices.DISHES;
+                        choice = PictureChoices.DISHES.name();
                         break;
 
                     case "Car":
                         Bitmap carbm = BitmapFactory.decodeResource(getResources(), R.drawable.caricon);
                         ImageView carImageView = (ImageView) findViewById(R.id.imageView4);
                         carImageView.setImageBitmap(carbm);
-                        choice = PictureChoices.CAR;
+                        choice = PictureChoices.CAR.name();
                         break;
 
                     case "Food":
                         Bitmap foodbm = BitmapFactory.decodeResource(getResources(), R.drawable.foodicon);
                         ImageView foodImageView = (ImageView) findViewById(R.id.imageView4);
                         foodImageView.setImageBitmap(foodbm);
-                        choice = PictureChoices.FOOD;
+                        choice = PictureChoices.FOOD.name();
                         break;
 
                     case "Video Games":
                         Bitmap gamebm = BitmapFactory.decodeResource(getResources(), R.drawable.gameicon);
                         ImageView gameImageView = (ImageView) findViewById(R.id.imageView4);
                         gameImageView.setImageBitmap(gamebm);
-                        choice = PictureChoices.GAMES;
+                        choice = PictureChoices.GAMES.name();
                         break;
                 }
             }
@@ -132,8 +128,9 @@ public class CreateTask extends AppCompatActivity {
             public void onClick(View v) {
                 Task task = createTask();
                 if (task != null) {
-                    TaskManager.getInstance().taskList.add(0, task);
-                    startActivity(new Intent(CreateTask.this, Home_Page.class));
+                    TaskManager.taskList.add(task);
+                    TaskManager.storeTask(task);
+                    startActivity(new Intent(getApplicationContext(), HomePage.class));
                 } else {
                     Toast.makeText(CreateTask.this, "Please fill all fields!", Toast.LENGTH_SHORT).show();
                 }
@@ -182,14 +179,14 @@ public class CreateTask extends AppCompatActivity {
         }
 
         if (id == setTimeId) {
-            return new TimePickerDialog(this, myTimeListener, 0, 0, true);
+            return new TimePickerDialog(this, myTimeListener, 0, 0, false);
         }
 
         return null;
     }
 
     public void goHome(View v) {
-        startActivity(new Intent(getApplicationContext(), Home_Page.class));
+        startActivity(new Intent(getApplicationContext(), HomePage.class));
     }
 
 
@@ -231,6 +228,7 @@ public class CreateTask extends AppCompatActivity {
             return null;
         }
 
+
         text = (EditText) findViewById(R.id.editText5);
         if(text.getText().toString().equalsIgnoreCase("laundry")){
             tTYpe = 1;
@@ -255,8 +253,12 @@ public class CreateTask extends AppCompatActivity {
         time[1] = min;
         time[2] = ampm;
 
-        Task task = new Task(title, description, location,
-        time, date, 0, price, false, tTYpe, choice);
+
+
+        Task task = new Task(title, description, location, year, month,
+                             day, hour, min, ampm, price, false, choice,
+                             ParseUser.getCurrentUser().getUsername());
+
         return task;
     }
 
@@ -303,8 +305,11 @@ public class CreateTask extends AppCompatActivity {
 
 
             case R.id.action_home_page:
+
                 Toast.makeText(CreateTask.this, "Welcome Home", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(CreateTask.this, Home_Page.class));
+
+                startActivity(new Intent(CreateTask.this, HomePage.class));
+
                 break;
         }
 

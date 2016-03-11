@@ -6,5 +6,7 @@ package com.example.blaid.tasker;
  * Filter options to be used by the TaskManager class.
  */
 public enum FilterOption {
-    SOON, PRICE, PRICE_INC, LOCATION, LAUNDRY, FOOD, PETS
+
+    SOON, PRICE, PRICE_INC, LOCATION, USER, LAUNDRY, FOOD, PETS
+
 }

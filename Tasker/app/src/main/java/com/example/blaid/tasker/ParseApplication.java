@@ -2,10 +2,8 @@ package com.example.blaid.tasker;
 
 import com.parse.Parse;
 import com.parse.ParseACL;
-
 import com.parse.ParseObject;
 import com.parse.ParseUser;
-
 import android.app.Application;
 
 /**

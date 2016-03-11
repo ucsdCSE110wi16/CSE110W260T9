@@ -160,9 +160,12 @@ public class EditProfile extends AppCompatActivity {
                 break;
 
             case R.id.action_home_page:
+
                 Toast.makeText(EditProfile.this, "Welcome Home",
                 Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(EditProfile.this, Home_Page.class));
+
+                startActivity(new Intent(EditProfile.this, HomePage.class));
+
                 break;
 
               }
@@ -172,7 +175,7 @@ public class EditProfile extends AppCompatActivity {
 
     public void goHome(View view) {
 
-        startActivity(new Intent(EditProfile.this, Home_Page.class));
+        startActivity(new Intent(EditProfile.this, HomePage.class));
 
 
     }

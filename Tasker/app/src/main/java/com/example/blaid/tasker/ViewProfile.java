@@ -7,9 +7,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
+import com.parse.ParseUser;
 
 public class ViewProfile extends AppCompatActivity {
+    TextView username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +23,34 @@ public class ViewProfile extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        Button historybutton = (Button) findViewById(R.id.button);
+        historybutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), TaskHistory.class));
+            }
+        });
+
+        Button completedbutton = (Button) findViewById(R.id.button3);
+        completedbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), CompletedTasks.class));
+            }
+        });
+
+        Button acceptedbutton = (Button) findViewById(R.id.button2);
+        acceptedbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), AcceptedTasks.class));
+            }
+        });
         setupActionBar();
+
+        username = (TextView) findViewById(R.id.textViewUsername);
+        username.setText(ParseUser.getCurrentUser().getUsername());
+
     }
 
     private void setupActionBar() {

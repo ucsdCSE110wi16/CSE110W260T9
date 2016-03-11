@@ -11,100 +11,96 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.CreateAccountActivity.CreateAccountActivity"
     tools:showIn="@layout/activity_create_account"
-    android:background="@drawable/createtaskbackground">
+    android:background="@drawable/alt_background">
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:layout_width="275dp"
+        android:layout_height="30dp"
         android:inputType="textEmailAddress"
-        android:ems="10"
+        android:textSize="17dp"
         android:id="@+id/editTextEmail"
         android:hint="E-mail"
-        android:width="320sp"
-        android:paddingTop="20sp"
-        android:background="#fdfafa"
+        android:background="@drawable/rounded_edittext"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:layout_width="275dp"
+        android:layout_height="30dp"
+        android:textSize="17dp"
         android:inputType="textPassword"
-        android:ems="10"
         android:id="@+id/editTextPassword"
         android:hint="@string/Password"
-        android:width="320sp"
         android:password="true"
-        android:paddingTop="20sp"
-        android:background="#fefbfb"
+        android:background="@drawable/rounded_edittext"
         android:layout_below="@+id/editTextUsername"
         android:layout_alignLeft="@+id/editTextUsername"
         android:layout_alignStart="@+id/editTextUsername"
         android:layout_marginTop="30dp" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:layout_width="275dp"
+        android:layout_height="30dp"
         android:inputType="textPassword"
-        android:ems="10"
+        android:textSize="17dp"
         android:id="@+id/editTextPasswordConfirm"
-        android:hint="@string/confirmPwd"
-        android:width="320sp"
+        android:hint="Re-enter password"
         android:password="true"
-        android:paddingTop="20sp"
-        android:background="#ffffff"
+        android:background="@drawable/rounded_edittext"
         android:layout_below="@+id/editTextPassword"
         android:layout_alignLeft="@+id/editTextPassword"
         android:layout_alignStart="@+id/editTextPassword"
         android:layout_marginTop="28dp" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="275dp"
+        android:layout_height="30dp"
+        android:paddingLeft="15dp"
         android:id="@+id/editTextUsername"
         android:hint="@string/Username"
-        android:paddingTop="20sp"
-        android:width="320sp"
-        android:background="#ffffff"
+        android:textSize="17dp"
+        android:background="@drawable/rounded_edittext"
         android:layout_below="@+id/editTextEmail"
         android:layout_alignLeft="@+id/editTextEmail"
         android:layout_alignStart="@+id/editTextEmail"
         android:layout_marginTop="28dp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Create Account"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:text="Create Account!"
         android:id="@+id/createButton"
-        android:width="320sp"
         android:shadowColor="#000000"
-        android:textSize="16sp"
-        android:background="@drawable/buttonshape"
-        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@drawable/default_button"
+        android:width="120dp"
         android:typeface="monospace"
+        android:layout_marginBottom="48dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/profilePicButtonID"
-        android:layout_below="@+id/editTextPasswordConfirm"
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView6"
+        android:layout_above="@+id/createButton"
         android:layout_alignLeft="@+id/editTextPasswordConfirm"
         android:layout_alignStart="@+id/editTextPasswordConfirm"
-        android:layout_alignRight="@+id/editTextPasswordConfirm"
-        android:layout_alignEnd="@+id/editTextPasswordConfirm"
-        android:layout_above="@+id/createButton"
-        android:src="@android:drawable/ic_menu_camera" />
+        android:layout_marginBottom="38dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Click to Add Profile Picture"
-        android:id="@+id/textView8"
-        android:textSize="25dp"
-        android:layout_above="@+id/createButton"
-        android:layout_centerHorizontal="true" />
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:id="@+id/spinnerPicID"
+        android:entries="@array/Task_Types"
+        android:background="@drawable/green_button"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_alignRight="@+id/editTextPasswordConfirm"
+        android:layout_alignEnd="@+id/editTextPasswordConfirm" />
 
 </RelativeLayout>

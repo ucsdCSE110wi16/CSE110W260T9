@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/createtaskbackground"
+    android:background="@drawable/alt_background"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Login"
     tools:showIn="@layout/activity_login">
@@ -93,7 +93,7 @@
         android:layout_centerHorizontal="true"
         android:textColor="@color/white"
         android:textSize="15sp"
-        android:background="@drawable/buttonshape"
+        android:background="@drawable/default_button"
         android:shadowColor="@color/colorShadow"
         android:shadowDx="0"
         android:shadowDy="0"/>
@@ -109,19 +109,10 @@
         android:layout_alignStart="@+id/clicktosignin"
         android:textColor="@color/white"
         android:textSize="15sp"
-        android:background="@drawable/buttonshape"
+        android:background="@drawable/default_button"
         android:shadowColor="@color/colorShadow"
         android:shadowDx="0"
         android:shadowDy="0" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Skip Login"
-        android:id="@+id/skipLoginID"
-        android:layout_below="@+id/clicktosignup"
-        android:layout_toRightOf="@+id/clicktosignup"
-        android:layout_toEndOf="@+id/clicktosignup" />
 
     <TextView
         android:layout_width="wrap_content"

@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/createtaskbackground"
+    android:background="@drawable/alt_background"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.blaid.tasker.CreateTask"
     tools:showIn="@layout/activity_create_task">
@@ -18,17 +18,16 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Title:"
+        android:textStyle="bold"
         android:id="@+id/textView9"
         android:fontFamily="Monaco"
         android:textColor="@color/white"
         android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/editText"
-        android:layout_toStartOf="@+id/editText"
-        android:layout_marginRight="17dp"
-        android:layout_marginEnd="17dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:id="@+id/editText"
         android:hint="Enter title here"
@@ -36,29 +35,30 @@
         android:textSize="17dp"
         android:background="@drawable/rounded_edittext"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_alignEnd="@+id/editText2"
-        android:layout_alignLeft="@+id/button6"
-        android:layout_alignStart="@+id/button6" />
+        android:layout_toRightOf="@+id/textView12"
+        android:layout_toEndOf="@+id/textView12" />
 
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:id="@+id/imageView4"
         android:layout_below="@+id/textView9"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Description:"
         android:id="@+id/textView10"
         android:textColor="#FFFFFF"
         android:layout_below="@+id/editText3"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp" />
 
     <EditText
         android:layout_width="600dp"
@@ -74,65 +74,69 @@
         android:layout_below="@+id/textView11"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="52dp" />
+        android:layout_marginTop="52dp"
+        android:layout_alignRight="@+id/button4"
+        android:layout_alignEnd="@+id/button4" />
 
     <Button
-        android:layout_width="125dp"
-        android:layout_height="35dp"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
         android:text="Select Time"
         android:id="@+id/button4"
         android:onClick="setTime"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
-        android:background="@drawable/buttonshape"
+        android:background="@drawable/default_button"
         android:shadowColor="#A8A8A8"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
         android:layout_alignBottom="@+id/imageView4"
-        android:layout_alignRight="@+id/editText4"
-        android:layout_alignEnd="@+id/editText4"
-        android:layout_marginRight="18dp"
-        android:layout_marginEnd="18dp" />
+        android:layout_alignLeft="@+id/button6"
+        android:layout_alignStart="@+id/button6" />
 
     <Button
-        android:layout_width="125dp"
-        android:layout_height="35dp"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
         android:text="@string/select_date"
         android:onClick="setDate"
         android:id="@+id/button6"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
-        android:background="@drawable/buttonshape"
+        android:background="@drawable/default_button"
         android:shadowColor="#A8A8A8"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
         android:layout_above="@+id/button4"
-        android:layout_alignLeft="@+id/button4"
-        android:layout_alignStart="@+id/button4"
-        android:layout_marginBottom="39dp" />
+        android:layout_alignRight="@+id/editText4"
+        android:layout_alignEnd="@+id/editText4"
+        android:layout_marginBottom="11dp" />
 
     <Button
-        android:layout_width="125dp"
-        android:layout_height="40dp"
+        android:layout_width="115dp"
+        android:layout_height="35dp"
         android:text="@string/create_task"
         android:id="@+id/cancelId"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
-        android:background="@drawable/redbuttonshape"
+        android:textStyle="bold"
+        android:background="@drawable/red_button"
         android:shadowColor="#A8A8A8"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
+
         android:layout_below="@+id/editText4"
         android:layout_alignRight="@+id/editText4"
         android:layout_alignEnd="@+id/editText4"
         android:layout_marginTop="30dp" />
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/price"
         android:id="@+id/textView11"
@@ -152,6 +156,7 @@
         android:id="@+id/editText3"
         android:background="@drawable/rounded_edittext"
         android:gravity="center"
+<<<<<<< HEAD
         android:layout_alignTop="@+id/textView11"
         android:layout_alignRight="@+id/editText2"
         android:layout_alignEnd="@+id/editText2" />
@@ -181,9 +186,11 @@
         android:layout_alignEnd="@+id/textView11" />
 
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/location"
         android:id="@+id/textView12"
@@ -208,19 +215,14 @@
         android:layout_toEndOf="@+id/imageView4" />
 
     <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="85dp"
+        android:layout_height="30dp"
         android:id="@+id/spin"
         android:entries="@array/Task_Types"
-        android:background="@drawable/buttonshape"
-        android:layout_below="@+id/imageView4"
-        android:layout_alignLeft="@+id/textView10"
-        android:layout_alignStart="@+id/textView10"
-        android:layout_toStartOf="@+id/cancelId"
-        android:layout_toLeftOf="@+id/cancelId"
-        android:layout_alignRight="@+id/imageView4"
-        android:layout_alignEnd="@+id/imageView4"
-        android:layout_above="@+id/editText3" />
+        android:background="@drawable/green_button"
+        android:layout_above="@+id/editText3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>

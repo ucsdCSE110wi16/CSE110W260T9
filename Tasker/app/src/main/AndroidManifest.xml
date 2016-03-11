@@ -36,11 +36,7 @@
                 android:value=".Login" />
         </activity>
         <activity
-            android:name=".drawer_activity"
-            android:label="@string/title_activity_drawer_activity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Home_Page"
+            android:name=".HomePage"
             android:label="@string/title_activity_home_page_"
             android:theme="@style/AppTheme.NoActionBar" />
         <!--
@@ -75,7 +71,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Home_Page" />
+                android:value=".HomePage" />
         </activity>
         <activity
             android:name=".GeneralSettings"
@@ -87,7 +83,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Home_Page" />
+                android:value=".HomePage" />
         </activity>
         <activity
             android:name=".ViewProfile"
@@ -95,19 +91,26 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Home_Page" />
+                android:value=".HomePage" />
         </activity>
         <activity
             android:name=".SettingsPage"
             android:label="@string/title_activity_settings_new_">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Home_Page" />
+                android:value=".HomePage" />
         </activity>
         <activity
-            android:name=".ViewTask"
-            android:label="@string/title_activity_view_task"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".TaskHistory"
+            android:label="@string/title_activity_task_history"
+            android:parentActivityName=".ViewProfile"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.blaid.tasker.ViewProfile" />
+        </activity>
+        <activity android:name=".AcceptedTasks" />
+        <activity android:name=".CompletedTasks"></activity>
     </application>
 
 </manifest>

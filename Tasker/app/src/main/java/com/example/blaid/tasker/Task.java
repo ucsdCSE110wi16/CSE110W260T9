@@ -1,6 +1,6 @@
 package com.example.blaid.tasker;
-import com.parse.ParseObject;
-import com.parse.ParseClassName;
+
+import com.parse.ParseUser;
 
 /**
  * Author: James McCullough
@@ -21,32 +21,42 @@ public class Task {
     private int MINUTE_INDEX = 1;
     private int AMPM_INDEX = 2;
 
+
     private int taskType = 0;
 
     /* Keep track of who created this task */
     private final int USER_ID;
 
+    private String objectID;
+
+
     private boolean accepted;
+    private boolean completed;
     private PictureChoices img_src;
     private String title, description, location;
     private int[] date = new int[3];
     private int[] time = new int[3];
     private double price;
+    private String username;
+    private String user_accepted;
+
 
     public Task() {
         /* Initialize member variables */
         this.title = "Default Title";
         this.description = "Default Description";
-        this.location = "";
-        this.USER_ID = 0;
-        this.price = 0;
+        this.location = "1 Scholar's Dr, La Jolla, CA";
+        this.price = 100;
         this.accepted = false;
 
         this.taskType = 0;
 
         this.img_src = PictureChoices.DEFAULT;
 
+        this.username = ParseUser.getCurrentUser().getUsername();
+
     }
+
     public Task(String title, double price) {
         /* Initialize member variables */
         this.img_src = PictureChoices.DEFAULT;
@@ -63,75 +73,55 @@ public class Task {
         this.date[YEAR_INDEX] = 2016;
         this.time[HOUR_INDEX] = 6;
         this.time[MINUTE_INDEX] = 30;
+        this.username = ParseUser.getCurrentUser().getUsername();
+
     }
-    public Task(String title, double price, PictureChoices choice) {
+
+    public Task(String title, double price, PictureChoices choice, int tktype) {
         /* Initialize member variables */
         this.img_src = choice;
         this.title = title;
         this.description = "Default Description";
         this.location = "Default Location";
-        this.USER_ID = 0;
         this.price = price;
         this.accepted = false;
-        this.taskType = 0;
+        this.taskType = tktype;
 
         this.date[MONTH_INDEX] = (int)(Math.random()*10 + 3);
         this.date[DAY_INDEX] = (int)(Math.random()*30 + 1);
         this.date[YEAR_INDEX] = 2016;
         this.time[HOUR_INDEX] = 6;
         this.time[MINUTE_INDEX] = 30;
+        this.username = ParseUser.getCurrentUser().getUsername();
+
     }
 
-    public Task(String title, double price, int tkType) {
-        /* Initialize member variables */
-        this.title = title;
-        this.description = "Default Description";
-        this.location = "";
-        this.USER_ID = 0;
-        this.price = price;
-        this.accepted = false;
-        this.taskType = tkType;
-        this.img_src = PictureChoices.DEFAULT;
 
-        this.date[MONTH_INDEX] = (int)(Math.random()*10 + 3);
-        this.date[DAY_INDEX] = (int)(Math.random()*30 + 1);
-        this.date[YEAR_INDEX] = 2016;
-        this.time[HOUR_INDEX] = 6;
-        this.time[MINUTE_INDEX] = 30;
-    }
 
-    public Task(String title, String description, String location, int[] time,
-                int[] date, int USER_ID, double price, boolean accepted,
-                PictureChoices choice) {
+    public Task(String title, String description, String location, int year,
+                int month, int day, int hour, int min, int ampm, double price,
+                boolean accepted, String pictureChoice, String username, int tktype) {
         /* Initialize member variables */
         this.title = title;
         this.description = description;
         this.location = location;
-        this.time = time;
-        this.date = date;
-        this.USER_ID = USER_ID;
+        this.date[YEAR_INDEX] = year;
+        this.date[MONTH_INDEX] = month;
+        this.date[DAY_INDEX] = day;
+        this.time[HOUR_INDEX] = hour;
+        this.time[MINUTE_INDEX] = min;
+        this.time[AMPM_INDEX] = ampm;
         this.price = price;
-        this.accepted = false;
-        this.img_src = choice;
+        this.accepted = accepted;
+        this.img_src = PictureChoices.valueof(pictureChoice);
+        this.username = username;
+        this.user_accepted = "";
+        this.completed = false;
 
-        this.taskType = 0;
-    }
-
-    public Task(String title, String description, String location, int[] time,
-                int[] date, int USER_ID, double price, boolean accepted, int tkType, PictureChoices choice) {
-        /* Initialize member variables */
-        this.title = title;
-        this.description = description;
-        this.location = location;
-        this.time = time;
-        this.date = date;
-        this.USER_ID = USER_ID;
-        this.price = price;
-        this.accepted = false;
         this.taskType = tkType;
-
-        this.img_src = choice;
     }
+
+
 
     /* Implement toString() for list view */
     @Override
@@ -191,6 +181,11 @@ public class Task {
         return this.date;
     }
 
+    public String getDateToString() {
+        return this.date[MONTH_INDEX] + "/" + this.date[DAY_INDEX] +
+                "/" + this.date[YEAR_INDEX];
+    }
+
     public void setYear(int year) {
         this.date[YEAR_INDEX] = year;
     }
@@ -232,7 +227,6 @@ public class Task {
     }
 
 
-
     public void setType(int tkType) {
         this.taskType = tkType;
     }
@@ -240,13 +234,20 @@ public class Task {
     public int getType() { return this.taskType; }
 
 
-    public PictureChoices getImg_src() {
+
+
+    public PictureChoices getImageSource() {
+
         return this.img_src;
     }
 
-    public void setImg_src(PictureChoices img_src) {
+    public void setImageSource(PictureChoices img_src) {
         this.img_src = img_src;
     }
+
+    public void setImageSourceFromString(String src) { this.img_src = PictureChoices.valueOf(src); }
+
+    public String getImageSourceName() { return this.img_src.name(); }
 
     public String getDescription() {
         return this.description;
@@ -256,10 +257,13 @@ public class Task {
         this.description = description;
     }
 
+    public String getUsername() {
+        return this.username;
+    }
 
-    /* Note there is no setUserID method, userID cannot be changed */
-    public int getUserID() {
-        return this.USER_ID;
+    public void setUsername(String username) {
+        this.username = username;
+
     }
 
     public void setAccepted(boolean accepted) {
@@ -269,4 +273,29 @@ public class Task {
     public boolean getAccepted() {
         return this.accepted;
     }
+
+    public String getUserAccepted() {
+        return this.user_accepted;
+    }
+
+    public void setUserAccepted(String username) {
+        this.user_accepted = username;
+    }
+
+    public void setCompleted(boolean val) {
+        this.completed = val;
+    }
+
+    public boolean getCompleted() {
+        return this.completed;
+    }
+
+    public String getObjectID() {
+        return this.objectID;
+    }
+
+    public void setObjectID(String id) {
+        this.objectID = id;
+    }
+
 }
