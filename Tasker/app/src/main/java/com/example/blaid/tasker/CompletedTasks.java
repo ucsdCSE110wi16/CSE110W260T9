@@ -58,6 +58,9 @@ public class CompletedTasks extends AppCompatActivity {
                 text = (TextView) dialog.findViewById(R.id.dialogUserText);
                 text.setText(listItem.getUsername());
 
+                text = (TextView) dialog.findViewById(R.id.dialogtaskType);
+                text.setText(listItem.getType());
+
                 /* Set image view */
                 ImageView img = (ImageView) dialog.findViewById(R.id.imageView3);
                 switch (listItem.getImageSource()) {

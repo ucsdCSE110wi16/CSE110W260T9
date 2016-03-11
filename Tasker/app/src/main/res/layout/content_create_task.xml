@@ -127,10 +127,10 @@
         android:shadowDy="0"
         android:shadowRadius="5"
 
-        android:layout_below="@+id/editText4"
-        android:layout_alignRight="@+id/editText4"
-        android:layout_alignEnd="@+id/editText4"
-        android:layout_marginTop="30dp" />
+        android:layout_below="@+id/editText5"
+        android:layout_alignLeft="@+id/editText5"
+        android:layout_alignStart="@+id/editText5"
+        android:layout_marginTop="36dp" />
 
 
     <TextView
@@ -156,7 +156,7 @@
         android:id="@+id/editText3"
         android:background="@drawable/rounded_edittext"
         android:gravity="center"
-<<<<<<< HEAD
+
         android:layout_alignTop="@+id/textView11"
         android:layout_alignRight="@+id/editText2"
         android:layout_alignEnd="@+id/editText2" />
@@ -164,10 +164,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Filter Label:"
+        android:text="Subject:"
         android:id="@+id/textView55"
         android:textColor="#ffffff"
-        android:layout_alignTop="@+id/cancelId"
+        android:layout_below="@+id/textView12"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -176,14 +176,14 @@
         android:layout_height="wrap_content"
         android:inputType="textMultiLine"
         android:hint="ex: Pets"
-        android:textSize="17dp"
-        android:ems="10"
+
         android:id="@+id/editText5"
         android:background="@drawable/rounded_edittext"
         android:gravity="center"
-        android:layout_alignTop="@+id/cancelId"
-        android:layout_alignRight="@+id/textView11"
-        android:layout_alignEnd="@+id/textView11" />
+
+        android:layout_alignBottom="@+id/textView55"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4" />
 
 
 
@@ -196,9 +196,8 @@
         android:id="@+id/textView12"
         android:textColor="#ffffff"
         android:layout_below="@+id/editText2"
-        android:layout_alignLeft="@+id/textView10"
-        android:layout_alignStart="@+id/textView10"
-        android:layout_marginTop="27dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="235dp"

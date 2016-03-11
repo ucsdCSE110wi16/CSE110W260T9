@@ -197,7 +197,7 @@ public class CreateTask extends AppCompatActivity {
         String title, description, location;
         double price;
         EditText text;
-        int tTYpe;
+        String tTYpe;
 
         /* Get title text */
         text = (EditText) findViewById(R.id.editText);
@@ -230,34 +230,36 @@ public class CreateTask extends AppCompatActivity {
 
 
         text = (EditText) findViewById(R.id.editText5);
-        if(text.getText().toString().equalsIgnoreCase("laundry")){
-            tTYpe = 1;
+
+        if(text.getText().toString().equalsIgnoreCase("laundry")||text.getText()
+                .toString().equalsIgnoreCase("clothes")||text.getText().toString().equalsIgnoreCase("wash clothes")){
+            tTYpe = "Laundry";
         }
-        else if(text.getText().toString().equalsIgnoreCase("food") || text.getText().toString().equalsIgnoreCase("cook")){
-            tTYpe = 2;
+        else if(text.getText().toString().equalsIgnoreCase("food") || text.getText().toString().equalsIgnoreCase("cook")
+                ||text.getText().toString().equalsIgnoreCase("eat")){
+            tTYpe ="Food";
         }
-        else if(text.getText().toString().equalsIgnoreCase("pets") || text.getText().toString().equalsIgnoreCase("pet")) {
-            tTYpe = 3;
+        else if(text.getText().toString().equalsIgnoreCase("pets") || text.getText().toString().
+                equalsIgnoreCase("cat")||text.getText().toString().equalsIgnoreCase("dog")) {
+            tTYpe = "Pets";
+        }
+        else if(text.getText().toString().equalsIgnoreCase("dishes") || text.getText().toString().
+                equalsIgnoreCase("kitchen")||text.getText().toString().equalsIgnoreCase("plate")||
+                text.getText().toString().equalsIgnoreCase("plates")||text.getText().toString().equalsIgnoreCase("dish")) {
+            tTYpe = "Dishes";
         }
         else {
-            tTYpe = 0;
+            tTYpe = "Unavailable";
         }
 
 
-        /* Create new task */
-        date[0] = month;
-        date[1] = day;
-        date[2] = year;
 
-        time[0] = hour;
-        time[1] = min;
-        time[2] = ampm;
 
 
 
         Task task = new Task(title, description, location, year, month,
                              day, hour, min, ampm, price, false, choice,
-                             ParseUser.getCurrentUser().getUsername());
+                             ParseUser.getCurrentUser().getUsername(), tTYpe);
 
         return task;
     }

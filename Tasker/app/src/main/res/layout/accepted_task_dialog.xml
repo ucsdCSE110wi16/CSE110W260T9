@@ -22,7 +22,6 @@
         android:textStyle="bold"
         android:textColor="#ffffff"
         android:id="@+id/textView17"
-        android:layout_marginTop="24dp"
         android:layout_alignTop="@+id/imageView3"
         android:layout_centerHorizontal="true" />
 
@@ -137,7 +136,8 @@
         android:textStyle="bold"
         android:textColor="#ffffff"
         android:id="@+id/dialogUser"
-        android:layout_above="@+id/textView16"
+        android:layout_alignBaseline="@+id/dialogUserText"
+        android:layout_alignBottom="@+id/dialogUserText"
         android:layout_alignLeft="@+id/date"
         android:layout_alignStart="@+id/date" />
 
@@ -147,9 +147,10 @@
         android:text="New Text"
         android:textColor="#ffffff"
         android:id="@+id/dialogUserText"
-        android:layout_above="@+id/textView16"
+        android:layout_below="@+id/date"
         android:layout_alignLeft="@+id/dialogDate"
-        android:layout_alignStart="@+id/dialogDate" />
+        android:layout_alignStart="@+id/dialogDate"
+        android:layout_marginTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -185,5 +186,27 @@
         android:layout_alignBottom="@+id/okButton"
         android:layout_toRightOf="@+id/dialogLocation"
         android:layout_toEndOf="@+id/dialogLocation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject:"
+        android:id="@+id/viewSubject"
+        android:layout_above="@+id/textView16"
+        android:layout_toLeftOf="@+id/dialogPrice"
+        android:layout_toStartOf="@+id/dialogPrice"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/dialogtaskType"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/textView16"
+        android:layout_alignLeft="@+id/dialogUserText"
+        android:layout_alignStart="@+id/dialogUserText" />
 
 </RelativeLayout>

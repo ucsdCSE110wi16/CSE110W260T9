@@ -22,10 +22,9 @@ public class Task {
     private int AMPM_INDEX = 2;
 
 
-    private int taskType = 0;
+    private String taskType = "Unavailable";
 
-    /* Keep track of who created this task */
-    private final int USER_ID;
+
 
     private String objectID;
 
@@ -49,8 +48,6 @@ public class Task {
         this.price = 100;
         this.accepted = false;
 
-        this.taskType = 0;
-
         this.img_src = PictureChoices.DEFAULT;
 
         this.username = ParseUser.getCurrentUser().getUsername();
@@ -63,10 +60,9 @@ public class Task {
         this.title = title;
         this.description = "Default Description";
         this.location = "Default Location";
-        this.USER_ID = 0;
+
         this.price = price;
         this.accepted = false;
-        this.taskType = 0;
 
         this.date[MONTH_INDEX] = (int)(Math.random()*10 + 3);
         this.date[DAY_INDEX] = (int)(Math.random()*30 + 1);
@@ -77,9 +73,28 @@ public class Task {
 
     }
 
-    public Task(String title, double price, PictureChoices choice, int tktype) {
+    public Task(String title, double price, PictureChoices choice, String tktype) {
         /* Initialize member variables */
         this.img_src = choice;
+        this.title = title;
+        this.description = "Default Description";
+        this.location = "Default Location";
+        this.price = price;
+        this.accepted = false;
+        this.taskType = tktype;
+
+        this.date[MONTH_INDEX] = (int)(Math.random()*10 + 3);
+        this.date[DAY_INDEX] = (int)(Math.random()*30 + 1);
+        this.date[YEAR_INDEX] = 2016;
+        this.time[HOUR_INDEX] = 6;
+        this.time[MINUTE_INDEX] = 30;
+        this.username = ParseUser.getCurrentUser().getUsername();
+
+    }
+
+    public Task(String title, double price, String tktype) {
+        /* Initialize member variables */
+        this.img_src = PictureChoices.DEFAULT;;
         this.title = title;
         this.description = "Default Description";
         this.location = "Default Location";
@@ -100,7 +115,7 @@ public class Task {
 
     public Task(String title, String description, String location, int year,
                 int month, int day, int hour, int min, int ampm, double price,
-                boolean accepted, String pictureChoice, String username, int tktype) {
+                boolean accepted, String pictureChoice, String username, String tkType) {
         /* Initialize member variables */
         this.title = title;
         this.description = description;
@@ -113,7 +128,7 @@ public class Task {
         this.time[AMPM_INDEX] = ampm;
         this.price = price;
         this.accepted = accepted;
-        this.img_src = PictureChoices.valueof(pictureChoice);
+        this.img_src = PictureChoices.valueOf(pictureChoice);
         this.username = username;
         this.user_accepted = "";
         this.completed = false;
@@ -227,11 +242,55 @@ public class Task {
     }
 
 
-    public void setType(int tkType) {
-        this.taskType = tkType;
+    public void setType(String tkType) {
+
+        if(taskType.equalsIgnoreCase("laundry") || taskType.equalsIgnoreCase("clothes")||
+        taskType.equalsIgnoreCase("wash clothes") || taskType.equalsIgnoreCase("food") || taskType.equalsIgnoreCase("cook")||
+                taskType.equalsIgnoreCase("cooking") ||taskType.equalsIgnoreCase("eat") ||
+                taskType.equalsIgnoreCase("pet") || taskType.equalsIgnoreCase("pets")||
+                taskType.equalsIgnoreCase("cat") || taskType.equalsIgnoreCase("dog") ||
+                taskType.equalsIgnoreCase("games") || taskType.equalsIgnoreCase("video games")||
+                taskType.equalsIgnoreCase("gaming")||taskType.equalsIgnoreCase("gamer")||
+                taskType.equalsIgnoreCase("dishes") || taskType.
+                equalsIgnoreCase("kitchen")||taskType.equalsIgnoreCase("plate")||
+                taskType.equalsIgnoreCase("plates")||taskType.equalsIgnoreCase("dish"))
+                {
+            this.taskType = tkType;
+        }
     }
 
-    public int getType() { return this.taskType; }
+    public String getType() {
+        if(taskType == null){
+            return "Unavailable";
+        }
+        if(taskType.equalsIgnoreCase("laundry") || taskType.equalsIgnoreCase("clothes")||
+                taskType.equalsIgnoreCase("wash clothes")){
+            return "laundry";
+        }
+        if(taskType.equalsIgnoreCase("food") || taskType.equalsIgnoreCase("cook")||
+                taskType.equalsIgnoreCase("cooking") ||taskType.equalsIgnoreCase("eat")) {
+            return "food";
+        }
+        if(taskType.equalsIgnoreCase("pet") || taskType.equalsIgnoreCase("pets") ||
+                taskType.equalsIgnoreCase("cat") || taskType.equalsIgnoreCase("dog")) {
+
+            return "pets";
+        }
+
+        if(taskType.equalsIgnoreCase("games") || taskType.equalsIgnoreCase("video games")||
+                taskType.equalsIgnoreCase("gaming")||taskType.equalsIgnoreCase("gamer")){
+            return "games";
+        }
+        if (taskType.equalsIgnoreCase("dishes") || taskType.
+                equalsIgnoreCase("kitchen") ||taskType.equalsIgnoreCase("plate")||
+                taskType.equalsIgnoreCase("plates")||taskType.equalsIgnoreCase("dish")) {
+            return "dishes";
+        }
+
+
+        return "Unavailable";
+
+    }
 
 
 

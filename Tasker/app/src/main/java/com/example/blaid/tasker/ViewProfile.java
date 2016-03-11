@@ -97,7 +97,7 @@ public class ViewProfile extends AppCompatActivity {
 
                 case R.id.action_home_page:
                     Toast.makeText(ViewProfile.this, "Welcome Home", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(ViewProfile.this, Home_Page.class));
+                    startActivity(new Intent(ViewProfile.this, HomePage.class));
                     break;
 
         }

@@ -39,6 +39,18 @@
             android:icon="@drawable/paws"
             android:title="Pets"
             />
+        <item
+            android:id="@+id/nav_games"
+            android:icon="@drawable/game"
+            android:title="Games"
+            />
+        <item
+            android:id="@+id/nav_dishes"
+            android:icon="@drawable/dishes"
+            android:title="Dishes"
+            />
+
+
 
     </group>
 

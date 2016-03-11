@@ -41,6 +41,7 @@ public class MyAdapter extends ArrayAdapter<Task> {
         TextView title = (TextView) rowView.findViewById(R.id.listTitle);
         TextView subtitle = (TextView) rowView.findViewById(R.id.textView8);
         ImageView img = (ImageView) rowView.findViewById(R.id.imageView5);
+        TextView filter = (TextView) rowView.findViewById(R.id.textView21);
 
         switch (taskList.get(position).getImageSource()) {
             case LAUNDRY:
@@ -69,6 +70,9 @@ public class MyAdapter extends ArrayAdapter<Task> {
 
         String price = "$" + String.format("%.2f", taskList.get(position).getPrice());
         String date = taskList.get(position).getDateToString();
+
+        String taskType = taskList.get(position).getType();
+        filter.setText(taskType);
 
         String subtext = price + " - " + date;
         subtitle.setText(subtext);

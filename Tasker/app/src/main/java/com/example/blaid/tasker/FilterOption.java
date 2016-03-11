@@ -7,6 +7,6 @@ package com.example.blaid.tasker;
  */
 public enum FilterOption {
 
-    SOON, PRICE, PRICE_INC, LOCATION, USER, LAUNDRY, FOOD, PETS
+    SOON, PRICE, PRICE_INC, LOCATION, USER, LAUNDRY, FOOD, PETS, GAMES, DISHES
 
 }

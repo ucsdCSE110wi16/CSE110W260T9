@@ -121,10 +121,10 @@
         android:shadowColor="@color/colorShadow"
         android:shadowDx="0"
         android:shadowDy="0"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="51dp"
         android:layout_below="@+id/dialogLocation"
-        android:layout_toLeftOf="@+id/date"
-        android:layout_toStartOf="@+id/date" />
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_alignEnd="@+id/imageView3" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -139,8 +139,8 @@
         android:shadowDx="0"
         android:shadowDy="0"
         android:layout_alignTop="@+id/buttonTaskBack"
-        android:layout_toRightOf="@+id/date"
-        android:layout_toEndOf="@+id/date" />
+        android:layout_alignRight="@+id/dialogtaskType"
+        android:layout_alignEnd="@+id/dialogtaskType" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -151,8 +151,8 @@
         android:textColor="@color/white"
         android:id="@+id/textView19"
         android:layout_below="@+id/date"
-        android:layout_toRightOf="@+id/buttonTaskBack"
-        android:layout_toEndOf="@+id/buttonTaskBack" />
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignStart="@+id/date" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -163,5 +163,26 @@
         android:layout_alignBottom="@+id/textView19"
         android:layout_alignLeft="@+id/dialogDate"
         android:layout_alignStart="@+id/dialogDate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject:"
+        android:id="@+id/taskSub"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:layout_alignTop="@+id/dialogtaskType"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unavailable"
+        android:id="@+id/dialogtaskType"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignLeft="@+id/dialogPrice"
+        android:layout_alignStart="@+id/dialogPrice" />
 
 </RelativeLayout>

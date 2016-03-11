@@ -35,8 +35,8 @@ public class HomePage extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
-        TaskManager.getTaskList();
+        TaskManager.gTList();
+        //TaskManager.getTaskList();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -76,8 +76,9 @@ public class HomePage extends AppCompatActivity
                 text.setText(listItem.getLocation());
 
                 text = (TextView) dialog.findViewById(R.id.dialogUserText);
-                text.setText(listItem.getUsername());
 
+                text = (TextView) dialog.findViewById(R.id.dialogtaskType);
+                text.setText(listItem.getType());
 
                 /* Set image view */
                 ImageView img = (ImageView) dialog.findViewById(R.id.imageView3);
@@ -169,27 +170,9 @@ public class HomePage extends AppCompatActivity
                 break;
 
                 case R.id.action_settings:
-                      Toast.makeText(Home_Page.this, "Welcome to General Settings", Toast.LENGTH_SHORT).show();
+                      Toast.makeText(HomePage.this, "Welcome to General Settings", Toast.LENGTH_SHORT).show();
                       startActivity(new Intent(getApplicationContext(), SettingsPage.class));
                       break;
-
-
-          /*  case R.id.action_settings:
-                Toast.makeText(Home_Page.this, "Welcome to General Settings", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(), SettingsPage.class));
-                break;
-
-            case R.id.action_edit_profile:
-                Toast.makeText(Home_Page.this, "Preparing to edit User Settings...", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(Home_Page.this, EditProfile.class));
-                break;
-
-            case R.id.action_create_task:
-                Toast.makeText(Home_Page.this, "New Blank Task...", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(Home_Page.this, CreateTask.class));
-
-                startActivity(new Intent(getApplicationContext(), SettingsPage.class));
-                break; */
 
 
 
@@ -232,15 +215,23 @@ public class HomePage extends AppCompatActivity
             TaskManager.filterTasks(FilterOption.PRICE_INC);
             adapter.notifyDataSetChanged();
         } else if (id == R.id.nav_laundry) {
-            TaskManager.filterTasks(FilterOption.LAUNDRY, 1);
+            TaskManager.filterTasks(FilterOption.LAUNDRY, "laundry");
             adapter.notifyDataSetChanged();
         }
         else if (id == R.id.nav_food) {
-            TaskManager.filterTasks(FilterOption.FOOD, 2);
+            TaskManager.filterTasks(FilterOption.FOOD, "food");
             adapter.notifyDataSetChanged();
         }
         else if (id == R.id.nav_pets) {
-            TaskManager.filterTasks(FilterOption.PETS, 3);
+            TaskManager.filterTasks(FilterOption.PETS, "pets");
+            adapter.notifyDataSetChanged();
+        }
+        else if(id == R.id.nav_games){
+            TaskManager.filterTasks(FilterOption.GAMES, "games");
+            adapter.notifyDataSetChanged();
+        }
+        else if(id == R.id.nav_dishes){
+            TaskManager.filterTasks(FilterOption.DISHES, "dishes");
             adapter.notifyDataSetChanged();
         }
 

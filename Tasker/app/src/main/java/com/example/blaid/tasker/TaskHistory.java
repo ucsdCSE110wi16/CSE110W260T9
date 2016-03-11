@@ -56,6 +56,9 @@ public class TaskHistory extends AppCompatActivity {
                 text = (TextView) dialog.findViewById(R.id.dialogLocation);
                 text.setText(listItem.getLocation());
 
+                text = (TextView) dialog.findViewById(R.id.dialogtaskType);
+                text.setText(listItem.getType());
+
                 text = (TextView) dialog.findViewById(R.id.dialogUserText);
                 text.setText(listItem.getUsername());
 

@@ -59,6 +59,9 @@ public class AcceptedTasks extends AppCompatActivity {
                 text = (TextView) dialog.findViewById(R.id.dialogUserText);
                 text.setText(listItem.getUsername());
 
+                text = (TextView) dialog.findViewById(R.id.dialogtaskType);
+                text.setText(listItem.getType());
+
                 if (listItem.getCompleted()) {
                     text = (TextView) dialog.findViewById(R.id.dialogStatus);
                     text.setTextColor(Color.GREEN);

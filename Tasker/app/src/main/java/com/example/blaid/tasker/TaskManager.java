@@ -31,35 +31,38 @@ public class TaskManager {
 
         /* get taskList from database */
         /* filter by newest before displaying to user */
-        taskList = new ArrayList<Task>();
-
-        taskList.add(new Task("Laundry Task", 13.29, 1));
-        taskList.add(new Task("Dishes", 5.00, 2));
-        taskList.add(new Task("Food Run", 15.69, 2));
-
-        taskList.add(new Task("Pets cleaning", 20.00,3));
-        taskList.add(new Task("Dog Cleaning", 15.99, 3));
-        taskList.add(new Task("Get Food", 2.00, 2));
-        taskList.add(new Task("Drop off Paper", 15.69));
-        taskList.add(new Task("Sell Chair", 45));
-        taskList.add(new Task("Pick up Clothes", 10, 1));
-
-        taskList.add(new Task("Change Tire", 15.99));
-        taskList.add(new Task("Cook Meal", 2.00, 2));
-        taskList.add(new Task("Drop off clothes", 15.69, 1));
-        taskList.add(new Task("Buy Groceries", 45, 2));
-        taskList.add(new Task("Wash clothes", 10, 1));
-
-        taskList.add(new Task("Laundry Task", 13.50, 1));
-        taskList.add(new Task("Dishes", 5.00, 2));
-        taskList.add(new Task("Food Run", 15.69,2));
-
-        taskList.add(new Task("Get Food", 2.00, 2));
-
-        taskList.add(new Task("Cook Meal", 2.00, 2));
-
 
         //getTaskList();
+
+    }
+
+    public static void gTList(){
+        taskList = new ArrayList<Task>();
+
+        taskList.add(new Task("Laundry Task", 13.29, "wash clothes"));
+        taskList.add(new Task("Dishes", 5.00, "dishes"));
+        taskList.add(new Task("Food Run", 15.69, "food"));
+
+        taskList.add(new Task("Pets cleaning", 20.00, "pets"));
+        taskList.add(new Task("Dog Cleaning", 15.99, "pets"));
+        taskList.add(new Task("Get Food", 2.00, "food"));
+        taskList.add(new Task("Drop off Paper", 15.69,"games"));
+        taskList.add(new Task("Sell Chair", 45, "games"));
+        taskList.add(new Task("Pick up Clothes", 10, "laundry"));
+
+        taskList.add(new Task("Change Tire", 15.99, "dishes"));
+        taskList.add(new Task("Cook Meal", 2.00, "food"));
+        taskList.add(new Task("Drop off clothes", 15.69, "laundry"));
+        taskList.add(new Task("Buy Groceries", 45, "food"));
+        taskList.add(new Task("Wash clothes", 10, "laundry"));
+
+        taskList.add(new Task("Laundry Task", 13.50, "laundry"));
+        taskList.add(new Task("Dishes", 5.00, "dishes"));
+        taskList.add(new Task("Food Run", 15.69, "food"));
+
+        taskList.add(new Task("Get Food", 2.00, "food"));
+
+        taskList.add(new Task("Cook Meal", 2.00, "food"));
 
     }
 
@@ -87,6 +90,7 @@ public class TaskManager {
         parseTask.put("day", task.getDay());
         parseTask.put("completed", false);
         parseTask.put("useraccepted", "");
+        parseTask.put("Task Type", task.getType());
 
         /* Save task to database */
         parseTask.saveInBackground();
@@ -176,7 +180,8 @@ public class TaskManager {
                           obj.getDouble("price"),
                           obj.getBoolean("accepted"),
                           obj.getString("imagesource"),
-                          obj.getString("username"));
+                          obj.getString("username"),
+                          obj.getString("taskType"));
     }
 
     /**
@@ -244,21 +249,22 @@ public class TaskManager {
     }
 
 
-    public static void filterTasks(FilterOption option, final int tk_type) {
+    public static void filterTasks(FilterOption option, final String tk_type) {
         switch(option) {
             case LAUNDRY:
                 Collections.sort(taskList, new Comparator<Task>() {
                     @Override
                     public int compare(Task lhs, Task rhs) {
-                        int val1 = lhs.getType();
-                        int val2 = rhs.getType();
-                        if(val1 == tk_type){
+                        String val1 = lhs.getType();
+                        String val2 = rhs.getType();
+
+                        if(val1.equalsIgnoreCase(tk_type)){
                             return -1;
                         }
-                        else if(val2 == tk_type){
+                        else if(val2.equalsIgnoreCase(tk_type)){
                             return 1;
                         }
-                        return 0;
+                        return -1*compareByTime(lhs,rhs);
                     }
                 });
                 break;
@@ -267,16 +273,16 @@ public class TaskManager {
                 Collections.sort(taskList, new Comparator<Task>() {
                     @Override
                     public int compare(Task lhs, Task rhs) {
-                        int val1 = lhs.getType();
-                        int val2 = rhs.getType();
+                        String val1 = lhs.getType();
+                        String val2 = rhs.getType();
 
-                        if(val1 == tk_type) {
+                        if(val1.equalsIgnoreCase(tk_type) ) {
                             return -1;
                         }
-                        else if(val2 == tk_type) {
+                        else if(val2.equalsIgnoreCase(tk_type) ) {
                             return 1;
                         }
-                        return 0;
+                        return -1*compareByTime(lhs,rhs);
                     }
                 });
                 break;
@@ -285,18 +291,51 @@ public class TaskManager {
                 Collections.sort(taskList, new Comparator<Task>() {
                     @Override
                     public int compare(Task lhs, Task rhs) {
-                        int val1 = lhs.getType();
-                        int val2 = rhs.getType();
-                        if(val1== tk_type){
+                        String val1 = lhs.getType();
+                        String val2 = rhs.getType();
+                        if(val1.equalsIgnoreCase(tk_type)){
                             return -1;
                         }
-                        else if(val2 ==tk_type) {
+                        else if(val2.equalsIgnoreCase(tk_type)) {
                             return 1;
                         }
-                        return 0;
+                        return -1*compareByTime(lhs,rhs);
                     }
                 });
                 break;
+            case GAMES:
+                Collections.sort(taskList, new Comparator<Task>() {
+                    @Override
+                    public int compare(Task lhs, Task rhs) {
+                        String val1 = lhs.getType();
+                        String val2 = rhs.getType();
+                        if(val1.equalsIgnoreCase(tk_type)){
+                            return -1;
+                        }
+                        else if(val2.equalsIgnoreCase(tk_type)) {
+                            return 1;
+                        }
+                        return -1*compareByTime(lhs,rhs);
+                    }
+                });
+                break;
+            case DISHES:
+                Collections.sort(taskList, new Comparator<Task>() {
+                    @Override
+                    public int compare(Task lhs, Task rhs) {
+                        String val1 = lhs.getType();
+                        String val2 = rhs.getType();
+                        if(val1.equalsIgnoreCase(tk_type)){
+                            return -1;
+                        }
+                        else if(val2.equalsIgnoreCase(tk_type)) {
+                            return 1;
+                        }
+                        return -1*compareByTime(lhs,rhs);
+                    }
+                });
+                break;
+
 
         }
     }

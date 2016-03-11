@@ -41,4 +41,17 @@
         android:layout_alignLeft="@+id/listTitle"
         android:layout_alignStart="@+id/listTitle"
         android:layout_marginBottom="7dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unavailable"
+        android:id="@+id/textView21"
+        android:textColor="#ffffff"
+        android:textSize="12dp"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_toRightOf="@+id/listTitle"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp" />
 </RelativeLayout>
