@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ViewProfile"
+    tools:showIn="@layout/activity_view_profile"
+    android:background="@drawable/bluebackground">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Username"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/textViewUsername"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+       />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/profile_pic_default"
+        android:minHeight="200sp"
+        android:minWidth="200sp"
+        android:nestedScrollingEnabled="true"
+        android:layout_marginRight="20sp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView6"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_marginTop="46dp"
+
+        android:text="@string/task_creation_rating"
+        android:textColor="@color/white" />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_below="@+id/textView4"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:rating="1.5"
+        android:numStars="4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bio"
+        android:textColor="@color/white"
+        android:id="@+id/textView6"
+        android:singleLine="true"
+        android:minWidth="300sp"
+        android:minHeight="100sp"
+        android:nestedScrollingEnabled="true"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+         />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="@string/task_history"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:background="@drawable/default_button"
+        android:shadowColor="@color/colorShadow"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:id="@+id/button"
+        android:layout_above="@+id/button2"
+        android:layout_marginBottom="40sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="Accepted Tasks"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:background="@drawable/default_button"
+        android:shadowColor="@color/colorShadow"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:id="@+id/button2"
+        android:layout_marginBottom="60sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar2"
+        android:layout_below="@+id/textView7"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:numStars="4"
+        android:rating="3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView7"
+        android:text="@string/task_completion_rating"
+        android:textColor="@color/white"
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completed Tasks"
+        android:id="@+id/button3"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_above="@+id/button2"
+        android:layout_alignRight="@+id/ratingBar2"
+        android:layout_alignEnd="@+id/ratingBar2"
+        android:layout_marginBottom="14dp" />
+
+</RelativeLayout>

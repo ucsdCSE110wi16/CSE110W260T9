@@ -15,12 +15,12 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="General Settings"
+        android:text="@string/general_settings"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:textColor="@color/colorBackground"
         android:width="400dp"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:layout_centerHorizontal="true"
         android:textAlignment="center"
         android:background="@color/colorAccent" />

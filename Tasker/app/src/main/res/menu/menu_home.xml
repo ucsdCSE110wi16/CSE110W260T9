@@ -4,7 +4,7 @@
     tools:context=".Login">
     <item
         android:id="@+id/action_logout"
-        android:orderInCategory="100"
+        android:orderInCategory="600"
         android:title="Log Out"
         app:showAsAction="never">
 
@@ -15,4 +15,68 @@
     </logout>
     </item>
 
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="500"
+        android:title="Settings"
+        app:showAsAction="never">
+
+        <settings>
+            <item
+                android:id="@+id/menu_settingsID"
+                android:title="Settings"/>
+        </settings>
+    </item>
+
+    <item
+        android:id="@+id/action_create_task"
+        android:orderInCategory="200"
+        android:title="Create Task"
+        app:showAsAction="never">
+
+        <crateTask>
+            <item
+                android:id="@+id/menu_create_taskID"
+                android:title="Create Task"/>
+        </crateTask>
+    </item>
+
+    <item
+        android:id="@+id/action_edit_profile"
+        android:orderInCategory="300"
+        android:title="Edit Profile"
+        app:showAsAction="never">
+
+        <editProfile>
+            <item
+                android:id="@+id/menu_edit_profileID"
+                android:title="Edit Profile"/>
+        </editProfile>
+    </item>
+
+    <item
+        android:id="@+id/action_view_profile"
+        android:orderInCategory="400"
+        android:title="View Profile"
+        app:showAsAction="never">
+
+        <viewProfile>
+            <item
+                android:id="@+id/menu_view_profileID"
+                android:title="View Profile"/>
+        </viewProfile>
+    </item>
+
+    <item
+        android:id="@+id/action_home_page"
+        android:orderInCategory="100"
+        android:title="Home Page"
+        app:showAsAction="never">
+
+        <homepage>
+            <item
+                android:id="@+id/menu_home_pageID"
+                android:title="Home Page"/>
+        </homepage>
+    </item>
 </menu>

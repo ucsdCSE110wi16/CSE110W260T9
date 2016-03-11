@@ -8,46 +8,29 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bluebackground"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".HomePage"
-    tools:showIn="@layout/activity_home_page">
+    tools:context=".HomePage">
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView15" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="createTask"
-        android:id="@+id/createTaskButtonId"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Task_List"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10.0"
+        android:id="@+id/textView15"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="49dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="settings"
-        android:id="@+id/settingsButton"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="107dp"
-        android:onClick="settingsPage" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="user profile"
-        android:id="@+id/userProfileID"
-        android:layout_marginTop="23dp"
-        android:layout_below="@+id/settingsButton"
-        android:layout_centerHorizontal="true"
-        android:nestedScrollingEnabled="false" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="view my profile"
-        android:id="@+id/viewMyProfileID"
-        android:layout_marginTop="39dp"
-        android:layout_below="@+id/userProfileID"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

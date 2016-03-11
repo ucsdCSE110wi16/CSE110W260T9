@@ -35,6 +35,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Login" />
         </activity>
+        <activity
+            android:name=".HomePage"
+            android:label="@string/title_activity_home_page_"
+            android:theme="@style/AppTheme.NoActionBar" />
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for
              App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -43,10 +47,6 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity
-            android:name=".HomePage"
-            android:label="@string/title_activity_home_page"
-            android:theme="@style/AppTheme" />
         <!-- <activity -->
         <!-- android:name=".MainActivity" -->
         <!-- android:label="@string/title_activity_main" -->
@@ -54,7 +54,11 @@
         <!-- <intent-filter> -->
         <!-- <action android:name="android.intent.action.MAIN" /> -->
 
+<<<<<<< HEAD
         >>>>>>> CreateTask/master
+=======
+
+>>>>>>> e838c49ded70dd89259bb27e435db89ecb6bd486
         <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
         <!-- </intent-filter> -->
         <!-- </activity> -->
@@ -68,24 +72,33 @@
         <activity
             android:name=".CreateTask"
             android:label="@string/title_activity_create_task"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".settings"
-            android:label="@string/title_activity_settings"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomePage" />
+        </activity>
         <activity
             android:name=".GeneralSettings"
             android:label="@string/title_activity_general_settings"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".User_Settings"
-            android:label="User_Settings"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".EditProfile"
+            android:label="Edit Profile"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomePage" />
+        </activity>
         <activity
-            android:name=".UserProfile"
-            android:label="UserProfile"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".ViewProfile"
+            android:label="View Profile"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomePage" />
+        </activity>
         <activity
+<<<<<<< HEAD
             android:name=".Home_Page"
             android:label="Home_Page"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -100,6 +113,25 @@
             <!--android:name=".SettingsNEW_Activity.java"-->
             <!--android:label="@string/title_activity_settings_new__activity.java" />-->
 >>>>>>> CreateTask/master
+=======
+            android:name=".SettingsPage"
+            android:label="@string/title_activity_settings_new_">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomePage" />
+        </activity>
+        <activity
+            android:name=".TaskHistory"
+            android:label="@string/title_activity_task_history"
+            android:parentActivityName=".ViewProfile"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.blaid.tasker.ViewProfile" />
+        </activity>
+        <activity android:name=".AcceptedTasks" />
+        <activity android:name=".CompletedTasks"></activity>
+>>>>>>> e838c49ded70dd89259bb27e435db89ecb6bd486
     </application>
 
 </manifest>
