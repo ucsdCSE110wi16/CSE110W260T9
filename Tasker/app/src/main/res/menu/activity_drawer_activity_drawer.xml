@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+<<<<<<< HEAD
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_closest"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Near You" />
+
+        <item
+            android:id="@+id/nav_household"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Household" />
+        <item
+            android:id="@+id/nav_food"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Food" />
+        <item
+            android:id="@+id/nav_labor"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Manual Labor" />
+        <item
+            android:id="@+id/nav_delivery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Delivery" />
+        <item
+            android:id="@+id/nav_fivezero"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="$0 -> $50"/>
+        <item
+            android:id="@+id/nav_ftoone"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="$50 -> $100" />
+        <item
+            android:id="@+id/nav_onetwofifty"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="$100 -> $250" />
+        <item
+            android:id="@+id/nav_Twofifty"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="$250 >" />
+        <item
+            android:id="@+id/nav_deals"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="$Deals$" />
+=======
 
     <group android:checkableBehavior="single">
 
@@ -52,6 +96,7 @@
 
 
 
+>>>>>>> e838c49ded70dd89259bb27e435db89ecb6bd486
     </group>
 
 

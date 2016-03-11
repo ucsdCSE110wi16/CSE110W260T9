@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+<<<<<<< HEAD
+    android:layout_height="@dimen/nav_header_height"
+=======
     android:layout_height="80dp"
+>>>>>>> e838c49ded70dd89259bb27e435db89ecb6bd486
     android:background="@drawable/side_nav_bar"
     android:gravity="bottom"
     android:orientation="vertical"
@@ -12,15 +16,42 @@
     android:theme= "@style/ThemeOverlay.AppCompat.Dark">
 
 
+<<<<<<< HEAD
+<!--
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:src="@android:drawable/sym_def_app_icon" />
+-->
+
+=======
+>>>>>>> e838c49ded70dd89259bb27e435db89ecb6bd486
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
+<<<<<<< HEAD
+        android:text="Change Filter Options Here"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#f1d81a" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy Filtering"
+        android:textColor="#e8ca22" />
+=======
         android:text="@string/sort_by"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textStyle="bold"
         android:textSize="25sp"
         android:textColor="@color/white" />
+>>>>>>> e838c49ded70dd89259bb27e435db89ecb6bd486
 
 
 </LinearLayout>

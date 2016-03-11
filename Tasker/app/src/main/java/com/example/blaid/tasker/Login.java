@@ -30,7 +30,14 @@ public class Login extends AppCompatActivity {
      */
     private GoogleApiClient client;
 
+<<<<<<< HEAD
+    //public static final String APPLICATION_ID = "B1JHogV7pRql8v3xKuvuxNxRZjWWOUbGK04GzbK3";
+    //public static final String CLIENT_ID = "B9BB44VfrV96Dlq28bP13yi7QRD5lyIBGc0FOGER";
+
+    Button signInButton, signUpButton, skipLoginButton, logoutButton;
+=======
     Button signInButton, signUpButton, logoutButton;
+>>>>>>> e838c49ded70dd89259bb27e435db89ecb6bd486
     EditText username, password;
 
     TextView forgotUsername, forgotPassword;
@@ -160,7 +167,13 @@ public class Login extends AppCompatActivity {
                     public void done(ParseUser user, ParseException e) {
                         if (e == null) {
                             // If user exist and authenticated, send user to Welcome.class
+<<<<<<< HEAD
+                            Intent intent = new Intent(
+                                    Login.this,
+                                    Home_Page.class);
+=======
                             Intent intent = new Intent(Login.this, HomePage.class);
+>>>>>>> e838c49ded70dd89259bb27e435db89ecb6bd486
                             startActivity(intent);
                             finish();
                         } else {
@@ -180,10 +193,14 @@ public class Login extends AppCompatActivity {
     }
 
     public void skipLoginPage(View view) {
+<<<<<<< HEAD
+        startActivity(new Intent(Login.this, Home_Page.class));
+=======
 
         startActivity(new Intent(Login.this, HomePage.class));
 
 
+>>>>>>> e838c49ded70dd89259bb27e435db89ecb6bd486
     }
 
 
