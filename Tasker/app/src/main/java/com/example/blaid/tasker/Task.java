@@ -47,7 +47,23 @@ public class Task {
         this.img_src = PictureChoices.DEFAULT;
 
     }
+    public Task(String title, double price) {
+        /* Initialize member variables */
+        this.img_src = PictureChoices.DEFAULT;
+        this.title = title;
+        this.description = "Default Description";
+        this.location = "Default Location";
+        this.USER_ID = 0;
+        this.price = price;
+        this.accepted = false;
+        this.taskType = 0;
 
+        this.date[MONTH_INDEX] = (int)(Math.random()*10 + 3);
+        this.date[DAY_INDEX] = (int)(Math.random()*30 + 1);
+        this.date[YEAR_INDEX] = 2016;
+        this.time[HOUR_INDEX] = 6;
+        this.time[MINUTE_INDEX] = 30;
+    }
     public Task(String title, double price, PictureChoices choice) {
         /* Initialize member variables */
         this.img_src = choice;
@@ -58,7 +74,7 @@ public class Task {
         this.price = price;
         this.accepted = false;
         this.taskType = 0;
-        this.choice
+
         this.date[MONTH_INDEX] = (int)(Math.random()*10 + 3);
         this.date[DAY_INDEX] = (int)(Math.random()*30 + 1);
         this.date[YEAR_INDEX] = 2016;
