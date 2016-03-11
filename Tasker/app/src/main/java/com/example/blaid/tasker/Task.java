@@ -20,14 +20,17 @@ public class Task {
     private int HOUR_INDEX = 0;
     private int MINUTE_INDEX = 1;
     private int AMPM_INDEX = 2;
+    private String objectID;
 
     private boolean accepted;
+    private boolean completed;
     private PictureChoices img_src;
     private String title, description, location;
     private int[] date = new int[3];
     private int[] time = new int[3];
     private double price;
     private String username;
+    private String user_accepted;
 
     public Task() {
         /* Initialize member variables */
@@ -73,7 +76,8 @@ public class Task {
         this.accepted = accepted;
         this.img_src = PictureChoices.valueOf(pictureChoice);
         this.username = username;
-
+        this.user_accepted = "";
+        this.completed = false;
     }
 
     /* Implement toString() for list view */
@@ -214,4 +218,29 @@ public class Task {
     public boolean getAccepted() {
         return this.accepted;
     }
+
+    public String getUserAccepted() {
+        return this.user_accepted;
+    }
+
+    public void setUserAccepted(String username) {
+        this.user_accepted = username;
+    }
+
+    public void setCompleted(boolean val) {
+        this.completed = val;
+    }
+
+    public boolean getCompleted() {
+        return this.completed;
+    }
+
+    public String getObjectID() {
+        return this.objectID;
+    }
+
+    public void setObjectID(String id) {
+        this.objectID = id;
+    }
+
 }

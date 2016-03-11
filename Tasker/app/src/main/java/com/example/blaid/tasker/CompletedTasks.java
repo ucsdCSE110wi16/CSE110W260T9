@@ -2,7 +2,6 @@ package com.example.blaid.tasker;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -16,7 +15,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class TaskHistory extends AppCompatActivity {
+public class CompletedTasks extends AppCompatActivity {
     private ArrayAdapter<Task> adapter;
     final Context context = this;
 
@@ -27,7 +26,7 @@ public class TaskHistory extends AppCompatActivity {
         setContentView(R.layout.activity_completed_tasks);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        ArrayList<Task> taskHistory = User.getTaskHistory();
+        ArrayList<Task> taskHistory = User.getCompletedTaskHistory();
 
         final ListView listView = (ListView) findViewById(R.id.listView2);
         listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
@@ -37,9 +36,9 @@ public class TaskHistory extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Task listItem = (Task) listView.getItemAtPosition(position);
+                final Task listItem = (Task) listView.getItemAtPosition(position);
                 final Dialog dialog = new Dialog(context);
-                dialog.setContentView(R.layout.task_history_dialog);
+                dialog.setContentView(R.layout.accepted_task_dialog);
                 dialog.setTitle(listItem.getTitle());
 
                 TextView text = (TextView) dialog.findViewById(R.id.dialogPrice);
@@ -58,12 +57,6 @@ public class TaskHistory extends AppCompatActivity {
 
                 text = (TextView) dialog.findViewById(R.id.dialogUserText);
                 text.setText(listItem.getUsername());
-
-                text = (TextView) dialog.findViewById(R.id.dialogStatus);
-                if (listItem.getCompleted()) {
-                    text.setTextColor(Color.GREEN);
-                    text.setText("Completed!");
-                }
 
                 /* Set image view */
                 ImageView img = (ImageView) dialog.findViewById(R.id.imageView3);
@@ -88,6 +81,15 @@ public class TaskHistory extends AppCompatActivity {
                         break;
                 }
 
+                Button completeButton = (Button) dialog.findViewById(R.id.completeButton);
+                completeButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        listItem.setCompleted(true);
+                        dialog.dismiss();
+                    }
+                });
+
                 Button dialogButton = (Button) dialog.findViewById(R.id.okButton);
                 // if button is clicked, close the custom dialog
                 dialogButton.setOnClickListener(new View.OnClickListener() {
@@ -102,3 +104,4 @@ public class TaskHistory extends AppCompatActivity {
         });
     }
 }
+

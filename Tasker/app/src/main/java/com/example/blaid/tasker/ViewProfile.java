@@ -23,17 +23,33 @@ public class ViewProfile extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Button button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button historybutton = (Button) findViewById(R.id.button);
+        historybutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), TaskHistory.class));
             }
         });
+
+        Button completedbutton = (Button) findViewById(R.id.button3);
+        completedbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), CompletedTasks.class));
+            }
+        });
+
+        Button acceptedbutton = (Button) findViewById(R.id.button2);
+        acceptedbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), AcceptedTasks.class));
+            }
+        });
         setupActionBar();
 
         username = (TextView) findViewById(R.id.textViewUsername);
-        username.setText(ParseUser.getCurrentUser().getUsername().toString());
+        username.setText(ParseUser.getCurrentUser().getUsername());
 
     }
 

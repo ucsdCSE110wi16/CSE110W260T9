@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/bluebackground"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".TaskHistory"
+    tools:context=".AcceptedTasks"
     tools:showIn="@layout/activity_task_history">
 
     <ListView
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Task History"
+        android:text="Accepted Tasks"
         android:textStyle="bold"
         android:textSize="40sp"
         android:textColor="@color/white"

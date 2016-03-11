@@ -1,5 +1,6 @@
 package com.example.blaid.tasker;
 
+import com.parse.GetCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
@@ -52,9 +53,52 @@ public class TaskManager {
         parseTask.put("year", task.getYear());
         parseTask.put("month", task.getMonth());
         parseTask.put("day", task.getDay());
+        parseTask.put("completed", false);
+        parseTask.put("useraccepted", "");
 
         /* Save task to database */
         parseTask.saveInBackground();
+        task.setObjectID(parseTask.getObjectId());
+    }
+
+    public static void acceptTask(Task task) {
+        String id = task.getObjectID();
+        final String user = ParseUser.getCurrentUser().getUsername();
+        task.setAccepted(true);
+        task.setUserAccepted(user);
+
+        ParseQuery<ParseObject> parseTask = ParseQuery.getQuery("Task");
+        parseTask.getInBackground(id, new GetCallback<ParseObject>() {
+            @Override
+            public void done(ParseObject object, ParseException e) {
+                if (e == null) {
+                    object.put("accepted", true);
+                    object.put("useraccepted", user);
+                }
+                else {
+                    System.out.println("Something went wrong with parse!");
+                }
+            }
+        });
+
+    }
+
+    public static void completeTask(Task task) {
+        task.setCompleted(true);
+        String id = task.getObjectID();
+        ParseQuery<ParseObject> parseTask = ParseQuery.getQuery("Task");
+        parseTask.getInBackground(id, new GetCallback<ParseObject>() {
+            @Override
+            public void done(ParseObject object, ParseException e) {
+                if (e == null) {
+                    object.put("completed", true);
+                }
+                else {
+                    System.out.println("Something went wrong with parse!");
+                }
+            }
+        });
+
     }
 
     /**
@@ -66,7 +110,7 @@ public class TaskManager {
 
         /* Get new ParseQuery */
         ParseQuery<ParseObject> query = ParseQuery.getQuery("Task");
-
+        query.whereNotEqualTo("username", ParseUser.getCurrentUser().getUsername());
         try {
             List<ParseObject> result = query.find();
 

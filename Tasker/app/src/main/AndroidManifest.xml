@@ -101,7 +101,7 @@
                 android:value=".HomePage" />
         </activity>
         <activity
-            android:name=".TaskHistory.TaskHistory"
+            android:name=".TaskHistory"
             android:label="@string/title_activity_task_history"
             android:parentActivityName=".ViewProfile"
             android:theme="@style/AppTheme.NoActionBar">
@@ -109,6 +109,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.blaid.tasker.ViewProfile" />
         </activity>
+        <activity android:name=".AcceptedTasks" />
+        <activity android:name=".CompletedTasks"></activity>
     </application>
 
 </manifest>
