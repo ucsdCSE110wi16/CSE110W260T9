@@ -97,7 +97,6 @@ public class TaskManager {
             query.whereEqualTo("completed", false);
             List<ParseObject> result = query.find();
 
-
             for (int i = 0; i < result.size(); i++) {
                 Task t = TaskManager.createTask(result.get(i));
                 acceptedTaskHistory.add(t);

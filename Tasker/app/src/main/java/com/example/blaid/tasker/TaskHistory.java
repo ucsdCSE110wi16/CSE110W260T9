@@ -24,10 +24,10 @@ public class TaskHistory extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_completed_tasks);
+        setContentView(R.layout.activity_task_history);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        ArrayList<Task> taskHistory = User.getTaskHistory();
+        ArrayList<Task> taskHistory = TaskManager.getTaskHistory();
 
         final ListView listView = (ListView) findViewById(R.id.listView2);
         listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
