@@ -5,7 +5,6 @@ import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -25,9 +24,8 @@ public class AcceptedTasks extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accepted_tasks);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        ArrayList<Task> taskHistory = User.getAcceptedTaskHistory();
+
+        ArrayList<Task> taskHistory = TaskManager.getAcceptedTaskHistory();
 
         final ListView listView = (ListView) findViewById(R.id.listView2);
         listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);

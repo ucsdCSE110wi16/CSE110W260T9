@@ -71,7 +71,8 @@ public class MyAdapter extends ArrayAdapter<Task> {
         String date = taskList.get(position).getDateToString();
 
         String subtext = price + " - " + date;
-        subtitle.setText(subtext);
+        //subtitle.setText(subtext);
+        subtitle.setText(taskList.get(position).getObjectID());
 
         // 5. return rowView
         return rowView;

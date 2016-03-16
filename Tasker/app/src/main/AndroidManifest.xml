@@ -109,8 +109,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.blaid.tasker.ViewProfile" />
         </activity>
-        <activity android:name=".AcceptedTasks" />
-        <activity android:name=".CompletedTasks"></activity>
+        <activity
+            android:name=".AcceptedTasks"
+            android:label="@string/title_activity_accepted_tasks"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.blaid.tasker.ViewProfile" />
+        </activity>
+        <activity android:name=".CompletedTasks" />
     </application>
 
 </manifest>

@@ -230,6 +230,7 @@ public class CreateTask extends AppCompatActivity {
         Task task = new Task(title, description, location, year, month,
                              day, hour, min, ampm, price, false, choice,
                              ParseUser.getCurrentUser().getUsername());
+
         return task;
     }
 
@@ -260,20 +261,27 @@ public class CreateTask extends AppCompatActivity {
                 startActivity(new Intent(CreateTask.this, Login.class));
                 break;
 
-            case R.id.action_settings:
-                startActivity(new Intent(CreateTask.this, SettingsPage.class));
-                break;
-
-            case R.id.action_edit_profile:
-                startActivity(new Intent(CreateTask.this, EditProfile.class));
-                break;
-
             case R.id.action_create_task:
                 Toast.makeText(CreateTask.this, "You are already viewing Create Task", Toast.LENGTH_SHORT).show();
                 break;
 
+            case R.id.action_settings:
+                Toast.makeText(CreateTask.this, "Welcome to General Settings", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(CreateTask.this, SettingsPage.class));
+                break;
+
+            case R.id.action_edit_profile:
+                Toast.makeText(CreateTask.this, "Preparing to edit User Settings", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(CreateTask.this, EditProfile.class));
+                break;
+
+
             case R.id.action_home_page:
+
+                Toast.makeText(CreateTask.this, "Welcome Home", Toast.LENGTH_SHORT).show();
+
                 startActivity(new Intent(CreateTask.this, HomePage.class));
+
                 break;
         }
 

@@ -5,6 +5,7 @@ import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
+import com.parse.SaveCallback;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -21,14 +22,120 @@ import java.lang.Integer;
 public class TaskManager {
 
     /* This stores our task list for sorting */
-    public static ArrayList<Task> taskList = new ArrayList<>();
+    public static ArrayList<Task> taskList;
+    public static ArrayList<Task> taskHistory;
+    public static ArrayList<Task> acceptedTaskHistory;
+    public static ArrayList<Task> completedTaskHistory;
+    private static String username = ParseUser.getCurrentUser().getUsername();
 
-    /*
-     * This constructor grabs all the tasks in the database and initializes the
-     * taskList.
+
+    /**
+     * This method retrieves a list of ParseObjects to be displayed on the home page.
      */
-    public TaskManager() {
-        getTaskList();
+    public static ArrayList<Task> getTaskList() {
+        /* Fill new task list */
+        taskList = new ArrayList<>();
+
+        /* Get new ParseQuery */
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Task");
+        query.whereNotEqualTo("username", ParseUser.getCurrentUser().getUsername());
+        query.whereEqualTo("accepted", false);
+        try {
+            List<ParseObject> result = query.find();
+
+            for (int i = 0; i < result.size(); i++) {
+                Task t = createTask(result.get(i));
+                taskList.add(t);
+            }
+            return taskList;
+
+        } catch (ParseException e) {
+            System.out.println(e);
+            return null;
+        }
+    }
+
+    /**
+     * This method retrieves a list of ParseObjects to be displayed on the home page.
+     */
+    public static ArrayList<Task> getTaskHistory() {
+        /* Fill new task list */
+        taskHistory = new ArrayList<>();
+
+        /* Get new ParseQuery */
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Task");
+
+        try {
+            query.whereEqualTo("username", username);
+            List<ParseObject> result = query.find();
+
+
+            for (int i = 0; i < result.size(); i++) {
+                Task t = TaskManager.createTask(result.get(i));
+                taskHistory.add(t);
+            }
+            return taskHistory;
+
+        } catch (ParseException e) {
+            System.out.println(e);
+            return null;
+        }
+    }
+
+    /**
+     * This method retrieves a list of "accepted" ParseObjects to be displayed on the home page.
+     */
+    public static ArrayList<Task> getAcceptedTaskHistory() {
+        /* Fill new task list */
+        acceptedTaskHistory = new ArrayList<>();
+
+        /* Get new ParseQuery */
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Task");
+
+        try {
+            query.whereEqualTo("useraccepted", username);
+            query.whereEqualTo("completed", false);
+            List<ParseObject> result = query.find();
+
+
+            for (int i = 0; i < result.size(); i++) {
+                Task t = TaskManager.createTask(result.get(i));
+                acceptedTaskHistory.add(t);
+            }
+            return acceptedTaskHistory;
+
+        } catch (ParseException e) {
+            System.out.println(e);
+            return null;
+        }
+    }
+
+    /**
+     * This method retrieves a list of "completed" ParseObjects to be displayed on the home page.
+     */
+    public static ArrayList<Task> getCompletedTaskHistory() {
+        /* Fill new task list */
+        completedTaskHistory = new ArrayList<>();
+
+        /* Get new ParseQuery */
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Task");
+
+        try {
+            query.whereEqualTo("useraccepted", username);
+            query.whereEqualTo("completed", true);
+            List<ParseObject> result = query.find();
+
+
+            for (int i = 0; i < result.size(); i++) {
+                Task t = TaskManager.createTask(result.get(i));
+                acceptedTaskHistory.add(t);
+            }
+            return acceptedTaskHistory;
+
+        } catch (ParseException e) {
+            System.out.println(e);
+            return null;
+        }
     }
 
     /**
@@ -36,9 +143,9 @@ public class TaskManager {
      *
      * @param task - The task to store.
      */
-    public static void storeTask(Task task) {
+    public static void storeTask(final Task task) {
         /* Create new parse object */
-        ParseObject parseTask = new ParseObject("Task");
+        final ParseObject parseTask = new ParseObject("Task");
 
         parseTask.put("title", task.getTitle());
         parseTask.put("description", task.getDescription());
@@ -57,12 +164,17 @@ public class TaskManager {
         parseTask.put("useraccepted", "");
 
         /* Save task to database */
-        parseTask.saveInBackground();
-        task.setObjectID(parseTask.getObjectId());
+        parseTask.saveInBackground(new SaveCallback() {
+            @Override
+            public void done(ParseException e) {
+                if (e == null) {
+                    task.setObjectID(parseTask.getObjectId());
+                }
+            }
+        });
     }
 
-    public static void acceptTask(Task task) {
-        String id = task.getObjectID();
+    public static void acceptTask(Task task, final String id) {
         final String user = ParseUser.getCurrentUser().getUsername();
         task.setAccepted(true);
         task.setUserAccepted(user);
@@ -70,12 +182,12 @@ public class TaskManager {
         ParseQuery<ParseObject> parseTask = ParseQuery.getQuery("Task");
         parseTask.getInBackground(id, new GetCallback<ParseObject>() {
             @Override
-            public void done(ParseObject object, ParseException e) {
+            public void done(ParseObject parseTask, ParseException e) {
                 if (e == null) {
-                    object.put("accepted", true);
-                    object.put("useraccepted", user);
-                }
-                else {
+                    parseTask.put("accepted", true);
+                    parseTask.put("useraccepted", user);
+                    parseTask.saveInBackground();
+                } else {
                     System.out.println("Something went wrong with parse!");
                 }
             }
@@ -92,36 +204,12 @@ public class TaskManager {
             public void done(ParseObject object, ParseException e) {
                 if (e == null) {
                     object.put("completed", true);
-                }
-                else {
+                } else {
                     System.out.println("Something went wrong with parse!");
                 }
             }
         });
 
-    }
-
-    /**
-     * This method retrieves a list of ParseObjects to be displayed on the home page.
-     */
-    public static void getTaskList() {
-        /* Fill new task list */
-        taskList = new ArrayList<>();
-
-        /* Get new ParseQuery */
-        ParseQuery<ParseObject> query = ParseQuery.getQuery("Task");
-        query.whereNotEqualTo("username", ParseUser.getCurrentUser().getUsername());
-        try {
-            List<ParseObject> result = query.find();
-
-            for (int i = 0; i < result.size(); i++) {
-                Task t = createTask(result.get(i));
-                taskList.add(t);
-            }
-
-        } catch (ParseException e) {
-            System.out.println(e);
-        }
     }
 
     /**
@@ -144,7 +232,8 @@ public class TaskManager {
                           obj.getDouble("price"),
                           obj.getBoolean("accepted"),
                           obj.getString("imagesource"),
-                          obj.getString("username"));
+                          obj.getString("username"),
+                          obj.getObjectId());
     }
 
     /**
@@ -211,8 +300,7 @@ public class TaskManager {
         }
     }
 
-    /**
-     * This is a helper method for filterTasks, it implements a comparing
+    /* This is a helper method for filterTasks, it implements a comparing
      * method to arrange tasks by soonest date.
      *
      * @param lhs - the first task to compare
@@ -225,6 +313,7 @@ public class TaskManager {
                                               rhs.getDay());
         return cal1.compareTo(cal2);
     }
+
 
     /*
      * This helper method for filterTasks compares tasks by time only, it does

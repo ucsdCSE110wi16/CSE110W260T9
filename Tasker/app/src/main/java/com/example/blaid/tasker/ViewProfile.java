@@ -23,7 +23,7 @@ public class ViewProfile extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Button historybutton = (Button) findViewById(R.id.button);
+        Button historybutton = (Button) findViewById(R.id.taskHistory);
         historybutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,7 +31,7 @@ public class ViewProfile extends AppCompatActivity {
             }
         });
 
-        Button completedbutton = (Button) findViewById(R.id.button3);
+        Button completedbutton = (Button) findViewById(R.id.completeTask);
         completedbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,7 +39,7 @@ public class ViewProfile extends AppCompatActivity {
             }
         });
 
-        Button acceptedbutton = (Button) findViewById(R.id.button2);
+        Button acceptedbutton = (Button) findViewById(R.id.acceptTask);
         acceptedbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,16 +81,30 @@ public class ViewProfile extends AppCompatActivity {
                 break;
 
             case R.id.action_settings:
+                Toast.makeText(ViewProfile.this, "Welcome to General Settings", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(ViewProfile.this, SettingsPage.class));
                 break;
 
             case R.id.action_edit_profile:
+                Toast.makeText(ViewProfile.this, "Preparing to edit User Settings", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(ViewProfile.this, EditProfile.class));
                 break;
 
+            case R.id.action_view_profile:
+                Toast.makeText(ViewProfile.this, "Already viewing profile", Toast.LENGTH_SHORT).show();
+
+                break;
+
             case R.id.action_create_task:
+                Toast.makeText(ViewProfile.this, "New Blank Task...", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(ViewProfile.this, CreateTask.class));
                 break;
+
+                case R.id.action_home_page:
+                    Toast.makeText(ViewProfile.this, "Welcome Home", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(ViewProfile.this, HomePage.class));
+                    break;
+
         }
 
         return super.onOptionsItemSelected(item);

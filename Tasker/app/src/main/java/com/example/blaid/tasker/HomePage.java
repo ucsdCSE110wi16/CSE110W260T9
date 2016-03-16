@@ -21,10 +21,13 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 
 public class HomePage extends AppCompatActivity
             implements NavigationView.OnNavigationItemSelectedListener {
     private ArrayAdapter<Task> adapter;
+    private ArrayList<Task> taskList;
     final Context context = this;
     TextView text;
 
@@ -35,9 +38,8 @@ public class HomePage extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        TaskManager.getTaskList();
+        taskList = TaskManager.getTaskList();
 
-         
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -50,13 +52,14 @@ public class HomePage extends AppCompatActivity
         final ListView listView1 = (ListView) findViewById(R.id.listView1);
         listView1.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
-        adapter = new MyAdapter(this, TaskManager.taskList);
+        adapter = new MyAdapter(this, taskList);
 
         listView1.setAdapter(adapter);
         listView1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 final Task listItem = (Task) listView1.getItemAtPosition(position);
+                String objectID = listItem.getObjectID();
                 final Dialog dialog = new Dialog(context);
                 dialog.setContentView(R.layout.home_page_dialog);
                 dialog.setTitle(listItem.getTitle());
@@ -76,8 +79,7 @@ public class HomePage extends AppCompatActivity
                 text.setText(listItem.getLocation());
 
                 text = (TextView) dialog.findViewById(R.id.dialogUserText);
-                text.setText(listItem.getUsername());
-
+                text.setText(listItem.getObjectID());
 
                 /* Set image view */
                 ImageView img = (ImageView) dialog.findViewById(R.id.imageView3);
@@ -117,16 +119,8 @@ public class HomePage extends AppCompatActivity
                 dialogAcceptButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast iDo = Toast.makeText(getApplicationContext(), "Task, " + listItem.getTitle() + " accepted!", Toast.LENGTH_SHORT);
-                        Toast iCant = Toast.makeText(getApplicationContext(), "Task, " + listItem.getTitle() + " is already in Progress :(", Toast.LENGTH_SHORT);
-
-                        if(!listItem.getAccepted()){
-                            listItem.setAccepted(true);
-                            iDo.show();
-                        } else {
-                            iCant.show();
-                        }
-
+                        TaskManager.acceptTask(listItem, listItem.getObjectID());
+                        Toast.makeText(getApplicationContext(), "Task accepted!", Toast.LENGTH_LONG).show();
                         dialog.dismiss();
                     }
                 });
@@ -168,9 +162,12 @@ public class HomePage extends AppCompatActivity
                 startActivity(new Intent(getApplicationContext(), Login.class));
                 break;
 
-            case R.id.action_settings:
-                startActivity(new Intent(getApplicationContext(), SettingsPage.class));
-                break;
+                case R.id.action_settings:
+                      Toast.makeText(HomePage.this, "Welcome to General Settings", Toast.LENGTH_SHORT).show();
+                      startActivity(new Intent(getApplicationContext(), SettingsPage.class));
+                      break;
+
+
 
             case R.id.action_edit_profile:
                 startActivity(new Intent(getApplicationContext(), EditProfile.class));
@@ -217,6 +214,3 @@ public class HomePage extends AppCompatActivity
         return true;
     }
 }
-
-
-
