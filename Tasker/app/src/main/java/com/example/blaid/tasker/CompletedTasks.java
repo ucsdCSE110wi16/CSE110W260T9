@@ -26,7 +26,7 @@ public class CompletedTasks extends AppCompatActivity {
         setContentView(R.layout.activity_completed_tasks);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        ArrayList<Task> taskHistory = User.getCompletedTaskHistory();
+        ArrayList<Task> taskHistory = TaskManager.getCompletedTaskHistory();
 
         final ListView listView = (ListView) findViewById(R.id.listView2);
         listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
@@ -38,7 +38,7 @@ public class CompletedTasks extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 final Task listItem = (Task) listView.getItemAtPosition(position);
                 final Dialog dialog = new Dialog(context);
-                dialog.setContentView(R.layout.accepted_task_dialog);
+                dialog.setContentView(R.layout.task_history_dialog);
                 dialog.setTitle(listItem.getTitle());
 
                 TextView text = (TextView) dialog.findViewById(R.id.dialogPrice);
@@ -80,15 +80,6 @@ public class CompletedTasks extends AppCompatActivity {
                         img.setImageResource(R.drawable.gameicon);
                         break;
                 }
-
-                Button completeButton = (Button) dialog.findViewById(R.id.completeButton);
-                completeButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        listItem.setCompleted(true);
-                        dialog.dismiss();
-                    }
-                });
 
                 Button dialogButton = (Button) dialog.findViewById(R.id.okButton);
                 // if button is clicked, close the custom dialog

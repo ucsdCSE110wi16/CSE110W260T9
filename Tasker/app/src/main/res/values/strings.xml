@@ -128,6 +128,7 @@
     </string-array>
 
 
+    <string name="title_activity_completed_tasks">Completed Tasks</string>
     <string name="title_activity_filter">Filter Settings</string>
     <string name="title_activity_view_task">View Task</string>
     <string name="Date">Date:</string>

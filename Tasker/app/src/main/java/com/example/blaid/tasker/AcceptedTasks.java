@@ -2,6 +2,7 @@ package com.example.blaid.tasker;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -89,7 +91,9 @@ public class AcceptedTasks extends AppCompatActivity {
                 completeButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        listItem.setCompleted(true);
+                        TaskManager.completeTask(listItem, listItem.getObjectID());
+                        Toast.makeText(getApplicationContext(), "Task completed!", Toast.LENGTH_LONG).show();
+                        adapter.remove(listItem);
                         dialog.dismiss();
                     }
                 });

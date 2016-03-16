@@ -17,7 +17,7 @@ import android.widget.TextView;
 public class MyAdapter extends ArrayAdapter<Task> {
 
     private final Context context;
-    private final ArrayList<Task> taskList;
+    public ArrayList<Task> taskList;
 
     public MyAdapter(Context context, ArrayList<Task> taskList) {
 
@@ -25,6 +25,11 @@ public class MyAdapter extends ArrayAdapter<Task> {
 
         this.context = context;
         this.taskList = taskList;
+    }
+
+    public void remove(Task task) {
+        taskList.remove(task);
+        notifyDataSetChanged();
     }
 
     @Override
@@ -71,8 +76,7 @@ public class MyAdapter extends ArrayAdapter<Task> {
         String date = taskList.get(position).getDateToString();
 
         String subtext = price + " - " + date;
-        //subtitle.setText(subtext);
-        subtitle.setText(taskList.get(position).getObjectID());
+        subtitle.setText(subtext);
 
         // 5. return rowView
         return rowView;

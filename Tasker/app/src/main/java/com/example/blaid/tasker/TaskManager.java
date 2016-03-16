@@ -127,9 +127,9 @@ public class TaskManager {
 
             for (int i = 0; i < result.size(); i++) {
                 Task t = TaskManager.createTask(result.get(i));
-                acceptedTaskHistory.add(t);
+                completedTaskHistory.add(t);
             }
-            return acceptedTaskHistory;
+            return completedTaskHistory;
 
         } catch (ParseException e) {
             System.out.println(e);
@@ -177,6 +177,9 @@ public class TaskManager {
         final String user = ParseUser.getCurrentUser().getUsername();
         task.setAccepted(true);
         task.setUserAccepted(user);
+        if (acceptedTaskHistory != null) {
+            acceptedTaskHistory.remove(task);
+        }
 
         ParseQuery<ParseObject> parseTask = ParseQuery.getQuery("Task");
         parseTask.getInBackground(id, new GetCallback<ParseObject>() {
@@ -194,15 +197,19 @@ public class TaskManager {
 
     }
 
-    public static void completeTask(Task task) {
+    public static void completeTask(Task task, final String id) {
         task.setCompleted(true);
-        String id = task.getObjectID();
+        if (completedTaskHistory != null) {
+            completedTaskHistory.remove(task);
+        }
+
         ParseQuery<ParseObject> parseTask = ParseQuery.getQuery("Task");
         parseTask.getInBackground(id, new GetCallback<ParseObject>() {
             @Override
             public void done(ParseObject object, ParseException e) {
                 if (e == null) {
                     object.put("completed", true);
+                    object.saveInBackground();
                 } else {
                     System.out.println("Something went wrong with parse!");
                 }

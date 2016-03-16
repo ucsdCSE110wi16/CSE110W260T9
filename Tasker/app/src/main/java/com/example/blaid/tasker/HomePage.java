@@ -1,5 +1,6 @@
 package com.example.blaid.tasker;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
@@ -79,7 +80,7 @@ public class HomePage extends AppCompatActivity
                 text.setText(listItem.getLocation());
 
                 text = (TextView) dialog.findViewById(R.id.dialogUserText);
-                text.setText(listItem.getObjectID());
+                text.setText(listItem.getUsername());
 
                 /* Set image view */
                 ImageView img = (ImageView) dialog.findViewById(R.id.imageView3);
@@ -121,6 +122,7 @@ public class HomePage extends AppCompatActivity
                     public void onClick(View v) {
                         TaskManager.acceptTask(listItem, listItem.getObjectID());
                         Toast.makeText(getApplicationContext(), "Task accepted!", Toast.LENGTH_LONG).show();
+                        adapter.remove(listItem);
                         dialog.dismiss();
                     }
                 });
@@ -129,7 +131,6 @@ public class HomePage extends AppCompatActivity
             }
         });
     }
-
 
     @Override
     public void onBackPressed() {

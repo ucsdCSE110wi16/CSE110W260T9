@@ -182,8 +182,8 @@
         android:textColor="#ffffff"
         android:id="@+id/completeButton"
         android:background="@drawable/green_button"
-        android:layout_alignBottom="@+id/okButton"
-        android:layout_toRightOf="@+id/dialogLocation"
-        android:layout_toEndOf="@+id/dialogLocation" />
+        android:layout_alignTop="@+id/okButton"
+        android:layout_toRightOf="@+id/dialogUser"
+        android:layout_toEndOf="@+id/dialogUser" />
 
 </RelativeLayout>
