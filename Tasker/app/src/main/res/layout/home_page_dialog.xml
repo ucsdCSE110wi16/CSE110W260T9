@@ -111,7 +111,7 @@
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="130dp"
+        android:layout_width="75dp"
         android:layout_height="40dp"
         android:text="@string/Back"
         android:id="@+id/buttonTaskBack"
@@ -128,7 +128,7 @@
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="130dp"
+        android:layout_width="75dp"
         android:layout_height="40dp"
         android:text="@string/Accept"
         android:id="@+id/buttonTaskAccept"
@@ -139,8 +139,8 @@
         android:shadowDx="0"
         android:shadowDy="0"
         android:layout_alignTop="@+id/buttonTaskBack"
-        android:layout_toRightOf="@+id/date"
-        android:layout_toEndOf="@+id/date" />
+        android:layout_alignRight="@+id/dialogUserText"
+        android:layout_alignEnd="@+id/dialogUserText" />
 
     <TextView
         android:layout_width="wrap_content"
