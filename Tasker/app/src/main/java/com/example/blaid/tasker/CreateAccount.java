@@ -82,7 +82,7 @@ public class CreateAccount extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //set task image
-        Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.profile_pic_default);
+        Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.selecticon);
         ImageView myImageView = (ImageView) findViewById(R.id.imageView6);
         myImageView.setImageBitmap(bm);
 

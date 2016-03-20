@@ -134,7 +134,7 @@
          />
 
     <Button
-        android:layout_width="135dp"
+        android:layout_width="145dp"
         android:layout_height="40dp"
         android:text="Completed Tasks"
         android:textSize="15dp"
@@ -142,7 +142,7 @@
         android:id="@+id/completeTask"
         android:background="@drawable/default_button"
         android:layout_alignTop="@+id/taskHistory"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignRight="@+id/ratingBar2"
+        android:layout_alignEnd="@+id/ratingBar2" />
 
 </RelativeLayout>

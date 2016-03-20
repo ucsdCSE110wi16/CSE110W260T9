@@ -50,7 +50,7 @@ public class CreateTask extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         //set task image
-        Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.profile_pic_default);
+        Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.selecticon);
         ImageView myImageView = (ImageView) findViewById(R.id.imageView4);
         myImageView.setImageBitmap(bm);
 

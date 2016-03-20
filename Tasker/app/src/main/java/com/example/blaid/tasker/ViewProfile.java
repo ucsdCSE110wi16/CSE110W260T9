@@ -51,6 +51,7 @@ public class ViewProfile extends AppCompatActivity {
         username = (TextView) findViewById(R.id.textViewUsername);
         username.setText(ParseUser.getCurrentUser().getUsername());
 
+
     }
 
     private void setupActionBar() {
